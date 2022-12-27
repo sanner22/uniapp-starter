@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-  import BasicButton from '@/components/BasicButton/index.vue';
   import { useRouter } from '@/hooks/router';
   import Navbar from '@/components/Navbar/index.vue';
 
@@ -12,7 +11,7 @@
   <view>
     <navbar />
     <view> Test2 </view>
-    <basic-button @click="jumpDetail">Detail → </basic-button>
+    <u-button type="primary" @click="jumpDetail">Detail → </u-button>
   </view>
 </template>
 <style scoped></style>

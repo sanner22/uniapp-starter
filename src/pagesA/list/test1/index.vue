@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-  import BasicButton from '@/components/BasicButton/index.vue';
   import { useRouter } from '@/hooks/router';
 
   const router = useRouter();
@@ -10,7 +9,7 @@
 <template>
   <view class="_u_center"> Test1 </view>
   <view class="_u_center">
-    <basic-button @click="jumpTest2">Test2 → </basic-button>
+    <u-button type="primary" @click="jumpTest2">Test2 → </u-button>
   </view>
 </template>
 <style scoped></style>

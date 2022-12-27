@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-  import BasicButton from '@/components/BasicButton/index.vue';
   import AppProvider from '@/components/AppProvider/inedx.vue';
   import { useRouter } from '@/hooks/router';
 
@@ -13,7 +12,9 @@
   <app-provider>
     <view class="container"> 页面构建中... </view>
     <view class="_u_center">
-      <basic-button @click="jumpList1">List1 → </basic-button>
+      <u-button type="primary" size="small" @click="jumpList1"
+        >List1 →
+      </u-button>
     </view>
   </app-provider>
 </template>

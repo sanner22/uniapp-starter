@@ -1,6 +1,5 @@
 <script setup lang="ts">
   import { ref } from 'vue';
-  import BasicButton from '@/components/BasicButton/index.vue';
   import AppProvider from '@/components/AppProvider/inedx.vue';
   import { useRouter } from '@/hooks/router';
   import { CURRENT_PLATFORM, PLATFORMS } from '@/enums/platformEnum';
@@ -35,7 +34,9 @@
       <view class="text-area">
         <text class="_u_text-red">当前平台: {{ platform }}</text>
       </view>
-      <basic-button @click="handleGetStarted">Get Started → </basic-button>
+      <u-button type="primary" @click="handleGetStarted"
+        >Get Started →
+      </u-button>
       <view class="_u_text-red">uno css</view>
       <iconify icon="i-ph-anchor-simple-thin" size="65" />
       <iconify icon="i-system-uicons-book-text" />
