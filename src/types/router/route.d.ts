@@ -1,6 +1,3 @@
-import { types } from 'sass';
-import Boolean = types.Boolean;
-
 export interface Route extends Record<string, any> {
   path: string;
   meta?: {
