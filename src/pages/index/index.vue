@@ -20,6 +20,7 @@
     // router.push('/pages/log/index?id=4345&title=log');
   };
 </script>
+
 <template>
   <AppProvider>
     <Navbar />
@@ -41,9 +42,30 @@
       <Iconify icon="i-system-uicons-battery-full" size="65" />
       <Iconify icon="i-system-uicons-box-add" :size="65" />
       <Iconify icon="i-system-uicons-bell-snooze" color="red" :size="65" />
+
+      <u-icon name="photo"></u-icon>
+
+      <u-button type="primary" text="确定"></u-button>
+      <u-button type="primary" :plain="true" text="镂空"></u-button>
+      <u-button
+        type="primary"
+        :plain="true"
+        :hairline="true"
+        text="细边"
+      ></u-button>
+      <u-button type="primary" disabled text="禁用"></u-button>
+      <u-button type="primary" loading loadingText="加载中"></u-button>
+      <u-button type="primary" icon="map" text="图标按钮"></u-button>
+      <u-button type="primary" shape="circle" text="按钮形状"></u-button>
+      <u-button
+        text="渐变色按钮"
+        color="linear-gradient(to right, rgb(66, 83, 216), rgb(213, 51, 186))"
+      ></u-button>
+      <u-button type="primary" size="small" text="大小尺寸"></u-button>
     </view>
   </AppProvider>
 </template>
+
 <style lang="scss">
   .content {
     display: flex;
