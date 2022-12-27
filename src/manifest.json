@@ -1,6 +1,6 @@
 {
     "name" : "uniapp_vue3_vite_ts",
-    "appid" : "__UNI__38BE53A",
+    "appid" : "__UNI__D0B7835",
     "description" : "",
     "versionName" : "1.0.3",
     "versionCode" : "100",
@@ -61,7 +61,7 @@
     "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
-        "appid" : "wxc8e4923d551cd4a4",
+        "appid" : "wx56ffbeb2411ba1ce",
         "setting" : {
             "urlCheck" : false,
             "es6" : true,
@@ -69,12 +69,16 @@
             "minified" : true
         },
         "usingComponents" : true,
-        "permission" : {},
+        "permission" : {
+            "scope.userLocation" : {
+                "desc" : "更精准的推送你的信息"
+            }
+        },
         "optimization" : {
             "subPackages" : true
         },
         "lazyCodeLoading" : "requiredComponents",
-		"style": "v2"
+        "style" : "v2"
     },
     "mp-alipay" : {
         "usingComponents" : true,
