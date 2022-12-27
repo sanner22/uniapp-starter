@@ -10,12 +10,12 @@
 </script>
 
 <template>
-  <AppProvider>
+  <app-provider>
     <view class="container"> 页面构建中... </view>
     <view class="_u_center">
-      <BasicButton @click="jumpList1">List1 → </BasicButton>
+      <basic-button @click="jumpList1">List1 → </basic-button>
     </view>
-  </AppProvider>
+  </app-provider>
 </template>
 
 <style lang="scss" scoped>

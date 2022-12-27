@@ -10,9 +10,9 @@
 </script>
 <template>
   <view>
-    <Navbar />
+    <navbar />
     <view> Test2 </view>
-    <BasicButton @click="jumpDetail">Detail → </BasicButton>
+    <basic-button @click="jumpDetail">Detail → </basic-button>
   </view>
 </template>
 <style scoped></style>

@@ -8,8 +8,8 @@
   const router = useRouter();
   const redirect = ref<string>('');
   onLoad(query => {
-    go.value = query.go || '';
-    redirect.value = query.redirect || '';
+    go.value = query?.go || '';
+    redirect.value = query?.redirect || '';
   });
 
   /**
@@ -26,7 +26,7 @@
     <view class="mb-40rpx">
       <text>{{ go }} 页面找不到了~</text>
     </view>
-    <BasicButton @click="backHome">返回首页</BasicButton>
+    <basic-button @click="backHome">返回首页</basic-button>
   </view>
 </template>
 

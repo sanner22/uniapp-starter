@@ -22,8 +22,8 @@
 </script>
 
 <template>
-  <AppProvider>
-    <Navbar />
+  <app-provider>
+    <navbar />
     <view class="content">
       <image class="logo" src="/static/svg/LOGO.svg" />
       <view class="text-area">
@@ -35,13 +35,13 @@
       <view class="text-area">
         <text class="_u_text-red">当前平台: {{ platform }}</text>
       </view>
-      <BasicButton @click="handleGetStarted">Get Started → </BasicButton>
+      <basic-button @click="handleGetStarted">Get Started → </basic-button>
       <view class="_u_text-red">uno css</view>
-      <Iconify icon="i-ph-anchor-simple-thin" size="65" />
-      <Iconify icon="i-system-uicons-book-text" />
-      <Iconify icon="i-system-uicons-battery-full" size="65" />
-      <Iconify icon="i-system-uicons-box-add" :size="65" />
-      <Iconify icon="i-system-uicons-bell-snooze" color="red" :size="65" />
+      <iconify icon="i-ph-anchor-simple-thin" size="65" />
+      <iconify icon="i-system-uicons-book-text" />
+      <iconify icon="i-system-uicons-battery-full" size="65" />
+      <iconify icon="i-system-uicons-box-add" :size="65" />
+      <iconify icon="i-system-uicons-bell-snooze" color="red" :size="65" />
 
       <u-icon name="photo"></u-icon>
 
@@ -63,7 +63,7 @@
       ></u-button>
       <u-button type="primary" size="small" text="大小尺寸"></u-button>
     </view>
-  </AppProvider>
+  </app-provider>
 </template>
 
 <style lang="scss">

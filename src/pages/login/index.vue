@@ -7,7 +7,8 @@
 
   const redirect = ref<string | undefined>(undefined);
   onLoad(query => {
-    redirect.value = query.redirect
+    debugger;
+    redirect.value = query?.redirect
       ? decodeURIComponent(query.redirect)
       : undefined;
   });

@@ -87,6 +87,18 @@ module.exports = {
     'vue/attribute-hyphenation': 'off',
     'vue/require-default-prop': 'off',
   },
+  overrides: [
+    {
+      files: ['*.vue'],
+      rules: {
+        'vue/component-name-in-template-casing': [2, 'kebab-case'],
+        'vue/require-default-prop': 0,
+        'vue/multi-word-component-names': 0,
+        'vue/no-reserved-props': 0,
+        'vue/no-v-html': 0,
+      },
+    },
+  ],
   globals: {
     defineProps: 'readonly',
     defineEmits: 'readonly',

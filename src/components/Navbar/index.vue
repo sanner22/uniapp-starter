@@ -100,7 +100,7 @@
           <slot name="left">
             <view class="_u_h-full _u_flex _u_items-center">
               <template v-if="backShow">
-                <Iconify
+                <iconify
                   @click="onBack"
                   :size="navbarLeftIconSize"
                   :color="navbarTitleColor"
@@ -108,7 +108,7 @@
                 />
               </template>
               <template v-if="backHomeShow">
-                <Iconify
+                <iconify
                   @click="onBackHome"
                   :size="navbarLeftIconSize"
                   :color="navbarTitleColor"

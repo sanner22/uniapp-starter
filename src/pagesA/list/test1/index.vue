@@ -9,8 +9,8 @@
 </script>
 <template>
   <view class="_u_center"> Test1 </view>
-  <view class="_u_center"
-    ><BasicButton @click="jumpTest2">Test2 → </BasicButton></view
-  >
+  <view class="_u_center">
+    <basic-button @click="jumpTest2">Test2 → </basic-button>
+  </view>
 </template>
 <style scoped></style>
