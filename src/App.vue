@@ -3,9 +3,28 @@
   import { useAuthStore } from '@/state/modules/auth';
   import { removeInterceptor, setupInterceptors } from '@/utils/interceptors';
   import { useRouterStore } from '@/state/modules/router';
+  import { judgePlatform } from './utils/platform';
+  import { CURRENT_PLATFORM, PLATFORMS } from './enums/platformEnum';
+
+  const platform = CURRENT_PLATFORM;
+  const isVue3 = judgePlatform(PLATFORMS.VUE3);
+  const apiUrl = import.meta.env.VITE_BASE_URL;
   onLaunch(() => {
+    console.log(
+      `\n%cUNIAPP:%c${platform}%cVUE:%c${isVue3 ? '3' : '2'}%cUVIEW PLUS:%c${
+        uni.$u.config.v
+      }%cAPI:%c${apiUrl}%c\n`,
+      'background:#2b993a;color:#fff;padding:5px 6px;border-radius:4px 0 0 4px;',
+      'background:#fff;padding:5px 6px;color:#000;margin-right:1em;border-radius:0 4px 4px 0;',
+      'background:#42d392;color:#fff;padding:5px 6px;border-radius:4px 0 0 4px;',
+      'background:#fff;padding:5px 6px;color:#000;margin-right:1em;border-radius:0 4px 4px 0;',
+      'background:#2979ff;color:#fff;padding:5px 6px;border-radius:4px 0 0 4px;',
+      'background:#fff;padding:5px 6px;color:#000;margin-right:1em;border-radius:0 4px 4px 0;',
+      'background:orange;color:#fff;padding:5px 6px;border-radius:4px 0 0 4px;',
+      'background:#fff;padding:5px 6px;color:#000;margin-right:1em;border-radius:0 4px 4px 0;',
+      '',
+    );
     console.log('App Launch');
-    console.log('uview-version:', uni.$u.config.v);
     removeInterceptor();
 
     setupInterceptors();
@@ -22,7 +41,7 @@
   });
 </script>
 <style lang="scss">
-  /* 注意要写在第一行，同时给style标签加入lang="scss"属性 */
+  /* uview-plus 全局样式 */
   @import 'uview-plus/index.scss';
 
   @import '@/assets/main.scss';
