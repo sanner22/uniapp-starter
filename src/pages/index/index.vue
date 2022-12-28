@@ -23,12 +23,10 @@
 </script>
 
 <template>
-  <!-- <navbar /> -->
-  <u-navbar title="首页" placeholder>
+  <!-- 自定义导航栏 -->
+  <u-navbar title="首页" bg-color="#f6f6f6" placeholder>
     <template #left>
-      <view
-        class="_u_flex _u_items-center _u_justify-center _u_b-1 _u_b-trueGray-2 _u_b-rd-99px _u_px-8px _u_py-4px"
-      >
+      <view class="mp-weixin-menu">
         <u-icon name="arrow-left" size="18" color="black"></u-icon>
         <u-line
           direction="column"

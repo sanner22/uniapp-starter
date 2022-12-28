@@ -1,17 +1,20 @@
 <script lang="ts" setup>
+  import AppProvider from '@/components/AppProvider/inedx.vue';
   import { useRouter } from '@/hooks/router';
-  import Navbar from '@/components/Navbar/index.vue';
 
   const router = useRouter();
   const jumpDetail = () => {
     router.push('/pagesB/detail/index?page=1&limit=20');
   };
 </script>
+
 <template>
-  <view>
-    <navbar />
+  <u-navbar title="test2" bg-color="#f6f6f6" placeholder auto-back></u-navbar>
+
+  <app-provider>
     <view> Test2 </view>
     <u-button type="primary" @click="jumpDetail">Detail → </u-button>
-  </view>
+  </app-provider>
 </template>
-<style scoped></style>
+
+<style lang="scss" scoped></style>

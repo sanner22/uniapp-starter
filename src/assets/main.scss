@@ -50,7 +50,7 @@ web-view,
 @for $i from 1 through 5 {
   .text-ellipsis-#{$i} {
     // vue下，单行和多行显示省略号需要单独处理
-    @if $i == '1' {
+    @if $i == "1" {
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
@@ -64,6 +64,37 @@ web-view,
     }
   }
 }
+
 page {
-  background-color: #f2f2f2;
+  background-color: #ffffff;
+}
+
+// 小程序胶囊菜单
+.mp-weixin-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  opacity: 0.8;
+  border-width: 1rpx;
+  border-style: solid;
+  padding: 0 7px;
+  -o-border-radius: 99px;
+  -webkit-border-radius: 99px;
+  -moz-border-radius: 99px;
+  -ms-border-radius: 99px;
+  border-radius: 99px;
+
+  // light
+  border-color: rgba($color: #000000, $alpha: 0.1);
+  background-color: rgba($color: #ffffff, $alpha: 0.6);
+  color: #000000;
+
+  // dark
+  &.dark {
+    border-color: rgba($color: #ffffff, $alpha: 0.25);
+    background-color: rgba($color: #000000, $alpha: 0.15);
+    color: #ffffff;
+  }
 }
