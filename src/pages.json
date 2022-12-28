@@ -1,17 +1,25 @@
 {
   "easycom": {
-		// 注意一定要放在custom里，否则无效，https://ask.dcloud.net.cn/question/131175
-		"custom": {
-	    "^u-(.*)": "uview-plus/components/u-$1/u-$1.vue"
-		}
-	},
-
+    // 注意一定要放在custom里，否则无效，https://ask.dcloud.net.cn/question/131175
+    "custom": {
+      "^u-(.*)": "uview-plus/components/u-$1/u-$1.vue"
+    }
+  },
   "pages": [
     {
       "path": "pages/index/index",
       "style": {
         "navigationBarTitleText": "首页",
-        "navigationStyle":"custom"
+        "navigationStyle": "custom"
+      },
+      "meta": {
+        "ignoreAuth": true
+      }
+    },
+    {
+      "path": "pages/components/index",
+      "style": {
+        "navigationBarTitleText": "uview plus"
       },
       "meta": {
         "ignoreAuth": true
@@ -60,38 +68,46 @@
       }
     }
   ],
-  "subPackages": [{
-    "root": "pagesA",
-    "pages": [{
-      "path": "list/test1/index",
-      "style": {
-        "navigationBarTitleText": "test1"
-      },
-      "meta": {
-        "ignoreAuth": true
-      }
-    },{
-      "path": "list/test2/index",
-      "style": {
-        "navigationBarTitleText": "test2",
-        "navigationStyle":"custom"
-      },
-      "meta": {
-        "ignoreAuth": true
-      }
-    }]
-  }, {
-    "root": "pagesB",
-    "pages": [{
-      "path": "detail/index",
-      "style": {
-        "navigationBarTitleText": "Detail"
-      },
-      "meta": {
-        "ignoreAuth": true
-      }
-    }]
-  }],
+  "subPackages": [
+    {
+      "root": "pagesA",
+      "pages": [
+        {
+          "path": "list/test1/index",
+          "style": {
+            "navigationBarTitleText": "test1"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        {
+          "path": "list/test2/index",
+          "style": {
+            "navigationBarTitleText": "test2",
+            "navigationStyle": "custom"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        }
+      ]
+    },
+    {
+      "root": "pagesB",
+      "pages": [
+        {
+          "path": "detail/index",
+          "style": {
+            "navigationBarTitleText": "Detail"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        }
+      ]
+    }
+  ],
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uni-app",
@@ -105,21 +121,31 @@
     "color": "#474747",
     "selectedColor": "#9BC6FC",
     "backgroundColor": "#FFFFFF",
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "首页",
-      "iconPath": "static/images/tabBar/home.png",
-      "selectedIconPath": "static/images/tabBar/selectedHome.png"
-    },{
-      "pagePath": "pages/demo/index",
-      "text": "Demo",
-      "iconPath": "static/images/tabBar/demo.png",
-      "selectedIconPath": "static/images/tabBar/selectedDemo.png"
-    },{
-      "pagePath": "pages/about/index",
-      "text": "关于",
-      "iconPath": "static/images/tabBar/about.png",
-      "selectedIconPath": "static/images/tabBar/selectedAbout.png"
-    }]
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/images/tabBar/home.png",
+        "selectedIconPath": "static/images/tabBar/selectedHome.png"
+      },
+      {
+        "pagePath": "pages/components/index",
+        "text": "组件",
+        "iconPath": "static/images/tabBar/category.png",
+        "selectedIconPath": "static/images/tabBar/selectedCategory.png"
+      },
+      {
+        "pagePath": "pages/demo/index",
+        "text": "Demo",
+        "iconPath": "static/images/tabBar/demo.png",
+        "selectedIconPath": "static/images/tabBar/selectedDemo.png"
+      },
+      {
+        "pagePath": "pages/about/index",
+        "text": "关于",
+        "iconPath": "static/images/tabBar/about.png",
+        "selectedIconPath": "static/images/tabBar/selectedAbout.png"
+      }
+    ]
   }
 }
