@@ -5,7 +5,6 @@
   import { CURRENT_PLATFORM, PLATFORMS } from '@/enums/platformEnum';
   import { judgePlatform } from '@/utils/platform';
   import Iconify from '@/components/Iconify/index.vue';
-  import Navbar from '@/components/Navbar/index.vue';
 
   const title = ref('uni-app vue3 ts --Vite');
 
@@ -18,12 +17,39 @@
     router.pushTab('/pages/demo/index');
     // router.push('/pages/log/index?id=4345&title=log');
   };
+  const handleGo404 = () => {
+    router.push('/pages/notFound/404');
+  };
 </script>
 
 <template>
+  <!-- <navbar /> -->
+  <u-navbar title="首页" placeholder>
+    <template #left>
+      <view
+        class="_u_flex _u_items-center _u_justify-center _u_b-1 _u_b-trueGray-2 _u_b-rd-99px _u_px-8px _u_py-4px"
+      >
+        <u-icon name="arrow-left" size="18" color="black"></u-icon>
+        <u-line
+          direction="column"
+          :hairline="false"
+          length="16"
+          margin="0 8px"
+        ></u-line>
+        <u-icon name="home" size="20" color="black"></u-icon>
+      </view>
+    </template>
+  </u-navbar>
   <app-provider>
-    <navbar />
-    <view class="content">
+    <view class="_u_flex _u_flex-col _u_items-center _u_justify-center">
+      <div class="_u_m-t-80px">
+        <u-image
+          src="/static/svg/favicon.svg"
+          width="200"
+          height="200"
+          mode="aspectFit"
+        />
+      </div>
       <image class="logo" src="/static/svg/LOGO.svg" />
       <view class="text-area">
         <text class="">{{ title }}</text>
@@ -37,6 +63,7 @@
       <u-button type="primary" @click="handleGetStarted"
         >Get Started →
       </u-button>
+      <u-button type="primary" @click="handleGo404">404 → </u-button>
       <view class="_u_text-red">uno css</view>
       <iconify icon="i-ph-anchor-simple-thin" size="65" />
       <iconify icon="i-system-uicons-book-text" />
@@ -45,6 +72,11 @@
       <iconify icon="i-system-uicons-bell-snooze" color="red" :size="65" />
 
       <u-icon name="photo"></u-icon>
+      <u-icon
+        label="uview-plus"
+        size="40"
+        name="https://cdn.uviewui.com/uview/example/button.png"
+      ></u-icon>
 
       <u-button type="primary" text="确定"></u-button>
       <u-button type="primary" :plain="true" text="镂空"></u-button>
@@ -68,13 +100,6 @@
 </template>
 
 <style lang="scss">
-  .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
   .logo {
     height: 200rpx;
     width: 200rpx;

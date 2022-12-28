@@ -2,13 +2,15 @@
   import { onLoad } from '@dcloudio/uni-app';
   import { ref } from 'vue';
   import { useRouter } from '@/hooks/router';
+  import { HOME_PAGE } from '@/enums/routerEnum';
 
   const go = ref<string>('');
   const router = useRouter();
   const redirect = ref<string>('');
+
   onLoad(query => {
     go.value = query?.go || '';
-    redirect.value = query?.redirect || '';
+    redirect.value = query?.redirect || HOME_PAGE;
   });
 
   /**
@@ -20,12 +22,19 @@
 </script>
 
 <template>
-  <view class="w-screen flex flex-col items-center pt-320rpx">
-    <image class="w-360rpx" mode="widthFix" src="/static/svg/weep.svg" />
-    <view class="mb-40rpx">
-      <text>{{ go }} 页面找不到了~</text>
-    </view>
-    <u-button type="primary" @click="backHome">返回首页</u-button>
+  <view
+    class="_u_w-screen _u_h-screen _u_flex _u_flex-col _u_items-center _u_justify-center"
+  >
+    <u-empty mode="page" :text="`${go} 页面找不到了~`" class="_u_mb-30px" />
+    <u-button
+      type="primary"
+      icon="home-fill"
+      size="small"
+      class="_u_mb-30px"
+      @click="backHome"
+    >
+      返回首页
+    </u-button>
   </view>
 </template>
 
