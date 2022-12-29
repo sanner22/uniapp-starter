@@ -72,6 +72,20 @@
     {
       "root": "pagesA",
       "pages": [
+      ]
+    },
+    {
+      "root": "pagesB",
+      "pages": [
+        {
+          "path": "detail/index",
+          "style": {
+            "navigationBarTitleText": "Detail"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         {
           "path": "list/test1/index",
           "style": {
@@ -86,20 +100,6 @@
           "style": {
             "navigationBarTitleText": "test2",
             "navigationStyle": "custom"
-          },
-          "meta": {
-            "ignoreAuth": true
-          }
-        }
-      ]
-    },
-    {
-      "root": "pagesB",
-      "pages": [
-        {
-          "path": "detail/index",
-          "style": {
-            "navigationBarTitleText": "Detail"
           },
           "meta": {
             "ignoreAuth": true

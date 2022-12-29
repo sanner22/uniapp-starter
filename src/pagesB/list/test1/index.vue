@@ -3,7 +3,7 @@
 
   const router = useRouter();
   const jumpTest2 = () => {
-    router.push('/pagesA/list/test2/index?id=256');
+    router.push('/pagesB/list/test2/index?id=256');
   };
 </script>
 <template>

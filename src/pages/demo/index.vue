@@ -4,7 +4,7 @@
 
   const router = useRouter();
   const jumpList1 = () => {
-    router.push('/pagesA/list/test1/index?key=words&page=1&limit=15');
+    router.push('/pagesB/list/test1/index?key=words&page=1&limit=15');
   };
 </script>
 
