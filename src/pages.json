@@ -19,7 +19,7 @@
     {
       "path": "pages/components/index",
       "style": {
-        "navigationBarTitleText": "uview plus"
+        "navigationBarTitleText": "UI 组件库"
       },
       "meta": {
         "ignoreAuth": true
@@ -72,6 +72,15 @@
     {
       "root": "pagesA",
       "pages": [
+        {
+          "path": "base/color",
+          "style": {
+            "navigationBarTitleText": "色彩"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        }
       ]
     },
     {

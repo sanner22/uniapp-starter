@@ -4,7 +4,7 @@
 
   setTimeout(() => {
     loading.value = false;
-  }, 1500);
+  }, 500);
 </script>
 
 <template>
@@ -14,7 +14,12 @@
 
   <template v-else>
     <u-cell-group title="基础组件">
-      <u-cell icon="grid" title="Color 色彩" is-link></u-cell>
+      <u-cell
+        icon="grid"
+        title="Color 色彩"
+        is-link
+        url="/pagesA/base/color"
+      ></u-cell>
       <u-cell icon="grid-fill" title="Icon 图标" is-link></u-cell>
       <u-cell icon="photo-fill" title="Image 图片" is-link></u-cell>
       <u-cell icon="plus-square-fill" title="Button 按钮" is-link></u-cell>
