@@ -48,10 +48,10 @@
 
     <view>
       <u-text
-        text="cli 方式基于 vue3/vite4/ts/pinia 的 uniapp 快速开发模板项目"
+        text="cli 方式基于 vue3/vite4/ts/pinia 的 移动端 快速开发解决方案"
         size="12"
         align="center"
-      ></u-text>
+      />
     </view>
 
     <view class="_u_center _u_flex-wrap _u_gap-1 _u_mt-40px">
