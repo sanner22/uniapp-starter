@@ -106,7 +106,7 @@
       <u-tag
         bg-color="#666666"
         border-color="#666666"
-        text="UnoCSS:0.48.0"
+        text="UnoCSS:0.46.5"
         shape="circle"
         size="mini"
       ></u-tag>
