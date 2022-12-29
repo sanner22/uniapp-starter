@@ -80,6 +80,15 @@
           "meta": {
             "ignoreAuth": true
           }
+        },
+        {
+          "path": "base/icon",
+          "style": {
+            "navigationBarTitleText": "图标"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
         }
       ]
     },

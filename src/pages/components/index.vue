@@ -20,7 +20,12 @@
         is-link
         url="/pagesA/base/color"
       ></u-cell>
-      <u-cell icon="grid-fill" title="Icon 图标" is-link></u-cell>
+      <u-cell
+        icon="grid-fill"
+        title="Icon 图标"
+        is-link
+        url="/pagesA/base/icon"
+      ></u-cell>
       <u-cell icon="photo-fill" title="Image 图片" is-link></u-cell>
       <u-cell icon="plus-square-fill" title="Button 按钮" is-link></u-cell>
       <u-cell icon="file-text" title="Text 文本" is-link></u-cell>
