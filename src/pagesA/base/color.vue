@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars, no-unused-vars
   const convertEnumEntriesToArray = (
     entries: [string, any][],
   ): Array<{ label: string; value: string | number }> => {
@@ -7,25 +8,14 @@
       return result.filter(i => typeof i.value === 'number');
     return result;
   };
-  enum typeEnums {
-    primary = '主色调',
-    success = 'success',
-    warning = 'warning',
-    error = 'error',
-    info = 'info',
-  }
-  // eslint-disable-next-line no-unused-vars, @typescript-eslint/no-unused-vars
-  const typeArr = convertEnumEntriesToArray(Object.entries(typeEnums));
 
   const $uConfig = (uni as any).$u.config;
-  console.log($uConfig);
   const $typeColors = {
     primary: { dark: '#398ade', disabled: '#9acafc', light: '#ecf5ff' },
     success: { dark: '#53c21d', disabled: '#a9e08f', light: '#f5fff0' },
     warning: { dark: '#f1a532', disabled: '#f9d39b', light: '#fdf6ec' },
     error: { dark: '#e45656', disabled: '#f7b2b2', light: '#fef0f0' },
     info: { dark: '#767a82', disabled: '#c4c6c9', light: '#f4f4f5' },
-    border: { dark: '#398ade', disabled: '#9acafc', light: '#ecf5ff' },
   };
 
   const getColor = (type: string, key: string) => {
