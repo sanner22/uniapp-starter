@@ -89,6 +89,15 @@
           "meta": {
             "ignoreAuth": true
           }
+        },
+        {
+          "path": "base/image",
+          "style": {
+            "navigationBarTitleText": "图片"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
         }
       ]
     },
