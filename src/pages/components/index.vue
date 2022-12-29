@@ -32,7 +32,12 @@
         is-link
         url="/pagesA/base/image"
       ></u-cell>
-      <u-cell icon="plus-square-fill" title="Button 按钮" is-link></u-cell>
+      <u-cell
+        icon="plus-square-fill"
+        title="Button 按钮"
+        is-link
+        url="/pagesA/base/button"
+      ></u-cell>
       <u-cell icon="file-text" title="Text 文本" is-link></u-cell>
       <u-cell icon="grid" title="Layout 布局" is-link></u-cell>
       <u-cell icon="list" title="Cell 单元格" is-link></u-cell>

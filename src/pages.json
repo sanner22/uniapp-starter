@@ -98,6 +98,15 @@
           "meta": {
             "ignoreAuth": true
           }
+        },
+        {
+          "path": "base/button",
+          "style": {
+            "navigationBarTitleText": "按钮"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
         }
       ]
     },
