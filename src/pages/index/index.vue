@@ -1,24 +1,21 @@
 <script setup lang="ts">
-  import { ref } from 'vue';
   import AppProvider from '@/components/AppProvider/inedx.vue';
   import { useRouter } from '@/hooks/router';
   import { CURRENT_PLATFORM, PLATFORMS } from '@/enums/platformEnum';
   import { judgePlatform } from '@/utils/platform';
-  import Iconify from '@/components/Iconify/index.vue';
-
-  const title = ref('uni-app vue3 ts --Vite');
 
   const platform = CURRENT_PLATFORM;
-
   const isVue3 = judgePlatform(PLATFORMS.VUE3);
+  const uViewVersion = (uni as any).$u.config.v;
 
   const router = useRouter();
+
   const handleGetStarted = () => {
-    router.pushTab('/pages/demo/index');
+    router.pushTab('/pages/components/index');
     // router.push('/pages/log/index?id=4345&title=log');
   };
-  const handleGo404 = () => {
-    router.push('/pages/notFound/404');
+  const handleGoDemo = () => {
+    router.pushTab('/pages/demo/index');
   };
 </script>
 
@@ -38,80 +35,102 @@
       </view>
     </template>
   </u-navbar>
+
   <app-provider>
-    <view class="_u_flex _u_flex-col _u_items-center _u_justify-center">
-      <div class="_u_m-t-80px">
-        <u-image
-          src="/static/svg/favicon.svg"
-          width="200"
-          height="200"
-          mode="aspectFit"
-        />
-      </div>
-      <image class="logo" src="/static/svg/LOGO.svg" />
-      <view class="text-area">
-        <text class="">{{ title }}</text>
-      </view>
-      <view class="text-area">
-        <text class="">是否是Vue3: {{ isVue3 }}</text>
-      </view>
-      <view class="text-area">
-        <text class="_u_text-red">当前平台: {{ platform }}</text>
-      </view>
-      <u-button type="primary" @click="handleGetStarted"
-        >Get Started →
-      </u-button>
-      <u-button type="primary" @click="handleGo404">404 → </u-button>
-      <view class="_u_text-red">uno css</view>
-      <iconify icon="i-ph-anchor-simple-thin" size="65" />
-      <iconify icon="i-system-uicons-book-text" />
-      <iconify icon="i-system-uicons-battery-full" size="65" />
-      <iconify icon="i-system-uicons-box-add" :size="65" />
-      <iconify icon="i-system-uicons-bell-snooze" color="red" :size="65" />
+    <view class="_u_my-60px _u_center">
+      <u-image
+        src="/static/svg/favicon.svg"
+        width="120"
+        height="120"
+        mode="aspectFit"
+      />
+    </view>
 
-      <u-icon name="photo"></u-icon>
-      <u-icon
-        label="uview-plus"
-        size="40"
-        name="https://cdn.uviewui.com/uview/example/button.png"
-      ></u-icon>
+    <view>
+      <u-text
+        text="cli 方式基于 vue3/vite4/ts/pinia 的 uniapp 快速开发模板项目"
+        size="12"
+        align="center"
+      ></u-text>
+    </view>
 
-      <u-button type="primary" text="确定"></u-button>
-      <u-button type="primary" :plain="true" text="镂空"></u-button>
+    <view class="_u_center _u_flex-wrap _u_gap-1 _u_mt-40px">
+      <u-tag
+        bg-color="#42d392"
+        border-color="#42d392"
+        :text="isVue3 ? 'Vue:3' : 'Vue:2'"
+        shape="circle"
+        size="mini"
+      ></u-tag>
+      <u-tag
+        bg-color="#bd34fe"
+        border-color="#bd34fe"
+        text="Vite:4"
+        shape="circle"
+        size="mini"
+      ></u-tag>
+      <u-tag
+        bg-color="#007acd"
+        border-color="#007acd"
+        text="TS:4.9.4"
+        shape="circle"
+        size="mini"
+      ></u-tag>
+      <u-tag
+        bg-color="#cca438"
+        border-color="#cca438"
+        text="pinia:2.0.28"
+        shape="circle"
+        size="mini"
+      ></u-tag>
+      <u-tag
+        type="primary"
+        :text="`uView-plus:${uViewVersion}`"
+        shape="circle"
+        size="mini"
+      ></u-tag>
+      <u-tag
+        bg-color="#2b993a"
+        border-color="#2b993a"
+        :text="`UNIAPP`"
+        shape="circle"
+        size="mini"
+      ></u-tag>
+      <u-tag
+        bg-color="#30a15f"
+        border-color="#30a15f"
+        :text="`${platform}`"
+        shape="circle"
+        size="mini"
+      ></u-tag>
+      <u-tag
+        bg-color="#666666"
+        border-color="#666666"
+        text="UnoCSS:0.48.0"
+        shape="circle"
+        size="mini"
+      ></u-tag>
+    </view>
+
+    <view class="_u_center _u_gap-2 _u_mt-40px">
       <u-button
         type="primary"
-        :plain="true"
-        :hairline="true"
-        text="细边"
-      ></u-button>
-      <u-button type="primary" disabled text="禁用"></u-button>
-      <u-button type="primary" loading loadingText="加载中"></u-button>
-      <u-button type="primary" icon="map" text="图标按钮"></u-button>
-      <u-button type="primary" shape="circle" text="按钮形状"></u-button>
-      <u-button
-        text="渐变色按钮"
+        size="small"
         color="linear-gradient(to right, rgb(66, 83, 216), rgb(213, 51, 186))"
-      ></u-button>
-      <u-button type="primary" size="small" text="大小尺寸"></u-button>
+        @click="handleGetStarted"
+      >
+        快速开始 🚀
+      </u-button>
+      <u-button
+        type="primary"
+        size="small"
+        color="linear-gradient(to right, rgb(66, 83, 216), rgb(213, 51, 186))"
+        @click="handleGoDemo"
+      >
+        demo ✨
+      </u-button>
     </view>
   </app-provider>
 </template>
 
-<style lang="scss">
-  .logo {
-    height: 200rpx;
-    width: 200rpx;
-    margin: 280rpx auto 50rpx;
-  }
-
-  .text-area {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 60rpx;
-  }
-
-  .title {
-    font-size: 36rpx;
-    color: #8f8f94;
-  }
-</style>
+<style lang="scss" scoped></style>
