@@ -116,6 +116,15 @@
           "meta": {
             "ignoreAuth": true
           }
+        },
+        {
+          "path": "base/layout",
+          "style": {
+            "navigationBarTitleText": "布局"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
         }
       ]
     },

@@ -4,7 +4,7 @@
 
   setTimeout(() => {
     loading.value = false;
-  }, 500);
+  }, 100);
 </script>
 
 <template>
@@ -44,7 +44,12 @@
         is-link
         url="/pagesA/base/text"
       ></u-cell>
-      <u-cell icon="grid" title="Layout 布局" is-link></u-cell>
+      <u-cell
+        icon="grid"
+        title="Layout 布局"
+        is-link
+        url="/pagesA/base/layout"
+      ></u-cell>
       <u-cell icon="list" title="Cell 单元格" is-link></u-cell>
       <u-cell icon="bookmark" title="Badge 微标数" is-link></u-cell>
       <u-cell icon="bookmark-fill" title="Tag 标签" is-link></u-cell>
