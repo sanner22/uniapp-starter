@@ -125,6 +125,15 @@
           "meta": {
             "ignoreAuth": true
           }
+        },
+        {
+          "path": "base/cell",
+          "style": {
+            "navigationBarTitleText": "单元格"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
         }
       ]
     },
