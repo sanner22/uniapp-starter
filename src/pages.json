@@ -143,6 +143,15 @@
           "meta": {
             "ignoreAuth": true
           }
+        },
+        {
+          "path": "base/tag",
+          "style": {
+            "navigationBarTitleText": "标签"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
         }
       ]
     },
