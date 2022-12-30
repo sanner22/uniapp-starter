@@ -68,7 +68,12 @@
         is-link
         url="/pagesA/base/tag"
       ></u-cell>
-      <u-cell icon="reload" title="Loading 加载动画" is-link></u-cell>
+      <u-cell
+        icon="reload"
+        title="Loading 加载动画"
+        is-link
+        url="/pagesA/base/loading-icon"
+      ></u-cell>
       <u-cell icon="reload" title="Loading page 加载页" is-link></u-cell>
     </u-cell-group>
 

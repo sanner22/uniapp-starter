@@ -152,6 +152,15 @@
           "meta": {
             "ignoreAuth": true
           }
+        },
+        {
+          "path": "base/loading-icon",
+          "style": {
+            "navigationBarTitleText": "Loading 加载动画"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
         }
       ]
     },
