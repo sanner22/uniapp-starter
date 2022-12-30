@@ -56,7 +56,12 @@
         is-link
         url="/pagesA/base/cell"
       ></u-cell>
-      <u-cell icon="bookmark" title="Badge 微标数" is-link></u-cell>
+      <u-cell
+        icon="bookmark"
+        title="Badge 微标数"
+        is-link
+        url="/pagesA/base/badge"
+      ></u-cell>
       <u-cell icon="bookmark-fill" title="Tag 标签" is-link></u-cell>
       <u-cell icon="reload" title="Loading 加载动画" is-link></u-cell>
       <u-cell icon="reload" title="Loading page 加载页" is-link></u-cell>

@@ -134,6 +134,15 @@
           "meta": {
             "ignoreAuth": true
           }
+        },
+        {
+          "path": "base/badge",
+          "style": {
+            "navigationBarTitleText": "微标数"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
         }
       ]
     },
