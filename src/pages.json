@@ -72,6 +72,7 @@
     {
       "root": "pagesA",
       "pages": [
+        // #region base
         {
           "path": "base/color",
           "style": {
@@ -170,7 +171,20 @@
           "meta": {
             "ignoreAuth": true
           }
+        },
+        // #endregion
+
+        // #region form
+        {
+          "path": "form/form",
+          "style": {
+            "navigationBarTitleText": "表单"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
         }
+        // #endregion
       ]
     },
     {
