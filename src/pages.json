@@ -161,6 +161,15 @@
           "meta": {
             "ignoreAuth": true
           }
+        },
+        {
+          "path": "base/loading-page",
+          "style": {
+            "navigationBarTitleText": "Loading 加载页"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
         }
       ]
     },
