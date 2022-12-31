@@ -318,6 +318,15 @@
         //   "meta": {
         //     "ignoreAuth": true
         //   }
+        // },
+        // {
+        //   "path": "form/album",
+        //   "style": {
+        //     "navigationBarTitleText": "相册"
+        //   },
+        //   "meta": {
+        //     "ignoreAuth": true
+        //   }
         // }
         // #endregion
       ]

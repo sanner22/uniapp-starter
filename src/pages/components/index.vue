@@ -179,7 +179,12 @@
         is-link
         url="/pagesA/form/slider"
       ></u-cell>
-      <u-cell icon="map" title="Album 相册" is-link></u-cell>
+      <u-cell
+        icon="photo-fill"
+        title="Album 相册"
+        is-link
+        url="/pagesA/form/album"
+      ></u-cell>
     </u-cell-group>
 
     <u-cell-group title="数据组件">
