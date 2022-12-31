@@ -228,6 +228,15 @@
           "meta": {
             "ignoreAuth": true
           }
+        },
+        {
+          "path": "form/search",
+          "style": {
+            "navigationBarTitleText": "搜索"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
         }
         // #endregion
       ]

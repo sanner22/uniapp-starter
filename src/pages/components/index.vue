@@ -119,7 +119,12 @@
         is-link
         url="/pagesA/form/rate"
       ></u-cell>
-      <u-cell icon="map" title="Search 搜索" is-link></u-cell>
+      <u-cell
+        icon="search"
+        title="Search 搜索"
+        is-link
+        url="/pagesA/form/search"
+      ></u-cell>
       <u-cell icon="map" title="NumberBox 步进器" is-link></u-cell>
       <u-cell icon="map" title="Upload 上传" is-link></u-cell>
       <u-cell icon="map" title="Code 验证码倒计时" is-link></u-cell>
