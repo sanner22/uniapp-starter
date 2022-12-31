@@ -95,7 +95,12 @@
         is-link
         url="/pagesA/form/calendar"
       ></u-cell>
-      <u-cell icon="map" title="Keyboard 键盘" is-link></u-cell>
+      <u-cell
+        icon="chat"
+        title="Keyboard 键盘"
+        is-link
+        url="/pagesA/form/keyboard"
+      ></u-cell>
       <u-cell icon="map" title="Picker 选择器" is-link></u-cell>
       <u-cell icon="map" title="DatetimePicker 时间选择器" is-link></u-cell>
       <u-cell icon="map" title="Rate 评分" is-link></u-cell>

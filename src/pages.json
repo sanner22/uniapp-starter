@@ -183,8 +183,8 @@
           "meta": {
             "ignoreAuth": true
           }
-        }
-        // ,{
+        },
+        // {
         //   "path": "form/calendar",
         //   "style": {
         //     "navigationBarTitleText": "日历"
@@ -192,7 +192,16 @@
         //   "meta": {
         //     "ignoreAuth": true
         //   }
-        // }
+        // },
+        {
+          "path": "form/keyboard",
+          "style": {
+            "navigationBarTitleText": "键盘"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        }
         // #endregion
       ]
     },
