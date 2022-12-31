@@ -162,12 +162,17 @@
         url="/pagesA/form/checkbox"
       ></u-cell>
       <u-cell
-        icon="checkmark-circle-fill"
+        icon="checkbox-mark"
         title="Radio 单选框"
         is-link
         url="/pagesA/form/radio"
       ></u-cell>
-      <u-cell icon="map" title="Switch 开关选择器" is-link></u-cell>
+      <u-cell
+        icon="checkmark-circle-fill"
+        title="Switch 开关选择器"
+        is-link
+        url="/pagesA/form/switch"
+      ></u-cell>
       <u-cell icon="map" title="Slider 滑动选择器" is-link></u-cell>
       <u-cell icon="map" title="Album 相册" is-link></u-cell>
     </u-cell-group>

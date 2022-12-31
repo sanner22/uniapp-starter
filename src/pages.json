@@ -300,6 +300,15 @@
           "meta": {
             "ignoreAuth": true
           }
+        },
+        {
+          "path": "form/switch",
+          "style": {
+            "navigationBarTitleText": "开关选择器"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
         }
         // #endregion
       ]
