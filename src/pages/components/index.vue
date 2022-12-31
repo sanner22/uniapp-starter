@@ -101,7 +101,12 @@
         is-link
         url="/pagesA/form/keyboard"
       ></u-cell>
-      <u-cell icon="map" title="Picker 选择器" is-link></u-cell>
+      <u-cell
+        icon="more-circle"
+        title="Picker 选择器"
+        is-link
+        url="/pagesA/form/picker"
+      ></u-cell>
       <u-cell icon="map" title="DatetimePicker 时间选择器" is-link></u-cell>
       <u-cell icon="map" title="Rate 评分" is-link></u-cell>
       <u-cell icon="map" title="Search 搜索" is-link></u-cell>

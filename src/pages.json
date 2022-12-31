@@ -201,6 +201,15 @@
           "meta": {
             "ignoreAuth": true
           }
+        },
+        {
+          "path": "form/picker",
+          "style": {
+            "navigationBarTitleText": "选择器"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
         }
         // #endregion
       ]
