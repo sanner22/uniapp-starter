@@ -188,7 +188,12 @@
     </u-cell-group>
 
     <u-cell-group title="数据组件">
-      <u-cell icon="share" title="List 列表" is-link></u-cell>
+      <u-cell
+        icon="list-dot"
+        title="List 列表"
+        is-link
+        url="/pagesA/data/list"
+      ></u-cell>
       <u-cell icon="map" title="Progress 进度条" is-link></u-cell>
       <u-cell icon="map" title="CountDown 倒计时" is-link></u-cell>
       <u-cell icon="map" title="CountTo 数字滚动" is-link></u-cell>

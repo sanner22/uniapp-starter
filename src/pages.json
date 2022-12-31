@@ -327,6 +327,18 @@
         //   "meta": {
         //     "ignoreAuth": true
         //   }
+        // },
+        // #endregion
+
+        // #region data
+        // {
+        //   "path": "data/list",
+        //   "style": {
+        //     "navigationBarTitleText": "列表"
+        //   },
+        //   "meta": {
+        //     "ignoreAuth": true
+        //   }
         // }
         // #endregion
       ]
