@@ -246,7 +246,16 @@
           "meta": {
             "ignoreAuth": true
           }
-        }
+        },
+        // {
+        //   "path": "form/upload",
+        //   "style": {
+        //     "navigationBarTitleText": "上传"
+        //   },
+        //   "meta": {
+        //     "ignoreAuth": true
+        //   }
+        // },
         // #endregion
       ]
     },

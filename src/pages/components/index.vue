@@ -131,7 +131,12 @@
         is-link
         url="/pagesA/form/number-box"
       ></u-cell>
-      <u-cell icon="map" title="Upload 上传" is-link></u-cell>
+      <u-cell
+        icon="arrow-upward"
+        title="Upload 上传"
+        is-link
+        url="/pagesA/form/upload"
+      ></u-cell>
       <u-cell icon="map" title="Code 验证码倒计时" is-link></u-cell>
       <u-cell icon="map" title="Input 输入框" is-link></u-cell>
       <u-cell icon="map" title="Textarea 文本域" is-link></u-cell>
