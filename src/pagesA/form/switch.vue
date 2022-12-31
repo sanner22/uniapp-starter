@@ -108,18 +108,14 @@
     console.log('change', e);
   };
   const asyncChange = (e: boolean) => {
-    //# 貌似这里有问题呢
-    Modal({
-      content: e ? '确定要打开吗' : '确定要关闭吗',
-      success: res => {
-        console.log(res);
-        if (res.confirm) {
+    Modal({ content: e ? '确定要打开吗' : '确定要关闭吗' })
+      .then(res => {
+        if ((res as UniApp.ShowModalRes).confirm) {
           value13.value = e;
         }
-      },
-      fail: error => {
+      })
+      .catch(error => {
         console.log(error);
-      },
-    });
+      });
   };
 </script>
