@@ -149,7 +149,12 @@
         is-link
         url="/pagesA/form/input"
       ></u-cell>
-      <u-cell icon="map" title="Textarea 文本域" is-link></u-cell>
+      <u-cell
+        icon="edit-pen"
+        title="Textarea 文本域"
+        is-link
+        url="/pagesA/form/textarea"
+      ></u-cell>
       <u-cell icon="map" title="Checkbox 复选框" is-link></u-cell>
       <u-cell icon="map" title="Radio 单选框" is-link></u-cell>
       <u-cell icon="map" title="Switch 开关选择器" is-link></u-cell>

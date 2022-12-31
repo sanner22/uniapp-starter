@@ -273,6 +273,15 @@
           "meta": {
             "ignoreAuth": true
           }
+        },
+        {
+          "path": "form/textarea",
+          "style": {
+            "navigationBarTitleText": "文本域"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
         }
         // #endregion
       ]
