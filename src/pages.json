@@ -310,6 +310,15 @@
             "ignoreAuth": true
           }
         }
+        // ,{
+        //   "path": "form/slider",
+        //   "style": {
+        //     "navigationBarTitleText": "滑动选择器"
+        //   },
+        //   "meta": {
+        //     "ignoreAuth": true
+        //   }
+        // }
         // #endregion
       ]
     },

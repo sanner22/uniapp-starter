@@ -173,7 +173,12 @@
         is-link
         url="/pagesA/form/switch"
       ></u-cell>
-      <u-cell icon="map" title="Slider 滑动选择器" is-link></u-cell>
+      <u-cell
+        icon="integral"
+        title="Slider 滑动选择器"
+        is-link
+        url="/pagesA/form/slider"
+      ></u-cell>
       <u-cell icon="map" title="Album 相册" is-link></u-cell>
     </u-cell-group>
 
