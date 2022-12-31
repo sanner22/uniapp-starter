@@ -219,6 +219,15 @@
           "meta": {
             "ignoreAuth": true
           }
+        },
+        {
+          "path": "form/rate",
+          "style": {
+            "navigationBarTitleText": "评分"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
         }
         // #endregion
       ]
