@@ -237,6 +237,15 @@
           "meta": {
             "ignoreAuth": true
           }
+        },
+        {
+          "path": "form/number-box",
+          "style": {
+            "navigationBarTitleText": "步进器"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
         }
         // #endregion
       ]
