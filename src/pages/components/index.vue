@@ -137,7 +137,12 @@
         is-link
         url="/pagesA/form/upload"
       ></u-cell>
-      <u-cell icon="map" title="Code 验证码倒计时" is-link></u-cell>
+      <u-cell
+        icon="email"
+        title="Code 验证码倒计时"
+        is-link
+        url="/pagesA/form/code"
+      ></u-cell>
       <u-cell icon="map" title="Input 输入框" is-link></u-cell>
       <u-cell icon="map" title="Textarea 文本域" is-link></u-cell>
       <u-cell icon="map" title="Checkbox 复选框" is-link></u-cell>

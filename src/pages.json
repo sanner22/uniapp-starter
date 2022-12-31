@@ -256,6 +256,15 @@
         //     "ignoreAuth": true
         //   }
         // },
+        {
+          "path": "form/code",
+          "style": {
+            "navigationBarTitleText": "短信验证码"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        }
         // #endregion
       ]
     },
