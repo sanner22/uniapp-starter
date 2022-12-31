@@ -84,12 +84,17 @@
 
     <u-cell-group title="表单组件">
       <u-cell
-        icon="share"
+        icon="order"
         title="Form 表单"
         is-link
         url="/pagesA/form/form"
       ></u-cell>
-      <u-cell icon="map" title="Calendar 日历" is-link></u-cell>
+      <u-cell
+        icon="calendar"
+        title="Calendar 日历"
+        is-link
+        url="/pagesA/form/calendar"
+      ></u-cell>
       <u-cell icon="map" title="Keyboard 键盘" is-link></u-cell>
       <u-cell icon="map" title="Picker 选择器" is-link></u-cell>
       <u-cell icon="map" title="DatetimePicker 时间选择器" is-link></u-cell>
