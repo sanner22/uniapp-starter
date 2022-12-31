@@ -210,6 +210,15 @@
           "meta": {
             "ignoreAuth": true
           }
+        },
+        {
+          "path": "form/datetime-picker",
+          "style": {
+            "navigationBarTitleText": "日期时间选择器"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
         }
         // #endregion
       ]
