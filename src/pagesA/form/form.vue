@@ -216,7 +216,7 @@
     ></u-calendar> -->
 
     <u-code
-      ref="uCode"
+      ref="uCode1"
       seconds="20"
       @change="codeChange"
       @start="disabled1 = true"
@@ -374,11 +374,12 @@
   // #endregion
 
   // #region 验证码
-  const uCode = ref(null);
+  const uCode1 = ref(null);
   const tips = ref('');
   const disabled1 = ref(false);
   const getCode = () => {
-    const uCodeVal = uCode.value as any;
+    const uCodeVal = uCode1.value as any;
+    debugger;
     if (!uCodeVal) {
       Toast('code 组件实例不存在');
       return;
@@ -391,7 +392,7 @@
         // 这里此提示会被this.start()方法中的提示覆盖
         Toast('验证码已发送');
         // 通知验证码组件内部开始倒计时
-        (uCode.value as any).start();
+        (uCode1.value as any).start();
       }, 2000);
     } else {
       Toast('倒计时结束后再发送');
