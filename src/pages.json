@@ -368,6 +368,17 @@
         //   }
         // }
         // #endregion
+
+        // #region feedback
+        // {
+        //   "path": "feedback/tooltip",
+        //   "style": {
+        //     "navigationBarTitleText": "长按提示"
+        //   },
+        //   "meta": {
+        //     "ignoreAuth": true
+        //   }
+        // },
       ]
     },
     {

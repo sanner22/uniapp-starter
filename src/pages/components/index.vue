@@ -215,8 +215,12 @@
     </u-cell-group>
 
     <u-cell-group title="反馈组件">
-      <u-cell icon="map" title="Tooltip 长按提示" is-link></u-cell>
-      <u-cell icon="map" title="ActionSheet 上拉菜单" is-link></u-cell>
+      <u-cell
+        icon="map"
+        title="Tooltip 长按提示"
+        is-link
+        url="/pagesA/feedback/tooltip"
+      ></u-cell>
       <u-cell icon="map" title="Alert 警告提示" is-link></u-cell>
       <u-cell icon="map" title="Toast 消息提示" is-link></u-cell>
       <u-cell icon="map" title="Noticebar 滚动通知" is-link></u-cell>
