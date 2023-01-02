@@ -227,7 +227,12 @@
         is-link
         url="/pagesA/feedback/action-sheet"
       ></u-cell>
-      <u-cell icon="map" title="Alert 警告提示" is-link></u-cell>
+      <u-cell
+        icon="map"
+        title="Alert 警告提示"
+        is-link
+        url="/pagesA/feedback/alert"
+      ></u-cell>
       <u-cell icon="map" title="Toast 消息提示" is-link></u-cell>
       <u-cell icon="map" title="Noticebar 滚动通知" is-link></u-cell>
       <u-cell icon="map" title="Notify 消息提示" is-link></u-cell>

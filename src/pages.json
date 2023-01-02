@@ -388,6 +388,15 @@
             "ignoreAuth": true
           }
         }
+        // ,{
+        //   "path": "feedback/alert",
+        //   "style": {
+        //     "navigationBarTitleText": "警告提示"
+        //   },
+        //   "meta": {
+        //     "ignoreAuth": true
+        //   }
+        // }
         // #endregion
       ]
     },
