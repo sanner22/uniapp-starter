@@ -216,60 +216,65 @@
 
     <u-cell-group title="反馈组件">
       <u-cell
-        icon="map"
+        icon="order"
         title="Tooltip 长按提示"
         is-link
         url="/pagesA/feedback/tooltip"
       ></u-cell>
       <u-cell
-        icon="map"
+        icon="list"
         title="ActionSheet 上拉菜单"
         is-link
         url="/pagesA/feedback/action-sheet"
       ></u-cell>
       <u-cell
-        icon="map"
+        icon="warning"
         title="Alert 警告提示"
         is-link
         url="/pagesA/feedback/alert"
       ></u-cell>
       <u-cell
-        icon="map"
+        icon="chat"
         title="Toast 消息提示"
         is-link
         url="/pagesA/feedback/toast"
       ></u-cell>
       <u-cell
-        icon="map"
+        icon="chat-fill"
         title="Noticebar 滚动通知"
         is-link
         url="/pagesA/feedback/notice-bar"
       ></u-cell>
       <u-cell
-        icon="map"
+        icon="volume"
         title="Notify 消息提示"
         is-link
         url="/pagesA/feedback/notify"
       ></u-cell>
       <u-cell
-        icon="map"
+        icon="list-dot"
         title="SwipeAction 滑动单元格"
         is-link
         url="/pagesA/feedback/swipe-action"
       ></u-cell>
       <u-cell
-        icon="map"
+        icon="bookmark"
         title="Collapse 折叠面板"
         is-link
         url="/pagesA/feedback/collapse"
       ></u-cell>
       <u-cell
-        icon="map"
+        icon="share-square"
         title="Popup 弹出层"
         is-link
         url="/pagesA/feedback/popup"
       ></u-cell>
-      <u-cell icon="map" title="Modal 模态框" is-link></u-cell>
+      <u-cell
+        icon="more-circle-fill"
+        title="Modal 模态框"
+        is-link
+        url="/pagesA/feedback/modal"
+      ></u-cell>
     </u-cell-group>
 
     <u-cell-group title="布局组件">
