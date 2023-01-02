@@ -309,7 +309,7 @@
           "meta": {
             "ignoreAuth": true
           }
-        }
+        },
         // ,{
         //   "path": "form/slider",
         //   "style": {
@@ -379,6 +379,16 @@
         //     "ignoreAuth": true
         //   }
         // },
+        {
+          "path": "feedback/action-sheet",
+          "style": {
+            "navigationBarTitleText": "操作菜单"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        }
+        // #endregion
       ]
     },
     {
