@@ -423,6 +423,15 @@
         //   "meta": {
         //     "ignoreAuth": true
         //   }
+        // },
+        // {
+        //   "path": "feedback/swipe-action",
+        //   "style": {
+        //     "navigationBarTitleText": "滑动单元格"
+        //   },
+        //   "meta": {
+        //     "ignoreAuth": true
+        //   }
         // }
         // #endregion
       ]
