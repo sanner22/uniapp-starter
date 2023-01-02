@@ -257,7 +257,12 @@
         is-link
         url="/pagesA/feedback/swipe-action"
       ></u-cell>
-      <u-cell icon="map" title="Collapse 折叠面板" is-link></u-cell>
+      <u-cell
+        icon="map"
+        title="Collapse 折叠面板"
+        is-link
+        url="/pagesA/feedback/collapse"
+      ></u-cell>
       <u-cell icon="map" title="Popup 弹出层" is-link></u-cell>
       <u-cell icon="map" title="Modal 模态框" is-link></u-cell>
     </u-cell-group>
