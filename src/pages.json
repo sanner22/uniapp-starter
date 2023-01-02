@@ -405,7 +405,16 @@
           "meta": {
             "ignoreAuth": true
           }
-        }
+        },
+        // {
+        //   "path": "feedback/notice-bar",
+        //   "style": {
+        //     "navigationBarTitleText": "滚动通知"
+        //   },
+        //   "meta": {
+        //     "ignoreAuth": true
+        //   }
+        // }
         // #endregion
       ]
     },

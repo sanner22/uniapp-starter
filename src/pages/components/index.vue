@@ -239,7 +239,12 @@
         is-link
         url="/pagesA/feedback/toast"
       ></u-cell>
-      <u-cell icon="map" title="Noticebar 滚动通知" is-link></u-cell>
+      <u-cell
+        icon="map"
+        title="Noticebar 滚动通知"
+        is-link
+        url="/pagesA/feedback/notice-bar"
+      ></u-cell>
       <u-cell icon="map" title="Notify 消息提示" is-link></u-cell>
       <u-cell icon="map" title="SwipeAction 滑动单元格" is-link></u-cell>
       <u-cell icon="map" title="Collapse 折叠面板" is-link></u-cell>
