@@ -387,8 +387,8 @@
           "meta": {
             "ignoreAuth": true
           }
-        }
-        // ,{
+        },
+        // {
         //   "path": "feedback/alert",
         //   "style": {
         //     "navigationBarTitleText": "警告提示"
@@ -396,7 +396,16 @@
         //   "meta": {
         //     "ignoreAuth": true
         //   }
-        // }
+        // },
+        {
+          "path": "feedback/toast",
+          "style": {
+            "navigationBarTitleText": "消息提示"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        }
         // #endregion
       ]
     },
