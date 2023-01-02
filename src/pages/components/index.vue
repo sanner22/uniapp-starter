@@ -194,9 +194,24 @@
         is-link
         url="/pagesA/data/list"
       ></u-cell>
-      <u-cell icon="map" title="Progress 进度条" is-link></u-cell>
-      <u-cell icon="map" title="CountDown 倒计时" is-link></u-cell>
-      <u-cell icon="map" title="CountTo 数字滚动" is-link></u-cell>
+      <u-cell
+        icon="car"
+        title="Progress 进度条"
+        is-link
+        url="/pagesA/data/progress"
+      ></u-cell>
+      <u-cell
+        icon="clock-fill"
+        title="CountDown 倒计时"
+        is-link
+        url="/pagesA/data/count-down"
+      ></u-cell>
+      <u-cell
+        icon="hourglass"
+        title="CountTo 数字滚动"
+        is-link
+        url="/pagesA/data/count-to"
+      ></u-cell>
     </u-cell-group>
 
     <u-cell-group title="反馈组件">

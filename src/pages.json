@@ -339,6 +339,33 @@
         //   "meta": {
         //     "ignoreAuth": true
         //   }
+        // },
+        // {
+        //   "path": "data/progress",
+        //   "style": {
+        //     "navigationBarTitleText": "线性进度条"
+        //   },
+        //   "meta": {
+        //     "ignoreAuth": true
+        //   }
+        // },
+        // {
+        //   "path": "data/count-down",
+        //   "style": {
+        //     "navigationBarTitleText": "倒计时"
+        //   },
+        //   "meta": {
+        //     "ignoreAuth": true
+        //   }
+        // },
+        // {
+        //   "path": "data/count-to",
+        //   "style": {
+        //     "navigationBarTitleText": "数字滚动"
+        //   },
+        //   "meta": {
+        //     "ignoreAuth": true
+        //   }
         // }
         // #endregion
       ]
