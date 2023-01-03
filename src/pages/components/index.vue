@@ -341,7 +341,12 @@
         is-link
         url="/pagesA/nav/tabbar"
       ></u-cell>
-      <u-cell icon="map" title="BackTop 返回顶部" is-link></u-cell>
+      <u-cell
+        icon="map"
+        title="BackTop 返回顶部"
+        is-link
+        url="/pagesA/nav/back-top"
+      ></u-cell>
       <u-cell icon="map" title="Nabbar 导航栏" is-link></u-cell>
       <u-cell icon="map" title="Tabs 标签" is-link></u-cell>
       <u-cell icon="map" title="Subsection 分段器" is-link></u-cell>
