@@ -335,7 +335,12 @@
     </u-cell-group>
 
     <u-cell-group title="导航组件">
-      <u-cell icon="map" title="Tabbar 底部导航栏" is-link></u-cell>
+      <u-cell
+        icon="map"
+        title="Tabbar 底部导航栏"
+        is-link
+        url="/pagesA/nav/tabbar"
+      ></u-cell>
       <u-cell icon="map" title="BackTop 返回顶部" is-link></u-cell>
       <u-cell icon="map" title="Nabbar 导航栏" is-link></u-cell>
       <u-cell icon="map" title="Tabs 标签" is-link></u-cell>

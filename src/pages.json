@@ -540,7 +540,19 @@
         //   "meta": {
         //     "ignoreAuth": true
         //   }
-        // }
+        // },
+        // #endregion
+
+        // #region 导航组件
+        // {
+        //   "path": "nav/tabbar",
+        //   "style": {
+        //     "navigationBarTitleText": "底部导航栏"
+        //   },
+        //   "meta": {
+        //     "ignoreAuth": true
+        //   }
+        // },
         // #endregion
       ]
     },
