@@ -336,48 +336,53 @@
 
     <u-cell-group title="导航组件">
       <u-cell
-        icon="map"
+        icon="bookmark"
         title="Tabbar 底部导航栏"
         is-link
         url="/pagesA/nav/tabbar"
       ></u-cell>
       <u-cell
-        icon="map"
+        icon="arrow-up"
         title="BackTop 返回顶部"
         is-link
         url="/pagesA/nav/back-top"
       ></u-cell>
       <u-cell
-        icon="map"
+        icon="home-fill"
         title="Nabbar 导航栏"
         is-link
         url="/pagesA/nav/navbar"
       ></u-cell>
       <u-cell
-        icon="map"
+        icon="tags-fill"
         title="Tabs 标签"
         is-link
         url="/pagesA/nav/tabs"
       ></u-cell>
       <u-cell
-        icon="map"
+        icon="tags"
         title="Subsection 分段器"
         is-link
         url="/pagesA/nav/subsection"
       ></u-cell>
       <u-cell
-        icon="map"
+        icon="list-dot"
         title="IndexList 索引列表"
         is-link
         url="/pagesA/nav/index-list"
       ></u-cell>
       <u-cell
-        icon="map"
+        icon="skip-forward-right"
         title="Steps 步骤条"
         is-link
         url="/pagesA/nav/steps"
       ></u-cell>
-      <u-cell icon="map" title="Empty 空内容" is-link></u-cell>
+      <u-cell
+        icon="coupon"
+        title="Empty 空内容"
+        is-link
+        url="/pagesA/nav/empty"
+      ></u-cell>
     </u-cell-group>
 
     <u-cell-group title="其他组件">

@@ -598,15 +598,24 @@
         //     "ignoreAuth": true
         //   }
         // },
+        // {
+        //   "path": "nav/steps",
+        //   "style": {
+        //     "navigationBarTitleText": "步骤条"
+        //   },
+        //   "meta": {
+        //     "ignoreAuth": true
+        //   }
+        // },
         {
-          "path": "nav/steps",
+          "path": "nav/empty",
           "style": {
-            "navigationBarTitleText": "步骤条"
+            "navigationBarTitleText": "空内容"
           },
           "meta": {
             "ignoreAuth": true
           }
-        },
+        }
         // #endregion
       ]
     },
