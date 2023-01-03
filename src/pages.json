@@ -486,7 +486,16 @@
           "meta": {
             "ignoreAuth": true
           }
-        }
+        },
+        // {
+        //   "path": "layout/no-network",
+        //   "style": {
+        //     "navigationBarTitleText": "无网络提示"
+        //   },
+        //   "meta": {
+        //     "ignoreAuth": true
+        //   }
+        // }
         // #endregion
       ]
     },

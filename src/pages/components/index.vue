@@ -296,7 +296,12 @@
         is-link
         url="/pagesA/layout/overlay"
       ></u-cell>
-      <u-cell icon="map" title="NoNetwork 无网络提示" is-link></u-cell>
+      <u-cell
+        icon="map"
+        title="NoNetwork 无网络提示"
+        is-link
+        url="/pagesA/layout/no-network"
+      ></u-cell>
       <u-cell icon="map" title="Grid 宫格布局" is-link></u-cell>
       <u-cell icon="map" title="Swiper 轮播图" is-link></u-cell>
       <u-cell icon="map" title="Skeleton 骨架屏" is-link></u-cell>
