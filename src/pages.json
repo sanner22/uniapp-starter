@@ -571,6 +571,15 @@
             "ignoreAuth": true
           }
         },
+        // {
+        //   "path": "nav/tabs",
+        //   "style": {
+        //     "navigationBarTitleText": "标签"
+        //   },
+        //   "meta": {
+        //     "ignoreAuth": true
+        //   }
+        // },
         // #endregion
       ]
     },
