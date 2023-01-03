@@ -504,7 +504,16 @@
           "meta": {
             "ignoreAuth": true
           }
-        }
+        },
+        // {
+        //   "path": "layout/swiper",
+        //   "style": {
+        //     "navigationBarTitleText": "轮播图"
+        //   },
+        //   "meta": {
+        //     "ignoreAuth": true
+        //   }
+        // }
         // #endregion
       ]
     },

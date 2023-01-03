@@ -308,7 +308,12 @@
         is-link
         url="/pagesA/layout/grid"
       ></u-cell>
-      <u-cell icon="map" title="Swiper 轮播图" is-link></u-cell>
+      <u-cell
+        icon="map"
+        title="Swiper 轮播图"
+        is-link
+        url="/pagesA/layout/swiper"
+      ></u-cell>
       <u-cell icon="map" title="Skeleton 骨架屏" is-link></u-cell>
       <u-cell icon="map" title="Sticky 吸顶" is-link></u-cell>
       <u-cell icon="map" title="Divider 分割线" is-link></u-cell>
