@@ -320,7 +320,12 @@
         is-link
         url="/pagesA/layout/skeleton"
       ></u-cell>
-      <u-cell icon="map" title="Sticky 吸顶" is-link></u-cell>
+      <u-cell
+        icon="map"
+        title="Sticky 吸顶"
+        is-link
+        url="/pagesA/layout/sticky"
+      ></u-cell>
       <u-cell icon="map" title="Divider 分割线" is-link></u-cell>
     </u-cell-group>
 

@@ -522,7 +522,16 @@
           "meta": {
             "ignoreAuth": true
           }
-        }
+        },
+        // {
+        //   "path": "layout/sticky",
+        //   "style": {
+        //     "navigationBarTitleText": "吸顶"
+        //   },
+        //   "meta": {
+        //     "ignoreAuth": true
+        //   }
+        // }
         // #endregion
       ]
     },
