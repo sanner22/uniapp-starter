@@ -139,7 +139,7 @@
     const { columnIndex, index } = e;
     if (columnIndex === 0) {
       loading.value = true;
-      (uni as any).$u.sleep(1500).then(() => {
+      uni.$u.sleep(1500).then(() => {
         picker.setColumnValues(1, columnData[index]);
         loading.value = false;
       });

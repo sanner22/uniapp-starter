@@ -9,7 +9,7 @@
     return result;
   };
 
-  const $uConfig = (uni as any).$u.config;
+  const $uConfig = uni.$u.config;
   const $typeColors = {
     primary: { dark: '#398ade', disabled: '#9acafc', light: '#ecf5ff' },
     success: { dark: '#53c21d', disabled: '#a9e08f', light: '#f5fff0' },

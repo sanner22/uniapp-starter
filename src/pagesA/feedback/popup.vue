@@ -140,7 +140,7 @@
 
   const openPopup = (data: any) => {
     popupData = data;
-    (uni as any).$u.sleep().then(() => {
+    uni.$u.sleep().then(() => {
       show.value = !show.value;
     });
   };

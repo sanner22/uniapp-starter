@@ -117,7 +117,7 @@
   import { Toast } from '@/utils/uniapi/prompt';
   import { ref } from 'vue';
 
-  const successColor = (uni as any).$u.color['success'];
+  const successColor = uni.$u.color['success'];
 
   const list = [
     {

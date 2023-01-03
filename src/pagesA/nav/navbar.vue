@@ -55,7 +55,7 @@
 </template>
 
 <script setup lang="ts">
-  const bgColor = (uni as any).$u.color['success'];
+  const bgColor = uni.$u.color['success'];
 
   const rightClick = () => {
     console.log('rightClick');

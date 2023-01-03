@@ -12,7 +12,7 @@
   onLaunch(() => {
     console.log(
       `\n%cUNIAPP%c${platform}%cVUE%c${isVue3 ? '3' : '2'}%cUVIEW PLUS%c${
-        (uni as any).$u.config.v
+        uni.$u.config.v
       }%cAPI%c${apiUrl}%c\n`,
       'background:#2b993a;color:#fff;padding:3px 6px;border-radius:4px 0 0 4px;',
       'background:#fff;padding:3px 6px;color:#000;margin-right:1em;border-radius:0 4px 4px 0;',

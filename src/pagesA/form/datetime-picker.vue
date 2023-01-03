@@ -167,7 +167,7 @@
   };
 
   const result = (time: any, mode: any) => {
-    const timeFormat = (uni as any).$u.timeFormat;
+    const timeFormat = uni.$u.timeFormat;
     switch (mode) {
       case 'datetime':
         return Toast(timeFormat(time, 'yyyy-mm-dd hh:MM'));

@@ -38,7 +38,7 @@
   const loadmore = () => {
     for (let i = 0; i < 30; i++) {
       indexList.value.push({
-        url: urls[(uni as any).$u.random(0, urls.length - 1)],
+        url: urls[uni.$u.random(0, urls.length - 1)],
       });
     }
   };

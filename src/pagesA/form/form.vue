@@ -266,7 +266,7 @@
         // 此为同步验证，可以直接返回true或者false，如果是异步验证，稍微不同，见下方说明
         validator: (_rule: any, value: any, _callback: any) => {
           // 调用uView自带的js验证规则，详见：https://www.uviewui.com/js/test.html
-          return (uni as any).$u.test.chinese(value);
+          return uni.$u.test.chinese(value);
         },
         message: '姓名必须为中文',
         // 触发器可以同时用blur和change，二者之间用英文逗号隔开
@@ -407,10 +407,7 @@
   const birthday = ref(Number(new Date(model1.userInfo.birthday)));
   const birthdayConfirm = (e: any) => {
     pickerName.value = '';
-    model1.userInfo.birthday = (uni as any).$u.timeFormat(
-      e.value,
-      'yyyy-mm-dd',
-    );
+    model1.userInfo.birthday = uni.$u.timeFormat(e.value, 'yyyy-mm-dd');
   };
   // #endregion
 

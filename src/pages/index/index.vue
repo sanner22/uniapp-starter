@@ -6,7 +6,7 @@
 
   const platform = CURRENT_PLATFORM;
   const isVue3 = judgePlatform(PLATFORMS.VUE3);
-  const uViewVersion = (uni as any).$u.config.v;
+  const uViewVersion = uni.$u.config.v;
 
   const router = useRouter();
 

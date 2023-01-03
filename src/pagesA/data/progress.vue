@@ -88,17 +88,17 @@
 
   const computedWidth = (type: string | undefined) => {
     if (type === 'plus') {
-      percentage6.value = (uni as any).$u.range(0, 100, percentage6.value + 10);
+      percentage6.value = uni.$u.range(0, 100, percentage6.value + 10);
     } else {
-      percentage6.value = (uni as any).$u.range(0, 100, percentage6.value - 10);
+      percentage6.value = uni.$u.range(0, 100, percentage6.value - 10);
     }
   };
 
   onLoad(_e => {
     // #ifdef APP-NVUE
-    androidNvue.value = (uni as any).$u.os() === 'android';
+    androidNvue.value = uni.$u.os() === 'android';
     // #endif
-    (uni as any).$u.sleep(2500).then(() => {
+    uni.$u.sleep(2500).then(() => {
       percentage1.value = 120;
     });
   });
