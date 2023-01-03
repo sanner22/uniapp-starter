@@ -589,6 +589,15 @@
         //     "ignoreAuth": true
         //   }
         // },
+        // {
+        //   "path": "nav/index-list",
+        //   "style": {
+        //     "navigationBarTitleText": "索引列表"
+        //   },
+        //   "meta": {
+        //     "ignoreAuth": true
+        //   }
+        // },
         // #endregion
       ]
     },
