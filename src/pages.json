@@ -598,6 +598,15 @@
         //     "ignoreAuth": true
         //   }
         // },
+        {
+          "path": "nav/steps",
+          "style": {
+            "navigationBarTitleText": "步骤条"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     },

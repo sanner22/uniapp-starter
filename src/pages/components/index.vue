@@ -371,7 +371,12 @@
         is-link
         url="/pagesA/nav/index-list"
       ></u-cell>
-      <u-cell icon="map" title="Steps 步骤条" is-link></u-cell>
+      <u-cell
+        icon="map"
+        title="Steps 步骤条"
+        is-link
+        url="/pagesA/nav/steps"
+      ></u-cell>
       <u-cell icon="map" title="Empty 空内容" is-link></u-cell>
     </u-cell-group>
 
