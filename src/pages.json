@@ -513,7 +513,16 @@
         //   "meta": {
         //     "ignoreAuth": true
         //   }
-        // }
+        // },
+        {
+          "path": "layout/skeleton",
+          "style": {
+            "navigationBarTitleText": "骨架屏"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        }
         // #endregion
       ]
     },
