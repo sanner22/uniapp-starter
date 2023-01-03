@@ -495,7 +495,16 @@
         //   "meta": {
         //     "ignoreAuth": true
         //   }
-        // }
+        // },
+        {
+          "path": "layout/grid",
+          "style": {
+            "navigationBarTitleText": "宫格布局"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        }
         // #endregion
       ]
     },
