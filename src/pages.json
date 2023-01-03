@@ -468,7 +468,16 @@
         //   "meta": {
         //     "ignoreAuth": true
         //   }
-        // }
+        // },
+        {
+          "path": "layout/line",
+          "style": {
+            "navigationBarTitleText": "线条"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        }
         // #endregion
       ]
     },
