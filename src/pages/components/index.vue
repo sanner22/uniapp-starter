@@ -359,7 +359,12 @@
         is-link
         url="/pagesA/nav/tabs"
       ></u-cell>
-      <u-cell icon="map" title="Subsection 分段器" is-link></u-cell>
+      <u-cell
+        icon="map"
+        title="Subsection 分段器"
+        is-link
+        url="/pagesA/nav/subsection"
+      ></u-cell>
       <u-cell icon="map" title="IndexList 索引列表" is-link></u-cell>
       <u-cell icon="map" title="Steps 步骤条" is-link></u-cell>
       <u-cell icon="map" title="Empty 空内容" is-link></u-cell>
