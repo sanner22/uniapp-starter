@@ -531,6 +531,15 @@
         //   "meta": {
         //     "ignoreAuth": true
         //   }
+        // },
+        // {
+        //   "path": "layout/divider",
+        //   "style": {
+        //     "navigationBarTitleText": "分割线"
+        //   },
+        //   "meta": {
+        //     "ignoreAuth": true
+        //   }
         // }
         // #endregion
       ]

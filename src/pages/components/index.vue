@@ -279,54 +279,59 @@
 
     <u-cell-group title="布局组件">
       <u-cell
-        icon="map"
+        icon="coupon"
         title="ScrollList 横向滚动列表"
         is-link
         url="/pagesA/layout/scroll-list"
       ></u-cell>
       <u-cell
-        icon="map"
+        icon="minus"
         title="Line 线条"
         is-link
         url="/pagesA/layout/line"
       ></u-cell>
       <u-cell
-        icon="map"
+        icon="moments-circel-fill"
         title="Overlay 遮罩层"
         is-link
         url="/pagesA/layout/overlay"
       ></u-cell>
       <u-cell
-        icon="map"
+        icon="wifi-off"
         title="NoNetwork 无网络提示"
         is-link
         url="/pagesA/layout/no-network"
       ></u-cell>
       <u-cell
-        icon="map"
+        icon="grid"
         title="Grid 宫格布局"
         is-link
         url="/pagesA/layout/grid"
       ></u-cell>
       <u-cell
-        icon="map"
+        icon="gift-fill"
         title="Swiper 轮播图"
         is-link
         url="/pagesA/layout/swiper"
       ></u-cell>
       <u-cell
-        icon="map"
+        icon="more-dot-fill"
         title="Skeleton 骨架屏"
         is-link
         url="/pagesA/layout/skeleton"
       ></u-cell>
       <u-cell
-        icon="map"
+        icon="info"
         title="Sticky 吸顶"
         is-link
         url="/pagesA/layout/sticky"
       ></u-cell>
-      <u-cell icon="map" title="Divider 分割线" is-link></u-cell>
+      <u-cell
+        icon="minus"
+        title="Divider 分割线"
+        is-link
+        url="/pagesA/layout/divider"
+      ></u-cell>
     </u-cell-group>
 
     <u-cell-group title="导航组件">
