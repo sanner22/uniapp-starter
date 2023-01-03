@@ -278,7 +278,12 @@
     </u-cell-group>
 
     <u-cell-group title="布局组件">
-      <u-cell icon="map" title="ScrollList 横向滚动列表" is-link></u-cell>
+      <u-cell
+        icon="map"
+        title="ScrollList 横向滚动列表"
+        is-link
+        url="/pagesA/layout/scroll-list"
+      ></u-cell>
       <u-cell icon="map" title="Line 线条" is-link></u-cell>
       <u-cell icon="map" title="Overlay 遮罩层" is-link></u-cell>
       <u-cell icon="map" title="NoNetwork 无网络提示" is-link></u-cell>
