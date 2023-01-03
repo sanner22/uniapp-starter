@@ -477,6 +477,15 @@
           "meta": {
             "ignoreAuth": true
           }
+        },
+        {
+          "path": "layout/overlay",
+          "style": {
+            "navigationBarTitleText": "遮罩层"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
         }
         // #endregion
       ]
