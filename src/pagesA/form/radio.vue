@@ -107,7 +107,7 @@
     />
     <u-radio-group
       v-model="radiovalue7"
-      :borderBottom="true"
+      :border-bottom="true"
       placement="column"
       iconPlacement="right"
     >

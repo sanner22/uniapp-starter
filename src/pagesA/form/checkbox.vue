@@ -106,7 +106,7 @@
     <u-checkbox-group
       v-model="checkboxValue7"
       @change="checkboxChange"
-      :borderBottom="true"
+      :border-bottom="true"
       placement="column"
       iconPlacement="right"
     >

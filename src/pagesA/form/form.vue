@@ -1,6 +1,6 @@
 <template>
   <view class="_u_px-15px">
-    <u-text text="基础使用" type="info" margin="10px 0"></u-text>
+    <u-text text="基础使用" type="info" margin="10px 0" />
 
     <u-form
       label-position="left"
@@ -9,7 +9,7 @@
       :rules="formRules"
       ref="form1"
     >
-      <u-form-item label="姓名" prop="userInfo.name" border-bottom>
+      <u-form-item label="姓名" prop="userInfo.name" :border-bottom="true">
         <u-input
           v-model="model1.userInfo.name"
           border="none"
@@ -20,7 +20,7 @@
       <u-form-item
         label="性别"
         prop="userInfo.sex"
-        border-bottom
+        :border-bottom="true"
         @click="
           pickerName = 'sex';
           hideKeyboard();
@@ -38,7 +38,7 @@
         </template>
       </u-form-item>
 
-      <u-form-item label="水果" prop="radiovalue1" border-bottom>
+      <u-form-item label="水果" prop="radiovalue1" :border-bottom="true">
         <u-radio-group v-model="model1.radiovalue1" @change="radioGroupChange">
           <u-radio
             :custom-style="{ marginRight: '16px' }"
@@ -59,15 +59,14 @@
             :key="index"
             :label="item.name"
             :name="item.name"
-          >
-          </u-radio>
+          />
         </u-radio-group>
       </u-form-item>
 
       <u-form-item
         label="兴趣爱好"
         prop="checkboxValue1"
-        borderBottom
+        :border-bottom="true"
         labelWidth="80"
         ref="item3"
       >
@@ -95,12 +94,11 @@
             :key="index"
             :label="item.name"
             :name="item.name"
-          >
-          </u-checkbox>
+          />
         </u-checkbox-group>
       </u-form-item>
 
-      <u-form-item label="简介" prop="intro" border-bottom>
+      <u-form-item label="简介" prop="intro" :border-bottom="true">
         <u-textarea
           placeholder="不低于3个字"
           v-model="model1.intro"
@@ -113,7 +111,7 @@
         label="住店时间"
         prop="hotel"
         label-width="80"
-        border-bottom
+        :border-bottom="true"
         @click="
           pickerName = 'hotel';
           hideKeyboard();
@@ -125,18 +123,23 @@
           disabled-color="#ffffff"
           placeholder="请选择住店和离店时间"
           border="none"
-        ></u-input>
+        />
         <template #right>
-          <u-icon name="arrow-right"></u-icon>
+          <u-icon name="arrow-right" />
         </template>
       </u-form-item>
 
-      <u-form-item label="验证码" prop="code" labelWidth="80" border-bottom>
+      <u-form-item
+        label="验证码"
+        prop="code"
+        labelWidth="80"
+        :border-bottom="true"
+      >
         <u-input
           v-model="model1.code"
           border="none"
           placeholder="请填写验证码"
-        ></u-input>
+        />
         <template #right>
           <u-button
             :text="tips || '获取验证码'"
@@ -144,14 +147,14 @@
             size="mini"
             :disabled="disabled1"
             @tap="getCode"
-          ></u-button>
+          />
         </template>
       </u-form-item>
 
       <u-form-item
         label="生日"
         prop="userInfo.birthday"
-        borderBottom
+        :border-bottom="true"
         @click="
           pickerName = 'birthday';
           hideKeyboard();
@@ -164,9 +167,9 @@
           disabledColor="#ffffff"
           placeholder="请选择生日"
           border="none"
-        ></u-input>
+        />
         <template #right>
-          <u-icon name="arrow-right"></u-icon>
+          <u-icon name="arrow-right" />
         </template>
       </u-form-item>
     </u-form>
@@ -176,13 +179,13 @@
       text="提交"
       customStyle="margin-top: 30px"
       @click="submit"
-    ></u-button>
+    />
     <u-button
       type="error"
       text="重置"
       customStyle="margin-top: 10px"
       @click="reset"
-    ></u-button>
+    />
 
     <u-action-sheet
       :show="pickerName === 'sex'"
@@ -201,10 +204,10 @@
       description="如果选择保密会报错"
       @close="pickerName = ''"
       @select="sexSelect"
-    >
-    </u-action-sheet>
+    />
 
-    <!-- <u-calendar
+    <!-- #ifdef APP-PLUS -->
+    <u-calendar
       :show="pickerName === 'hotel'"
       mode="range"
       start-text="住店"
@@ -213,7 +216,8 @@
       :formatter="formatter"
       @confirm="calendarConfirm"
       @close="calendarClose"
-    ></u-calendar> -->
+    />
+    <!-- #endif -->
 
     <u-code
       ref="uCode1"
@@ -221,8 +225,9 @@
       @change="codeChange"
       @start="disabled1 = true"
       @end="disabled1 = false"
-    ></u-code>
+    />
 
+    <!-- #ifdef APP-PLUS -->
     <u-datetime-picker
       :show="pickerName === 'birthday'"
       :value="birthday"
@@ -231,7 +236,8 @@
       @confirm="birthdayConfirm"
       @cancel="pickerName = ''"
       @close="pickerName = ''"
-    ></u-datetime-picker>
+    />
+    <!-- #endif -->
   </view>
 </template>
 
