@@ -120,27 +120,28 @@
   const loading = ref(false);
   const pickerName = ref('');
 
-  const uPicker3 = ref(null);
+  interface IUPickerComponent {
+    setColumnValues: Function;
+  }
+  const uPicker3 = ref<IUPickerComponent>({} as IUPickerComponent);
   const changeHandler1 = (e: any) => {
     change(e);
     // 微信小程序无法将picker实例传出来，只能通过ref操作
-    const picker = uPicker3.value as any;
     const { columnIndex, index } = e;
     if (columnIndex === 0) {
-      picker.setColumnValues(1, columnData[index]);
+      uPicker3.value.setColumnValues(1, columnData[index]);
     }
   };
 
-  const uPicker4 = ref(null);
+  const uPicker4 = ref<IUPickerComponent>({} as IUPickerComponent);
   const changeHandler2 = (e: any) => {
     change(e);
     // 微信小程序无法将picker实例传出来，只能通过ref操作
-    const picker = uPicker4.value as any;
     const { columnIndex, index } = e;
     if (columnIndex === 0) {
       loading.value = true;
       uni.$u.sleep(1500).then(() => {
-        picker.setColumnValues(1, columnData[index]);
+        uPicker4.value.setColumnValues(1, columnData[index]);
         loading.value = false;
       });
     }

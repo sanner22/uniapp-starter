@@ -62,9 +62,13 @@
     },
   ];
 
-  const uToast1 = ref(null);
+  interface IComponent {
+    show: Function;
+  }
+
+  const uToast1 = ref<IComponent>({} as IComponent);
   const showToast = (params: any) => {
-    (uToast1.value as any).show({
+    uToast1.value.show({
       ...params,
       complete() {
         params.url &&

@@ -247,7 +247,14 @@
   import { Toast, Loading, HideLoading } from '@/utils/uniapi/prompt';
 
   // #region form && rules
-  const form1 = ref(null);
+  interface IComponent {
+    validateField: Function;
+    setRules: Function;
+    validate: Function;
+    resetFields: Function;
+    clearValidate: Function;
+  }
+  const form1 = ref<IComponent>({} as IComponent);
   const model1 = reactive({
     userInfo: {
       name: '楼兰',
@@ -339,18 +346,18 @@
   // #region 性别
   const sexSelect = (e: any) => {
     model1.userInfo.sex = e.name;
-    (form1.value as any).validateField('userInfo.sex');
+    form1.value.validateField('userInfo.sex');
   };
   // #endregion
 
   const radioGroupChange = (e: any) => {
     console.log(e);
-    (form1.value as any).validateField('radiovalue1');
+    form1.value.validateField('radiovalue1');
   };
 
   const checkboxGroupChange = (e: any) => {
     console.log(e);
-    (form1.value as any).validateField('checkboxValue1');
+    form1.value.validateField('checkboxValue1');
   };
 
   // #region 住店日期
@@ -370,27 +377,29 @@
     console.log(e);
     pickerName.value = '';
     model1.hotel = `${e[0]} / ${e[e.length - 1]}`;
-    (form1.value as any).validateField('hotel');
+    form1.value.validateField('hotel');
   };
   // eslint-disable-next-line @typescript-eslint/no-unused-vars, no-unused-vars
   const calendarClose = () => {
     pickerName.value = '';
-    (form1.value as any).validateField('hotel');
+    form1.value.validateField('hotel');
   };
   // #endregion
 
   // #region 验证码
-  const uCode1 = ref(null);
+  interface IUCodeComponent {
+    canGetCode: boolean;
+    start: Function;
+  }
+  const uCode1 = ref<IUCodeComponent>({} as IUCodeComponent);
   const tips = ref('');
   const disabled1 = ref(false);
   const getCode = () => {
-    const uCodeVal = uCode1.value as any;
-    debugger;
-    if (!uCodeVal) {
+    if (!uCode1.value) {
       Toast('code 组件实例不存在');
       return;
     }
-    if (uCodeVal.canGetCode) {
+    if (uCode1.value.canGetCode) {
       // 模拟向后端请求验证码
       Loading('正在获取验证码');
       setTimeout(() => {
@@ -398,7 +407,7 @@
         // 这里此提示会被this.start()方法中的提示覆盖
         Toast('验证码已发送');
         // 通知验证码组件内部开始倒计时
-        (uCode1.value as any).start();
+        uCode1.value.start();
       }, 2000);
     } else {
       Toast('倒计时结束后再发送');
@@ -420,7 +429,7 @@
   onReady(() => {
     // #ifdef MP-WEIXIN
     // 注意，如果需要兼容微信小程序，最好通过setRules方法设置rules规则
-    (form1.value as any).setRules(formRules);
+    form1.value.setRules(formRules);
     // #endif
   });
 
@@ -434,7 +443,7 @@
 
   const submit = () => {
     // 如果有错误，会在catch中返回报错信息数组，校验通过则在then中返回true
-    (form1.value as any)
+    form1.value
       .validate()
       .then((res: any) => {
         console.log(res);
@@ -446,7 +455,7 @@
       });
   };
   const reset = () => {
-    (form1.value as any).resetFields(); // 重置所有字段值
-    (form1.value as any).clearValidate(); // 清除所有验证状态
+    form1.value.resetFields(); // 重置所有字段值
+    form1.value.clearValidate(); // 清除所有验证状态
   };
 </script>

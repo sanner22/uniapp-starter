@@ -108,7 +108,13 @@
 <script setup lang="ts">
   import { reactive, ref } from 'vue';
 
-  const countDown1 = ref(null);
+  interface IComponent {
+    start: Function;
+    pause: Function;
+    reset: Function;
+  }
+
+  const countDown1 = ref<IComponent>({} as IComponent);
   let timeData = reactive({
     days: 0,
     hours: 0,
@@ -117,15 +123,15 @@
   });
   //开始
   const start = () => {
-    (countDown1.value as any).start();
+    countDown1.value.start();
   };
   // 暂停
   const pause = () => {
-    (countDown1.value as any).pause();
+    countDown1.value.pause();
   };
   // 重置
   const reset = () => {
-    (countDown1.value as any).reset();
+    countDown1.value.reset();
   };
   const onChange = (e: any) => {
     timeData = e;

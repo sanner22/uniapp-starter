@@ -24,9 +24,12 @@
     p: 'color: #606266; line-height: 24px;',
   };
 
-  const readMore1 = ref(null);
+  interface IUReadmoreComponent {
+    init: Function;
+  }
+  const readMore1 = ref<IUReadmoreComponent>({} as IUReadmoreComponent);
   const load = () => {
-    (readMore1.value as any).init();
+    readMore1.value.init();
   };
   const open = (name: string) => {
     console.log('open', name);

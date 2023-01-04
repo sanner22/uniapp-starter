@@ -80,6 +80,12 @@
 <script setup lang="ts">
   import { ref } from 'vue';
 
+  interface IComponent {
+    start: Function;
+    stop: Function;
+    resume: Function;
+  }
+
   const value = ref(3000);
   const startVal1 = ref(300);
   const startVal2 = ref(100.0);
@@ -91,16 +97,16 @@
   const autoplay = ref(false);
   const fontSize = ref(40);
 
-  const countTo1 = ref(null);
+  const countTo1 = ref<IComponent>({} as IComponent);
   const start = () => {
     console.log(countTo1.value);
-    (countTo1.value as any).start();
+    countTo1.value.start();
   };
   const paused = () => {
-    (countTo1.value as any).stop();
+    countTo1.value.stop();
   };
   const resume = () => {
-    (countTo1.value as any).resume();
+    countTo1.value.resume();
   };
   const end = () => {
     console.log('end');

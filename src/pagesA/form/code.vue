@@ -75,9 +75,13 @@
     tips2.value = text;
   };
 
-  const uCode0 = ref(null);
+  interface IComponent {
+    canGetCode: boolean;
+    start: Function;
+  }
+  const uCode0 = ref<IComponent>({} as IComponent);
   const getCode = () => {
-    if ((uCode0.value as any).canGetCode) {
+    if (uCode0.value.canGetCode) {
       // 模拟向后端请求验证码
       Loading('正在获取验证码');
       setTimeout(() => {
@@ -85,15 +89,15 @@
         // 这里此提示会被this.start()方法中的提示覆盖
         Toast('验证码已发送');
         // 通知验证码组件内部开始倒计时
-        (uCode0.value as any).start();
+        uCode0.value.start();
       }, 2000);
     } else {
       Toast('倒计时结束后再发送');
     }
   };
-  const uCode1 = ref(null);
+  const uCode1 = ref<IComponent>({} as IComponent);
   const getCode1 = () => {
-    if ((uCode1.value as any).canGetCode) {
+    if (uCode1.value.canGetCode) {
       // 模拟向后端请求验证码
       Loading('正在获取验证码');
       setTimeout(() => {
@@ -101,15 +105,15 @@
         // 这里此提示会被this.start()方法中的提示覆盖
         Toast('验证码已发送');
         // 通知验证码组件内部开始倒计时
-        (uCode1.value as any).start();
+        uCode1.value.start();
       }, 2000);
     } else {
       Toast('倒计时结束后再发送');
     }
   };
-  const uCode2 = ref(null);
+  const uCode2 = ref<IComponent>({} as IComponent);
   const getCode2 = () => {
-    if ((uCode2.value as any).canGetCode) {
+    if (uCode2.value.canGetCode) {
       // 模拟向后端请求验证码
       Loading('正在获取验证码');
       setTimeout(() => {
@@ -117,7 +121,7 @@
         // 这里此提示会被this.start()方法中的提示覆盖
         Toast('验证码已发送');
         // 通知验证码组件内部开始倒计时
-        (uCode2.value as any).start();
+        uCode2.value.start();
       }, 2000);
     } else {
       Toast('倒计时结束后再发送');

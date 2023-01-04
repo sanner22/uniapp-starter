@@ -19,6 +19,10 @@
 <script setup lang="ts">
   import { ref } from 'vue';
 
+  interface IComponent {
+    show: Function;
+  }
+
   const list = [
     {
       notifyData: {
@@ -110,9 +114,9 @@
     },
   ];
 
-  const uNotify1 = ref(null);
+  const uNotify1 = ref<IComponent>({} as IComponent);
   const openNotify = (params: any) => {
-    (uNotify1.value as any).show({
+    uNotify1.value.show({
       ...params,
     });
     // 也可以通过主题形式调用，如：
