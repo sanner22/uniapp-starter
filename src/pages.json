@@ -689,6 +689,15 @@
           "meta": {
             "ignoreAuth": true
           }
+        },
+        {
+          "path": "other/avatar",
+          "style": {
+            "navigationBarTitleText": "头像"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
         }
         // #endregion
       ]

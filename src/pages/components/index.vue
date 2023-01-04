@@ -416,7 +416,12 @@
         is-link
         url="/pagesA/other/gap"
       ></u-cell>
-      <u-cell icon="map" title="Avatar 头像" is-link></u-cell>
+      <u-cell
+        icon="map"
+        title="Avatar 头像"
+        is-link
+        url="/pagesA/other/avatar"
+      ></u-cell>
       <u-cell icon="map" title="Link 超链接" is-link></u-cell>
       <u-cell icon="map" title="transition 动画" is-link></u-cell>
     </u-cell-group>
