@@ -565,7 +565,7 @@
         // #endif
         // #endregion
 
-        // #region 导航组件
+        // #region nav
         // #ifdef H5
         {
           "path": "nav/tabbar",
@@ -637,6 +637,18 @@
           "path": "nav/empty",
           "style": {
             "navigationBarTitleText": "空内容"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        // #endregion
+
+        // #region other
+        {
+          "path": "other/parse",
+          "style": {
+            "navigationBarTitleText": "富文本解析器"
           },
           "meta": {
             "ignoreAuth": true
