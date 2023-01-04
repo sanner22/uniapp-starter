@@ -698,6 +698,15 @@
           "meta": {
             "ignoreAuth": true
           }
+        },
+        {
+          "path": "other/link",
+          "style": {
+            "navigationBarTitleText": "链接"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
         }
         // #endregion
       ]

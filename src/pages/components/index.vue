@@ -422,7 +422,12 @@
         is-link
         url="/pagesA/other/avatar"
       ></u-cell>
-      <u-cell icon="map" title="Link 超链接" is-link></u-cell>
+      <u-cell
+        icon="map"
+        title="Link 超链接"
+        is-link
+        url="/pagesA/other/link"
+      ></u-cell>
       <u-cell icon="map" title="transition 动画" is-link></u-cell>
     </u-cell-group>
   </template>
