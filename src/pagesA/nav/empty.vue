@@ -12,17 +12,17 @@
         </u-button>
       </view>
     </u-empty>
-
-    <u-picker
-      :show="showPicker"
-      :columns="[list]"
-      keyName="label"
-      closeOnClickOverlay
-      @close="showPicker = false"
-      @cancel="showPicker = false"
-      @confirm="confirmMode"
-    />
   </view>
+
+  <u-picker
+    :show="showPicker"
+    :columns="[list]"
+    keyName="label"
+    closeOnClickOverlay
+    @close="showPicker = false"
+    @cancel="showPicker = false"
+    @confirm="confirmMode"
+  />
 </template>
 
 <script setup lang="ts">
