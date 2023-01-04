@@ -1,90 +1,80 @@
 <template>
   <view class="_u_px-15px _u_pb-500px">
-    <view class="u-demo-block">
-      <text class="u-demo-block__title">基础演示</text>
-      <view class="u-demo-block__content">
-        <u-tabs :list="list1" @click="click" :current="3"> </u-tabs>
-      </view>
+    <u-text type="info" margin="10px 0" text="基础演示" />
+    <view>
+      <u-tabs :list="list1" @click="click" :current="3" />
     </view>
-    <view class="u-demo-block" style="margin-bottom: 0">
-      <text class="u-demo-block__title">粘性布局</text>
-    </view>
+
+    <u-text type="info" margin="10px 0" text="粘性布局" />
     <u-sticky bgColor="#fff">
-      <u-tabs :list="list1"></u-tabs>
+      <u-tabs :list="list1" />
     </u-sticky>
-    <u-gap height="23" bgColor="#fff"></u-gap>
-    <view class="u-demo-block">
-      <text class="u-demo-block__title">显示徽标</text>
-      <view class="u-demo-block__content">
-        <u-tabs :list="list2"> </u-tabs>
-      </view>
+
+    <u-text type="info" margin="10px 0" text="显示徽标" />
+    <view>
+      <u-tabs :list="list2" />
     </view>
-    <view class="u-demo-block">
-      <text class="u-demo-block__title">禁止滚动</text>
-      <view class="u-demo-block__content">
-        <u-tabs :list="list6" :scrollable="false"> </u-tabs>
-      </view>
+
+    <u-text type="info" margin="10px 0" text="禁止滚动" />
+    <view>
+      <u-tabs :list="list6" :scrollable="false" />
     </view>
-    <view class="u-demo-block">
-      <text class="u-demo-block__title">禁用菜单</text>
-      <view class="u-demo-block__content">
-        <u-tabs :list="list3"> </u-tabs>
-      </view>
+
+    <u-text type="info" margin="10px 0" text="禁用菜单" />
+    <view>
+      <u-tabs :list="list3" />
     </view>
-    <view class="u-demo-block">
-      <text class="u-demo-block__title">自定义样式</text>
-      <view class="u-demo-block__content">
-        <u-tabs
-          :list="list4"
-          lineWidth="30"
-          lineColor="#f56c6c"
-          :activeStyle="{
-            color: '#303133',
-            fontWeight: 'bold',
-            transform: 'scale(1.05)',
-          }"
-          :inactiveStyle="{
-            color: '#606266',
-            transform: 'scale(1)',
-          }"
-          itemStyle="padding-left: 15px; padding-right: 15px; height: 34px;"
-        >
-        </u-tabs>
-      </view>
+
+    <u-text type="info" margin="10px 0" text="自定义样式" />
+    <view>
+      <u-tabs
+        :list="list4"
+        lineWidth="30"
+        lineColor="#f56c6c"
+        :activeStyle="{
+          color: '#303133',
+          fontWeight: 'bold',
+          transform: 'scale(1.05)',
+        }"
+        :inactiveStyle="{
+          color: '#606266',
+          transform: 'scale(1)',
+        }"
+        itemStyle="padding-left: 15px; padding-right: 15px; height: 34px;"
+      >
+      </u-tabs>
     </view>
-    <view class="u-demo-block">
-      <text class="u-demo-block__title">滑块设置背景图</text>
-      <view class="u-demo-block__content">
-        <u-tabs
-          :list="list4"
-          lineWidth="20"
-          lineHeight="7"
-          :lineColor="`url(${lineBg}) 100% 100%`"
-          :activeStyle="{
-            color: '#303133',
-            fontWeight: 'bold',
-            transform: 'scale(1.05)',
-          }"
-          :inactiveStyle="{
-            color: '#606266',
-            transform: 'scale(1)',
-          }"
-          itemStyle="padding-left: 15px; padding-right: 15px; height: 34px;"
-        >
-        </u-tabs>
-      </view>
+
+    <u-text type="info" margin="10px 0" text="滑块设置背景图" />
+    <view>
+      <u-tabs
+        :list="list4"
+        lineWidth="20"
+        lineHeight="7"
+        :lineColor="`url(${lineBg}) 100% 100%`"
+        :activeStyle="{
+          color: '#303133',
+          fontWeight: 'bold',
+          transform: 'scale(1.05)',
+        }"
+        :inactiveStyle="{
+          color: '#606266',
+          transform: 'scale(1)',
+        }"
+        itemStyle="padding-left: 15px; padding-right: 15px; height: 34px;"
+      >
+      </u-tabs>
     </view>
-    <view class="u-demo-block">
-      <text class="u-demo-block__title">右侧自定义插槽</text>
-      <view class="u-demo-block__content">
-        <u-tabs :list="list1">
-          <template #right>
-            <view style="padding-left: 4px" @click="click2">
-              <u-icon name="list" size="21" bold></u-icon>
-            </view>
-          </template>
-        </u-tabs>
-      </view>
+
+    <u-text type="info" margin="10px 0" text="右侧自定义插槽" />
+    <view>
+      <u-tabs :list="list1">
+        <template #right>
+          <view style="padding-left: 4px" @click="click2">
+            <u-icon name="list" size="21" bold></u-icon>
+          </view>
+        </template>
+      </u-tabs>
     </view>
   </view>
 </template>

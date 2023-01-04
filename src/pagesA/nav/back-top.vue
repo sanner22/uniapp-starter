@@ -1,5 +1,5 @@
 <template>
-  <view class="_u_h-1200px">
+  <view class="_u_h-1200px _u_px-15px">
     <u-text
       type="info"
       margin="10px 0"
@@ -113,6 +113,7 @@
     backTopData.icon = 'arrow-up';
   });
   onPageScroll(e => {
+    console.log(e);
     scrollTop.value = e.scrollTop;
   });
 </script>

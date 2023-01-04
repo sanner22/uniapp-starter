@@ -1,6 +1,6 @@
 <template>
-  <view class="u-page">
-    <u-text type="info" margin="10px 0" text="基础功能" />
+  <view>
+    <u-text type="info" margin="10px 0 10px 10px" text="基础功能" />
     <u-tabbar
       :value="value1"
       @change="change1"
@@ -18,7 +18,7 @@
       <u-tabbar-item text="我的" icon="account" @click="click1"></u-tabbar-item>
     </u-tabbar>
 
-    <u-text type="info" margin="10px 0" text="显示徽标" />
+    <u-text type="info" margin="10px 0 10px 10px" text="显示徽标" />
     <u-tabbar
       :value="value2"
       :placeholder="false"
@@ -32,7 +32,7 @@
       <u-tabbar-item text="我的" icon="account"></u-tabbar-item>
     </u-tabbar>
 
-    <u-text type="info" margin="10px 0" text="匹配标签的名称" />
+    <u-text type="info" margin="10px 0 10px 10px" text="匹配标签的名称" />
     <u-tabbar
       :placeholder="false"
       :value="value3"
@@ -50,7 +50,7 @@
       <u-tabbar-item text="我的" name="account" icon="account"></u-tabbar-item>
     </u-tabbar>
 
-    <u-text type="info" margin="10px 0" text="自定义图标/颜色" />
+    <u-text type="info" margin="10px 0 10px 10px" text="自定义图标/颜色" />
     <u-tabbar
       :value="value4"
       @change="(name: string) => (value4 = name)"
@@ -60,17 +60,19 @@
       :safeAreaInsetBottom="false"
     >
       <u-tabbar-item text="首页">
-        <template v-slot:active-icon>
-          <image
-            class="u-page__item__slot-icon"
+        <template #active-icon>
+          <u-image
             src="https://cdn.uviewui.com/uview/common/bell-selected.png"
-          ></image>
+            width="16"
+            height="16"
+          />
         </template>
-        <template v-slot:inactive-icon>
-          <image
-            class="u-page__item__slot-icon"
+        <template #inactive-icon>
+          <u-image
             src="https://cdn.uviewui.com/uview/common/bell.png"
-          ></image>
+            width="16"
+            height="16"
+          />
         </template>
       </u-tabbar-item>
       <u-tabbar-item text="放映厅" icon="photo"></u-tabbar-item>
@@ -78,7 +80,11 @@
       <u-tabbar-item text="我的" icon="account"></u-tabbar-item>
     </u-tabbar>
 
-    <u-text type="info" margin="10px 0" text="拦截切换事件(点击第二个标签)" />
+    <u-text
+      type="info"
+      margin="10px 0 10px 10px"
+      text="拦截切换事件(点击第二个标签)"
+    />
     <u-tabbar
       :value="value5"
       :fixed="false"
@@ -92,7 +98,7 @@
       <u-tabbar-item text="我的" icon="account"></u-tabbar-item>
     </u-tabbar>
 
-    <u-text type="info" margin="10px 0" text="去除上边框" />
+    <u-text type="info" margin="10px 0 10px 10px" text="去除上边框" />
     <u-tabbar
       :value="value7"
       :placeholder="false"
@@ -107,7 +113,11 @@
       <u-tabbar-item text="我的" icon="account"></u-tabbar-item>
     </u-tabbar>
 
-    <u-text type="info" margin="10px 0" text="固定在底部(固定在屏幕最下方)" />
+    <u-text
+      type="info"
+      margin="10px 0 10px 10px"
+      text="固定在底部(固定在屏幕最下方)"
+    />
     <u-gap height="150"></u-gap>
     <u-tabbar
       :value="value6"

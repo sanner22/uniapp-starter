@@ -1,9 +1,9 @@
 <template>
-  <view class="u-page">
-    <text class="u-demo-block__title">基础功能</text>
+  <view class="_u_px-15px">
+    <u-text type="info" margin="10px 0" text="基础功能" />
     <u-swiper :list="list1" @change="change" @click="click"></u-swiper>
 
-    <text class="u-demo-block__title">带标题</text>
+    <u-text type="info" margin="10px 0" text="带标题" />
     <u-swiper
       :list="list2"
       keyName="image"
@@ -12,14 +12,14 @@
       circular
     ></u-swiper>
 
-    <text class="u-demo-block__title">带指示器</text>
+    <u-text type="info" margin="10px 0" text="带指示器" />
     <u-swiper :list="list3" indicator indicatorMode="line" circular></u-swiper>
 
-    <text class="u-demo-block__title">加载中</text>
+    <u-text type="info" margin="10px 0" text="加载中" />
     <u-swiper :list="list3" loading></u-swiper>
 
     <!-- #ifndef APP-NVUE || MP-TOUTIAO -->
-    <text class="u-demo-block__title">卡片式</text>
+    <u-text type="info" margin="10px 0" text="卡片式" />
     <u-swiper
       :list="list3"
       previousMargin="30"
@@ -31,23 +31,24 @@
     ></u-swiper>
     <!-- #endif -->
 
-    <text class="u-demo-block__title">嵌入视频</text>
+    <u-text type="info" margin="10px 0" text="嵌入视频" />
     <u-swiper :list="list4" keyName="url" :autoplay="false"></u-swiper>
 
-    <text class="u-demo-block__title">自定义指示器</text>
+    <u-text type="info" margin="10px 0" text="自定义指示器" />
     <u-swiper
       :list="list5"
       @change="(e: any) => (current = e.current)"
       :autoplay="false"
     >
-      <!-- eslint-disable-next-line vue/no-useless-template-attributes -->
-      <template #indicator class="indicator">
-        <view
-          class="indicator__dot"
-          v-for="(item, index) in list5"
-          :key="index"
-          :class="[index === current && 'indicator__dot--active']"
-        >
+      <template #indicator>
+        <view class="indicator">
+          <view
+            class="indicator__dot"
+            v-for="(item, index) in list5"
+            :key="index"
+            :class="[index === current && 'indicator__dot--active']"
+          >
+          </view>
         </view>
       </template>
     </u-swiper>
@@ -58,17 +59,20 @@
       :autoplay="false"
       indicatorStyle="right: 20px"
     >
-      <!-- eslint-disable-next-line vue/no-useless-template-attributes -->
-      <template #indicator class="indicator-num">
-        <text class="indicator-num__text"
-          >{{ currentNum + 1 }}/{{ list6.length }}</text
-        >
+      <template #indicator>
+        <view class="indicator-num">
+          <text class="indicator-num__text">
+            {{ currentNum + 1 }}/{{ list6.length }}
+          </text>
+        </view>
       </template>
     </u-swiper>
   </view>
 </template>
 
 <script setup lang="ts">
+  import { ref } from 'vue';
+
   const list1 = [
     'https://cdn.uviewui.com/uview/swiper/swiper1.png',
     'https://cdn.uviewui.com/uview/swiper/swiper2.png',
@@ -119,8 +123,8 @@
     'https://cdn.uviewui.com/uview/swiper/swiper3.png',
     'https://cdn.uviewui.com/uview/swiper/swiper1.png',
   ];
-  const current = 0;
-  const currentNum = 0;
+  const current = ref(0);
+  const currentNum = ref(0);
 
   const change = (e: any) => {
     console.log('change', e);

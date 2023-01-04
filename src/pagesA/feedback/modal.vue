@@ -2,7 +2,7 @@
   <view>
     <u-cell-group>
       <u-cell
-        @click="showModal(index)"
+        @click="showModal(index + 1)"
         :title="item.title"
         v-for="(item, index) in list"
         :key="index"
@@ -61,7 +61,7 @@
       closeOnClickOverlay
       @confirm="confirm"
     >
-      <u-image src="/static/uview/common/logo.png" width="80" height="80" />
+      <u-image src="/static/logo.png" width="80" height="80" />
     </u-modal>
     <u-modal
       title="标题"

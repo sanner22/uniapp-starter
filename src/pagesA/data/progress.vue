@@ -27,11 +27,11 @@
     </view>
 
     <template v-if="!androidNvue">
-      <text
+      <u-text
         text="自定义样式(不支持安卓环境的nvue)"
         type="info"
         margin="10px 0"
-      ></text>
+      />
       <view>
         <u-line-progress
           height="8"
@@ -125,6 +125,7 @@
     justify-content: center;
 
     &__circle {
+      @include flex;
       width: 50px;
       height: 50px;
       background-color: #dbfbdb;

@@ -4,7 +4,7 @@
     <view class="album">
       <view class="album__avatar">
         <u-image
-          src="/static/scv/favicon.png"
+          src="/static/logo.png"
           mode="aspectFill"
           width="32"
           height="32"
@@ -24,7 +24,7 @@
     <view class="album">
       <view class="album__avatar">
         <u-image
-          src="/static/scv/favicon.png"
+          src="/static/logo.png"
           mode="aspectFill"
           width="32"
           height="32"
@@ -44,7 +44,7 @@
     <view class="album">
       <view class="album__avatar">
         <u-image
-          src="/static/scv/favicon.png"
+          src="/static/logo.png"
           mode="aspectFill"
           width="32"
           height="32"
@@ -77,7 +77,7 @@
     <view class="album">
       <view class="album__avatar">
         <u-image
-          src="/static/scv/favicon.png"
+          src="/static/logo.png"
           mode="aspectFill"
           width="32"
           height="32"
@@ -102,7 +102,7 @@
     <view class="album">
       <view class="album__avatar">
         <u-image
-          src="/static/scv/favicon.png"
+          src="/static/logo.png"
           mode="aspectFill"
           width="32"
           height="32"

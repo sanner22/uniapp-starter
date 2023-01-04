@@ -38,7 +38,7 @@
       ></u-count-to>
     </view>
     <u-grid
-      border
+      :border="true"
       align="center"
       customStyle="margin-top: 20px;margin-bottom: 20"
     >
@@ -93,13 +93,14 @@
 
   const countTo1 = ref(null);
   const start = () => {
-    (countTo1 as any).start();
+    console.log(countTo1.value);
+    (countTo1.value as any).start();
   };
   const paused = () => {
-    (countTo1 as any).stop();
+    (countTo1.value as any).stop();
   };
   const resume = () => {
-    (countTo1 as any).resume();
+    (countTo1.value as any).resume();
   };
   const end = () => {
     console.log('end');
@@ -114,6 +115,7 @@
     @include flex;
 
     &__circle {
+      @include flex;
       width: 50px;
       height: 50px;
       background-color: #dbfbdb;

@@ -1,7 +1,7 @@
 <template>
   <view>
     <view class="u-page__item">
-      <text class="u-page__item__title">基础功能</text>
+      <u-text type="info" margin="10px 0 10px 10px" text="基础功能" />
       <u-collapse @change="change" @close="close" @open="open">
         <u-collapse-item title="文档指南" name="Docs guide">
           <text class="u-collapse-content">
@@ -22,7 +22,7 @@
     </view>
 
     <view class="u-page__item">
-      <text class="u-page__item__title">展开和禁用</text>
+      <u-text type="info" margin="10px 0 10px 10px" text="展开和禁用" />
       <u-collapse :value="['2']">
         <u-collapse-item title="文档指南">
           <text class="u-collapse-content">
@@ -43,7 +43,7 @@
     </view>
 
     <view class="u-page__item">
-      <text class="u-page__item__title">手风琴模式</text>
+      <u-text type="info" margin="10px 0 10px 10px" text="手风琴模式" />
       <u-collapse accordion>
         <u-collapse-item title="文档指南">
           <text class="u-collapse-content">
@@ -64,7 +64,7 @@
     </view>
 
     <view class="u-page__item">
-      <text class="u-page__item__title">移除下划线</text>
+      <u-text type="info" margin="10px 0 10px 10px" text="移除下划线" />
       <u-collapse accordion :border="false">
         <u-collapse-item title="文档指南">
           <text class="u-collapse-content">
@@ -87,7 +87,7 @@
     <!-- 微信小程序不支持，因为微信中不支持 <slot name="title" slot="title" />的写法 -->
     <!-- #ifndef MP-WEIXIN -->
     <view class="u-page__item">
-      <text class="u-page__item__title">自定义标题和内容</text>
+      <u-text type="info" margin="10px 0 10px 10px" text="自定义标题和内容" />
       <u-collapse accordion>
         <u-collapse-item>
           <template #title>
