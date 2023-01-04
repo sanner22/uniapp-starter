@@ -387,19 +387,19 @@
 
     <u-cell-group title="其他组件">
       <u-cell
-        icon="map"
+        icon="file-text-fill"
         title="Parse 富文本解析器"
         is-link
         url="/pagesA/other/parse"
       ></u-cell>
       <u-cell
-        icon="map"
+        icon="edit-pen"
         title="CodeInput 验证码输入"
         is-link
         url="/pagesA/other/code-input"
       ></u-cell>
       <u-cell
-        icon="map"
+        icon="more-circle"
         title="Loadmore 加载更多"
         is-link
         url="/pagesA/other/loadmore"
@@ -411,24 +411,29 @@
         url="/pagesA/other/read-more"
       ></u-cell>
       <u-cell
-        icon="map"
+        icon="scan"
         title="Gap 间隔槽"
         is-link
         url="/pagesA/other/gap"
       ></u-cell>
       <u-cell
-        icon="map"
+        icon="server-man"
         title="Avatar 头像"
         is-link
         url="/pagesA/other/avatar"
       ></u-cell>
       <u-cell
-        icon="map"
+        icon="attach"
         title="Link 超链接"
         is-link
         url="/pagesA/other/link"
       ></u-cell>
-      <u-cell icon="map" title="transition 动画" is-link></u-cell>
+      <u-cell
+        icon="twitter"
+        title="transition 动画"
+        is-link
+        url="/pagesA/other/transition"
+      ></u-cell>
     </u-cell-group>
   </template>
 </template>

@@ -707,6 +707,15 @@
           "meta": {
             "ignoreAuth": true
           }
+        },
+        {
+          "path": "other/transition",
+          "style": {
+            "navigationBarTitleText": "动画"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
         }
         // #endregion
       ]
