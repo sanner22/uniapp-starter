@@ -184,15 +184,17 @@
             "ignoreAuth": true
           }
         },
-        // {
-        //   "path": "form/calendar",
-        //   "style": {
-        //     "navigationBarTitleText": "日历"
-        //   },
-        //   "meta": {
-        //     "ignoreAuth": true
-        //   }
-        // },
+        // #ifdef H5
+        {
+          "path": "form/calendar",
+          "style": {
+            "navigationBarTitleText": "日历"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        // #endif
         {
           "path": "form/keyboard",
           "style": {
@@ -247,15 +249,17 @@
             "ignoreAuth": true
           }
         },
-        // {
-        //   "path": "form/upload",
-        //   "style": {
-        //     "navigationBarTitleText": "上传"
-        //   },
-        //   "meta": {
-        //     "ignoreAuth": true
-        //   }
-        // },
+        // #ifdef H5
+        {
+          "path": "form/upload",
+          "style": {
+            "navigationBarTitleText": "上传"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        // #endif
         {
           "path": "form/code",
           "style": {
@@ -310,75 +314,81 @@
             "ignoreAuth": true
           }
         },
-        // ,{
-        //   "path": "form/slider",
-        //   "style": {
-        //     "navigationBarTitleText": "滑动选择器"
-        //   },
-        //   "meta": {
-        //     "ignoreAuth": true
-        //   }
-        // },
-        // {
-        //   "path": "form/album",
-        //   "style": {
-        //     "navigationBarTitleText": "相册"
-        //   },
-        //   "meta": {
-        //     "ignoreAuth": true
-        //   }
-        // },
+        // #ifdef H5
+        {
+          "path": "form/slider",
+          "style": {
+            "navigationBarTitleText": "滑动选择器"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        {
+          "path": "form/album",
+          "style": {
+            "navigationBarTitleText": "相册"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        // #endif
         // #endregion
 
         // #region data
-        // {
-        //   "path": "data/list",
-        //   "style": {
-        //     "navigationBarTitleText": "列表"
-        //   },
-        //   "meta": {
-        //     "ignoreAuth": true
-        //   }
-        // },
-        // {
-        //   "path": "data/progress",
-        //   "style": {
-        //     "navigationBarTitleText": "线性进度条"
-        //   },
-        //   "meta": {
-        //     "ignoreAuth": true
-        //   }
-        // },
-        // {
-        //   "path": "data/count-down",
-        //   "style": {
-        //     "navigationBarTitleText": "倒计时"
-        //   },
-        //   "meta": {
-        //     "ignoreAuth": true
-        //   }
-        // },
-        // {
-        //   "path": "data/count-to",
-        //   "style": {
-        //     "navigationBarTitleText": "数字滚动"
-        //   },
-        //   "meta": {
-        //     "ignoreAuth": true
-        //   }
-        // }
+        // #ifdef H5
+        {
+          "path": "data/list",
+          "style": {
+            "navigationBarTitleText": "列表"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        {
+          "path": "data/progress",
+          "style": {
+            "navigationBarTitleText": "线性进度条"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        {
+          "path": "data/count-down",
+          "style": {
+            "navigationBarTitleText": "倒计时"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        {
+          "path": "data/count-to",
+          "style": {
+            "navigationBarTitleText": "数字滚动"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        // #endif
         // #endregion
 
         // #region feedback
-        // {
-        //   "path": "feedback/tooltip",
-        //   "style": {
-        //     "navigationBarTitleText": "长按提示"
-        //   },
-        //   "meta": {
-        //     "ignoreAuth": true
-        //   }
-        // },
+        // #ifdef H5
+        {
+          "path": "feedback/tooltip",
+          "style": {
+            "navigationBarTitleText": "长按提示"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        // #endif
         {
           "path": "feedback/action-sheet",
           "style": {
@@ -388,15 +398,17 @@
             "ignoreAuth": true
           }
         },
-        // {
-        //   "path": "feedback/alert",
-        //   "style": {
-        //     "navigationBarTitleText": "警告提示"
-        //   },
-        //   "meta": {
-        //     "ignoreAuth": true
-        //   }
-        // },
+        // #ifdef H5
+        {
+          "path": "feedback/alert",
+          "style": {
+            "navigationBarTitleText": "警告提示"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        // #endif
         {
           "path": "feedback/toast",
           "style": {
@@ -406,42 +418,44 @@
             "ignoreAuth": true
           }
         },
-        // {
-        //   "path": "feedback/notice-bar",
-        //   "style": {
-        //     "navigationBarTitleText": "滚动通知"
-        //   },
-        //   "meta": {
-        //     "ignoreAuth": true
-        //   }
-        // },
-        // {
-        //   "path": "feedback/notify",
-        //   "style": {
-        //     "navigationBarTitleText": "notify 消息提示"
-        //   },
-        //   "meta": {
-        //     "ignoreAuth": true
-        //   }
-        // },
-        // {
-        //   "path": "feedback/swipe-action",
-        //   "style": {
-        //     "navigationBarTitleText": "滑动单元格"
-        //   },
-        //   "meta": {
-        //     "ignoreAuth": true
-        //   }
-        // },
-        // {
-        //   "path": "feedback/collapse",
-        //   "style": {
-        //     "navigationBarTitleText": "折叠面板"
-        //   },
-        //   "meta": {
-        //     "ignoreAuth": true
-        //   }
-        // },
+        // #ifdef H5
+        {
+          "path": "feedback/notice-bar",
+          "style": {
+            "navigationBarTitleText": "滚动通知"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        {
+          "path": "feedback/notify",
+          "style": {
+            "navigationBarTitleText": "notify 消息提示"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        {
+          "path": "feedback/swipe-action",
+          "style": {
+            "navigationBarTitleText": "滑动单元格"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        {
+          "path": "feedback/collapse",
+          "style": {
+            "navigationBarTitleText": "折叠面板"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        // #endif
         {
           "path": "feedback/popup",
           "style": {
@@ -451,24 +465,26 @@
             "ignoreAuth": true
           }
         },
-        // {
-        //   "path": "feedback/modal",
-        //   "style": {
-        //     "navigationBarTitleText": "模态框"
-        //   },
-        //   "meta": {
-        //     "ignoreAuth": true
-        //   }
-        // },
-        // {
-        //   "path": "layout/scroll-list",
-        //   "style": {
-        //     "navigationBarTitleText": "横向滚动列表"
-        //   },
-        //   "meta": {
-        //     "ignoreAuth": true
-        //   }
-        // },
+        // #ifdef H5
+        {
+          "path": "feedback/modal",
+          "style": {
+            "navigationBarTitleText": "模态框"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        {
+          "path": "layout/scroll-list",
+          "style": {
+            "navigationBarTitleText": "横向滚动列表"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        // #endif
         {
           "path": "layout/line",
           "style": {
@@ -487,15 +503,17 @@
             "ignoreAuth": true
           }
         },
-        // {
-        //   "path": "layout/no-network",
-        //   "style": {
-        //     "navigationBarTitleText": "无网络提示"
-        //   },
-        //   "meta": {
-        //     "ignoreAuth": true
-        //   }
-        // },
+        // #ifdef H5
+        {
+          "path": "layout/no-network",
+          "style": {
+            "navigationBarTitleText": "无网络提示"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        // #endif
         {
           "path": "layout/grid",
           "style": {
@@ -505,15 +523,17 @@
             "ignoreAuth": true
           }
         },
-        // {
-        //   "path": "layout/swiper",
-        //   "style": {
-        //     "navigationBarTitleText": "轮播图"
-        //   },
-        //   "meta": {
-        //     "ignoreAuth": true
-        //   }
-        // },
+        // #ifdef H5
+        {
+          "path": "layout/swiper",
+          "style": {
+            "navigationBarTitleText": "轮播图"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        // #endif
         {
           "path": "layout/skeleton",
           "style": {
@@ -523,45 +543,49 @@
             "ignoreAuth": true
           }
         },
-        // {
-        //   "path": "layout/sticky",
-        //   "style": {
-        //     "navigationBarTitleText": "吸顶"
-        //   },
-        //   "meta": {
-        //     "ignoreAuth": true
-        //   }
-        // },
-        // {
-        //   "path": "layout/divider",
-        //   "style": {
-        //     "navigationBarTitleText": "分割线"
-        //   },
-        //   "meta": {
-        //     "ignoreAuth": true
-        //   }
-        // },
+        // #ifdef H5
+        {
+          "path": "layout/sticky",
+          "style": {
+            "navigationBarTitleText": "吸顶"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        {
+          "path": "layout/divider",
+          "style": {
+            "navigationBarTitleText": "分割线"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        // #endif
         // #endregion
 
         // #region 导航组件
-        // {
-        //   "path": "nav/tabbar",
-        //   "style": {
-        //     "navigationBarTitleText": "底部导航栏"
-        //   },
-        //   "meta": {
-        //     "ignoreAuth": true
-        //   }
-        // },
-        // {
-        //   "path": "nav/back-top",
-        //   "style": {
-        //     "navigationBarTitleText": "返回顶部"
-        //   },
-        //   "meta": {
-        //     "ignoreAuth": true
-        //   }
-        // },
+        // #ifdef H5
+        {
+          "path": "nav/tabbar",
+          "style": {
+            "navigationBarTitleText": "底部导航栏"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        {
+          "path": "nav/back-top",
+          "style": {
+            "navigationBarTitleText": "返回顶部"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        // #endif
         {
           "path": "nav/navbar",
           "style": {
@@ -571,42 +595,44 @@
             "ignoreAuth": true
           }
         },
-        // {
-        //   "path": "nav/tabs",
-        //   "style": {
-        //     "navigationBarTitleText": "标签"
-        //   },
-        //   "meta": {
-        //     "ignoreAuth": true
-        //   }
-        // },
-        // {
-        //   "path": "nav/subsection",
-        //   "style": {
-        //     "navigationBarTitleText": "分段器"
-        //   },
-        //   "meta": {
-        //     "ignoreAuth": true
-        //   }
-        // },
-        // {
-        //   "path": "nav/index-list",
-        //   "style": {
-        //     "navigationBarTitleText": "索引列表"
-        //   },
-        //   "meta": {
-        //     "ignoreAuth": true
-        //   }
-        // },
-        // {
-        //   "path": "nav/steps",
-        //   "style": {
-        //     "navigationBarTitleText": "步骤条"
-        //   },
-        //   "meta": {
-        //     "ignoreAuth": true
-        //   }
-        // },
+        // #ifdef H5
+        {
+          "path": "nav/tabs",
+          "style": {
+            "navigationBarTitleText": "标签"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        {
+          "path": "nav/subsection",
+          "style": {
+            "navigationBarTitleText": "分段器"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        {
+          "path": "nav/index-list",
+          "style": {
+            "navigationBarTitleText": "索引列表"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        {
+          "path": "nav/steps",
+          "style": {
+            "navigationBarTitleText": "步骤条"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        // #endif
         {
           "path": "nav/empty",
           "style": {
