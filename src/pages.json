@@ -671,6 +671,15 @@
           "meta": {
             "ignoreAuth": true
           }
+        },
+        {
+          "path": "other/read-more",
+          "style": {
+            "navigationBarTitleText": "阅读更多"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
         }
         // #endregion
       ]
