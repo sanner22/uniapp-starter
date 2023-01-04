@@ -625,6 +625,7 @@
             "ignoreAuth": true
           }
         },
+        // #endif
         {
           "path": "nav/steps",
           "style": {
@@ -634,7 +635,6 @@
             "ignoreAuth": true
           }
         },
-        // #endif
         {
           "path": "nav/empty",
           "style": {
