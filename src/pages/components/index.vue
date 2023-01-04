@@ -392,7 +392,12 @@
         is-link
         url="/pagesA/other/parse"
       ></u-cell>
-      <u-cell icon="map" title="CodeInput 验证码输入" is-link></u-cell>
+      <u-cell
+        icon="map"
+        title="CodeInput 验证码输入"
+        is-link
+        url="/pagesA/other/code-input"
+      ></u-cell>
       <u-cell icon="map" title="Loadmore 加载更多" is-link></u-cell>
       <u-cell icon="map" title="ReadMore 展开阅读更多" is-link></u-cell>
       <u-cell icon="map" title="Gap 间隔槽" is-link></u-cell>
