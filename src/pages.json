@@ -662,6 +662,15 @@
           "meta": {
             "ignoreAuth": true
           }
+        },
+        {
+          "path": "other/loadmore",
+          "style": {
+            "navigationBarTitleText": "加载更多"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
         }
         // #endregion
       ]

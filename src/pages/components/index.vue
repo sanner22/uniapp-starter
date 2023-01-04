@@ -398,7 +398,12 @@
         is-link
         url="/pagesA/other/code-input"
       ></u-cell>
-      <u-cell icon="map" title="Loadmore 加载更多" is-link></u-cell>
+      <u-cell
+        icon="map"
+        title="Loadmore 加载更多"
+        is-link
+        url="/pagesA/other/loadmore"
+      ></u-cell>
       <u-cell icon="map" title="ReadMore 展开阅读更多" is-link></u-cell>
       <u-cell icon="map" title="Gap 间隔槽" is-link></u-cell>
       <u-cell icon="map" title="Avatar 头像" is-link></u-cell>
