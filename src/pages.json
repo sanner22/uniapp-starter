@@ -213,6 +213,7 @@
             "ignoreAuth": true
           }
         },
+        // #ifdef H5
         {
           "path": "form/datetime-picker",
           "style": {
@@ -222,6 +223,7 @@
             "ignoreAuth": true
           }
         },
+        // #endif
         {
           "path": "form/rate",
           "style": {
@@ -645,6 +647,7 @@
         // #endregion
 
         // #region other
+        // #ifdef H5
         {
           "path": "other/parse",
           "style": {
@@ -654,6 +657,7 @@
             "ignoreAuth": true
           }
         },
+        // #endif
         {
           "path": "other/code-input",
           "style": {
@@ -672,6 +676,7 @@
             "ignoreAuth": true
           }
         },
+        // #ifdef H5
         {
           "path": "other/read-more",
           "style": {
@@ -681,6 +686,7 @@
             "ignoreAuth": true
           }
         },
+        // #endif
         {
           "path": "other/gap",
           "style": {
