@@ -69,22 +69,6 @@
 </template>
 
 <script setup lang="ts">
-  const list = [
-    {
-      // image: 'https://cdn.uviewui.com/uview/resources/video.mp4',
-      image: 'https://cdn.uviewui.com/uview/swiper/swiper1.png',
-      title: '昨夜星辰昨夜风，画楼西畔桂堂东',
-      poster: 'https://cdn.uviewui.com/uview/swiper/swiper1.png',
-    },
-    {
-      image: 'https://cdn.uviewui.com/uview/swiper/swiper2.png',
-      title: '身无彩凤双飞翼，心有灵犀一点通',
-    },
-    {
-      image: 'https://cdn.uviewui.com/uview/swiper/swiper3.png',
-      title: '谁念西风独自凉，萧萧黄叶闭疏窗，沉思往事立残阳',
-    },
-  ];
   const list1 = [
     'https://cdn.uviewui.com/uview/swiper/swiper1.png',
     'https://cdn.uviewui.com/uview/swiper/swiper2.png',
