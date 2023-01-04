@@ -680,6 +680,15 @@
           "meta": {
             "ignoreAuth": true
           }
+        },
+        {
+          "path": "other/gap",
+          "style": {
+            "navigationBarTitleText": "间隔槽"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
         }
         // #endregion
       ]
