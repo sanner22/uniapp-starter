@@ -1,25 +1,28 @@
+# uniapp vue next starter
+
 ## 简介
 
-- **uni-app Vue3 Vite TypeScript 基础框架** 
-- cli创建的Vue3/Vite项目 与 使用HBuilderX导入插件 的包有差异,请直接访问 [开源地址](https://gitee.com/h_mo/uniapp-vue3-vite-ts-template)
-
+- **uniapp Vue3 TypeScript 快速开发框架**
+- cli 创建的 Vue3/ts 项目 与 使用 HBuilderX 导入插件 的包有差异,请直接访问 [开源地址](https://gitee.com/time-network/uniapp-vue-next-starter)
 
 ### 说明
-- 框架完全基于Vue3 SFC `<script setup>` 写法,不支持Vue2;
+
+- 框架完全基于 Vue3 SFC `<script setup>` 语法糖写法(包含示例页面)，不支持 Vue2;
 - 可用于学习与交流;
-- 目前测试H5、微信小程序,APP(Android),支付宝小程序通过;
+- 目前测试 H5、微信小程序,APP(Android),支付宝小程序通过;
 - 其他平台暂未测试,后续会增加;
-- 如发现问题或建议可在评论区留言, 或提[Issues](https://gitee.com/h_mo/uniapp-vue3-vite-ts-template/issues)及[PR](https://gitee.com/h_mo/uniapp-vue3-vite-ts-template/pulls),会及时处理;
+- 如发现问题或建议可在评论区留言, 或提 [Issues](https://gitee.com/time-network/uniapp-vue-next-starter/issues) 及 [PR](https://gitee.com/time-network/uniapp-vue-next-starter/pulls)，会及时处理;
 - 如有需求亦可在评论区留言,或在此项目基础上增加;
 
 ## 特性
 
 - **最新技术栈**：使用 Vue3/Vite4/pinia ,TypeScript 等前端前沿技术开发;
-- **[Unocss](https://github.com/unocss/unocss)**: 原子化CSS, [iconify](https://github.com/iconify/iconify)图标
+- **UI集成**: 集成 [uView-plus](https://uiadmin.net/uview-plus/) v3 UI 组件，扩展 vView 在 UNI 中的使用（后期加入 uView 更多 ts 支持）;
+- **[Unocss](https://github.com/unocss/unocss)**: 原子化 CSS，[iconify](https://github.com/iconify/iconify) 图标;
 - **Eslint/Prettier**: 规范代码格式,统一编码;
-- **路由拦截**: 基于uni.addInterceptor进行路由拦截;
+- **路由拦截**: 基于 uni.addInterceptor 进行路由拦截;
 - **请求拦截**: 核心使用 [luch-request](https://ext.dcloud.net.cn/plugin?id=392),支持请求和响应拦截等;
-- **缓存加密**: 使用AES加密缓存,可设置区分在开发或生成环境中是否加密;
+- **缓存加密**: 使用 AES 加密缓存,可设置区分在开发或生成环境中是否加密;
 
 ## 目录结构
 
@@ -29,46 +32,49 @@
 │   ├─assets # 静态资源目录
 │   │
 │   ├─components # 组件目录
-│   │   ├─ BasicButton
+│   │   ├─ AppProvider
 │   │   │    ├─index.vue
-│   │   │    └─prpos.ts
 │   │   └─...
-│   │ 
+│   │
 │   ├─enums # 枚举/常量
-│   │   ├─ cacheEnum.ts
+│   │   ├─ appEnum.ts
 │   │   └─...
-│   │ 
+│   │
+│   ├─hooks # 钩子
+│   │   ├─ router.ts
+│   │   └─...
+│   │
 │   ├─pages # 页面
 │   │   ├─ index
 │   │   │    └─index.vue
 │   │   └─...
-│   │ 
+│   │
 │   ├─services # 接口相关
-│   │   ├─ api # api  
+│   │   ├─ api # api
 │   │   │    ├─auth.ts
 │   │   │    └─...
 │   │   │
-│   │   └─ model # 数据模型  
+│   │   └─ model # 数据模型
 │   │        ├─authModel.d.ts
 │   │        └─...
-│   │ 
+│   │
 │   ├─settings # 设置
-│   │   └─ encryptionSetting # 加密设置  
+│   │   └─ encryptionSetting # 加密设置
 │   │
 │   ├─state # 状态管理模式(pinia)
-│   │   ├─ modules # 数据模块  
+│   │   ├─ modules # 数据模块
 │   │   │    ├─auth.ts
 │   │   │    └─...
 │   │   │
 │   │   └─ index.ts
-│   │ 
+│   │
 │   ├─static # 静态公共文件
-│   │   ├─ images # 图片  
+│   │   ├─ images # 图片
 │   │   │    ├─avatar.png
 │   │   │    └─...
 │   │   │
 │   │   └─ ...
-│   │   
+│   │
 │   ├─types # 类型文件
 │   │   ├─ http.d.ts
 │   │   └─ ...
@@ -89,29 +95,25 @@
 ├─ .prettierrc.js
 ├─ favicon.ico
 ├─ index.html
+├─ LICENSE
 ├─ package.json
 ├─ pnpm-lock.yaml
 ├─ README.md
-├─ tree.txt
 ├─ tsconfig.json
+├─ unocss.config.js
 └─ vite.config.ts
 
 ```
-
-
 
 ## 预览
 
 - H5
 
-  ![h5](https://api-catch.ranesuangyu.top/images/20220621/364f2b47d91ae5ae82a33d33854e2540.png
-  ) 
+  ![h5](./src/static/images/h5Qcode.png)
 
 - 小程序(体验版-需申请体验)
 
-  ![小程序](http://api-catch.ranesuangyu.top/images/20220621/8d4388315ef5b8630d0c0b3963d1ba6b.jpg)
-
-  
+  ![小程序](./src/static/images/wexinQcode.jpg)
 
 ## 安装使用
 
