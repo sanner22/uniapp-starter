@@ -3,14 +3,19 @@
   <u-navbar title="首页" bg-color="#f6f6f6" placeholder>
     <template #left>
       <view class="mp-weixin-menu">
-        <u-icon name="arrow-left" size="18" color="black" />
+        <u-icon
+          name="arrow-left"
+          size="18"
+          color="black"
+          @click="backMenuClick"
+        />
         <u-line
           direction="column"
           :hairline="false"
           length="16"
           margin="0 8px"
         />
-        <u-icon name="home" size="20" color="black" />
+        <u-icon name="home" size="20" color="black" @click="homeMenuClick" />
       </view>
     </template>
   </u-navbar>
@@ -33,7 +38,7 @@
       />
     </view>
 
-    <view class="_u_center _u_flex-wrap _u_gap-1 _u_mt-40px">
+    <view class="_u_center _u_flex-wrap _u_gap-5px _u_mt-40px">
       <u-tag
         bg-color="#42d392"
         border-color="#42d392"
@@ -91,7 +96,7 @@
       />
     </view>
 
-    <view class="_u_center _u_gap-2 _u_mt-40px">
+    <view class="_u_center _u_gap-15px _u_mt-40px">
       <view>
         <u-button
           type="primary"
@@ -119,12 +124,21 @@
   import { useRouter } from '@/hooks/router';
   import { CURRENT_PLATFORM, PLATFORMS } from '@/enums/platformEnum';
   import { judgePlatform } from '@/utils/platform';
+  import { Toast } from '@/utils/uniapi/prompt';
 
   const platform = CURRENT_PLATFORM;
   const isVue3 = judgePlatform(PLATFORMS.VUE3);
   const uViewVersion = uni.$u.config.v;
 
   const router = useRouter();
+
+  const backMenuClick = () => {
+    Toast('点击了 back 菜单');
+  };
+
+  const homeMenuClick = () => {
+    Toast('点击了 home 菜单');
+  };
 
   const handleGetStarted = () => {
     router.pushTab('/pages/components/index');
