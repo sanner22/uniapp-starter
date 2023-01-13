@@ -2,8 +2,8 @@
 declare module 'uview-plus';
 
 // 为 UniApp.Uni 扩展 $u 属性
-declare namespace UniApp {
-  export interface Uni {
+declare namespace UniNamespace {
+  export interface UniInterface {
     $u?: any;
   }
 }
