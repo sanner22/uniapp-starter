@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@dcloudio/types': ^3.0.17
+  '@dcloudio/types': ^3.2.7
   '@dcloudio/uni-app': 3.0.0-alpha-3061720230111001
   '@dcloudio/uni-app-plus': 3.0.0-alpha-3061720230111001
   '@dcloudio/uni-automator': 3.0.0-alpha-3061720230111001
