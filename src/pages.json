@@ -184,7 +184,6 @@
             "ignoreAuth": true
           }
         },
-        // #ifdef H5
         {
           "path": "form/calendar",
           "style": {
@@ -194,7 +193,6 @@
             "ignoreAuth": true
           }
         },
-        // #endif
         {
           "path": "form/keyboard",
           "style": {
@@ -213,7 +211,6 @@
             "ignoreAuth": true
           }
         },
-        // #ifdef H5
         {
           "path": "form/datetime-picker",
           "style": {
@@ -223,7 +220,6 @@
             "ignoreAuth": true
           }
         },
-        // #endif
         {
           "path": "form/rate",
           "style": {
@@ -251,7 +247,6 @@
             "ignoreAuth": true
           }
         },
-        // #ifdef H5
         {
           "path": "form/upload",
           "style": {
@@ -261,7 +256,6 @@
             "ignoreAuth": true
           }
         },
-        // #endif
         {
           "path": "form/code",
           "style": {
@@ -316,7 +310,6 @@
             "ignoreAuth": true
           }
         },
-        // #ifdef H5
         {
           "path": "form/slider",
           "style": {
@@ -335,11 +328,9 @@
             "ignoreAuth": true
           }
         },
-        // #endif
         // #endregion
 
         // #region data
-        // #ifdef H5
         {
           "path": "data/list",
           "style": {
@@ -376,11 +367,9 @@
             "ignoreAuth": true
           }
         },
-        // #endif
         // #endregion
 
         // #region feedback
-        // #ifdef H5
         {
           "path": "feedback/tooltip",
           "style": {
@@ -390,7 +379,6 @@
             "ignoreAuth": true
           }
         },
-        // #endif
         {
           "path": "feedback/action-sheet",
           "style": {
@@ -400,7 +388,6 @@
             "ignoreAuth": true
           }
         },
-        // #ifdef H5
         {
           "path": "feedback/alert",
           "style": {
@@ -410,7 +397,6 @@
             "ignoreAuth": true
           }
         },
-        // #endif
         {
           "path": "feedback/toast",
           "style": {
@@ -420,7 +406,6 @@
             "ignoreAuth": true
           }
         },
-        // #ifdef H5
         {
           "path": "feedback/notice-bar",
           "style": {
@@ -457,7 +442,6 @@
             "ignoreAuth": true
           }
         },
-        // #endif
         {
           "path": "feedback/popup",
           "style": {
@@ -467,7 +451,6 @@
             "ignoreAuth": true
           }
         },
-        // #ifdef H5
         {
           "path": "feedback/modal",
           "style": {
@@ -486,7 +469,6 @@
             "ignoreAuth": true
           }
         },
-        // #endif
         {
           "path": "layout/line",
           "style": {
@@ -505,7 +487,6 @@
             "ignoreAuth": true
           }
         },
-        // #ifdef H5
         {
           "path": "layout/no-network",
           "style": {
@@ -515,7 +496,6 @@
             "ignoreAuth": true
           }
         },
-        // #endif
         {
           "path": "layout/grid",
           "style": {
@@ -525,7 +505,6 @@
             "ignoreAuth": true
           }
         },
-        // #ifdef H5
         {
           "path": "layout/swiper",
           "style": {
@@ -535,7 +514,6 @@
             "ignoreAuth": true
           }
         },
-        // #endif
         {
           "path": "layout/skeleton",
           "style": {
@@ -545,7 +523,6 @@
             "ignoreAuth": true
           }
         },
-        // #ifdef H5
         {
           "path": "layout/sticky",
           "style": {
@@ -564,11 +541,9 @@
             "ignoreAuth": true
           }
         },
-        // #endif
         // #endregion
 
         // #region nav
-        // #ifdef H5
         {
           "path": "nav/tabbar",
           "style": {
@@ -587,7 +562,6 @@
             "ignoreAuth": true
           }
         },
-        // #endif
         {
           "path": "nav/navbar",
           "style": {
@@ -597,7 +571,6 @@
             "ignoreAuth": true
           }
         },
-        // #ifdef H5
         {
           "path": "nav/tabs",
           "style": {
@@ -625,7 +598,6 @@
             "ignoreAuth": true
           }
         },
-        // #endif
         {
           "path": "nav/steps",
           "style": {
@@ -647,7 +619,6 @@
         // #endregion
 
         // #region other
-        // #ifdef H5
         {
           "path": "other/parse",
           "style": {
@@ -657,7 +628,6 @@
             "ignoreAuth": true
           }
         },
-        // #endif
         {
           "path": "other/code-input",
           "style": {
@@ -676,7 +646,6 @@
             "ignoreAuth": true
           }
         },
-        // #ifdef H5
         {
           "path": "other/read-more",
           "style": {
@@ -686,7 +655,6 @@
             "ignoreAuth": true
           }
         },
-        // #endif
         {
           "path": "other/gap",
           "style": {
