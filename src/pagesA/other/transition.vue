@@ -2,7 +2,6 @@
   <view>
     <u-cell-group :border="true">
       <u-cell
-        :titleStyle="{ fontWeight: 500 }"
         @click="openTransition(item.mode)"
         :title="item.title"
         v-for="(item, index) in list"
@@ -130,11 +129,7 @@
   };
 </script>
 
-<style lang="scss">
-  .u-page {
-    padding: 0;
-  }
-
+<style lang="scss" scoped>
   .transition {
     background-color: $u-primary;
   }

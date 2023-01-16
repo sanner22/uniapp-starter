@@ -118,11 +118,4 @@
   });
 </script>
 
-<style lang="scss" scoped>
-  .u-page {
-    height: 1200px;
-    &__backTop-item {
-      margin-top: 10px;
-    }
-  }
-</style>
+<style lang="scss" scoped></style>

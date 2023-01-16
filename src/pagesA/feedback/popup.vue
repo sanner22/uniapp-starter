@@ -2,13 +2,12 @@
   <view>
     <u-cell-group>
       <u-cell
-        :titleStyle="{ fontWeight: 500 }"
         @click="openPopup(item.popupData)"
         :title="item.title"
         v-for="(item, index) in list"
         :key="index"
         :icon="item.iconUrl"
-        isLink
+        is-link
       />
     </u-cell-group>
 

@@ -6,13 +6,10 @@
         :title="item.title"
         v-for="(item, index) in list"
         :key="index"
+        :icon="item.iconUrl"
         is-link
         @click="openLoadingPage(index)"
-      >
-        <template #icon>
-          <u-image :src="item.iconUrl" mode="widthFix" width="16" height="16" />
-        </template>
-      </u-cell>
+      />
     </u-cell-group>
 
     <u-loading-page

@@ -1,9 +1,7 @@
 <template>
-  <view class="u-page">
-    <u-gap height="30" bgColor="#fff"></u-gap>
+  <view>
     <u-cell-group>
       <u-cell
-        :titleStyle="{ fontWeight: 500 }"
         @click="openNotify(item.notifyData)"
         :title="item.title"
         v-for="(item, index) in list"

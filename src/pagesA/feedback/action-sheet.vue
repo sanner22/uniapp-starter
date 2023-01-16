@@ -1,23 +1,16 @@
 <template>
-  <view class="u-page">
+  <view>
     <u-cell-group>
       <u-cell
         @click="openSheet(index)"
         :title="item.title"
         v-for="(item, index) in list"
         :key="index"
-        isLink
-      >
-        <template #icon>
-          <u-image
-            :src="item.iconUrl"
-            mode="widthFix"
-            width="16"
-            height="16"
-          ></u-image>
-        </template>
-      </u-cell>
+        :icon="item.iconUrl"
+        is-link
+      />
     </u-cell-group>
+
     <u-action-sheet
       :show="pickerName === 'show0'"
       @close="close"

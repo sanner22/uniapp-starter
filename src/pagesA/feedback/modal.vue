@@ -7,7 +7,7 @@
         v-for="(item, index) in list"
         :key="index"
         :icon="item.iconUrl"
-        isLink
+        is-link
       />
     </u-cell-group>
 

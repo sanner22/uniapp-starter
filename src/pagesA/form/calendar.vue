@@ -7,12 +7,9 @@
         v-for="(item, index) in list"
         :key="index"
         :label="values[index]"
-        isLink
-      >
-        <template #icon>
-          <t-image :src="item.iconUrl" mode="widthFix" />
-        </template>
-      </u-cell>
+        :icon="item.iconUrl"
+        is-link
+      />
     </u-cell-group>
 
     <u-calendar

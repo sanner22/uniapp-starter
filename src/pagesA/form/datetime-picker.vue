@@ -6,12 +6,9 @@
         :title="item.title"
         v-for="(item, index) in list"
         :key="index"
-        isLink
-      >
-        <template #icon>
-          <u-image :src="item.iconUrl" mode="widthFix" width="16" height="16" />
-        </template>
-      </u-cell>
+        :icon="item.iconUrl"
+        is-link
+      />
     </u-cell-group>
 
     <u-datetime-picker

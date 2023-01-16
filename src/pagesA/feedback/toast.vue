@@ -2,11 +2,10 @@
   <view>
     <u-cell-group title-bg-color="rgb(243, 244, 246)">
       <u-cell
-        :titleStyle="{ fontWeight: 500 }"
         :title="item.title"
         v-for="(item, index) in list"
         :key="index"
-        isLink
+        is-link
         :icon="item.iconUrl"
         @click="showToast(item)"
       >
