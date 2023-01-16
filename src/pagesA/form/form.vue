@@ -177,15 +177,17 @@
     <u-button
       type="primary"
       text="提交"
-      customStyle="margin-top: 30px"
+      customStyle="margin-top: 15px"
       @click="submit"
     />
     <u-button
       type="error"
       text="重置"
-      customStyle="margin-top: 10px"
+      customStyle="margin-top: 15px"
       @click="reset"
     />
+
+    <u-gap height="30" />
 
     <u-action-sheet
       :show="pickerName === 'sex'"
@@ -206,7 +208,6 @@
       @select="sexSelect"
     />
 
-    <!-- #ifdef APP-PLUS -->
     <u-calendar
       :show="pickerName === 'hotel'"
       mode="range"
@@ -217,7 +218,6 @@
       @confirm="calendarConfirm"
       @close="calendarClose"
     />
-    <!-- #endif -->
 
     <u-code
       ref="uCode1"
@@ -227,7 +227,6 @@
       @end="disabled1 = false"
     />
 
-    <!-- #ifdef APP-PLUS -->
     <u-datetime-picker
       :show="pickerName === 'birthday'"
       :value="birthday"
@@ -237,7 +236,6 @@
       @cancel="pickerName = ''"
       @close="pickerName = ''"
     />
-    <!-- #endif -->
   </view>
 </template>
 
