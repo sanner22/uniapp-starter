@@ -320,7 +320,7 @@
       />
       <u-cell
         icon="home-fill"
-        title="Nabbar 导航栏"
+        title="Navbar 导航栏"
         is-link
         url="/pagesA/nav/navbar"
       />
