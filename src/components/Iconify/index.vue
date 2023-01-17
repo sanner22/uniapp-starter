@@ -36,7 +36,7 @@
     ref="elRef"
     @click="onClick"
     :class="['iconify', icon]"
-    :style="style"
+    :style="(style as any)"
   ></view>
 </template>
 <style lang="scss" scoped>

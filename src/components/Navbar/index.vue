@@ -103,7 +103,7 @@
                 <iconify
                   @click="onBack"
                   :size="navbarLeftIconSize"
-                  :color="navbarTitleColor"
+                  :color="(navbarTitleColor as string)"
                   icon="i-humbleicons-chevron-left"
                 />
               </template>
@@ -111,7 +111,7 @@
                 <iconify
                   @click="onBackHome"
                   :size="navbarLeftIconSize"
-                  :color="navbarTitleColor"
+                  :color="(navbarTitleColor as string)"
                   icon="i-iconoir-home-simple-door"
                 />
               </template>
