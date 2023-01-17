@@ -1,29 +1,27 @@
+<template>
+  <view ref="elRef" @click="onClick" :class="['iconify', icon]"></view>
+</template>
+
 <script lang="ts" setup name="Iconify">
-  import { computed, ref, unref } from 'vue';
-  import { assign } from 'lodash-es';
+  import { isNumber } from '@/utils/is';
+  import { computed } from 'vue';
 
   const props = defineProps({
     icon: {
       type: String,
+      required: true,
     },
     size: {
       type: [Number, String],
+      default: '44rpx',
     },
     color: {
       type: String,
     },
   });
 
-  const iconSize = ref<string | boolean>(
-    props.size ? `${props.size}rpx` : false,
-  );
-  const style = computed(() => {
-    return assign(
-      unref(iconSize)
-        ? { width: unref(iconSize), height: unref(iconSize) }
-        : {},
-      props.color ? { color: props.color } : {},
-    );
+  const _size = computed(() => {
+    return isNumber(props.size) ? `${props.size}px` : props.size;
   });
 
   const emit = defineEmits(['click']);
@@ -31,21 +29,14 @@
     emit('click');
   };
 </script>
-<template>
-  <view
-    ref="elRef"
-    @click="onClick"
-    :class="['iconify', icon]"
-    :style="(style as any)"
-  ></view>
-</template>
+
 <style lang="scss" scoped>
   .iconify {
     display: inline-block;
     vertical-align: middle;
-    height: 44rpx;
-    width: 44rpx;
-    color: inherit;
+    height: v-bind('_size');
+    width: v-bind('_size');
+    color: v-bind('color');
     &:hover {
       cursor: pointer;
       opacity: 0.8;
