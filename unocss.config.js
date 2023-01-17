@@ -55,11 +55,24 @@ export default defineConfig({
   ],
   theme: {},
   transformers: [
+    // https://github.com/unocss/unocss/tree/main/packages/transformer-directives
+    // transformerDirectives(),
+
+    // https://github.com/MellowCo/unocss-preset-weapp/tree/main/src/transformer/transformerAttributify
     transformerAttributify({
-      classPrefix: prefix,
-      transformRules,
-      nonValuedAttribute: true,
+      classPrefix: prefix, // 为生成的class选择器添加前缀, ''
+      transformRules, // 自定义转换规则
+      nonValuedAttribute: false, // 支持匹配非值属性, true
+      // attributes: [], // 需要转换的属性列表, ['bg', 'flex', 'grid', 'border', 'text', 'font', 'class', 'className', 'p', 'm', 'animate']
+      // exclude: [], // 排除转换目标, [/[\\/]node_modules[\\/]/, /[\\/]\.git[\\/]/]
+      // prefix: '',
+      // ignoreNonValuedAttributes: [], // 忽略的非值属性列表, ['class']
+      // include: [], // 需要转换的目标, [/\.vue$/,  /\.vue\?vue/]
+      // prefixedOnly: true, // 仅匹配前缀属性, false
+      // transformEscape: true, // 转换转义字符, true
     }),
+
+    // https://github.com/MellowCo/unocss-preset-weapp/tree/main/src/transformer/transformerClass
     transformerClass({
       transformRules,
     }),
