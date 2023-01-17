@@ -1,7 +1,7 @@
 <template>
-  <view class="_u_px-15px">
+  <view class="uno-px-15px">
     <u-text text="基础功能" type="info" margin="10px 0" />
-    <view class="_u_flex _u_gap-15px">
+    <view class="uno-flex uno-gap-15px">
       <view>
         <u-switch v-model="value1" @change="change"></u-switch>
         {{ value1 }}
@@ -13,7 +13,7 @@
     </view>
 
     <u-text text="加载中" type="info" margin="10px 0" />
-    <view class="_u_flex _u_gap-15px">
+    <view class="uno-flex uno-gap-15px">
       <view>
         <u-switch v-model="value3" loading></u-switch>
       </view>
@@ -23,7 +23,7 @@
     </view>
 
     <u-text text="禁用状态" type="info" margin="10px 0" />
-    <view class="_u_flex _u_gap-15px">
+    <view class="uno-flex uno-gap-15px">
       <view>
         <u-switch v-model="value5" disabled></u-switch>
       </view>
@@ -33,7 +33,7 @@
     </view>
 
     <u-text text="自定义尺寸" type="info" margin="10px 0" />
-    <view class="_u_flex _u_gap-15px">
+    <view class="uno-flex uno-gap-15px">
       <view>
         <u-switch v-model="value7" size="28"></u-switch>
       </view>
@@ -43,7 +43,7 @@
     </view>
 
     <u-text text="自定义颜色" type="info" margin="10px 0" />
-    <view class="_u_flex _u_gap-15px">
+    <view class="uno-flex uno-gap-15px">
       <view>
         <u-switch v-model="value9" activeColor="#f56c6c" loading></u-switch>
       </view>
@@ -53,7 +53,7 @@
     </view>
 
     <u-text text="自定义样式" type="info" margin="10px 0" />
-    <view class="_u_flex _u_gap-15px">
+    <view class="uno-flex uno-gap-15px">
       <view>
         <u-switch
           :space="2"
@@ -73,7 +73,7 @@
     </view>
 
     <u-text text="异步控制" type="info" margin="10px 0" />
-    <view class="_u_flex _u_gap-15px">
+    <view class="uno-flex uno-gap-15px">
       <u-switch v-model="value13" asyncChange @change="asyncChange"></u-switch>
     </view>
   </view>

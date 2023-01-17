@@ -26,7 +26,7 @@ const transformRules = {
   ',': '-r222-',
 };
 
-const prefix = `_u_`;
+const prefix = `uno-`;
 
 export default defineConfig({
   presets: [
@@ -46,10 +46,11 @@ export default defineConfig({
   ],
   shortcuts: [
     {
-      'border-base': 'border border-gray-500_10',
-      '_u_z-tar-both': '_u_z-988',
-      '_u_head-fixed': '_u_fixed _u_top-0 _u_left-0 _u_w-full _u_z-tar-both',
-      _u_center: '_u_flex _u_justify-center _u_items-center',
+      'uno-border-base': 'uno-border uno-border-gray-500_10',
+      'uno-z-tar-both': 'uno-z-988',
+      'uno-head-fixed':
+        'uno-fixed uno-top-0 uno-left-0 uno-w-full uno-z-tar-both',
+      'uno-center': 'uno-flex uno-justify-center uno-items-center',
     },
   ],
   theme: {},

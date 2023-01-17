@@ -1,5 +1,5 @@
 <template>
-  <view class="_u_px-15px">
+  <view class="uno-px-15px">
     <u-text text="基础使用" margin="10px 0" />
     <u-text type="content" text="滚动页面,即可看到下方的按钮会吸顶。"></u-text>
     <u-gap height="30" />
@@ -16,7 +16,7 @@
     </u-sticky>
 
     <u-gap bgColor="#fff" height="1500px"></u-gap>
-    <view class="_u_flex-row _u_pb-15px _u_w-full">
+    <view class="uno-flex-row uno-pb-15px uno-w-full">
       <u-divider text="已到底部" custom-style="flex:1" />
     </view>
   </view>

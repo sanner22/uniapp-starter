@@ -1,7 +1,7 @@
 <template>
-  <view class="_u_px-15px">
+  <view class="uno-px-15px">
     <u-text type="info" text="基础功能" margin="10px 0" />
-    <view class="_u_flex _u_flex-col _u_gap-10px">
+    <view class="uno-flex uno-flex-col uno-gap-10px">
       <u-alert description="山不在于高，有了神仙就出名" type="warning" />
       <u-alert description="水不在深，有龙则灵" type="primary" />
       <u-alert
@@ -13,7 +13,7 @@
     </view>
 
     <u-text type="info" text="深浅色" margin="10px 0" />
-    <view class="_u_flex _u_flex-col _u_gap-10px">
+    <view class="uno-flex uno-flex-col uno-gap-10px">
       <u-alert description="无丝竹之乱耳，无案牍之劳形" type="warning" />
       <u-alert
         description="南阳诸葛庐，西蜀子云亭。孔子云：何陋之有"
@@ -23,7 +23,7 @@
     </view>
 
     <u-text type="info" text="显示图标" margin="10px 0" />
-    <view class="_u_flex _u_flex-col _u_gap-10px">
+    <view class="uno-flex uno-flex-col uno-gap-10px">
       <u-alert
         description="六王毕，四海一；蜀山兀，阿房出"
         type="error"
@@ -38,7 +38,7 @@
     </view>
 
     <u-text type="info" text="可关闭" margin="10px 0" />
-    <view class="_u_flex _u_flex-col _u_gap-10px">
+    <view class="uno-flex uno-flex-col uno-gap-10px">
       <u-alert
         description="五步一楼，十步一阁；廊腰缦回，檐牙高啄；各抱地势，钩心斗角"
         type="success"
@@ -55,7 +55,7 @@
     </view>
 
     <u-text type="info" text="带标题" margin="10px 0" />
-    <view class="_u_flex _u_flex-col _u_gap-10px">
+    <view class="uno-flex uno-flex-col uno-gap-10px">
       <u-alert
         title="妃嫔媵嫱，王子皇孙，辞楼下殿"
         description="长桥卧波，未云何龙？复道行空，不霁何虹"

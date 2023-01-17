@@ -1,12 +1,12 @@
 <template>
-  <view class="_u_px-15px">
+  <view class="uno-px-15px">
     <u-text text="基础功能" type="info" margin="10px 0"></u-text>
-    <view class="_u_flex _u_flex-wrap _u_gap-15px">
+    <view class="uno-flex uno-flex-wrap uno-gap-15px">
       <u-tag text="标签" plain size="mini" type="warning" />
     </view>
 
     <u-text text="自定义主题" type="info" margin="10px 0"></u-text>
-    <view class="_u_flex _u_flex-wrap _u_gap-15px">
+    <view class="uno-flex uno-flex-wrap uno-gap-15px">
       <u-tag text="标签" />
       <u-tag text="标签" type="warning" />
       <u-tag text="标签" type="success" />
@@ -14,13 +14,13 @@
     </view>
 
     <u-text text="圆形标签" type="info" margin="10px 0"></u-text>
-    <view class="_u_flex _u_flex-wrap _u_gap-15px">
+    <view class="uno-flex uno-flex-wrap uno-gap-15px">
       <u-tag text="标签" plain shape="circle" />
       <u-tag text="标签" type="warning" shape="circle" />
     </view>
 
     <u-text text="镂空标签" type="info" margin="10px 0"></u-text>
-    <view class="_u_flex _u_flex-wrap _u_gap-15px">
+    <view class="uno-flex uno-flex-wrap uno-gap-15px">
       <u-tag text="标签" plain />
       <u-tag text="标签" type="warning" plain />
       <u-tag text="标签" type="success" plain />
@@ -28,7 +28,7 @@
     </view>
 
     <u-text text="镂空带背景色" type="info" margin="10px 0"></u-text>
-    <view class="_u_flex _u_flex-wrap _u_gap-15px">
+    <view class="uno-flex uno-flex-wrap uno-gap-15px">
       <u-tag text="标签" plain plainFill />
       <u-tag text="标签" type="warning" plain plainFill />
       <u-tag text="标签" type="success" plain plainFill />
@@ -36,14 +36,14 @@
     </view>
 
     <u-text text="自定义尺寸" type="info" margin="10px 0"></u-text>
-    <view class="_u_flex _u_flex-wrap _u_gap-15px">
+    <view class="uno-flex uno-flex-wrap uno-gap-15px">
       <u-tag text="标签" plain size="mini" />
       <u-tag text="标签" type="warning" />
       <u-tag text="标签" type="success" plain size="large" />
     </view>
 
     <u-text text="可关闭标签" type="info" margin="10px 0"></u-text>
-    <view class="_u_flex _u_flex-wrap _u_gap-15px">
+    <view class="uno-flex uno-flex-wrap uno-gap-15px">
       <u-tag
         text="标签"
         size="mini"
@@ -70,7 +70,7 @@
     </view>
 
     <u-text text="带图片和图标" type="info" margin="10px 0"></u-text>
-    <view class="_u_flex _u_flex-wrap _u_gap-15px">
+    <view class="uno-flex uno-flex-wrap uno-gap-15px">
       <u-tag text="标签" size="mini" icon="map" plain />
       <u-tag text="标签" type="warning" icon="tags-fill" />
       <u-tag
@@ -83,7 +83,7 @@
     </view>
 
     <u-text text="单选标签" type="info" margin="10px 0"></u-text>
-    <view class="_u_flex _u_flex-wrap _u_gap-15px">
+    <view class="uno-flex uno-flex-wrap uno-gap-15px">
       <view
         class="u-page__tag-item"
         v-for="(item, index) in radios"
@@ -100,7 +100,7 @@
     </view>
 
     <u-text text="多选标签" type="info" margin="10px 0"></u-text>
-    <view class="_u_flex _u_flex-wrap _u_gap-15px">
+    <view class="uno-flex uno-flex-wrap uno-gap-15px">
       <view
         class="u-page__tag-item"
         v-for="(item, index) in checkboxs"

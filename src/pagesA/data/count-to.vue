@@ -1,5 +1,5 @@
 <template>
-  <view class="_u_px-15px">
+  <view class="uno-px-15px">
     <u-text text="基础功能" type="info" margin="10px 0" />
     <view>
       <u-count-to :endVal="value" @end="end"></u-count-to>

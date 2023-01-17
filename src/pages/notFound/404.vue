@@ -23,14 +23,14 @@
 
 <template>
   <view
-    class="_u_w-screen _u_h-screen _u_flex _u_flex-col _u_items-center _u_justify-center"
+    class="uno-w-screen uno-h-screen uno-flex uno-flex-col uno-items-center uno-justify-center"
   >
-    <u-empty mode="page" :text="`${go} 页面找不到了~`" class="_u_mb-30px" />
+    <u-empty mode="page" :text="`${go} 页面找不到了~`" class="uno-mb-30px" />
     <u-button
       type="primary"
       icon="home-fill"
       size="small"
-      class="_u_mb-30px"
+      class="uno-mb-30px"
       @click="backHome"
     >
       返回首页

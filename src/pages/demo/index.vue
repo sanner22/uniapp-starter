@@ -11,7 +11,7 @@
 <template>
   <app-provider>
     <view class="container"> 页面构建中... </view>
-    <view class="_u_center">
+    <view class="uno-center">
       <u-button type="primary" size="small" @click="jumpList1"
         >List1 →
       </u-button>

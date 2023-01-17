@@ -1,5 +1,5 @@
 <template>
-  <view class="_u_p-15px">
+  <view class="uno-p-15px">
     <u-read-more
       ref="readMore1"
       :showHeight="showHeight"

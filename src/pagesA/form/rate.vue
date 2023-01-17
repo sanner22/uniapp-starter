@@ -1,7 +1,7 @@
 <template>
-  <view class="_u_px-15px">
+  <view class="uno-px-15px">
     <u-text text="基本案例" type="info" margin="10px 0"></u-text>
-    <view class="_u_flex">
+    <view class="uno-flex">
       <u-rate size="20" />
     </view>
 
@@ -10,47 +10,47 @@
       type="info"
       margin="10px 0"
     ></u-text>
-    <view class="_u_flex">
+    <view class="uno-flex">
       <u-rate size="20" v-model="value1" @change="change" />
     </view>
 
     <u-text text="自定义星星大小" type="info" margin="10px 0"></u-text>
-    <view class="_u_flex">
+    <view class="uno-flex">
       <u-rate size="30" count="4" />
     </view>
 
     <u-text text="是否禁用评分" type="info" margin="10px 0"></u-text>
-    <view class="_u_flex">
+    <view class="uno-flex">
       <u-rate size="20" disabled />
     </view>
 
     <u-text text="是否只读评分" type="info" margin="10px 0"></u-text>
-    <view class="_u_flex">
+    <view class="uno-flex">
       <u-rate size="20" readonly />
     </view>
 
     <u-text text="自定义选中星星颜色" type="info" margin="10px 0"></u-text>
-    <view class="_u_flex">
+    <view class="uno-flex">
       <u-rate size="20" v-model="activeColorValue" activeColor="#2979ff" />
     </view>
 
     <u-text text="自定义未选中星星颜色" type="info" margin="10px 0"></u-text>
-    <view class="_u_flex">
+    <view class="uno-flex">
       <u-rate size="20" v-model="value2" inactiveColor="#2979ff" />
     </view>
 
     <u-text text="禁止触摸选择" type="info" margin="10px 0"></u-text>
-    <view class="_u_flex">
+    <view class="uno-flex">
       <u-rate size="20" :touchable="false" />
     </view>
 
     <u-text text="允许触摸选择" type="info" margin="10px 0"></u-text>
-    <view class="_u_flex">
+    <view class="uno-flex">
       <u-rate size="20" :touchable="true" />
     </view>
 
     <u-text text="是否允许半星" type="info" margin="10px 0"></u-text>
-    <view class="_u_flex">
+    <view class="uno-flex">
       <u-rate
         size="20"
         v-model="HalfValue"
@@ -60,7 +60,7 @@
     </view>
 
     <u-text text="自定义选中的图标" type="info" margin="10px 0"></u-text>
-    <view class="_u_flex">
+    <view class="uno-flex">
       <u-rate
         size="20"
         v-model="activeIconValue"

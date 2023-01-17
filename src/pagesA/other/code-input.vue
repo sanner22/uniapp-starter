@@ -1,5 +1,5 @@
 <template>
-  <view class="_u_px-15px">
+  <view class="uno-px-15px">
     <u-text type="info" margin="10px 0" text="基础使用" />
     <u-code-input
       v-model="value1"
@@ -18,7 +18,7 @@
     <u-code-input v-model="value4" mode="box" :space="0" :maxlength="4" />
 
     <u-text type="info" margin="10px 0" text="细边框" />
-    <view class="_u_flex _u_flex-col _u_gap-10px">
+    <view class="uno-flex uno-flex-col uno-gap-10px">
       <u-code-input
         v-model="value5"
         mode="box"
@@ -36,7 +36,7 @@
     </view>
 
     <u-text type="info" margin="10px 0" text="调整颜色" />
-    <view class="_u_flex _u_flex-col _u_gap-10px">
+    <view class="uno-flex uno-flex-col uno-gap-10px">
       <u-code-input
         v-model="value7"
         mode="box"

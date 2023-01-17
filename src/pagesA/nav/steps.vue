@@ -1,7 +1,7 @@
 <template>
-  <view class="_u_px-15px">
+  <view class="uno-px-15px">
     <u-text type="info" margin="10px 0" text="基础演示" />
-    <view class="_u_flex">
+    <view class="uno-flex">
       <u-steps :current="current1">
         <u-steps-item title="已下单" desc="10:30" />
         <u-steps-item title="已出库" desc="10:35" />

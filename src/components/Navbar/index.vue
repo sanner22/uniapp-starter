@@ -81,24 +81,24 @@
 </script>
 <template>
   <view class="head-wrapper">
-    <view :class="['page-head', '_u_head-fixed', '_u_shadow']">
+    <view :class="['page-head', 'uno-head-fixed', 'uno-shadow']">
       <!-- 顶部状态栏 -->
       <view class="status-bar"></view>
       <!-- navbar -->
       <view
         :class="[
           'navbar-wrapper',
-          '_u_flex',
-          '_u_flex-nowrap',
-          '_u_justify-between',
-          '_u_items-center',
+          'uno-flex',
+          'uno-flex-nowrap',
+          'uno-justify-between',
+          'uno-items-center',
         ]"
       >
         <view
-          class="_u_flex _u_flex-nowrap _u_items-center _u_h-full _u_w3/10 _u_min-w3/10"
+          class="uno-flex uno-flex-nowrap uno-items-center uno-h-full uno-w3/10 uno-min-w3/10"
         >
           <slot name="left">
-            <view class="_u_h-full _u_flex _u_items-center">
+            <view class="uno-h-full uno-flex uno-items-center">
               <template v-if="backShow">
                 <iconify
                   @click="onBack"
@@ -119,14 +119,14 @@
           </slot>
         </view>
         <view
-          class="navbar__center _u_flex _u_flex-nowrap _u_justify-center _u_items-center _u_h-full _u_w2/5 _u_min-w2/5"
+          class="navbar__center uno-center uno-flex-nowrap uno-h-full uno-w2/5 uno-min-w2/5"
         >
           <slot>
             <text>{{ navbarTitle }}</text>
           </slot>
         </view>
         <view
-          class="_u_flex _u_flex-nowrap _u_justify-end _u_items-center _u_h-full _u_w3/10 _u_min-w3/10"
+          class="uno-flex uno-flex-nowrap uno-justify-end uno-items-center uno-h-full uno-w3/10 uno-min-w3/10"
         >
           <slot name="right"></slot>
         </view>

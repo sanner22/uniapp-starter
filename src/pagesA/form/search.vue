@@ -1,5 +1,5 @@
 <template>
-  <view class="_u_p-15px _u_pt-0">
+  <view class="uno-p-15px uno-pt-0">
     <u-text text="基础功能" type="info" margin="10px 0"></u-text>
     <view>
       <u-search v-model="value1" :show-action="false" @change="change" />
@@ -11,7 +11,7 @@
     </view>
 
     <u-text text="搜索框形状" type="info" margin="10px 0"></u-text>
-    <view class="_u_flex _u_flex-col _u_gap-15px">
+    <view class="uno-flex uno-flex-col uno-gap-15px">
       <u-search v-model="value3" :show-action="false" shape="round" />
       <u-search v-model="value4" :show-action="false" shape="square" />
     </view>
@@ -36,14 +36,14 @@
     </view>
 
     <u-text text="搜索框内容水平对齐" type="info" margin="10px 0"></u-text>
-    <view class="_u_flex _u_flex-col _u_gap-15px">
+    <view class="uno-flex uno-flex-col uno-gap-15px">
       <u-search v-model="value7" :show-action="false" input-align="left" />
       <u-search v-model="value8" :show-action="false" input-align="center" />
       <u-search v-model="value9" :show-action="false" input-align="right" />
     </view>
 
     <u-text text="自定义" type="info" margin="10px 0"></u-text>
-    <view class="_u_flex _u_flex-col _u_gap-15px">
+    <view class="uno-flex uno-flex-col uno-gap-15px">
       <u-search
         v-model="value10"
         :show-action="false"

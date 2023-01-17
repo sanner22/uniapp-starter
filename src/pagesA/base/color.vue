@@ -24,7 +24,7 @@
 </script>
 
 <template>
-  <view class="_u_p-15px">
+  <view class="uno-p-15px">
     <view v-for="(item, index) in $uConfig.type" :key="index">
       <u-text :text="item" :type="item" margin="10px 0"></u-text>
       <u-row gutter="15">

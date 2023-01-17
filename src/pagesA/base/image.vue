@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-  <view class="_u_px-15px">
+  <view class="uno-px-15px">
     <u-text text="基本案例" type="info" margin="10px 0"></u-text>
     <u-image
       src="https://cdn.uviewui.com/uview/album/1.jpg"

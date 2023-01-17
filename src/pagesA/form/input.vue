@@ -1,7 +1,7 @@
 <template>
-  <view class="_u_px-15px">
+  <view class="uno-px-15px">
     <u-text text="基础使用" type="info" margin="10px 0" />
-    <view class="_u_flex _u_flex-col _u_gap-15px">
+    <view class="uno-flex uno-flex-col uno-gap-15px">
       <u-input
         placeholder="请输入内容"
         border="surround"
@@ -11,12 +11,12 @@
     </view>
 
     <u-text text="可清空内容" type="info" margin="10px 0" />
-    <view class="_u_flex _u_flex-col _u_gap-15px">
+    <view class="uno-flex uno-flex-col uno-gap-15px">
       <u-input placeholder="请输入内容" border="surround" clearable />
     </view>
 
     <u-text text="数字键盘" type="info" margin="10px 0" />
-    <view class="_u_flex _u_flex-col _u_gap-15px">
+    <view class="uno-flex uno-flex-col uno-gap-15px">
       <u-input
         placeholder="请输入内容"
         border="surround"
@@ -26,27 +26,27 @@
     </view>
 
     <u-text text="密码类型" type="info" margin="10px 0" />
-    <view class="_u_flex _u_flex-col _u_gap-15px">
+    <view class="uno-flex uno-flex-col uno-gap-15px">
       <u-input placeholder="请输入内容" border="surround" password clearable />
     </view>
 
     <u-text text="显示下划线" type="info" margin="10px 0" />
-    <view class="_u_flex _u_flex-col _u_gap-15px">
+    <view class="uno-flex uno-flex-col uno-gap-15px">
       <u-input placeholder="请输入内容" border="bottom" clearable />
     </view>
 
     <u-text text="禁用状态" type="info" margin="10px 0" />
-    <view class="_u_flex _u_flex-col _u_gap-15px">
+    <view class="uno-flex uno-flex-col uno-gap-15px">
       <u-input placeholder="禁用状态" border="surround" disabled />
     </view>
 
     <u-text text="圆形" type="info" margin="10px 0" />
-    <view class="_u_flex _u_flex-col _u_gap-15px">
+    <view class="uno-flex uno-flex-col uno-gap-15px">
       <u-input placeholder="请输入内容" border="surround" shape="circle" />
     </view>
 
     <u-text text="前后图标" type="info" margin="10px 0" />
-    <view class="_u_flex _u_flex-col _u_gap-15px">
+    <view class="uno-flex uno-flex-col uno-gap-15px">
       <u-input
         placeholder="前置图标"
         prefixIcon="search"
@@ -60,7 +60,7 @@
     </view>
 
     <u-text text="前后插槽" type="info" margin="10px 0" />
-    <view class="_u_flex _u_flex-col _u_gap-15px">
+    <view class="uno-flex uno-flex-col uno-gap-15px">
       <!-- 注意：由于兼容性差异，如果需要使用前后插槽，nvue下需使用u--input，非nvue下需使用u-input -->
       <!-- #ifndef APP-NVUE -->
       <u-input placeholder="前置插槽">

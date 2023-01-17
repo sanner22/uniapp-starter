@@ -1,7 +1,7 @@
 <template>
-  <view class="_u_px-15px">
+  <view class="uno-px-15px">
     <u-text text="基础用法" type="info" margin="10px 0" />
-    <view class="_u_flex">
+    <view class="uno-flex">
       <u-count-down
         :time="30 * 60 * 60 * 1000"
         format="HH:mm:ss"
@@ -12,7 +12,7 @@
     </view>
 
     <u-text text="自定义格式" type="info" margin="10px 0" />
-    <view class="_u_flex">
+    <view class="uno-flex">
       <u-count-down
         :time="30 * 60 * 60 * 1000"
         format="DD:HH:mm:ss"
@@ -34,7 +34,7 @@
     </view>
 
     <u-text text="毫秒级渲染" type="info" margin="10px 0" />
-    <view class="_u_flex">
+    <view class="uno-flex">
       <u-count-down
         :time="30 * 60 * 60 * 1000"
         format="HH:mm:ss:SSS"
@@ -44,7 +44,7 @@
     </view>
 
     <u-text text="自定义样式" type="info" margin="10px 0" />
-    <view class="_u_flex">
+    <view class="uno-flex">
       <u-count-down
         :time="30 * 60 * 60 * 1000"
         format="HH:mm:ss"
@@ -71,7 +71,7 @@
     </view>
 
     <u-text text="手动控制" type="info" margin="10px 0" />
-    <view class="_u_flex">
+    <view class="uno-flex">
       <u-count-down
         ref="countDown1"
         :time="3 * 1000"

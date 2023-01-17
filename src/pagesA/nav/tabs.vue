@@ -1,5 +1,5 @@
 <template>
-  <view class="_u_px-15px _u_pb-500px">
+  <view class="uno-px-15px uno-pb-500px">
     <u-text type="info" margin="10px 0" text="基础演示" />
     <view>
       <u-tabs :list="list1" @click="click" :current="3" />

@@ -1,5 +1,5 @@
 <template>
-  <view class="_u_px-15px">
+  <view class="uno-px-15px">
     <u-text type="info" margin="10px 0" text="基础使用" />
     <view>
       <u-skeleton rows="3" title loading />

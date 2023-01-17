@@ -1,5 +1,5 @@
 <template>
-  <view v-if="loading" class="_u_p-15px">
+  <view v-if="loading" class="uno-p-15px">
     <u-skeleton rows="3" title loading></u-skeleton>
   </view>
 

@@ -21,7 +21,7 @@
   </u-navbar>
 
   <app-provider>
-    <view class="_u_my-60px _u_center">
+    <view class="uno-my-60px uno-center">
       <u-image
         src="/static/svg/favicon.svg"
         width="120"
@@ -38,7 +38,7 @@
       />
     </view>
 
-    <view class="_u_center _u_flex-wrap _u_gap-5px _u_mt-40px">
+    <view class="uno-center uno-flex-wrap uno-gap-5px uno-mt-40px">
       <u-tag
         bg-color="#42d392"
         border-color="#42d392"
@@ -96,7 +96,7 @@
       />
     </view>
 
-    <view class="_u_center _u_gap-15px _u_mt-40px">
+    <view class="uno-center uno-gap-15px uno-mt-40px">
       <view>
         <u-button
           type="primary"

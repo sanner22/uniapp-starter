@@ -1,5 +1,5 @@
 <template>
-  <view class="_u_px-15px">
+  <view class="uno-px-15px">
     <u-text
       text="基本案例：苹果、香蕉和橙子哪个最甜？"
       type="info"

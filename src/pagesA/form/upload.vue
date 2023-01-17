@@ -1,5 +1,5 @@
 <template>
-  <view class="_u_px-15px">
+  <view class="uno-px-15px">
     <u-text text="基础用法" type="info" margin="10px 0"></u-text>
     <view>
       <u-upload

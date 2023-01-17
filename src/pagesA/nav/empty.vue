@@ -1,7 +1,7 @@
 <template>
-  <view class="_u_h-screen _u_center">
+  <view class="uno-h-screen uno-center">
     <u-empty :mode="mode" :icon="getIcon">
-      <view class="_u_mt-40px">
+      <view class="uno-mt-40px">
         <u-button
           size="small"
           type="primary"

@@ -1,11 +1,11 @@
 <template>
-  <view class="_u_h-1200px _u_px-15px">
+  <view class="uno-h-1200px uno-px-15px">
     <u-text
       type="info"
       margin="10px 0"
       text="自定义backTop(滚动页面即可在右下角看到图标)"
     />
-    <view class="_u_mt-10px">
+    <view class="uno-mt-10px">
       <u-checkbox-group
         placement="column"
         shape="square"

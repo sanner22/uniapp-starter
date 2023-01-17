@@ -206,7 +206,7 @@
   <view>
     <u-grid col="3" :border="true" @click="gridClick">
       <u-grid-item :name="item" v-for="(item, index) in icons" :key="index">
-        <view class="_u_center _u_flex-col _u_py-1em">
+        <view class="uno-center uno-flex-col uno-py-1em">
           <u-icon :name="item" size="30"></u-icon>
           <u-text
             :text="item"

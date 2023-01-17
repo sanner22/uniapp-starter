@@ -1,5 +1,5 @@
 <template>
-  <view class="_u_p-15px">
+  <view class="uno-p-15px">
     <u-text type="info" margin="0 0 15px 0" text="基础功能"></u-text>
     <u-text text="我用十年青春,赴你最后之约" @click="test"></u-text>
 
