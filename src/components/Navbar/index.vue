@@ -29,6 +29,7 @@
     isBackShow: { type: Boolean, default: true },
     isHomeShow: { type: Boolean },
     shadow: { type: Boolean, default: true },
+    fixed: { type: Boolean, default: true },
   });
 
   const { statusBarHeight } = useSystem();
@@ -79,9 +80,12 @@
     router.pushTab(HOME_PAGE);
   };
 </script>
+
 <template>
   <view class="head-wrapper">
-    <view :class="['page-head', 'uno-head-fixed', 'uno-shadow']">
+    <view
+      :class="['page-head', props.fixed ? 'uno-head-fixed' : '', 'uno-shadow']"
+    >
       <!-- 顶部状态栏 -->
       <view class="status-bar"></view>
       <!-- navbar -->

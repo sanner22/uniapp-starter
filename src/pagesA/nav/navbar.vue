@@ -50,11 +50,26 @@
       </template>
     </u-navbar>
 
+    <u-text type="info" margin="10px 0 10px 10px" text="自定义navbar组件" />
+    <custom-navbar
+      isBackShow
+      isHomeShow
+      title="自定义 navbar 组件"
+      :fixed="false"
+    >
+      <template #right>
+        <iconify size="22px" color="#F60" icon="i-mdi-share-all" />
+      </template>
+    </custom-navbar>
+
     <u-gap height="50"></u-gap>
   </view>
 </template>
 
 <script setup lang="ts">
+  import CustomNavbar from '@/components/Navbar/index.vue';
+  import Iconify from '@/components/Iconify/index.vue';
+
   const bgColor = uni.$u.color['success'];
 
   const rightClick = () => {
