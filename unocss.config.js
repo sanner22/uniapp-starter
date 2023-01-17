@@ -39,9 +39,12 @@ export default defineConfig({
       platform: 'uniapp',
       transformRules,
     }),
+    // unocss 预设图标配置 https://www.npmjs.com/package/@unocss/preset-icons
+    // 按照约定使用图标 <prefix><collection>-<icon> 或者 <prefix><collection>:<icon>
     presetIcons({
       scale: 1.2,
       warn: true,
+      // prefix: 'i-', // 前缀，默认：i-
     }),
   ],
   shortcuts: [
