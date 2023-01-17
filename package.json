@@ -89,8 +89,8 @@
     "sass": "^1.57.1",
     "sass-loader": "10",
     "typescript": "^4.9.4",
-    "unocss": "^0.46.5",
-    "unocss-preset-weapp": "^0.2.5",
+    "unocss": "^0.48.4",
+    "unocss-preset-weapp": "^0.3.0",
     "unplugin-vue-components": "^0.22.12",
     "vite": "^4.0.4",
     "vite-plugin-eslint": "^1.8.1"
