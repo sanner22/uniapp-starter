@@ -28,7 +28,7 @@ specifiers:
   '@types/qs': ^6.9.7
   '@typescript-eslint/eslint-plugin': ^5.48.1
   '@typescript-eslint/parser': ^5.48.1
-  '@unocss/preset-icons': ^0.46.5
+  '@unocss/preset-icons': ^0.48.4
   autoprefixer: ^10.4.13
   clipboard: ^2.0.11
   crypto-js: ^4.1.1
@@ -100,7 +100,7 @@ devDependencies:
   '@types/qs': registry.npmmirror.com/@types/qs/6.9.7
   '@typescript-eslint/eslint-plugin': registry.npmmirror.com/@typescript-eslint/eslint-plugin/5.48.1_3jon24igvnqaqexgwtxk6nkpse
   '@typescript-eslint/parser': registry.npmmirror.com/@typescript-eslint/parser/5.48.1_iukboom6ndih5an6iafl45j2fe
-  '@unocss/preset-icons': registry.npmmirror.com/@unocss/preset-icons/0.46.5
+  '@unocss/preset-icons': registry.npmmirror.com/@unocss/preset-icons/0.48.4
   autoprefixer: registry.npmmirror.com/autoprefixer/10.4.13_postcss@8.4.21
   eslint: registry.npmmirror.com/eslint/8.31.0
   eslint-config-prettier: registry.npmmirror.com/eslint-config-prettier/8.6.0_eslint@8.31.0
@@ -2411,12 +2411,6 @@ packages:
       unconfig: registry.npmmirror.com/unconfig/0.3.7
     dev: true
 
-  registry.npmmirror.com/@unocss/core/0.46.5:
-    resolution: {integrity: sha512-apPWISH2ASKySyp4vBAkEzr5XNJDv4mu26eQ4wvg2a32cHRokUsiHLWFNMDe7oJquivTAOHsXqbLQuR9ePKNSg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@unocss/core/-/core-0.46.5.tgz}
-    name: '@unocss/core'
-    version: 0.46.5
-    dev: true
-
   registry.npmmirror.com/@unocss/core/0.48.4:
     resolution: {integrity: sha512-ecoTzblwEIQGD4QhMo1U36rVwvTR9XW+gtJRhCnVyjy7L23AbGJu2xkRZSsH3k/v0gs0gx/SHNfyOqA52BNfoA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@unocss/core/-/core-0.48.4.tgz}
     name: '@unocss/core'
@@ -2438,18 +2432,6 @@ packages:
     version: 0.48.4
     dependencies:
       '@unocss/core': registry.npmmirror.com/@unocss/core/0.48.4
-    dev: true
-
-  registry.npmmirror.com/@unocss/preset-icons/0.46.5:
-    resolution: {integrity: sha512-g1gMi++j233nc/5KcUti5+X+fQ9K36MzROx37pJCFz+jD5i7Y21hXOC/brP7k4tWo1IEFR8rsLgtvVEXOhu8Sw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@unocss/preset-icons/-/preset-icons-0.46.5.tgz}
-    name: '@unocss/preset-icons'
-    version: 0.46.5
-    dependencies:
-      '@iconify/utils': registry.npmmirror.com/@iconify/utils/2.0.11
-      '@unocss/core': registry.npmmirror.com/@unocss/core/0.46.5
-      ohmyfetch: registry.npmmirror.com/ohmyfetch/0.4.21
-    transitivePeerDependencies:
-      - supports-color
     dev: true
 
   registry.npmmirror.com/@unocss/preset-icons/0.48.4:
