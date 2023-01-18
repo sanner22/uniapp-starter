@@ -53,7 +53,7 @@ specifiers:
   unocss: ^0.48.4
   unocss-preset-weapp: ^0.3.0
   unplugin-vue-components: ^0.22.12
-  uview-plus: ^3.1.23
+  uview-plus: 3.1.24
   vite: ^4.0.4
   vite-plugin-eslint: ^1.8.1
   vue: ^3.2.45
@@ -83,7 +83,7 @@ dependencies:
   luch-request: registry.npmmirror.com/luch-request/3.0.8
   pinia: registry.npmmirror.com/pinia/2.0.28_prq2uz4lho2pwp6irk4cfkrxwu
   qs: registry.npmmirror.com/qs/6.11.0
-  uview-plus: registry.npmmirror.com/uview-plus/3.1.23
+  uview-plus: registry.npmmirror.com/uview-plus/3.1.24
   vue: registry.npmmirror.com/vue/3.2.45
   vue-i18n: registry.npmmirror.com/vue-i18n/9.2.2_vue@3.2.45
 
@@ -8011,10 +8011,10 @@ packages:
     engines: {node: '>= 0.4.0'}
     dev: true
 
-  registry.npmmirror.com/uview-plus/3.1.23:
-    resolution: {integrity: sha512-xQ3JbgZd922Xjyts45FpWnhelIgC8/KjnXKFoehNTZDXd2FokD2jC83kn3vBcdzK2Li9ObmJz7hOrcqe5MN0JA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/uview-plus/-/uview-plus-3.1.23.tgz}
+  registry.npmmirror.com/uview-plus/3.1.24:
+    resolution: {integrity: sha512-8ztisg6hdF2QasvrorbBstq8fUjdV5oUBf38IyU2XWU56x68ze01kIBmOoj60JPwjE5Wa8IxFcetwu5tPmJcAw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/uview-plus/-/uview-plus-3.1.24.tgz}
     name: uview-plus
-    version: 3.1.23
+    version: 3.1.24
     engines: {HBuilderX: ^3.1.0}
     dependencies:
       clipboard: registry.npmmirror.com/clipboard/2.0.11
