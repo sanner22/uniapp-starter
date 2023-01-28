@@ -5,24 +5,25 @@
 - **uniapp Vue3 TypeScript 快速开发框架**
 - cli 创建的 Vue3/ts 项目 与 使用 HBuilderX 导入插件 的包有差异,请直接访问 [开源地址](https://gitee.com/time-network/uniapp-vue-next-starter)
 
+## 特性
+
+- **最新技术栈**：使用 Vue3/Vite4/pinia ,TypeScript 等前端前沿技术开发;
+- **UI集成**：集成 [uView-plus](https://uiadmin.net/uview-plus/) v3 UI 组件，扩展 vView 在 UNI 中的使用（后期加入 uView 更多 ts 支持）;
+- **快捷开发**：vscode 编辑器中开发，推荐插件 🚀[**uview-helper**](https://marketplace.visualstudio.com/items?itemName=tntgroup.uview-helper)，功能：代码片段、属性自动完成(智能枚举提示)、文档悬浮提示，给作者点赞 👍👍;
+- **[Unocss](https://github.com/unocss/unocss) 原子化 CSS**：预设图标：[preset-icons](https://github.com/unocss/unocss/tree/main/packages/preset-icons#readme) 使用 [iconify](https://github.com/iconify/iconify) 图标，[unocss-preset-weapp](https://github.com/MellowCo/unocss-preset-weapp) 小程序支持，配置参考：[unocss.config.js](./unocss.config.js);
+- **Eslint/Prettier**：规范代码格式,统一编码;
+- **路由拦截**：基于 uni.addInterceptor 进行路由拦截;
+- **请求拦截**：核心使用 [luch-request](https://ext.dcloud.net.cn/plugin?id=392),支持请求和响应拦截等;
+- **缓存加密**：使用 AES 加密缓存,可设置区分在开发或生成环境中是否加密;
+
 ### 说明
 
 - 框架完全基于 Vue3 SFC `<script setup>` 语法糖写法(包含示例页面)，不支持 Vue2;
 - 可用于学习与交流;
-- 目前测试 H5、微信小程序,APP(Android),支付宝小程序通过;
+- 目前测试 H5、微信小程序,APP(Android)通过;
 - 其他平台暂未测试,后续会增加;
 - 如发现问题或建议可在评论区留言, 或提 [Issues](https://gitee.com/time-network/uniapp-vue-next-starter/issues) 及 [PR](https://gitee.com/time-network/uniapp-vue-next-starter/pulls)，会及时处理;
 - 如有需求亦可在评论区留言,或在此项目基础上增加;
-
-## 特性
-
-- **最新技术栈**：使用 Vue3/Vite4/pinia ,TypeScript 等前端前沿技术开发;
-- **UI集成**: 集成 [uView-plus](https://uiadmin.net/uview-plus/) v3 UI 组件，扩展 vView 在 UNI 中的使用（后期加入 uView 更多 ts 支持）;
-- **[Unocss](https://github.com/unocss/unocss)**: 原子化 CSS，[iconify](https://github.com/iconify/iconify) 图标;
-- **Eslint/Prettier**: 规范代码格式,统一编码;
-- **路由拦截**: 基于 uni.addInterceptor 进行路由拦截;
-- **请求拦截**: 核心使用 [luch-request](https://ext.dcloud.net.cn/plugin?id=392),支持请求和响应拦截等;
-- **缓存加密**: 使用 AES 加密缓存,可设置区分在开发或生成环境中是否加密;
 
 ## 目录结构
 
