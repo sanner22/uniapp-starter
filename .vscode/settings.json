@@ -47,5 +47,10 @@
       "bold": false,
       "italic": false
     }
-  ]
+  ],
+
+  // 排除的搜索目录
+  "search.exclude": {
+    "dist": true
+  }
 }
