@@ -10,7 +10,10 @@
     "build:mp-weixin": "uni build -p mp-weixin --minify",
     "lint": "eslint --cache --max-warnings 0  \"src/**/*.{vue,ts}\" --fix",
     "prettier": "prettier --write \"src/**/*.{js,ts,json,css,scss,vue}\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "hbx:open": "cli.exe open",
+    "hbx:custom": "node ./scripts/hbx.pack.js custom",
+    "hbx:pack": "node ./scripts/hbx.pack.js"
   },
   "dependencies": {
     "@dcloudio/uni-app": "3.0.0-alpha-3070020230114001",
@@ -60,6 +63,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.9.0",
     "husky": "^8.0.3",
+    "iconv-lite": "^0.6.3",
     "lint-staged": "^13.1.0",
     "mrm": "^4.1.13",
     "postcss": "^8.4.21",
