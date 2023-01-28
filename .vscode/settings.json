@@ -33,7 +33,8 @@
   // 文件映射，json文件写注释
   "files.associations": {
     "pages.json": "jsonc",
-    "manifest.json": "jsonc"
+    "manifest.json": "jsonc",
+    "uniapp.pack.json.local": "jsonc"
   },
 
   // 条件编译注释颜色
