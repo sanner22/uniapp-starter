@@ -5,5 +5,6 @@
     "mrmlnc.vscode-scss",
     "christian-kohler.path-intellisense",
     "uni-helper.uni-helper-vscode", // uni-helper 包
+    "tntgroup.uview-helper", // uview-helper
   ]
 }
