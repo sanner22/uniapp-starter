@@ -2,8 +2,8 @@
 
 ## 简介
 
-- **uniapp Vue3 TypeScript 快速开发框架**
-- cli 创建的 Vue3/ts 项目 与 使用 HBuilderX 导入插件 的包有差异,请直接访问 [开源地址](https://gitee.com/time-network/uniapp-vue-next-starter)
+- **uniapp Vue3 TypeScript 快速开发框架**，集成 uView UI，集成 HBuilderX cli，一键打包自定义基座，一键云打包（APP 模式）
+- cli 创建的 Vue3/ts 项目 与 使用 HBuilderX 导入插件的包有差异，请直接访问 [开源地址](https://gitee.com/time-network/uniapp-vue-next-starter)
 
 ## 特性
 
@@ -17,7 +17,7 @@
 - **缓存加密**：使用 AES 加密缓存,可设置区分在开发或生成环境中是否加密;
 - **[HBuilderX cli](https://hx.dcloud.net.cn/cli/README) 集成**：通过命令实现启动hbx、打包自定义基座、云打包(使用前需把cli集成到[环境变量](https://hx.dcloud.net.cn/cli/env))，打包配置参考：[uniapp.pack.json](./uniapp.pack.json)，该文件只是配置参考，实际使用的是 `uniapp.pack.json.local`，该文档从 `uniapp.pack.json` 复制，考虑多PC开发情况，配置可能不一样，为了不产生 git 变更而使用 `.local`，单PC环境，可直接使用 `uniapp.pack.json`；
 
-### 说明
+## 说明
 
 - 框架完全基于 Vue3 SFC `<script setup>` 语法糖写法(包含示例页面)，不支持 Vue2;
 - 可用于学习与交流;
@@ -28,10 +28,10 @@
 
 ## 目录结构
 
-```shell
+```bash
 .
 ├─ scripts
-│   └─hbx.pack.js # 利用 HBuilderX cli 编译打包脚本
+│   └─hbx.pack.js # 利用 HBuilderX cli 打包脚本
 │
 ├─ src
 │   ├─assets # 静态资源目录
@@ -135,13 +135,29 @@ pnpm install
 ```bash
 # 其他端请查看 package.json script
 pnpm dev:h5
+pnpm dev:mp-weixin
+pnpm dev:app
 ```
 
-- 打包
+- 编译
 
 ```bash
 # 其他端请查看 package.json script
 pnpm build:h5
+pnpm build:mp-weixin
+pnpm build:app
+```
+
+- 打包自定义基座
+
+```bash
+pnpm hbx:custom
+```
+
+- 云打包(apk)
+
+```bash
+pnpm hbx:pack
 ```
 
 ## Git 贡献提交规范
