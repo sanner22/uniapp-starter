@@ -6,6 +6,7 @@ src/pages.json
 /public
 /docs
 /bin
+/src/tmui
 .idea
 .vscode
 .hbuilderx

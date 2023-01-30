@@ -7,9 +7,7 @@
 
   const redirect = ref<string | undefined>(undefined);
   onLoad(query => {
-    redirect.value = query?.redirect
-      ? decodeURIComponent(query.redirect)
-      : undefined;
+    redirect.value = query?.redirect ? decodeURIComponent(query.redirect) : undefined;
   });
 
   const router = useRouter();
@@ -34,28 +32,28 @@
 </script>
 
 <template>
-  <view class="container">
-    <view class="title">登录</view>
-    <view class="form-wrap">
-      <form class="form" @submit="submit">
-        <label class="form-item">
-          <view class="form-label">邮箱:</view>
-          <view class="form-element">
-            <input name="email" :value="form.email" />
-          </view>
-        </label>
-        <label class="form-item">
-          <view class="form-label">密码:</view>
-          <view class="form-element">
-            <input type="password" name="password" :value="form.password" />
-          </view>
-        </label>
-        <button form-type="submit" class="submit-btn" hover-class="none">
-          登录
-        </button>
-      </form>
+  <tm-app>
+    <view class="container">
+      <view class="title">登录</view>
+      <view class="form-wrap">
+        <form class="form" @submit="submit">
+          <label class="form-item">
+            <view class="form-label">邮箱:</view>
+            <view class="form-element">
+              <input name="email" :value="form.email" />
+            </view>
+          </label>
+          <label class="form-item">
+            <view class="form-label">密码:</view>
+            <view class="form-element">
+              <input type="password" name="password" :value="form.password" />
+            </view>
+          </label>
+          <tm-button block form-type="submit" class="submit-btn" hover-class="none"> 登录 </tm-button>
+        </form>
+      </view>
     </view>
-  </view>
+  </tm-app>
 </template>
 
 <style lang="scss" scoped>

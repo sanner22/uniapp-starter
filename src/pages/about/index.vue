@@ -1,7 +1,6 @@
 <script lang="ts" setup>
   import { ref } from 'vue';
   import { onShow } from '@dcloudio/uni-app';
-  import AppProvider from '@/components/AppProvider/inedx.vue';
   import { useAuthStore } from '@/state/modules/auth';
   import { useRouter } from '@/hooks/router';
 
@@ -24,7 +23,7 @@
 </script>
 
 <template>
-  <app-provider>
+  <tm-app>
     <view class="container">
       <view class="head-wrap">
         <view class="avatar">
@@ -33,23 +32,16 @@
         <view class="desc">{{ isLogin ? '测试' : '未登入' }}</view>
       </view>
       <view class="cell">
-        <u-button
-          type="primary"
-          @click="handleJump('/pages/log/index?id=4345&title=log')"
-        >
-          log
-        </u-button>
+        <tm-button color="primary" @click="handleJump('/pages/log/index?id=4345&title=log')" block> log </tm-button>
       </view>
       <view class="cell" v-if="isLogin">
-        <u-button type="error" @click="handleLoginOut">登出</u-button>
+        <tm-button color="red" block @click="handleLoginOut">登出</tm-button>
       </view>
       <view class="cell" v-else>
-        <u-button type="success" @click="handleJump('/pages/login/index')">
-          登入
-        </u-button>
+        <tm-button color="green" block @click="handleJump('/pages/login/index')"> 登入 </tm-button>
       </view>
     </view>
-  </app-provider>
+  </tm-app>
 </template>
 
 <style lang="scss" scoped>

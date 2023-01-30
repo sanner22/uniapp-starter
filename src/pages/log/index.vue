@@ -1,5 +1,7 @@
 <template>
-  <view style="line-height: 88rpx; text-align: center">登录后访问log</view>
+  <tm-app>
+    <view style="line-height: 88rpx; text-align: center">登录后访问log</view>
+  </tm-app>
 </template>
 
 <script lang="ts" setup>

@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-  import AppProvider from '@/components/AppProvider/inedx.vue';
   import { useRouter } from '@/hooks/router';
 
   const router = useRouter();
@@ -9,14 +8,12 @@
 </script>
 
 <template>
-  <app-provider>
-    <view class="container"> 页面构建中... </view>
-    <view class="uno-center">
-      <u-button type="primary" size="small" @click="jumpList1"
-        >List1 →
-      </u-button>
+  <tm-app>
+    <tm-sheet class="container"> 页面构建中... </tm-sheet>
+    <view class="uno-p-15px">
+      <tm-button color="primary" size="small" block @click="jumpList1">List1 → </tm-button>
     </view>
-  </app-provider>
+  </tm-app>
 </template>
 
 <style lang="scss" scoped>

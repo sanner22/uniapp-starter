@@ -17,6 +17,7 @@ export const useTmRouterBefore = (arg: beforeRouterOpts): void => {
   //返回事件，只有在h5端可以被拦截。
   if (arg.path) {
   }
+  console.log('useTmRouterBefore');
 };
 /**
  * 路由访问后执行的函数
@@ -25,4 +26,5 @@ export const useTmRouterBefore = (arg: beforeRouterOpts): void => {
  */
 export const useTmRouterAfter = (_arg: beforeRouterOpts): void => {
   //每一个页面初始后都会执行
+  console.log('useTmRouterAfter');
 };
