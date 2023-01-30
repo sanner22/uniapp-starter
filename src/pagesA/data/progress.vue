@@ -27,11 +27,7 @@
     </view>
 
     <template v-if="!androidNvue">
-      <u-text
-        text="自定义样式(不支持安卓环境的nvue)"
-        type="info"
-        margin="10px 0"
-      />
+      <u-text text="自定义样式(不支持安卓环境的nvue)" type="info" margin="10px 0" />
       <view>
         <u-line-progress
           height="8"
@@ -55,18 +51,10 @@
         inactiveColor="#f3f4f6"
       />
       <view class="button-group">
-        <view
-          class="button-group__circle"
-          hover-class="u-hover-class"
-          @click="computedWidth('minus')"
-        >
+        <view class="button-group__circle" hover-class="u-hover-class" @click="computedWidth('minus')">
           <text class="button-group__circle__text">减少</text>
         </view>
-        <view
-          class="button-group__circle"
-          hover-class="u-hover-class"
-          @click="computedWidth('plus')"
-        >
+        <view class="button-group__circle" hover-class="u-hover-class" @click="computedWidth('plus')">
           <text class="button-group__circle__text">增加</text>
         </view>
       </view>

@@ -1,11 +1,8 @@
 <script lang="ts" setup>
   // eslint-disable-next-line @typescript-eslint/no-unused-vars, no-unused-vars
-  const convertEnumEntriesToArray = (
-    entries: [string, any][],
-  ): Array<{ label: string; value: string | number }> => {
+  const convertEnumEntriesToArray = (entries: [string, any][]): Array<{ label: string; value: string | number }> => {
     const result = entries.map(([key, value]) => ({ label: key, value }));
-    if (result.find(i => typeof i.value === 'number'))
-      return result.filter(i => typeof i.value === 'number');
+    if (result.find(i => typeof i.value === 'number')) return result.filter(i => typeof i.value === 'number');
     return result;
   };
 

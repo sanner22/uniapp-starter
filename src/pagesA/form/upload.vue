@@ -2,14 +2,7 @@
   <view class="uno-px-15px">
     <u-text text="基础用法" type="info" margin="10px 0"></u-text>
     <view>
-      <u-upload
-        :fileList="fileList1"
-        @afterRead="afterRead"
-        @delete="deletePic"
-        name="1"
-        multiple
-        :maxCount="10"
-      />
+      <u-upload :fileList="fileList1" @afterRead="afterRead" @delete="deletePic" name="1" multiple :maxCount="10" />
     </view>
 
     <u-text text="上传视频" type="info" margin="10px 0"></u-text>
@@ -40,26 +33,12 @@
 
     <u-text text="隐藏上传按钮" type="info" margin="10px 0"></u-text>
     <view>
-      <u-upload
-        :fileList="fileList4"
-        @afterRead="afterRead"
-        @delete="deletePic"
-        name="4"
-        multiple
-        :maxCount="2"
-      />
+      <u-upload :fileList="fileList4" @afterRead="afterRead" @delete="deletePic" name="4" multiple :maxCount="2" />
     </view>
 
     <u-text text="限制上传数量" type="info" margin="10px 0"></u-text>
     <view>
-      <u-upload
-        :fileList="fileList5"
-        @afterRead="afterRead"
-        @delete="deletePic"
-        name="5"
-        multiple
-        :maxCount="3"
-      />
+      <u-upload :fileList="fileList5" @afterRead="afterRead" @delete="deletePic" name="5" multiple :maxCount="3" />
     </view>
 
     <u-text text="自定义上传样式" type="info" margin="10px 0"></u-text>

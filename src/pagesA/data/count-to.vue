@@ -12,36 +12,19 @@
 
     <u-text text="显示小数位" type="info" margin="10px 0" />
     <view>
-      <u-count-to
-        :startVal="startVal2"
-        :endVal="endVal"
-        :decimals="decimals"
-      ></u-count-to>
+      <u-count-to :startVal="startVal2" :endVal="endVal" :decimals="decimals"></u-count-to>
     </view>
 
     <u-text text="千分位分隔符" type="info" margin="10px 0" />
     <view>
-      <u-count-to
-        :startVal="startVal3"
-        :endVal="endVal2"
-        separator=","
-        :decimals="decimals"
-      ></u-count-to>
+      <u-count-to :startVal="startVal3" :endVal="endVal2" separator="," :decimals="decimals"></u-count-to>
     </view>
 
     <u-text text="自定义控制" type="info" margin="10px 0" />
     <view>
-      <u-count-to
-        ref="countTo1"
-        :endVal="endVal3"
-        :autoplay="autoplay"
-      ></u-count-to>
+      <u-count-to ref="countTo1" :endVal="endVal3" :autoplay="autoplay"></u-count-to>
     </view>
-    <u-grid
-      :border="true"
-      align="center"
-      customStyle="margin-top: 20px;margin-bottom: 20"
-    >
+    <u-grid :border="true" align="center" customStyle="margin-top: 20px;margin-bottom: 20">
       <u-grid-item @click="start">
         <view class="u-grid-slot">
           <view class="u-grid-slot__circle">
@@ -67,12 +50,7 @@
 
     <u-text text="自定义" type="info" margin="10px 0" />
     <view>
-      <u-count-to
-        :endVal="value"
-        color="#909399"
-        :fontSize="fontSize"
-        :bold="true"
-      ></u-count-to>
+      <u-count-to :endVal="value" color="#909399" :fontSize="fontSize" :bold="true"></u-count-to>
     </view>
   </view>
 </template>

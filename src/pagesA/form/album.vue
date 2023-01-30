@@ -3,19 +3,11 @@
     <u-text text="基础使用" type="info" margin="10px 0" />
     <view class="album">
       <view class="album__avatar">
-        <u-image
-          src="/static/logo.png"
-          mode="aspectFill"
-          width="32"
-          height="32"
-        />
+        <u-image src="/static/logo.png" mode="aspectFill" width="32" height="32" />
       </view>
       <view class="album__content">
         <u-text text="uView UI" type="primary" bold size="17" />
-        <u-text
-          margin="0 0 8px 0"
-          text="全面的组件和便捷的工具会让您信手拈来，如鱼得水"
-        />
+        <u-text margin="0 0 8px 0" text="全面的组件和便捷的工具会让您信手拈来，如鱼得水" />
         <u-album :urls="urls1" keyName="src2"></u-album>
       </view>
     </view>
@@ -23,19 +15,11 @@
     <u-text text="多图模式" type="info" margin="10px 0" />
     <view class="album">
       <view class="album__avatar">
-        <u-image
-          src="/static/logo.png"
-          mode="aspectFill"
-          width="32"
-          height="32"
-        />
+        <u-image src="/static/logo.png" mode="aspectFill" width="32" height="32" />
       </view>
       <view class="album__content">
         <u-text text="uView UI" type="primary" bold size="17" />
-        <u-text
-          margin="0 0 8px 0"
-          text="全面的组件和便捷的工具会让您信手拈来，如鱼得水"
-        />
+        <u-text margin="0 0 8px 0" text="全面的组件和便捷的工具会让您信手拈来，如鱼得水" />
         <u-album :urls="urls2"></u-album>
       </view>
     </view>
@@ -43,12 +27,7 @@
     <u-text text="图文对齐" type="info" margin="10px 0" />
     <view class="album">
       <view class="album__avatar">
-        <u-image
-          src="/static/logo.png"
-          mode="aspectFill"
-          width="32"
-          height="32"
-        />
+        <u-image src="/static/logo.png" mode="aspectFill" width="32" height="32" />
       </view>
       <view class="album__content">
         <u-text text="uView UI" type="primary" bold size="17" />
@@ -65,61 +44,31 @@
             }"
           />
         </view>
-        <u-album
-          :urls="urls2"
-          @albumWidth="(width: number) => (albumWidth = width)"
-          multipleSize="68"
-        ></u-album>
+        <u-album :urls="urls2" @albumWidth="(width: number) => (albumWidth = width)" multipleSize="68"></u-album>
       </view>
     </view>
 
     <u-text text="更改裁剪模式" type="info" margin="10px 0" />
     <view class="album">
       <view class="album__avatar">
-        <u-image
-          src="/static/logo.png"
-          mode="aspectFill"
-          width="32"
-          height="32"
-        />
+        <u-image src="/static/logo.png" mode="aspectFill" width="32" height="32" />
       </view>
       <view class="album__content">
         <u-text text="uView UI" type="primary" bold size="17" />
-        <u-text
-          margin="0 0 8px 0"
-          text="全面的组件和便捷的工具会让您信手拈来，如鱼得水"
-        />
-        <u-album
-          :urls="urls3"
-          rowCount="2"
-          maxCount="4"
-          multipleMode="scaleToFill"
-        ></u-album>
+        <u-text margin="0 0 8px 0" text="全面的组件和便捷的工具会让您信手拈来，如鱼得水" />
+        <u-album :urls="urls3" rowCount="2" maxCount="4" multipleMode="scaleToFill"></u-album>
       </view>
     </view>
 
     <u-text text="更改图片大小" type="info" margin="10px 0" />
     <view class="album">
       <view class="album__avatar">
-        <u-image
-          src="/static/logo.png"
-          mode="aspectFill"
-          width="32"
-          height="32"
-        />
+        <u-image src="/static/logo.png" mode="aspectFill" width="32" height="32" />
       </view>
       <view class="album__content">
         <u-text text="uView UI" type="primary" bold size="17" />
-        <u-text
-          margin="0 0 8px 0"
-          text="全面的组件和便捷的工具会让您信手拈来，如鱼得水"
-        />
-        <u-album
-          :urls="urls4"
-          rowCount="2"
-          maxCount="4"
-          multipleSize="50"
-        ></u-album>
+        <u-text margin="0 0 8px 0" text="全面的组件和便捷的工具会让您信手拈来，如鱼得水" />
+        <u-album :urls="urls4" rowCount="2" maxCount="4" multipleSize="50"></u-album>
       </view>
     </view>
   </view>

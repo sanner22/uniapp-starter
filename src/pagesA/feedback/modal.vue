@@ -11,17 +11,8 @@
       />
     </u-cell-group>
 
-    <u-modal
-      :content="content"
-      title="标题"
-      :show="pickerName === 'show1'"
-      @confirm="confirm"
-    />
-    <u-modal
-      :content="content"
-      :show="pickerName === 'show2'"
-      @confirm="confirm"
-    />
+    <u-modal :content="content" title="标题" :show="pickerName === 'show1'" @confirm="confirm" />
+    <u-modal :content="content" :show="pickerName === 'show2'" @confirm="confirm" />
     <u-modal
       :content="content"
       :show="pickerName === 'show3'"
@@ -55,32 +46,15 @@
       @confirm="confirm"
       @close="close"
     />
-    <u-modal
-      title="利剑出鞘,一统江湖"
-      :show="pickerName === 'show7'"
-      closeOnClickOverlay
-      @confirm="confirm"
-    >
+    <u-modal title="利剑出鞘,一统江湖" :show="pickerName === 'show7'" closeOnClickOverlay @confirm="confirm">
       <u-image src="/static/logo.png" width="80" height="80" />
     </u-modal>
-    <u-modal
-      title="标题"
-      :show="pickerName === 'show8'"
-      :content="content"
-      closeOnClickOverlay
-      showCancelButton
-    >
+    <u-modal title="标题" :show="pickerName === 'show8'" :content="content" closeOnClickOverlay showCancelButton>
       <template #confirmButton>
         <u-button text="确定" type="success" shape="circle" @click="close" />
       </template>
     </u-modal>
-    <u-modal
-      :content="content"
-      title="标题"
-      :show="pickerName === 'show9'"
-      :zoom="false"
-      @confirm="confirm"
-    />
+    <u-modal :content="content" title="标题" :show="pickerName === 'show9'" :zoom="false" @confirm="confirm" />
   </view>
 </template>
 
@@ -126,8 +100,7 @@
     },
   ];
 
-  const content =
-    '模态框，常用于消息提示、消息确认、在当前页面内完成特定的交互操作';
+  const content = '模态框，常用于消息提示、消息确认、在当前页面内完成特定的交互操作';
   const pickerName = ref('');
 
   const showModal = (index: number) => {

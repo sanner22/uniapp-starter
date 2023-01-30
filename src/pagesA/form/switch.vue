@@ -55,20 +55,10 @@
     <u-text text="自定义样式" type="info" margin="10px 0" />
     <view class="uno-flex uno-gap-15px">
       <view>
-        <u-switch
-          :space="2"
-          v-model="value11"
-          activeColor="#f56c6c"
-          inactiveColor="rgb(230, 230, 230)"
-        ></u-switch>
+        <u-switch :space="2" v-model="value11" activeColor="#f56c6c" inactiveColor="rgb(230, 230, 230)"></u-switch>
       </view>
       <view>
-        <u-switch
-          space="2"
-          v-model="value12"
-          activeColor="#f9ae3d"
-          inactiveColor="rgb(230, 230, 230)"
-        ></u-switch>
+        <u-switch space="2" v-model="value12" activeColor="#f9ae3d" inactiveColor="rgb(230, 230, 230)"></u-switch>
       </view>
     </view>
 

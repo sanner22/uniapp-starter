@@ -4,12 +4,7 @@
       <u-list-item v-for="(item, index) in indexList" :key="index">
         <u-cell :title="`列表长度-${index + 1}`">
           <template #icon>
-            <u-avatar
-              shape="square"
-              size="35"
-              :src="item.url"
-              customStyle="margin: -3px 5px -3px 0"
-            />
+            <u-avatar shape="square" size="35" :src="item.url" customStyle="margin: -3px 5px -3px 0" />
           </template>
         </u-cell>
       </u-list-item>

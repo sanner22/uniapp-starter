@@ -13,13 +13,7 @@
       </u-cell>
       <u-cell :border="true" title="限制输入范围">
         <template #value>
-          <u-number-box
-            v-model="value3"
-            step="1"
-            :min="min1"
-            :max="max1"
-            @change="change"
-          />
+          <u-number-box v-model="value3" step="1" :min="min1" :max="max1" @change="change" />
         </template>
       </u-cell>
       <u-cell :border="true" title="限制输入整数">
@@ -29,52 +23,27 @@
       </u-cell>
       <u-cell :border="true" title="禁用状态">
         <template #value>
-          <u-number-box
-            v-model="value5"
-            step="1"
-            :disabled="true"
-            @change="change"
-          />
+          <u-number-box v-model="value5" step="1" :disabled="true" @change="change" />
         </template>
       </u-cell>
       <u-cell :border="true" title="禁用输入框">
         <template #value>
-          <u-number-box
-            v-model="value6"
-            step="1"
-            :disabledInput="true"
-            @change="change"
-          />
+          <u-number-box v-model="value6" step="1" :disabledInput="true" @change="change" />
         </template>
       </u-cell>
       <u-cell :border="true" title="禁用长按">
         <template #value>
-          <u-number-box
-            v-model="value7"
-            step="1"
-            :longPress="false"
-            @change="change"
-          />
+          <u-number-box v-model="value7" step="1" :longPress="false" @change="change" />
         </template>
       </u-cell>
       <u-cell :border="true" title="固定小数位数">
         <template #value>
-          <u-number-box
-            v-model="value8"
-            step="0.2"
-            decimalLength="1"
-            @change="change"
-          />
+          <u-number-box v-model="value8" step="0.2" decimalLength="1" @change="change" />
         </template>
       </u-cell>
       <u-cell :border="true" title="异步变更">
         <template #value>
-          <u-number-box
-            v-model="value9"
-            step="1"
-            :asyncChange="asyncChange"
-            @change="myAsyncChange"
-          />
+          <u-number-box v-model="value9" step="1" :asyncChange="asyncChange" @change="myAsyncChange" />
         </template>
       </u-cell>
       <u-cell :border="true" title="自定义大小颜色样式">
@@ -92,21 +61,14 @@
       </u-cell>
       <u-cell :border="true" title="自定义(为0时减少按钮会消失)">
         <template #value>
-          <u-number-box
-            v-model="value11"
-            step="1"
-            :min="0"
-            :showMinus="value11 > 0"
-          >
+          <u-number-box v-model="value11" step="1" :min="0" :showMinus="value11 > 0">
             <template #minus>
               <view class="minus">
                 <u-icon name="minus" size="12"></u-icon>
               </view>
             </template>
             <template #input>
-              <text style="width: 50px; text-align: center" class="input">{{
-                value11
-              }}</text>
+              <text style="width: 50px; text-align: center" class="input">{{ value11 }}</text>
             </template>
             <template #plus>
               <view class="plus">

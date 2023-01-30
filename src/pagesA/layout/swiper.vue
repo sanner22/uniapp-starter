@@ -4,13 +4,7 @@
     <u-swiper :list="list1" @change="change" @click="click"></u-swiper>
 
     <u-text type="info" margin="10px 0" text="带标题" />
-    <u-swiper
-      :list="list2"
-      keyName="image"
-      showTitle
-      :autoplay="false"
-      circular
-    ></u-swiper>
+    <u-swiper :list="list2" keyName="image" showTitle :autoplay="false" circular></u-swiper>
 
     <u-text type="info" margin="10px 0" text="带指示器" />
     <u-swiper :list="list3" indicator indicatorMode="line" circular></u-swiper>
@@ -35,11 +29,7 @@
     <u-swiper :list="list4" keyName="url" :autoplay="false"></u-swiper>
 
     <u-text type="info" margin="10px 0" text="自定义指示器" />
-    <u-swiper
-      :list="list5"
-      @change="(e: any) => (current = e.current)"
-      :autoplay="false"
-    >
+    <u-swiper :list="list5" @change="(e: any) => (current = e.current)" :autoplay="false">
       <template #indicator>
         <view class="indicator">
           <view
@@ -61,9 +51,7 @@
     >
       <template #indicator>
         <view class="indicator-num">
-          <text class="indicator-num__text">
-            {{ currentNum + 1 }}/{{ list6.length }}
-          </text>
+          <text class="indicator-num__text"> {{ currentNum + 1 }}/{{ list6.length }} </text>
         </view>
       </template>
     </u-swiper>

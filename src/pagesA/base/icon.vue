@@ -208,12 +208,7 @@
       <u-grid-item :name="item" v-for="(item, index) in icons" :key="index">
         <view class="uno-center uno-flex-col uno-py-1em">
           <u-icon :name="item" size="30"></u-icon>
-          <u-text
-            :text="item"
-            type="info"
-            size="12px"
-            margin="10px 0 0"
-          ></u-text>
+          <u-text :text="item" type="info" size="12px" margin="10px 0 0"></u-text>
         </view>
       </u-grid-item>
     </u-grid>

@@ -2,12 +2,7 @@
   <view class="uno-px-15px">
     <u-text text="基础使用" type="info" margin="10px 0" />
     <view class="uno-flex uno-flex-col uno-gap-15px">
-      <u-input
-        placeholder="请输入内容"
-        border="surround"
-        v-model="value"
-        @change="change"
-      />
+      <u-input placeholder="请输入内容" border="surround" v-model="value" @change="change" />
     </view>
 
     <u-text text="可清空内容" type="info" margin="10px 0" />
@@ -17,12 +12,7 @@
 
     <u-text text="数字键盘" type="info" margin="10px 0" />
     <view class="uno-flex uno-flex-col uno-gap-15px">
-      <u-input
-        placeholder="请输入内容"
-        border="surround"
-        type="number"
-        clearable
-      />
+      <u-input placeholder="请输入内容" border="surround" type="number" clearable />
     </view>
 
     <u-text text="密码类型" type="info" margin="10px 0" />
@@ -47,16 +37,8 @@
 
     <u-text text="前后图标" type="info" margin="10px 0" />
     <view class="uno-flex uno-flex-col uno-gap-15px">
-      <u-input
-        placeholder="前置图标"
-        prefixIcon="search"
-        prefixIconStyle="font-size: 22px;color: #909399"
-      />
-      <u-input
-        placeholder="后置图标"
-        suffixIcon="map-fill"
-        suffixIconStyle="color: #909399"
-      />
+      <u-input placeholder="前置图标" prefixIcon="search" prefixIconStyle="font-size: 22px;color: #909399" />
+      <u-input placeholder="后置图标" suffixIcon="map-fill" suffixIconStyle="color: #909399" />
     </view>
 
     <u-text text="前后插槽" type="info" margin="10px 0" />
@@ -86,18 +68,8 @@
         <u-input placeholder="后置插槽">
           <!-- #endif -->
           <template v-slot:suffix>
-            <u-code
-              ref="uCode0"
-              @change="codeChange"
-              seconds="20"
-              changeText="X秒重新获取哈哈哈"
-            />
-            <u-button
-              @click="getCode"
-              :text="tips"
-              type="success"
-              size="mini"
-            />
+            <u-code ref="uCode0" @change="codeChange" seconds="20" changeText="X秒重新获取哈哈哈" />
+            <u-button @click="getCode" :text="tips" type="success" size="mini" />
           </template>
           <!-- #ifndef APP-NVUE -->
         </u-input>

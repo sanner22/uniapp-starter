@@ -5,11 +5,7 @@
       <u-rate size="20" />
     </view>
 
-    <u-text
-      text="自定义选中星星数量(有change事件和watch)"
-      type="info"
-      margin="10px 0"
-    ></u-text>
+    <u-text text="自定义选中星星数量(有change事件和watch)" type="info" margin="10px 0"></u-text>
     <view class="uno-flex">
       <u-rate size="20" v-model="value1" @change="change" />
     </view>
@@ -51,22 +47,12 @@
 
     <u-text text="是否允许半星" type="info" margin="10px 0"></u-text>
     <view class="uno-flex">
-      <u-rate
-        size="20"
-        v-model="HalfValue"
-        :allowHalf="true"
-        @change="change"
-      />
+      <u-rate size="20" v-model="HalfValue" :allowHalf="true" @change="change" />
     </view>
 
     <u-text text="自定义选中的图标" type="info" margin="10px 0"></u-text>
     <view class="uno-flex">
-      <u-rate
-        size="20"
-        v-model="activeIconValue"
-        inactiveIcon="heart"
-        activeIcon="heart-fill"
-      />
+      <u-rate size="20" v-model="activeIconValue" inactiveIcon="heart" activeIcon="heart-fill" />
     </view>
 
     <u-gap height="30"></u-gap>

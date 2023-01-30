@@ -23,11 +23,7 @@
 
     <u-text text="禁用输入框" type="info" margin="10px 0"></u-text>
     <view>
-      <u-search
-        placeholder="输入框被禁用,可以监听点击事件进行跳转"
-        disabled
-        :show-action="false"
-      />
+      <u-search placeholder="输入框被禁用,可以监听点击事件进行跳转" disabled :show-action="false" />
     </view>
 
     <u-text text="点击左侧图标" type="info" margin="10px 0"></u-text>
@@ -44,22 +40,9 @@
 
     <u-text text="自定义" type="info" margin="10px 0"></u-text>
     <view class="uno-flex uno-flex-col uno-gap-15px">
-      <u-search
-        v-model="value10"
-        :show-action="false"
-        borderColor="rgb(230, 230, 230)"
-        bgColor="#fff"
-      />
-      <u-search
-        v-model="value11"
-        :show-action="false"
-        search-icon-color="#FF0000"
-      />
-      <u-search
-        v-model="value12"
-        :show-action="false"
-        placeholder-color="#FF0000"
-      />
+      <u-search v-model="value10" :show-action="false" borderColor="rgb(230, 230, 230)" bgColor="#fff" />
+      <u-search v-model="value11" :show-action="false" search-icon-color="#FF0000" />
+      <u-search v-model="value12" :show-action="false" placeholder-color="#FF0000" />
       <u-search v-model="value13" :show-action="false" color="#FF0000" />
       <u-search v-model="value14" label="手机" :show-action="false" />
       <u-search v-model="value15" search-icon="scan" :show-action="false" />

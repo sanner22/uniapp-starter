@@ -11,13 +11,7 @@
       />
     </u-cell-group>
 
-    <u-picker
-      :show="pickerName === 'show1'"
-      :columns="columns1"
-      @change="change"
-      @cancel="cancel"
-      @confirm="confirm"
-    />
+    <u-picker :show="pickerName === 'show1'" :columns="columns1" @change="change" @cancel="cancel" @confirm="confirm" />
 
     <u-picker
       :show="pickerName === 'show2'"

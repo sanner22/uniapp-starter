@@ -10,13 +10,7 @@
         @start="disabled1 = true"
         @end="disabled1 = false"
       />
-      <u-button
-        @tap="getCode"
-        :text="tips"
-        type="success"
-        size="small"
-        :disabled="disabled1"
-      />
+      <u-button @tap="getCode" :text="tips" type="success" size="small" :disabled="disabled1" />
     </view>
 
     <u-text
@@ -33,23 +27,12 @@
         @start="disabled2 = true"
         @end="disabled2 = false"
       />
-      <u-button
-        type="primary"
-        @tap="getCode1"
-        :text="tips1"
-        size="small"
-        :disabled="disabled2"
-      />
+      <u-button type="primary" @tap="getCode1" :text="tips1" size="small" :disabled="disabled2" />
     </view>
 
     <u-text text="文本样式" type="info" margin="10px 0"></u-text>
     <view>
-      <u-code
-        ref="uCode2"
-        @change="codeChange2"
-        keep-running
-        start-text="点我获取验证码"
-      />
+      <u-code ref="uCode2" @change="codeChange2" keep-running start-text="点我获取验证码" />
       <u-text @click="getCode2" :text="tips2" />
     </view>
   </view>

@@ -1,15 +1,7 @@
 <template>
   <view class="uno-px-15px">
-    <u-text
-      text="基本案例：苹果、香蕉和橙子哪个最甜？"
-      type="info"
-      margin="10px 0"
-    />
-    <u-radio-group
-      v-model="radiovalue1"
-      placement="column"
-      @change="groupChange"
-    >
+    <u-text text="基本案例：苹果、香蕉和橙子哪个最甜？" type="info" margin="10px 0" />
+    <u-radio-group v-model="radiovalue1" placement="column" @change="groupChange">
       <u-radio
         :customStyle="{ marginBottom: '8px' }"
         v-for="(item, index) in radiolist1"
@@ -31,11 +23,7 @@
       />
     </u-radio-group>
 
-    <u-text
-      text="是否禁用：苹果、香蕉和菠萝哪个最甜？"
-      type="info"
-      margin="10px 0"
-    />
+    <u-text text="是否禁用：苹果、香蕉和菠萝哪个最甜？" type="info" margin="10px 0" />
     <u-radio-group v-model="radiovalue3" placement="column">
       <u-radio
         :customStyle="{ marginBottom: '8px' }"
@@ -47,16 +35,8 @@
       />
     </u-radio-group>
 
-    <u-text
-      text="纵向排列：狙击枪用哪个倍镜最好？"
-      type="info"
-      margin="10px 0"
-    />
-    <u-radio-group
-      v-model="radiovalue4"
-      placement="column"
-      :labelDisabled="true"
-    >
+    <u-text text="纵向排列：狙击枪用哪个倍镜最好？" type="info" margin="10px 0" />
+    <u-radio-group v-model="radiovalue4" placement="column" :labelDisabled="true">
       <u-radio
         :customStyle="{ marginBottom: '8px' }"
         v-for="(item, index) in radiolist4"
@@ -66,16 +46,8 @@
       />
     </u-radio-group>
 
-    <u-text
-      text="自定义颜色：你比较喜欢下面哪个颜色？"
-      type="info"
-      margin="10px 0"
-    />
-    <u-radio-group
-      v-model="radiovalue5"
-      placement="column"
-      activeColor="#19be6b"
-    >
+    <u-text text="自定义颜色：你比较喜欢下面哪个颜色？" type="info" margin="10px 0" />
+    <u-radio-group v-model="radiovalue5" placement="column" activeColor="#19be6b">
       <u-radio
         :customStyle="{ marginBottom: '8px' }"
         v-for="(item, index) in radiolist5"
@@ -85,11 +57,7 @@
       />
     </u-radio-group>
 
-    <u-text
-      text="横向排列形式：王者荣耀哪个英雄最美？"
-      type="info"
-      margin="10px 0"
-    />
+    <u-text text="横向排列形式：王者荣耀哪个英雄最美？" type="info" margin="10px 0" />
     <u-radio-group v-model="radiovalue6" placement="row">
       <u-radio
         :customStyle="{ marginRight: '16px' }"
@@ -100,17 +68,8 @@
       />
     </u-radio-group>
 
-    <u-text
-      text="横向两端排列形式：你觉得阿木木可爱吗？"
-      type="info"
-      margin="10px 0"
-    />
-    <u-radio-group
-      v-model="radiovalue7"
-      :border-bottom="true"
-      placement="column"
-      iconPlacement="right"
-    >
+    <u-text text="横向两端排列形式：你觉得阿木木可爱吗？" type="info" margin="10px 0" />
+    <u-radio-group v-model="radiovalue7" :border-bottom="true" placement="column" iconPlacement="right">
       <u-radio
         :customStyle="{ marginBottom: '16px' }"
         v-for="(item, index) in radiolist7"

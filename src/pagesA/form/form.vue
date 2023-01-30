@@ -2,19 +2,9 @@
   <view class="uno-px-15px">
     <u-text text="基础使用" type="info" margin="10px 0" />
 
-    <u-form
-      label-position="left"
-      label-width="80"
-      :model="model1"
-      :rules="formRules"
-      ref="form1"
-    >
+    <u-form label-position="left" label-width="80" :model="model1" :rules="formRules" ref="form1">
       <u-form-item label="姓名" prop="userInfo.name" :border-bottom="true">
-        <u-input
-          v-model="model1.userInfo.name"
-          border="none"
-          placeholder="姓名,只能为中文"
-        />
+        <u-input v-model="model1.userInfo.name" border="none" placeholder="姓名,只能为中文" />
       </u-form-item>
 
       <u-form-item
@@ -63,18 +53,8 @@
         </u-radio-group>
       </u-form-item>
 
-      <u-form-item
-        label="兴趣爱好"
-        prop="checkboxValue1"
-        :border-bottom="true"
-        labelWidth="80"
-        ref="item3"
-      >
-        <u-checkbox-group
-          v-model="model1.checkboxValue1"
-          shape="square"
-          @change="checkboxGroupChange"
-        >
+      <u-form-item label="兴趣爱好" prop="checkboxValue1" :border-bottom="true" labelWidth="80" ref="item3">
+        <u-checkbox-group v-model="model1.checkboxValue1" shape="square" @change="checkboxGroupChange">
           <u-checkbox
             :customStyle="{ marginRight: '16px' }"
             v-for="(item, index) in [
@@ -99,12 +79,7 @@
       </u-form-item>
 
       <u-form-item label="简介" prop="intro" :border-bottom="true">
-        <u-textarea
-          placeholder="不低于3个字"
-          v-model="model1.intro"
-          border="none"
-          count
-        />
+        <u-textarea placeholder="不低于3个字" v-model="model1.intro" border="none" count />
       </u-form-item>
 
       <u-form-item
@@ -129,25 +104,10 @@
         </template>
       </u-form-item>
 
-      <u-form-item
-        label="验证码"
-        prop="code"
-        labelWidth="80"
-        :border-bottom="true"
-      >
-        <u-input
-          v-model="model1.code"
-          border="none"
-          placeholder="请填写验证码"
-        />
+      <u-form-item label="验证码" prop="code" labelWidth="80" :border-bottom="true">
+        <u-input v-model="model1.code" border="none" placeholder="请填写验证码" />
         <template #right>
-          <u-button
-            :text="tips || '获取验证码'"
-            type="success"
-            size="mini"
-            :disabled="disabled1"
-            @tap="getCode"
-          />
+          <u-button :text="tips || '获取验证码'" type="success" size="mini" :disabled="disabled1" @tap="getCode" />
         </template>
       </u-form-item>
 
@@ -174,18 +134,8 @@
       </u-form-item>
     </u-form>
 
-    <u-button
-      type="primary"
-      text="提交"
-      customStyle="margin-top: 15px"
-      @click="submit"
-    />
-    <u-button
-      type="error"
-      text="重置"
-      customStyle="margin-top: 15px"
-      @click="reset"
-    />
+    <u-button type="primary" text="提交" customStyle="margin-top: 15px" @click="submit" />
+    <u-button type="error" text="重置" customStyle="margin-top: 15px" @click="reset" />
 
     <u-gap height="30" />
 
@@ -219,13 +169,7 @@
       @close="calendarClose"
     />
 
-    <u-code
-      ref="uCode1"
-      seconds="20"
-      @change="codeChange"
-      @start="disabled1 = true"
-      @end="disabled1 = false"
-    />
+    <u-code ref="uCode1" seconds="20" @change="codeChange" @start="disabled1 = true" @end="disabled1 = false" />
 
     <u-datetime-picker
       :show="pickerName === 'birthday'"

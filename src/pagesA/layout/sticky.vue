@@ -5,10 +5,7 @@
     <u-gap height="30" />
 
     <!-- #ifdef APP-NVUE -->
-    <u-text
-      type="warning"
-      text="目前由于nvue的bug,设置sticky的top值无效。"
-    ></u-text>
+    <u-text type="warning" text="目前由于nvue的bug,设置sticky的top值无效。"></u-text>
     <!-- #endif -->
 
     <u-sticky>

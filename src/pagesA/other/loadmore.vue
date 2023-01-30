@@ -16,20 +16,10 @@
     <u-loadmore status="nomore" :isDot="true" :line="true" color="#909399" />
 
     <u-text type="info" margin="10px 0" text="自定义提示语" />
-    <u-loadmore
-      status="loading"
-      loadingText="努力加载中,先喝杯茶"
-      color="#909399"
-    />
+    <u-loadmore status="loading" loadingText="努力加载中,先喝杯茶" color="#909399" />
 
     <u-text type="info" margin="10px 0" text="自定义线条颜色" />
-    <u-loadmore
-      loadmoreText="看,我和别人不一样"
-      color="#1CD29B"
-      lineColor="#1CD29B"
-      dashed
-      :line="true"
-    />
+    <u-loadmore loadmoreText="看,我和别人不一样" color="#1CD29B" lineColor="#1CD29B" dashed :line="true" />
   </view>
 </template>
 

@@ -2,31 +2,15 @@
   <view class="uno-px-15px">
     <u-text text="基础用法" type="info" margin="10px 0" />
     <view class="uno-flex">
-      <u-count-down
-        :time="30 * 60 * 60 * 1000"
-        format="HH:mm:ss"
-        autoStart
-        millisecond
-        @finish="finish"
-      />
+      <u-count-down :time="30 * 60 * 60 * 1000" format="HH:mm:ss" autoStart millisecond @finish="finish" />
     </view>
 
     <u-text text="自定义格式" type="info" margin="10px 0" />
     <view class="uno-flex">
-      <u-count-down
-        :time="30 * 60 * 60 * 1000"
-        format="DD:HH:mm:ss"
-        autoStart
-        millisecond
-        @change="onChange"
-      >
+      <u-count-down :time="30 * 60 * 60 * 1000" format="DD:HH:mm:ss" autoStart millisecond @change="onChange">
         <view class="time">
           <text class="time__item">{{ timeData.days }}&nbsp;天</text>
-          <text class="time__item"
-            >{{
-              timeData.hours > 10 ? timeData.hours : '0' + timeData.hours
-            }}&nbsp;时</text
-          >
+          <text class="time__item">{{ timeData.hours > 10 ? timeData.hours : '0' + timeData.hours }}&nbsp;时</text>
           <text class="time__item">{{ timeData.minutes }}&nbsp;分</text>
           <text class="time__item">{{ timeData.seconds }}&nbsp;秒</text>
         </view>
@@ -35,28 +19,15 @@
 
     <u-text text="毫秒级渲染" type="info" margin="10px 0" />
     <view class="uno-flex">
-      <u-count-down
-        :time="30 * 60 * 60 * 1000"
-        format="HH:mm:ss:SSS"
-        autoStart
-        millisecond
-      />
+      <u-count-down :time="30 * 60 * 60 * 1000" format="HH:mm:ss:SSS" autoStart millisecond />
     </view>
 
     <u-text text="自定义样式" type="info" margin="10px 0" />
     <view class="uno-flex">
-      <u-count-down
-        :time="30 * 60 * 60 * 1000"
-        format="HH:mm:ss"
-        autoStart
-        millisecond
-        @change="onChange"
-      >
+      <u-count-down :time="30 * 60 * 60 * 1000" format="HH:mm:ss" autoStart millisecond @change="onChange">
         <view class="time">
           <view class="time__custom">
-            <text class="time__custom__item">{{
-              timeData.hours > 10 ? timeData.hours : '0' + timeData.hours
-            }}</text>
+            <text class="time__custom__item">{{ timeData.hours > 10 ? timeData.hours : '0' + timeData.hours }}</text>
           </view>
           <text class="time__doc">:</text>
           <view class="time__custom">
@@ -72,13 +43,7 @@
 
     <u-text text="手动控制" type="info" margin="10px 0" />
     <view class="uno-flex">
-      <u-count-down
-        ref="countDown1"
-        :time="3 * 1000"
-        format="ss:SSS"
-        :autoStart="false"
-        millisecond
-      />
+      <u-count-down ref="countDown1" :time="3 * 1000" format="ss:SSS" :autoStart="false" millisecond />
     </view>
     <u-grid :border="true" :customStyle="{ marginTop: 10 + 'px' }">
       <u-grid-item @click="reset">

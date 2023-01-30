@@ -4,10 +4,7 @@
     <view class="uno-flex uno-flex-col uno-gap-10px">
       <u-alert description="山不在于高，有了神仙就出名" type="warning" />
       <u-alert description="水不在深，有龙则灵" type="primary" />
-      <u-alert
-        description="斯是陋室，惟吾德馨。苔痕上阶绿，草色入帘青"
-        type="error"
-      />
+      <u-alert description="斯是陋室，惟吾德馨。苔痕上阶绿，草色入帘青" type="error" />
       <u-alert description="谈笑有鸿儒，往来无白丁" type="info" />
       <u-alert description="可以调素琴，阅金经" type="success" />
     </view>
@@ -15,20 +12,12 @@
     <u-text type="info" text="深浅色" margin="10px 0" />
     <view class="uno-flex uno-flex-col uno-gap-10px">
       <u-alert description="无丝竹之乱耳，无案牍之劳形" type="warning" />
-      <u-alert
-        description="南阳诸葛庐，西蜀子云亭。孔子云：何陋之有"
-        type="warning"
-        effect="dark"
-      />
+      <u-alert description="南阳诸葛庐，西蜀子云亭。孔子云：何陋之有" type="warning" effect="dark" />
     </view>
 
     <u-text type="info" text="显示图标" margin="10px 0" />
     <view class="uno-flex uno-flex-col uno-gap-10px">
-      <u-alert
-        description="六王毕，四海一；蜀山兀，阿房出"
-        type="error"
-        showIcon
-      />
+      <u-alert description="六王毕，四海一；蜀山兀，阿房出" type="error" showIcon />
       <u-alert
         description="覆压三百余里，隔离天日。骊山北构而西折，直走咸阳，二川溶溶，流入宫墙"
         type="error"

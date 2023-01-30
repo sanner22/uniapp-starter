@@ -44,75 +44,29 @@
 
     <u-text text="可关闭标签" type="info" margin="10px 0"></u-text>
     <view class="uno-flex uno-flex-wrap uno-gap-15px">
-      <u-tag
-        text="标签"
-        size="mini"
-        closable
-        :show="close1"
-        @close="close1 = false"
-      />
-      <u-tag
-        text="标签"
-        type="warning"
-        closable
-        :show="close2"
-        @close="close2 = false"
-      />
-      <u-tag
-        text="标签"
-        type="success"
-        plain
-        size="large"
-        closable
-        :show="close3"
-        @close="close3 = false"
-      />
+      <u-tag text="标签" size="mini" closable :show="close1" @close="close1 = false" />
+      <u-tag text="标签" type="warning" closable :show="close2" @close="close2 = false" />
+      <u-tag text="标签" type="success" plain size="large" closable :show="close3" @close="close3 = false" />
     </view>
 
     <u-text text="带图片和图标" type="info" margin="10px 0"></u-text>
     <view class="uno-flex uno-flex-wrap uno-gap-15px">
       <u-tag text="标签" size="mini" icon="map" plain />
       <u-tag text="标签" type="warning" icon="tags-fill" />
-      <u-tag
-        text="标签"
-        type="success"
-        plain
-        size="large"
-        icon="https://cdn.uviewui.com/uview/example/tag.png"
-      />
+      <u-tag text="标签" type="success" plain size="large" icon="https://cdn.uviewui.com/uview/example/tag.png" />
     </view>
 
     <u-text text="单选标签" type="info" margin="10px 0"></u-text>
     <view class="uno-flex uno-flex-wrap uno-gap-15px">
-      <view
-        class="u-page__tag-item"
-        v-for="(item, index) in radios"
-        :key="index"
-      >
-        <u-tag
-          :text="`选项${index + 1}`"
-          :plain="!item.checked"
-          type="warning"
-          :name="index"
-          @click="radioClick"
-        />
+      <view class="u-page__tag-item" v-for="(item, index) in radios" :key="index">
+        <u-tag :text="`选项${index + 1}`" :plain="!item.checked" type="warning" :name="index" @click="radioClick" />
       </view>
     </view>
 
     <u-text text="多选标签" type="info" margin="10px 0"></u-text>
     <view class="uno-flex uno-flex-wrap uno-gap-15px">
-      <view
-        class="u-page__tag-item"
-        v-for="(item, index) in checkboxs"
-        :key="index"
-      >
-        <u-tag
-          :text="`选项${index + 1}`"
-          :plain="!item.checked"
-          type="warning"
-          :name="index"
-          @click="checkboxClick"
-        >
+      <view class="u-page__tag-item" v-for="(item, index) in checkboxs" :key="index">
+        <u-tag :text="`选项${index + 1}`" :plain="!item.checked" type="warning" :name="index" @click="checkboxClick">
         </u-tag>
       </view>
     </view>

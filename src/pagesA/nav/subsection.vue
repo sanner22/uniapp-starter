@@ -2,22 +2,12 @@
   <view class="uno-px-15px">
     <u-text type="info" margin="10px 0" text="基础使用"></u-text>
     <view>
-      <u-subsection
-        :list="list"
-        mode="subsection"
-        :current="current1"
-        @change="change1"
-      ></u-subsection>
+      <u-subsection :list="list" mode="subsection" :current="current1" @change="change1"></u-subsection>
     </view>
 
     <u-text type="info" margin="10px 0" text="按钮模式"></u-text>
     <view>
-      <u-subsection
-        :list="list"
-        mode="button"
-        :current="current2"
-        @change="change2"
-      ></u-subsection>
+      <u-subsection :list="list" mode="button" :current="current2" @change="change2"></u-subsection>
     </view>
 
     <u-text type="info" margin="10px 0" text="更换主题"></u-text>

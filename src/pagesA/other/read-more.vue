@@ -1,12 +1,6 @@
 <template>
   <view class="uno-p-15px">
-    <u-read-more
-      ref="readMore1"
-      :showHeight="showHeight"
-      toggle
-      @open="open"
-      @close="close"
-    >
+    <u-read-more ref="readMore1" :showHeight="showHeight" toggle @open="open" @close="close">
       <u-parse :content="content" @load="load" :tag-style="tagStyle"></u-parse>
     </u-read-more>
   </view>

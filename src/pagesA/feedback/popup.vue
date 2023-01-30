@@ -27,20 +27,11 @@
       <view
         class="u-popup-slot"
         :style="{
-          width: ['bottom', 'top'].includes(popupData.mode)
-            ? '750rpx'
-            : '200px',
-          marginTop: ['left', 'right'].includes(popupData.mode)
-            ? '480rpx'
-            : '0',
+          width: ['bottom', 'top'].includes(popupData.mode) ? '750rpx' : '200px',
+          marginTop: ['left', 'right'].includes(popupData.mode) ? '480rpx' : '0',
         }"
       >
-        <u-button
-          type="success"
-          text="点我关闭"
-          customStyle="width: 200rpx"
-          @click="show = !show"
-        ></u-button>
+        <u-button type="success" text="点我关闭" customStyle="width: 200rpx" @click="show = !show"></u-button>
       </view>
     </u-popup>
   </view>

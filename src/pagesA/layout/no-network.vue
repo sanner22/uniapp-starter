@@ -1,21 +1,11 @@
 <template>
   <view>
-    <u-no-network
-      @disconnected="disconnected"
-      @connected="connected"
-      @retry="retry"
-    />
+    <u-no-network @disconnected="disconnected" @connected="connected" @retry="retry" />
     <view class="u-content">
       <view class="u-content__circle">
         <u-icon name="checkbox-mark" color="#fff" size="30"></u-icon>
       </view>
-      <u-text
-        type="success"
-        size="15"
-        margin="15px 0 0"
-        align="center"
-        text="网络正常"
-      />
+      <u-text type="success" size="15" margin="15px 0 0" align="center" text="网络正常" />
       <u-text
         type="info"
         size="13"

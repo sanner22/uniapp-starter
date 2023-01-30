@@ -11,11 +11,7 @@
   import Iconify from '@/components/Iconify/index.vue';
   import { HOME_PAGE } from '@/enums/routerEnum';
 
-  const {
-    navigationBarBackgroundColor,
-    navigationBarTitleText,
-    navigationBarTextStyle,
-  } = useGlobalStyle();
+  const { navigationBarBackgroundColor, navigationBarTitleText, navigationBarTextStyle } = useGlobalStyle();
 
   const { currentRoute, currentPages } = useRoute();
 
@@ -37,27 +33,15 @@
   const defaultNavbarHeight = ref(44);
   const defaultTitleSize = ref(16);
   const defaultIconSize = ref(24);
-  const navbarHeight = computed(
-    () => `${px2rpx(defaultNavbarHeight.value)}rpx`,
-  );
-  const headHeight = computed(
-    () => `${px2rpx((statusBarHeight || 0) + defaultNavbarHeight.value)}rpx`,
-  );
+  const navbarHeight = computed(() => `${px2rpx(defaultNavbarHeight.value)}rpx`);
+  const headHeight = computed(() => `${px2rpx((statusBarHeight || 0) + defaultNavbarHeight.value)}rpx`);
   const sideGap = computed(() => `${px2rpx(props.gap)}rpx`);
-  const navbarBgColor = computed(
-    () => props.bgColor || navigationBarBackgroundColor,
-  );
+  const navbarBgColor = computed(() => props.bgColor || navigationBarBackgroundColor);
   const navbarTitle = computed(
-    () =>
-      props.title ||
-      currentRoute?.style?.navigationBarTitleText ||
-      navigationBarTitleText,
+    () => props.title || currentRoute?.style?.navigationBarTitleText || navigationBarTitleText,
   );
   const navbarTitleColor = computed(
-    () =>
-      props.titleColor ||
-      currentRoute?.style?.navigationBarTextStyle ||
-      navigationBarTextStyle,
+    () => props.titleColor || currentRoute?.style?.navigationBarTextStyle || navigationBarTextStyle,
   );
   const navbarTitleSize = computed(() => {
     return `${px2rpx(defaultTitleSize.value) || props.titleSize}rpx`;
@@ -83,24 +67,12 @@
 
 <template>
   <view class="head-wrapper">
-    <view
-      :class="['page-head', props.fixed ? 'uno-head-fixed' : '', 'uno-shadow']"
-    >
+    <view :class="['page-head', props.fixed ? 'uno-head-fixed' : '', 'uno-shadow']">
       <!-- 顶部状态栏 -->
       <view class="status-bar"></view>
       <!-- navbar -->
-      <view
-        :class="[
-          'navbar-wrapper',
-          'uno-flex',
-          'uno-flex-nowrap',
-          'uno-justify-between',
-          'uno-items-center',
-        ]"
-      >
-        <view
-          class="uno-flex uno-flex-nowrap uno-items-center uno-h-full uno-w3/10 uno-min-w3/10"
-        >
+      <view :class="['navbar-wrapper', 'uno-flex', 'uno-flex-nowrap', 'uno-justify-between', 'uno-items-center']">
+        <view class="uno-flex uno-flex-nowrap uno-items-center uno-h-full uno-w3/10 uno-min-w3/10">
           <slot name="left">
             <view class="uno-h-full uno-flex uno-items-center">
               <template v-if="backShow">
@@ -122,16 +94,12 @@
             </view>
           </slot>
         </view>
-        <view
-          class="navbar__center uno-center uno-flex-nowrap uno-h-full uno-w2/5 uno-min-w2/5"
-        >
+        <view class="navbar__center uno-center uno-flex-nowrap uno-h-full uno-w2/5 uno-min-w2/5">
           <slot>
             <text>{{ navbarTitle }}</text>
           </slot>
         </view>
-        <view
-          class="uno-flex uno-flex-nowrap uno-justify-end uno-items-center uno-h-full uno-w3/10 uno-min-w3/10"
-        >
+        <view class="uno-flex uno-flex-nowrap uno-justify-end uno-items-center uno-h-full uno-w3/10 uno-min-w3/10">
           <slot name="right"></slot>
         </view>
       </view>

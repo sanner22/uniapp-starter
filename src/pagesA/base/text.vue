@@ -46,11 +46,7 @@
     <u-text type="info" margin="15px 0" text="超链接"></u-text>
     <view class="u-demo-block__content">
       <view class="u-page__text-item">
-        <u-text
-          mode="link"
-          text="Go to uView docs"
-          href="https://www.uviewui.com"
-        ></u-text>
+        <u-text mode="link" text="Go to uView docs" href="https://www.uviewui.com"></u-text>
       </view>
     </view>
 
@@ -64,18 +60,10 @@
     <u-text type="info" margin="15px 0" text="前后图标"></u-text>
     <view class="u-demo-block__content">
       <view class="u-page__text-item" style="margin-right: 50px">
-        <u-text
-          prefixIcon="baidu"
-          iconStyle="font-size: 19px"
-          text="百度一下"
-        ></u-text>
+        <u-text prefixIcon="baidu" iconStyle="font-size: 19px" text="百度一下"></u-text>
       </view>
       <view class="u-page__text-item">
-        <u-text
-          suffixIcon="arrow-rightward"
-          iconStyle="font-size: 18px"
-          text="查看更多"
-        ></u-text>
+        <u-text suffixIcon="arrow-rightward" iconStyle="font-size: 18px" text="查看更多"></u-text>
       </view>
     </view>
 
@@ -89,12 +77,7 @@
 
     <u-text type="info" margin="15px 0" text="小程序开放能力"></u-text>
     <view class="u-demo-block__content">
-      <u-text
-        text="分享到微信"
-        openType="share"
-        type="success"
-        @click="clickHandler"
-      ></u-text>
+      <u-text text="分享到微信" openType="share" type="success" @click="clickHandler"></u-text>
     </view>
   </view>
 </template>

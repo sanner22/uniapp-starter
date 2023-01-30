@@ -3,46 +3,22 @@
     <template #header>
       <view class="list">
         <view class="list__item">
-          <u-avatar
-            shape="square"
-            size="35"
-            icon="man-add-fill"
-            fontSize="26"
-            randomBgColor
-          />
+          <u-avatar shape="square" size="35" icon="man-add-fill" fontSize="26" randomBgColor />
           <text class="list__item__user-name">新的朋友</text>
         </view>
         <u-line></u-line>
         <view class="list__item">
-          <u-avatar
-            shape="square"
-            size="35"
-            icon="tags-fill"
-            fontSize="26"
-            randomBgColor
-          />
+          <u-avatar shape="square" size="35" icon="tags-fill" fontSize="26" randomBgColor />
           <text class="list__item__user-name">标签</text>
         </view>
         <u-line></u-line>
         <view class="list__item">
-          <u-avatar
-            shape="square"
-            size="35"
-            icon="chrome-circle-fill"
-            fontSize="26"
-            randomBgColor
-          />
+          <u-avatar shape="square" size="35" icon="chrome-circle-fill" fontSize="26" randomBgColor />
           <text class="list__item__user-name">朋友圈</text>
         </view>
         <u-line></u-line>
         <view class="list__item">
-          <u-avatar
-            shape="square"
-            size="35"
-            icon="qq-fill"
-            fontSize="26"
-            randomBgColor
-          />
+          <u-avatar shape="square" size="35" icon="qq-fill" fontSize="26" randomBgColor />
           <text class="list__item__user-name">QQ</text>
         </view>
         <u-line></u-line>

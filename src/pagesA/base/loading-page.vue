@@ -46,13 +46,11 @@
   const list = reactive([
     {
       title: '自定义提示内容',
-      iconUrl:
-        'https://cdn.uviewui.com/uview/demo/loading-page/promptContent.png',
+      iconUrl: 'https://cdn.uviewui.com/uview/demo/loading-page/promptContent.png',
     },
     {
       title: '自定义图片',
-      iconUrl:
-        'https://cdn.uviewui.com/uview/demo/loading-page/customPicture.png',
+      iconUrl: 'https://cdn.uviewui.com/uview/demo/loading-page/customPicture.png',
     },
     {
       title: '自定义加载动画模式',
@@ -60,8 +58,7 @@
     },
     {
       title: '自定义背景色',
-      iconUrl:
-        'https://cdn.uviewui.com/uview/demo/loading-page/customBgColor.png',
+      iconUrl: 'https://cdn.uviewui.com/uview/demo/loading-page/customBgColor.png',
     },
   ]);
   const openLoadingPage = (indexNum: number) => {

@@ -1,15 +1,7 @@
 <template>
   <view class="uno-px-15px">
-    <u-text
-      text="基本案例：苹果、香蕉和橙子哪个最甜？"
-      type="info"
-      margin="10px 0"
-    />
-    <u-checkbox-group
-      v-model="checkboxValue1"
-      placement="column"
-      @change="checkboxChange"
-    >
+    <u-text text="基本案例：苹果、香蕉和橙子哪个最甜？" type="info" margin="10px 0" />
+    <u-checkbox-group v-model="checkboxValue1" placement="column" @change="checkboxChange">
       <u-checkbox
         :customStyle="{ marginBottom: '8px' }"
         v-for="(item, index) in checkboxList1"
@@ -20,12 +12,7 @@
     </u-checkbox-group>
 
     <u-text text="自定义形状：中国四大名著是？" type="info" margin="10px 0" />
-    <u-checkbox-group
-      v-model="checkboxValue2"
-      placement="column"
-      @change="checkboxChange"
-      shape="square"
-    >
+    <u-checkbox-group v-model="checkboxValue2" placement="column" @change="checkboxChange" shape="square">
       <u-checkbox
         :customStyle="{ marginBottom: '8px' }"
         v-for="(item, index) in checkboxList2"
@@ -36,11 +23,7 @@
     </u-checkbox-group>
 
     <u-text text="是否禁用：下面什么东西不能吃？" type="info" margin="10px 0" />
-    <u-checkbox-group
-      v-model="checkboxValue3"
-      placement="column"
-      @change="checkboxChange"
-    >
+    <u-checkbox-group v-model="checkboxValue3" placement="column" @change="checkboxChange">
       <u-checkbox
         :customStyle="{ marginBottom: '8px' }"
         v-for="(item, index) in checkboxList3"
@@ -51,17 +34,8 @@
       />
     </u-checkbox-group>
 
-    <u-text
-      text="是否禁止点击提示语选中复选框：北宋四大家是谁？"
-      type="info"
-      margin="10px 0"
-    />
-    <u-checkbox-group
-      v-model="checkboxValue4"
-      placement="column"
-      @change="checkboxChange"
-      :labelDisabled="true"
-    >
+    <u-text text="是否禁止点击提示语选中复选框：北宋四大家是谁？" type="info" margin="10px 0" />
+    <u-checkbox-group v-model="checkboxValue4" placement="column" @change="checkboxChange" :labelDisabled="true">
       <u-checkbox
         :customStyle="{ marginBottom: '8px' }"
         v-for="(item, index) in checkboxList4"
@@ -72,12 +46,7 @@
     </u-checkbox-group>
 
     <u-text text="自定义颜色：哪个颜色最好看？" type="info" margin="10px 0" />
-    <u-checkbox-group
-      v-model="checkboxValue5"
-      placement="column"
-      @change="checkboxChange"
-      activeColor="#19be6b"
-    >
+    <u-checkbox-group v-model="checkboxValue5" placement="column" @change="checkboxChange" activeColor="#19be6b">
       <u-checkbox
         :customStyle="{ marginBottom: '8px' }"
         v-for="(item, index) in checkboxList5"
@@ -98,11 +67,7 @@
       />
     </u-checkbox-group>
 
-    <u-text
-      text="横向两端排列形式：什么东西不能吃？"
-      type="info"
-      margin="10px 0"
-    />
+    <u-text text="横向两端排列形式：什么东西不能吃？" type="info" margin="10px 0" />
     <u-checkbox-group
       v-model="checkboxValue7"
       @change="checkboxChange"

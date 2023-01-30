@@ -12,12 +12,7 @@
       />
     </u-cell-group>
 
-    <u-calendar
-      :show="pickerName === 'show1'"
-      defaultDate="2022-02-15"
-      @confirm="confirm"
-      @close="close"
-    />
+    <u-calendar :show="pickerName === 'show1'" defaultDate="2022-02-15" @confirm="confirm" @close="close" />
 
     <u-calendar
       :show="pickerName === 'show2'"
@@ -27,12 +22,7 @@
       @close="close"
     />
 
-    <u-calendar
-      :show="pickerName === 'show3'"
-      mode="range"
-      @confirm="confirm"
-      @close="close"
-    />
+    <u-calendar :show="pickerName === 'show3'" mode="range" @confirm="confirm" @close="close" />
 
     <u-calendar
       :show="pickerName === 'show4'"
@@ -55,19 +45,9 @@
       :formatter="formatter"
     />
 
-    <u-calendar
-      :show="pickerName === 'show6'"
-      @confirm="confirm"
-      @close="close"
-      :maxDate="maxDate"
-    />
+    <u-calendar :show="pickerName === 'show6'" @confirm="confirm" @close="close" :maxDate="maxDate" />
 
-    <u-calendar
-      :show="pickerName === 'show7'"
-      @confirm="confirm"
-      @close="close"
-      showLunar
-    />
+    <u-calendar :show="pickerName === 'show7'" @confirm="confirm" @close="close" showLunar />
 
     <u-calendar
       :show="pickerName === 'show8'"
@@ -90,10 +70,7 @@
   let month: string | number = d.getMonth() + 1;
   month = month < 10 ? `0${month}` : month;
   const date = d.getDate();
-  const customThemeDefaultDate = ref([
-    `${year}-${month}-${date}`,
-    `${year}-${month}-${date + 5}`,
-  ]);
+  const customThemeDefaultDate = ref([`${year}-${month}-${date}`, `${year}-${month}-${date + 5}`]);
   const customTextDefaultDate = [`${year}-${month}-${date}`];
   const maxDate = `${year}-${month}-${date + 10}`;
   const defaultDateMultiple = ref([
@@ -150,9 +127,7 @@
         break;
       case 1:
         e.forEach((value: string, i: number) => {
-          i === 0
-            ? (values.value[index.value - 1] = value)
-            : (values.value[index.value - 1] += ';' + value);
+          i === 0 ? (values.value[index.value - 1] = value) : (values.value[index.value - 1] += ';' + value);
         });
         break;
       case 2:
@@ -172,9 +147,7 @@
         break;
       case 7:
         e.forEach((value: string, i: number) => {
-          i === 0
-            ? (values.value[index.value - 1] = value)
-            : (values.value[index.value - 1] += ';' + value);
+          i === 0 ? (values.value[index.value - 1] = value) : (values.value[index.value - 1] += ';' + value);
         });
         break;
     }

@@ -17,12 +17,7 @@
       </view>
     </u-overlay>
 
-    <u-overlay
-      opacity=".85"
-      :show="showOpcatiy"
-      @click="showOpcatiy = !showOpcatiy"
-    >
-    </u-overlay>
+    <u-overlay opacity=".85" :show="showOpcatiy" @click="showOpcatiy = !showOpcatiy"> </u-overlay>
   </view>
 </template>
 

@@ -1,20 +1,10 @@
 <template>
   <view>
     <u-text type="info" margin="10px 0 10px 10px" text="基础功能" />
-    <u-tabbar
-      :value="value1"
-      @change="change1"
-      :fixed="false"
-      :placeholder="false"
-      :safeAreaInsetBottom="false"
-    >
+    <u-tabbar :value="value1" @change="change1" :fixed="false" :placeholder="false" :safeAreaInsetBottom="false">
       <u-tabbar-item text="首页" icon="home" @click="click1"></u-tabbar-item>
       <u-tabbar-item text="放映厅" icon="photo" @click="click1"></u-tabbar-item>
-      <u-tabbar-item
-        text="直播"
-        icon="play-right"
-        @click="click1"
-      ></u-tabbar-item>
+      <u-tabbar-item text="直播" icon="play-right" @click="click1"></u-tabbar-item>
       <u-tabbar-item text="我的" icon="account" @click="click1"></u-tabbar-item>
     </u-tabbar>
 
@@ -42,11 +32,7 @@
     >
       <u-tabbar-item text="首页" icon="home" name="home"></u-tabbar-item>
       <u-tabbar-item text="放映厅" icon="photo" name="photo"></u-tabbar-item>
-      <u-tabbar-item
-        text="直播"
-        icon="play-right"
-        name="play-right"
-      ></u-tabbar-item>
+      <u-tabbar-item text="直播" icon="play-right" name="play-right"></u-tabbar-item>
       <u-tabbar-item text="我的" name="account" icon="account"></u-tabbar-item>
     </u-tabbar>
 
@@ -61,18 +47,10 @@
     >
       <u-tabbar-item text="首页">
         <template #active-icon>
-          <u-image
-            src="https://cdn.uviewui.com/uview/common/bell-selected.png"
-            width="16"
-            height="16"
-          />
+          <u-image src="https://cdn.uviewui.com/uview/common/bell-selected.png" width="16" height="16" />
         </template>
         <template #inactive-icon>
-          <u-image
-            src="https://cdn.uviewui.com/uview/common/bell.png"
-            width="16"
-            height="16"
-          />
+          <u-image src="https://cdn.uviewui.com/uview/common/bell.png" width="16" height="16" />
         </template>
       </u-tabbar-item>
       <u-tabbar-item text="放映厅" icon="photo"></u-tabbar-item>
@@ -80,18 +58,8 @@
       <u-tabbar-item text="我的" icon="account"></u-tabbar-item>
     </u-tabbar>
 
-    <u-text
-      type="info"
-      margin="10px 0 10px 10px"
-      text="拦截切换事件(点击第二个标签)"
-    />
-    <u-tabbar
-      :value="value5"
-      :fixed="false"
-      @change="change5"
-      :safeAreaInsetBottom="false"
-      :placeholder="false"
-    >
+    <u-text type="info" margin="10px 0 10px 10px" text="拦截切换事件(点击第二个标签)" />
+    <u-tabbar :value="value5" :fixed="false" @change="change5" :safeAreaInsetBottom="false" :placeholder="false">
       <u-tabbar-item text="首页" icon="home"> </u-tabbar-item>
       <u-tabbar-item text="放映厅" icon="photo"></u-tabbar-item>
       <u-tabbar-item text="直播" icon="play-right"></u-tabbar-item>
@@ -113,11 +81,7 @@
       <u-tabbar-item text="我的" icon="account"></u-tabbar-item>
     </u-tabbar>
 
-    <u-text
-      type="info"
-      margin="10px 0 10px 10px"
-      text="固定在底部(固定在屏幕最下方)"
-    />
+    <u-text type="info" margin="10px 0 10px 10px" text="固定在底部(固定在屏幕最下方)" />
     <u-gap height="150"></u-gap>
     <u-tabbar
       :value="value6"

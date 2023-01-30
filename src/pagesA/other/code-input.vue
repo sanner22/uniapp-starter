@@ -1,12 +1,7 @@
 <template>
   <view class="uno-px-15px">
     <u-text type="info" margin="10px 0" text="基础使用" />
-    <u-code-input
-      v-model="value1"
-      :maxlength="4"
-      @change="change"
-      @finish="finish"
-    />
+    <u-code-input v-model="value1" :maxlength="4" @change="change" @finish="finish" />
 
     <u-text type="info" margin="10px 0" text="横线模式" />
     <u-code-input v-model="value2" mode="line" :maxlength="4" :bold="true" />
@@ -19,20 +14,8 @@
 
     <u-text type="info" margin="10px 0" text="细边框" />
     <view class="uno-flex uno-flex-col uno-gap-10px">
-      <u-code-input
-        v-model="value5"
-        mode="box"
-        :space="0"
-        :maxlength="4"
-        hairline
-      />
-      <u-code-input
-        v-model="value6"
-        mode="line"
-        :space="10"
-        :maxlength="4"
-        hairline
-      />
+      <u-code-input v-model="value5" mode="box" :space="0" :maxlength="4" hairline />
+      <u-code-input v-model="value6" mode="line" :space="10" :maxlength="4" hairline />
     </view>
 
     <u-text type="info" margin="10px 0" text="调整颜色" />
@@ -58,24 +41,10 @@
     </view>
 
     <u-text type="info" margin="10px 0" text="点模式" />
-    <u-code-input
-      v-model="value8"
-      mode="box"
-      dot
-      :space="0"
-      :maxlength="4"
-      hairline
-    />
+    <u-code-input v-model="value8" mode="box" dot :space="0" :maxlength="4" hairline />
 
     <u-text type="info" margin="10px 0" text="预置内容" />
-    <u-code-input
-      v-model="value9"
-      mode="box"
-      :space="0"
-      :maxlength="4"
-      hairline
-      fontSize="17"
-    />
+    <u-code-input v-model="value9" mode="box" :space="0" :maxlength="4" hairline fontSize="17" />
   </view>
 </template>
 

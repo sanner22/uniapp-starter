@@ -81,12 +81,7 @@
       description="这是一段描述文本,字号偏小,颜色偏淡"
     >
     </u-action-sheet>
-    <u-action-sheet
-      :show="pickerName === 'show4'"
-      @close="close"
-      title="标题位置"
-      :round="10"
-    >
+    <u-action-sheet :show="pickerName === 'show4'" @close="close" title="标题位置" :round="10">
       <text style="margin: 10px 20px 30px 20px; color: #303133; font-size: 15px"
         >这是一段通过slot传入的内容,您可以在此自定义操作面板</text
       >

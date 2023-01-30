@@ -17,13 +17,7 @@
 
     <u-text type="info" margin="10px 0" text="设置段落高度" />
     <view>
-      <u-skeleton
-        rows="3"
-        title
-        :rowsWidth="['100%', '100%', '100%']"
-        :rowsHeight="['18px', '18px', '80px']"
-        loading
-      />
+      <u-skeleton rows="3" title :rowsWidth="['100%', '100%', '100%']" :rowsHeight="['18px', '18px', '80px']" loading />
     </view>
 
     <u-text type="info" margin="10px 0" text="是否开启动画" />
@@ -43,21 +37,11 @@
     <u-switch v-model="switch2" space="2" inactiveColor="#e6e6e6" />
     <u-gap height="15" bgColor="#fff" />
     <view>
-      <u-skeleton
-        rows="2"
-        title
-        :loading="switch2"
-        avatar
-        avatar-size="40"
-        rowsHeight="14"
-      >
+      <u-skeleton rows="2" title :loading="switch2" avatar avatar-size="40" rowsHeight="14">
         <!-- 需要在外部多嵌套一层占位view，否则在nvue下会导致样式失效 -->
         <view>
           <view class="u-skeleton-slot">
-            <image
-              src="/static/logo.png"
-              class="u-skeleton-slot__image"
-            ></image>
+            <image src="/static/logo.png" class="u-skeleton-slot__image"></image>
             <view class="u-skeleton-slot__content">
               <u-text text="利剑出鞘,一统江湖" type="main" size="16" />
               <u-text

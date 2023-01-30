@@ -1,12 +1,7 @@
 <template>
   <view class="uno-px-15px">
     <u-text text="基础使用" type="info" margin="10px 0" />
-    <u-scroll-list
-      indicatorColor="#fff0f0"
-      indicatorActiveColor="#f56c6c"
-      @right="right"
-      @left="left"
-    >
+    <u-scroll-list indicatorColor="#fff0f0" indicatorActiveColor="#f56c6c" @right="right" @left="left">
       <view class="scroll-list" style="flex-direction: row">
         <view
           class="scroll-list__goods-item"
@@ -14,11 +9,7 @@
           :key="index"
           :class="[index === 9 && 'scroll-list__goods-item--no-margin-right']"
         >
-          <u-image
-            class="scroll-list__goods-item__image"
-            :src="goodsBaseUrl + item.thumbnail"
-            mode="aspectFill"
-          />
+          <u-image class="scroll-list__goods-item__image" :src="goodsBaseUrl + item.thumbnail" mode="aspectFill" />
           <text class="scroll-list__goods-item__text">￥{{ item.price }}</text>
         </view>
         <view class="scroll-list__show-more" @tap="showMore">
@@ -31,25 +22,14 @@
     <u-text text="多菜单扩展" type="info" margin="10px 0" />
     <u-scroll-list>
       <view class="scroll-list">
-        <view
-          class="scroll-list__line"
-          v-for="(item, index) in menuArr"
-          :key="index"
-        >
+        <view class="scroll-list__line" v-for="(item, index) in menuArr" :key="index">
           <view
             class="scroll-list__line__item"
             v-for="(item1, index1) in item"
             :key="index1"
-            :class="[
-              index1 === item.length - 1 &&
-                'scroll-list__line__item--no-margin-right',
-            ]"
+            :class="[index1 === item.length - 1 && 'scroll-list__line__item--no-margin-right']"
           >
-            <u-image
-              class="scroll-list__line__item__image"
-              :src="menuBaseUrl + item1.icon"
-              mode="aspectFill"
-            />
+            <u-image class="scroll-list__line__item__image" :src="menuBaseUrl + item1.icon" mode="aspectFill" />
             <text class="scroll-list__line__item__text">{{ item1.name }}</text>
           </view>
         </view>

@@ -1,17 +1,8 @@
 <template>
   <view class="uno-h-1200px uno-px-15px">
-    <u-text
-      type="info"
-      margin="10px 0"
-      text="自定义backTop(滚动页面即可在右下角看到图标)"
-    />
+    <u-text type="info" margin="10px 0" text="自定义backTop(滚动页面即可在右下角看到图标)" />
     <view class="uno-mt-10px">
-      <u-checkbox-group
-        placement="column"
-        shape="square"
-        @change="checkboxChange"
-        v-model="value1"
-      >
+      <u-checkbox-group placement="column" shape="square" @change="checkboxChange" v-model="value1">
         <u-checkbox
           :customStyle="{ marginBottom: '8px' }"
           v-for="(item, index) in checkboxList"

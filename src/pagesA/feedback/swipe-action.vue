@@ -48,10 +48,7 @@
           :disabled="item.disabled"
           :key="index"
         >
-          <view
-            class="swipe-action u-border-top"
-            :class="[index === options4.length - 1 && 'u-border-bottom']"
-          >
+          <view class="swipe-action u-border-top" :class="[index === options4.length - 1 && 'u-border-bottom']">
             <view class="swipe-action__content">
               <text class="swipe-action__content__text">{{ item.text }}</text>
             </view>
