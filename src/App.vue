@@ -45,4 +45,11 @@
   /* #endif */
 
   @import '@/assets/main.scss';
+
+  // 解决 windicss 组合不生效的问题
+  .uno-center {
+    @apply uno-flex;
+    @apply uno-items-center;
+    @apply uno-justify-center;
+  }
 </style>

@@ -1,10 +1,13 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
 import { ConfigEnv, UserConfig } from 'vite';
 import uni from '@dcloudio/vite-plugin-uni';
-// eslint-disable-next-line @typescript-eslint/no-unused-vars, no-unused-vars
 import eslintPlugin from 'vite-plugin-eslint';
 import { resolve } from 'path';
 import { loadEnv } from 'vite';
 import Unocss from 'unocss/vite';
+import WindiCSS from 'vite-plugin-windicss';
 
 // https://vitejs.cn/config/
 export default ({ mode }: ConfigEnv): UserConfig => {
@@ -39,7 +42,10 @@ export default ({ mode }: ConfigEnv): UserConfig => {
     },
     plugins: [
       uni(),
-      Unocss(),
+
+      // Unocss(),
+      WindiCSS(),
+
       // eslintPlugin({
       //   include: ['src/**/*.js', 'src/**/*.vue', 'src/**/*.ts'],
       //   exclude: ['./node_modules/**'],

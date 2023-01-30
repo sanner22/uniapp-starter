@@ -1,8 +1,11 @@
 import { createSSRApp } from 'vue';
 import App from './App.vue';
 import { setupStore } from '@/state';
-import 'uno.css';
+// import 'uno.css';
 import tmui from './tmui';
+// import 'virtual:windi.css'; // 会生成 * {} 样式，小程序端不支持而报错，用以下两行代替
+import 'virtual:windi-components.css';
+import 'virtual:windi-utilities.css';
 
 export function createApp() {
   const app = createSSRApp(App);

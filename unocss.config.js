@@ -23,17 +23,7 @@ const transformRules = {
   ',': '-r222-',
 };
 const prefix = `uno-`;
-const exclude = [
-  /[\\/]node_modules[\\/]/,
-  /[\\/]\.git[\\/]/,
-  'dist',
-  /[\\/]dist[\\/]/,
-  'tmui',
-  'src/tmui',
-  '/src/tmui',
-  /[\\/]tmui[\\/]/,
-  /[\\/]src\/tmui[\\/]/,
-];
+const exclude = [/[\\/]node_modules[\\/]/, /[\\/]\.git[\\/]/, /[\\/]dist[\\/]/, /[\\/]tmui[\\/]/];
 
 export default defineConfig({
   presets: [
@@ -41,7 +31,7 @@ export default defineConfig({
     presetWeapp({
       nonValuedAttribute: false,
       prefix: prefix,
-      whRpx: true,
+      whRpx: false,
       transform: true,
       platform: 'uniapp',
       transformRules,
@@ -56,9 +46,6 @@ export default defineConfig({
   ],
   shortcuts: [
     {
-      'uno-border-base': 'uno-border uno-border-gray-500_10',
-      'uno-z-tar-both': 'uno-z-988',
-      'uno-head-fixed': 'uno-fixed uno-top-0 uno-left-0 uno-w-full uno-z-tar-both',
       'uno-center': 'uno-flex uno-justify-center uno-items-center',
     },
   ],
@@ -72,9 +59,8 @@ export default defineConfig({
       classPrefix: prefix, // 为生成的class选择器添加前缀, ''
       transformRules, // 自定义转换规则
       nonValuedAttribute: false, // 支持匹配非值属性, true
-      attributes: [], // 需要转换的属性列表, ['bg', 'flex', 'grid', 'border', 'text', 'font', 'class', 'className', 'p', 'm', 'animate']
-      // exclude: [], // 排除转换目标, [/[\\/]node_modules[\\/]/, /[\\/]\.git[\\/]/]
-      exclude,
+      // attributes: [], // 需要转换的属性列表, ['bg', 'flex', 'grid', 'border', 'text', 'font', 'class', 'className', 'p', 'm', 'animate']
+      exclude, // 排除转换目标, [/[\\/]node_modules[\\/]/, /[\\/]\.git[\\/]/]
       prefix,
       // ignoreNonValuedAttributes: [], // 忽略的非值属性列表, ['class']
       // include: [], // 需要转换的目标, [/\.vue$/,  /\.vue\?vue/]
