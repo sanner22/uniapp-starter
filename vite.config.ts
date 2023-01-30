@@ -1,5 +1,6 @@
 import { ConfigEnv, UserConfig } from 'vite';
 import uni from '@dcloudio/vite-plugin-uni';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars, no-unused-vars
 import eslintPlugin from 'vite-plugin-eslint';
 import { resolve } from 'path';
 import { loadEnv } from 'vite';

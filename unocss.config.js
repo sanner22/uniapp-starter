@@ -6,10 +6,7 @@
 
 import { defineConfig, presetIcons } from 'unocss';
 import presetWeapp from 'unocss-preset-weapp';
-import {
-  transformerAttributify,
-  transformerClass,
-} from 'unocss-preset-weapp/transformer';
+import { transformerAttributify, transformerClass } from 'unocss-preset-weapp/transformer';
 
 const transformRules = {
   '.': '-d111-',
@@ -25,14 +22,24 @@ const transformRules = {
   $: '-r111-',
   ',': '-r222-',
 };
-
 const prefix = `uno-`;
+const exclude = [
+  /[\\/]node_modules[\\/]/,
+  /[\\/]\.git[\\/]/,
+  'dist',
+  /[\\/]dist[\\/]/,
+  'tmui',
+  'src/tmui',
+  '/src/tmui',
+  /[\\/]tmui[\\/]/,
+  /[\\/]src\/tmui[\\/]/,
+];
 
 export default defineConfig({
   presets: [
     // https://github.com/MellowCo/unocss-preset-weapp
     presetWeapp({
-      nonValuedAttribute: true,
+      nonValuedAttribute: false,
       prefix: prefix,
       whRpx: true,
       transform: true,
@@ -51,8 +58,7 @@ export default defineConfig({
     {
       'uno-border-base': 'uno-border uno-border-gray-500_10',
       'uno-z-tar-both': 'uno-z-988',
-      'uno-head-fixed':
-        'uno-fixed uno-top-0 uno-left-0 uno-w-full uno-z-tar-both',
+      'uno-head-fixed': 'uno-fixed uno-top-0 uno-left-0 uno-w-full uno-z-tar-both',
       'uno-center': 'uno-flex uno-justify-center uno-items-center',
     },
   ],
@@ -66,24 +72,24 @@ export default defineConfig({
       classPrefix: prefix, // 为生成的class选择器添加前缀, ''
       transformRules, // 自定义转换规则
       nonValuedAttribute: false, // 支持匹配非值属性, true
-      // attributes: [], // 需要转换的属性列表, ['bg', 'flex', 'grid', 'border', 'text', 'font', 'class', 'className', 'p', 'm', 'animate']
+      attributes: [], // 需要转换的属性列表, ['bg', 'flex', 'grid', 'border', 'text', 'font', 'class', 'className', 'p', 'm', 'animate']
       // exclude: [], // 排除转换目标, [/[\\/]node_modules[\\/]/, /[\\/]\.git[\\/]/]
-      // prefix: '',
+      exclude,
+      prefix,
       // ignoreNonValuedAttributes: [], // 忽略的非值属性列表, ['class']
       // include: [], // 需要转换的目标, [/\.vue$/,  /\.vue\?vue/]
-      // prefixedOnly: true, // 仅匹配前缀属性, false
+      prefixedOnly: true, // 仅匹配前缀属性, false
       // transformEscape: true, // 转换转义字符, true
     }),
 
     // https://github.com/MellowCo/unocss-preset-weapp/tree/main/src/transformer/transformerClass
     transformerClass({
       transformRules,
-      exclude: [
-        /[\\/]node_modules[\\/]/,
-        /[\\/]\.git[\\/]/,
-        'dist',
-        'src/tmui',
-      ],
+      exclude,
     }),
   ],
+  exclude,
+  extract: {
+    exclude,
+  },
 });
