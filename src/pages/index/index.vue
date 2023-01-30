@@ -74,6 +74,13 @@
         size="mini"
       />
       <u-tag
+        bg-color="#0062ff"
+        border-color="#0062ff"
+        :text="`tmui:3.0.89`"
+        shape="circle"
+        size="mini"
+      />
+      <u-tag
         bg-color="#2b993a"
         border-color="#2b993a"
         :text="`UNIAPP`"
@@ -90,7 +97,7 @@
       <u-tag
         bg-color="#666666"
         border-color="#666666"
-        text="UnoCSS:0.46.5"
+        text="UnoCSS:0.48.4"
         shape="circle"
         size="mini"
       />
@@ -114,6 +121,16 @@
           @click="handleGoDemo"
           text="demo ✨"
         />
+      </view>
+      <view>
+        <tm-button
+          size="small"
+          color="primary"
+          @click="handleGoDemo"
+          :width="180"
+        >
+          tmui button
+        </tm-button>
       </view>
     </view>
   </app-provider>

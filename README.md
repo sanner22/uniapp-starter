@@ -2,7 +2,7 @@
 
 ## 简介
 
-- **uniapp Vue3 TypeScript 快速开发框架**，集成 uView UI，集成 HBuilderX cli，一键打包自定义基座，一键云打包（APP 模式）
+- **uniapp Vue3 TypeScript 移动端快速开发解决方案**，集成 uView UI（uView plus 3），集成 HBuilderX cli（APP 模式一键打包：自定义基座、云打包）
 - cli 创建的 Vue3/ts 项目 与 使用 HBuilderX 导入插件的包有差异，请直接访问 [开源地址](https://gitee.com/time-network/uniapp-vue-next-starter)
 
 ## 特性

@@ -78,6 +78,12 @@ export default defineConfig({
     // https://github.com/MellowCo/unocss-preset-weapp/tree/main/src/transformer/transformerClass
     transformerClass({
       transformRules,
+      exclude: [
+        /[\\/]node_modules[\\/]/,
+        /[\\/]\.git[\\/]/,
+        'dist',
+        'src/tmui',
+      ],
     }),
   ],
 });

@@ -2,7 +2,10 @@
   "easycom": {
     // 注意一定要放在custom里，否则无效，https://ask.dcloud.net.cn/question/131175
     "custom": {
-      "^u-(.*)": "uview-plus/components/u-$1/u-$1.vue"
+      // uview ui
+      "^u-(.*)": "uview-plus/components/u-$1/u-$1.vue",
+      // tm ui
+      "^tm-(.*)": "@/tmui/components/tm-$1/tm-$1.vue"
     }
   },
   "pages": [

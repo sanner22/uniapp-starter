@@ -44,5 +44,12 @@
   /* uview-plus 全局样式 */
   @import 'uview-plus/index.scss';
 
+  /* #ifdef APP-NVUE */
+  @import './tmui/scss/nvue.css';
+  /* #endif */
+  /* #ifndef APP-NVUE */
+  @import './tmui/scss/noNvue.css';
+  /* #endif */
+
   @import '@/assets/main.scss';
 </style>
