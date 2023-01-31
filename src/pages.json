@@ -777,6 +777,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "layout/row",
+          "style": {
+            "navigationBarTitleText": "布局 row"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
