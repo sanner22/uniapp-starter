@@ -816,6 +816,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "showData/badge",
+          "style": {
+            "navigationBarTitleText": "徽标 badge"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }

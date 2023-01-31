@@ -24,6 +24,7 @@
       <view class="uno-mx-15px uno-rounded-3px uno-overflow-hidden">
         <tm-cell :margin="[0, 0]" title="头像 avatar" url="/pagesTMUI/showData/avatar" />
         <tm-cell :margin="[0, 0]" title="二维码 qrcode" url="/pagesTMUI/showData/qrcode" />
+        <tm-cell :margin="[0, 0]" title="徽标 badge" url="/pagesTMUI/showData/badge" />
       </view>
     </template>
 
