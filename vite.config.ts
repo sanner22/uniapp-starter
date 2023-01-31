@@ -7,7 +7,6 @@ import eslintPlugin from 'vite-plugin-eslint';
 import { resolve } from 'path';
 import { loadEnv } from 'vite';
 import Unocss from 'unocss/vite';
-import WindiCSS from 'vite-plugin-windicss';
 
 // https://vitejs.cn/config/
 export default ({ mode }: ConfigEnv): UserConfig => {
@@ -42,9 +41,7 @@ export default ({ mode }: ConfigEnv): UserConfig => {
     },
     plugins: [
       uni(),
-
-      // Unocss(),
-      WindiCSS(),
+      Unocss(),
 
       // eslintPlugin({
       //   include: ['src/**/*.js', 'src/**/*.vue', 'src/**/*.ts'],
