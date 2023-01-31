@@ -451,6 +451,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "form/picker",
+          "style": {
+            "navigationBarTitleText": "选择器 picker"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }

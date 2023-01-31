@@ -56,6 +56,7 @@
         <tm-cell :margin="[0, 0]" title="表单 form" url="/pages-tmui/form/form" />
         <tm-cell :margin="[0, 0]" title="输入框 input" url="/pages-tmui/form/input" />
         <tm-cell :margin="[0, 0]" title="键盘 keyborad" url="/pages-tmui/form/keyborad" />
+        <tm-cell :margin="[0, 0]" title="选择器 picker" url="/pages-tmui/form/picker" />
       </view>
     </template>
   </tm-app>
