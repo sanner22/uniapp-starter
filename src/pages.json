@@ -496,6 +496,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "form/switch",
+          "style": {
+            "navigationBarTitleText": "开关 switch"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
