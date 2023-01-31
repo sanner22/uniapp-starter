@@ -53,6 +53,7 @@
         <tm-cell :margin="[0, 0]" title="复选框 checkbox" url="/pages-tmui/form/checkbox" />
         <tm-cell :margin="[0, 0]" title="日历 calendar" url="/pages-tmui/form/calendar" />
         <tm-cell :margin="[0, 0]" title="城市选择 city" url="/pages-tmui/form/city" />
+        <tm-cell :margin="[0, 0]" title="表单 form" url="/pages-tmui/form/form" />
       </view>
     </template>
   </tm-app>

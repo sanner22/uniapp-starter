@@ -424,6 +424,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "form/form",
+          "style": {
+            "navigationBarTitleText": "表单 form"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
