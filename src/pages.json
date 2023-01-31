@@ -523,6 +523,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "form/weekbar",
+          "style": {
+            "navigationBarTitleText": "时间周 weekbar"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
