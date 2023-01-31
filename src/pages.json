@@ -807,6 +807,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "showData/qrcode",
+          "style": {
+            "navigationBarTitleText": "二维码 qrcode"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
