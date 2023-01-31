@@ -825,6 +825,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "showData/card",
+          "style": {
+            "navigationBarTitleText": "卡片 card"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
