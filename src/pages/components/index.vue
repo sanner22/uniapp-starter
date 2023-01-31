@@ -44,6 +44,7 @@
         <tm-cell :margin="[0, 0]" title="时间轴 timeline" url="/pagesTMUI/showData/timeline" />
         <tm-cell :margin="[0, 0]" title="树 tree" url="/pagesTMUI/showData/tree" />
         <tm-cell :margin="[0, 0]" title="虚拟列表 virtual-list" url="/pagesTMUI/showData/virtual-list" />
+        <tm-cell :margin="[0, 0]" title="瀑布流 waterfall" url="/pagesTMUI/showData/waterfall" />
       </view>
     </template>
 

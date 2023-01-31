@@ -996,6 +996,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "showData/waterfall",
+          "style": {
+            "navigationBarTitleText": "瀑布流 waterfall"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
