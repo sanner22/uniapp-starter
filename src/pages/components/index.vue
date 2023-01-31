@@ -50,6 +50,7 @@
       <tm-text color="grey-darken-1" class="uno-m-15px">表单：</tm-text>
       <view class="uno-mx-15px uno-rounded-3px uno-overflow-hidden">
         <tm-cell :margin="[0, 0]" title="级联器 cascader" url="/pages-tmui/form/cascader" />
+        <tm-cell :margin="[0, 0]" title="复选框 checkbox" url="/pages-tmui/form/checkbox" />
       </view>
     </template>
   </tm-app>

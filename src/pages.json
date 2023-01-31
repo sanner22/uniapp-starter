@@ -397,6 +397,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "form/checkbox",
+          "style": {
+            "navigationBarTitleText": "复选框 checkbox"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
