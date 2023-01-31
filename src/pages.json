@@ -987,6 +987,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "showData/virtual-list",
+          "style": {
+            "navigationBarTitleText": "虚拟列表 virtual-list"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }

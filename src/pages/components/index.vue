@@ -43,6 +43,7 @@
         <tm-cell :margin="[0, 0]" title="标签 tag" url="/pagesTMUI/showData/tag" />
         <tm-cell :margin="[0, 0]" title="时间轴 timeline" url="/pagesTMUI/showData/timeline" />
         <tm-cell :margin="[0, 0]" title="树 tree" url="/pagesTMUI/showData/tree" />
+        <tm-cell :margin="[0, 0]" title="虚拟列表 virtual-list" url="/pagesTMUI/showData/virtual-list" />
       </view>
     </template>
 
