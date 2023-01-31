@@ -442,6 +442,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "form/keyborad",
+          "style": {
+            "navigationBarTitleText": "键盘 keyborad"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
