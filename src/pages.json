@@ -951,6 +951,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "showData/tabs",
+          "style": {
+            "navigationBarTitleText": "选项卡 tabs"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
