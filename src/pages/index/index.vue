@@ -5,7 +5,7 @@
     </view>
 
     <view class="uno-center">
-      <tm-text label="cli 方式基于 vue3/vite4/typescript 的 移动端快速开发解决方案" :font-size="12" />
+      <tm-text label="cli 方式基于 vue3/vite4/typescript 的 移动端快速开发解决方案" :font-size="20" />
     </view>
 
     <view class="uno-center uno-flex-wrap uno-mt-40px">
