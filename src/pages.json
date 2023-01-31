@@ -768,6 +768,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "layout/grid",
+          "style": {
+            "navigationBarTitleText": "宫格 grid"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
