@@ -879,6 +879,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "showData/descriptions",
+          "style": {
+            "navigationBarTitleText": "描述 descriptions"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }

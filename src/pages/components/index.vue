@@ -31,6 +31,7 @@
         <tm-cell :margin="[0, 0]" title="评论 comment" url="/pagesTMUI/showData/comment" />
         <tm-cell :margin="[0, 0]" title="单元格 cell" url="/pagesTMUI/showData/cell" />
         <tm-cell :margin="[0, 0]" title="倒计时 countdown" url="/pagesTMUI/showData/countdown" />
+        <tm-cell :margin="[0, 0]" title="描述 descriptions" url="/pagesTMUI/showData/descriptions" />
       </view>
     </template>
 
