@@ -40,6 +40,7 @@
         <tm-cell :margin="[0, 0]" title="数值显示 statistic" url="/pagesTMUI/showData/statistic" />
         <tm-cell :margin="[0, 0]" title="表格 table" url="/pagesTMUI/showData/table" />
         <tm-cell :margin="[0, 0]" title="选项卡 tabs" url="/pagesTMUI/showData/tabs" />
+        <tm-cell :margin="[0, 0]" title="标签 tag" url="/pagesTMUI/showData/tag" />
       </view>
     </template>
 

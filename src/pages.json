@@ -960,6 +960,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "showData/tag",
+          "style": {
+            "navigationBarTitleText": "标签 tag"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
