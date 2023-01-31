@@ -861,6 +861,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "showData/cell",
+          "style": {
+            "navigationBarTitleText": "单元格 cell"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
