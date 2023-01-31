@@ -924,6 +924,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "showData/popover",
+          "style": {
+            "navigationBarTitleText": "气泡卡片 popover"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }

@@ -36,6 +36,7 @@
         <tm-cell :margin="[0, 0]" title="列表索引 indexes" url="/pagesTMUI/showData/indexes" />
         <tm-cell :margin="[0, 0]" title="显示更多 more" url="/pagesTMUI/showData/more" />
         <tm-cell :margin="[0, 0]" title="结果页 result" url="/pagesTMUI/showData/result" />
+        <tm-cell :margin="[0, 0]" title="气泡卡片 popover" url="/pagesTMUI/showData/popover" />
       </view>
     </template>
 
