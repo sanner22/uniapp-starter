@@ -2,13 +2,14 @@
 
 ## 简介
 
-- **uniapp Vue3 TypeScript 移动端快速开发解决方案**，集成 uView UI（uView plus 3），集成 HBuilderX cli（APP 模式一键打包：自定义基座、云打包）
+- **uniapp Vue3 TypeScript 移动端快速开发解决方案**，集成 TMUI，集成 uView UI（uView plus 3），集成 HBuilderX cli（APP 模式一键打包：自定义基座、云打包）
 - cli 创建的 Vue3/ts 项目 与 使用 HBuilderX 导入插件的包有差异，请直接访问 [开源地址](https://gitee.com/time-network/uniapp-vue-next-starter)
 
 ## 特性
 
 - **最新技术栈**：使用 Vue3/Vite4/pinia ,TypeScript 等前端前沿技术开发;
-- **UI集成**：集成 [uView-plus](https://uiadmin.net/uview-plus/) v3 UI 组件，扩展 vView 在 UNI 中的使用（后期加入 uView 更多 ts 支持）;
+- **UI集成**：集成 [TMUI](https://tmui.design/) 组件，**tnt-tmui 分支**;
+- **UI集成**：集成 [uView-plus](https://uiadmin.net/uview-plus/) v3 UI 组件 **tnt-uview 分支**，扩展 vView 在 UNI 中的使用（后期加入 uView 更多 ts 支持）;
 - **快捷开发**：vscode 编辑器中开发，推荐插件 🚀[**uview-helper**](https://marketplace.visualstudio.com/items?itemName=tntgroup.uview-helper)，功能：代码片段、属性自动完成(智能枚举提示)、文档悬浮提示，给作者点赞 👍👍;
 - **[Unocss](https://github.com/unocss/unocss) 原子化 CSS**：预设图标：[preset-icons](https://github.com/unocss/unocss/tree/main/packages/preset-icons#readme) 使用 [iconify](https://github.com/iconify/iconify) 图标，[unocss-preset-weapp](https://github.com/MellowCo/unocss-preset-weapp) 小程序支持，配置参考：[unocss.config.js](./unocss.config.js);
 - **Eslint/Prettier**：规范代码格式,统一编码;

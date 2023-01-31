@@ -7,44 +7,44 @@
     <template v-else>
       <tm-text color="grey-darken-1" class="uno-m-15px">通用组件：</tm-text>
       <view class="uno-mx-15px uno-rounded-3px uno-overflow-hidden">
-        <tm-cell :margin="[0, 0]" title="按钮 Button" url="/pagesTMUI/common/button" />
-        <tm-cell :margin="[0, 0]" title="图标 Icon" url="/pagesTMUI/common/icon" />
-        <tm-cell :margin="[0, 0]" title="文本 Text" url="/pagesTMUI/common/text" />
+        <tm-cell :margin="[0, 0]" title="按钮 Button" url="/pages-tmui/common/button" />
+        <tm-cell :margin="[0, 0]" title="图标 Icon" url="/pages-tmui/common/icon" />
+        <tm-cell :margin="[0, 0]" title="文本 Text" url="/pages-tmui/common/text" />
       </view>
 
       <tm-text color="grey-darken-1" class="uno-m-15px">布局组件：</tm-text>
       <view class="uno-mx-15px uno-rounded-3px uno-overflow-hidden">
-        <tm-cell :margin="[0, 0]" title="分割线 divider" url="/pagesTMUI/layout/divider" />
-        <tm-cell :margin="[0, 0]" title="宫格 grid" url="/pagesTMUI/layout/grid" />
-        <tm-cell :margin="[0, 0]" title="布局 row" url="/pagesTMUI/layout/row" />
-        <tm-cell :margin="[0, 0]" title="容器 sheet" url="/pagesTMUI/layout/sheet" />
+        <tm-cell :margin="[0, 0]" title="分割线 divider" url="/pages-tmui/layout/divider" />
+        <tm-cell :margin="[0, 0]" title="宫格 grid" url="/pages-tmui/layout/grid" />
+        <tm-cell :margin="[0, 0]" title="布局 row" url="/pages-tmui/layout/row" />
+        <tm-cell :margin="[0, 0]" title="容器 sheet" url="/pages-tmui/layout/sheet" />
       </view>
 
       <tm-text color="grey-darken-1" class="uno-m-15px">展示组件：</tm-text>
       <view class="uno-mx-15px uno-rounded-3px uno-overflow-hidden">
-        <tm-cell :margin="[0, 0]" title="头像 avatar" url="/pagesTMUI/showData/avatar" />
-        <tm-cell :margin="[0, 0]" title="二维码 qrcode" url="/pagesTMUI/showData/qrcode" />
-        <tm-cell :margin="[0, 0]" title="徽标 badge" url="/pagesTMUI/showData/badge" />
-        <tm-cell :margin="[0, 0]" title="卡片 card" url="/pagesTMUI/showData/card" />
-        <tm-cell :margin="[0, 0]" title="轮播 carousel" url="/pagesTMUI/showData/carousel" />
-        <tm-cell :margin="[0, 0]" title="折叠面板 collapse" url="/pagesTMUI/showData/collapse" />
-        <tm-cell :margin="[0, 0]" title="评论 comment" url="/pagesTMUI/showData/comment" />
-        <tm-cell :margin="[0, 0]" title="单元格 cell" url="/pagesTMUI/showData/cell" />
-        <tm-cell :margin="[0, 0]" title="倒计时 countdown" url="/pagesTMUI/showData/countdown" />
-        <tm-cell :margin="[0, 0]" title="描述 descriptions" url="/pagesTMUI/showData/descriptions" />
-        <tm-cell :margin="[0, 0]" title="图片 image" url="/pagesTMUI/showData/image" />
-        <tm-cell :margin="[0, 0]" title="列表索引 indexes" url="/pagesTMUI/showData/indexes" />
-        <tm-cell :margin="[0, 0]" title="显示更多 more" url="/pagesTMUI/showData/more" />
-        <tm-cell :margin="[0, 0]" title="结果页 result" url="/pagesTMUI/showData/result" />
-        <tm-cell :margin="[0, 0]" title="气泡卡片 popover" url="/pagesTMUI/showData/popover" />
-        <tm-cell :margin="[0, 0]" title="数值显示 statistic" url="/pagesTMUI/showData/statistic" />
-        <tm-cell :margin="[0, 0]" title="表格 table" url="/pagesTMUI/showData/table" />
-        <tm-cell :margin="[0, 0]" title="选项卡 tabs" url="/pagesTMUI/showData/tabs" />
-        <tm-cell :margin="[0, 0]" title="标签 tag" url="/pagesTMUI/showData/tag" />
-        <tm-cell :margin="[0, 0]" title="时间轴 timeline" url="/pagesTMUI/showData/timeline" />
-        <tm-cell :margin="[0, 0]" title="树 tree" url="/pagesTMUI/showData/tree" />
-        <tm-cell :margin="[0, 0]" title="虚拟列表 virtual-list" url="/pagesTMUI/showData/virtual-list" />
-        <tm-cell :margin="[0, 0]" title="瀑布流 waterfall" url="/pagesTMUI/showData/waterfall" />
+        <tm-cell :margin="[0, 0]" title="头像 avatar" url="/pages-tmui/showData/avatar" />
+        <tm-cell :margin="[0, 0]" title="二维码 qrcode" url="/pages-tmui/showData/qrcode" />
+        <tm-cell :margin="[0, 0]" title="徽标 badge" url="/pages-tmui/showData/badge" />
+        <tm-cell :margin="[0, 0]" title="卡片 card" url="/pages-tmui/showData/card" />
+        <tm-cell :margin="[0, 0]" title="轮播 carousel" url="/pages-tmui/showData/carousel" />
+        <tm-cell :margin="[0, 0]" title="折叠面板 collapse" url="/pages-tmui/showData/collapse" />
+        <tm-cell :margin="[0, 0]" title="评论 comment" url="/pages-tmui/showData/comment" />
+        <tm-cell :margin="[0, 0]" title="单元格 cell" url="/pages-tmui/showData/cell" />
+        <tm-cell :margin="[0, 0]" title="倒计时 countdown" url="/pages-tmui/showData/countdown" />
+        <tm-cell :margin="[0, 0]" title="描述 descriptions" url="/pages-tmui/showData/descriptions" />
+        <tm-cell :margin="[0, 0]" title="图片 image" url="/pages-tmui/showData/image" />
+        <tm-cell :margin="[0, 0]" title="列表索引 indexes" url="/pages-tmui/showData/indexes" />
+        <tm-cell :margin="[0, 0]" title="显示更多 more" url="/pages-tmui/showData/more" />
+        <tm-cell :margin="[0, 0]" title="结果页 result" url="/pages-tmui/showData/result" />
+        <tm-cell :margin="[0, 0]" title="气泡卡片 popover" url="/pages-tmui/showData/popover" />
+        <tm-cell :margin="[0, 0]" title="数值显示 statistic" url="/pages-tmui/showData/statistic" />
+        <tm-cell :margin="[0, 0]" title="表格 table" url="/pages-tmui/showData/table" />
+        <tm-cell :margin="[0, 0]" title="选项卡 tabs" url="/pages-tmui/showData/tabs" />
+        <tm-cell :margin="[0, 0]" title="标签 tag" url="/pages-tmui/showData/tag" />
+        <tm-cell :margin="[0, 0]" title="时间轴 timeline" url="/pages-tmui/showData/timeline" />
+        <tm-cell :margin="[0, 0]" title="树 tree" url="/pages-tmui/showData/tree" />
+        <tm-cell :margin="[0, 0]" title="虚拟列表 virtual-list" url="/pages-tmui/showData/virtual-list" />
+        <tm-cell :margin="[0, 0]" title="瀑布流 waterfall" url="/pages-tmui/showData/waterfall" />
       </view>
     </template>
 
