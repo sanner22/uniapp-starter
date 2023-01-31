@@ -1,0 +1,42 @@
+<template>
+  <tm-app>
+    <tm-sheet>
+      <tm-text :font-size="24" _class="font-weight-b" label="基础示例,更多见文档"></tm-text>
+      <tm-divider></tm-divider>
+      <tm-statistic :endVal="2022" :fontSize="62" suffix="年" color="primary"></tm-statistic>
+    </tm-sheet>
+    <tm-sheet>
+      <tm-text :font-size="24" _class="font-weight-b" label="基础示例,更多见文档"></tm-text>
+      <tm-divider></tm-divider>
+      <view class="flex flex-row flex-between">
+        <view class="px-12">
+          <tm-statistic
+            prefix="↑"
+            :startVal="0"
+            :decimals="2"
+            :endVal="86.32"
+            :fontSize="32"
+            suffix="%"
+            color="green"
+          ></tm-statistic>
+        </view>
+        <view class="px-12">
+          <tm-statistic
+            prefix="↓"
+            :startVal="0"
+            :decimals="2"
+            :endVal="1050.98"
+            :fontSize="32"
+            suffix="元"
+            color="red"
+          ></tm-statistic>
+        </view>
+        <view class="px-12">
+          <tm-statistic :fontSize="32" suffix="元" color="orange"></tm-statistic>
+        </view>
+      </view>
+    </tm-sheet>
+  </tm-app>
+</template>
+
+<script lang="ts" setup></script>
