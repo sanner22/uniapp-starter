@@ -27,6 +27,7 @@
         <tm-cell :margin="[0, 0]" title="徽标 badge" url="/pagesTMUI/showData/badge" />
         <tm-cell :margin="[0, 0]" title="卡片 card" url="/pagesTMUI/showData/card" />
         <tm-cell :margin="[0, 0]" title="轮播 carousel" url="/pagesTMUI/showData/carousel" />
+        <tm-cell :margin="[0, 0]" title="折叠面板 collapse" url="/pagesTMUI/showData/collapse" />
       </view>
     </template>
 

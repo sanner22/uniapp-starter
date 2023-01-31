@@ -843,6 +843,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "showData/collapse",
+          "style": {
+            "navigationBarTitleText": "折叠面板 collapse"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
