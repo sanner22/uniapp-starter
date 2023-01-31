@@ -487,6 +487,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "form/slider",
+          "style": {
+            "navigationBarTitleText": "滑块 slider"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }

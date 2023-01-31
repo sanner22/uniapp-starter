@@ -60,6 +60,7 @@
         <tm-cell :margin="[0, 0]" title="评分 rate" url="/pages-tmui/form/rate" />
         <tm-cell :margin="[0, 0]" title="单选框 radio" url="/pages-tmui/form/radio" />
         <tm-cell :margin="[0, 0]" title="步进器 stepper" url="/pages-tmui/form/stepper" />
+        <tm-cell :margin="[0, 0]" title="滑块 slider" url="/pages-tmui/form/slider" />
       </view>
     </template>
   </tm-app>
