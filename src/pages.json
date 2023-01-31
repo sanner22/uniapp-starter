@@ -852,6 +852,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "showData/comment",
+          "style": {
+            "navigationBarTitleText": "评论 comment"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }

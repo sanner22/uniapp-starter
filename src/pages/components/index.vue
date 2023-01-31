@@ -28,6 +28,7 @@
         <tm-cell :margin="[0, 0]" title="卡片 card" url="/pagesTMUI/showData/card" />
         <tm-cell :margin="[0, 0]" title="轮播 carousel" url="/pagesTMUI/showData/carousel" />
         <tm-cell :margin="[0, 0]" title="折叠面板 collapse" url="/pagesTMUI/showData/collapse" />
+        <tm-cell :margin="[0, 0]" title="评论 comment" url="/pagesTMUI/showData/comment" />
       </view>
     </template>
 
