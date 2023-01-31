@@ -478,6 +478,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "form/stepper",
+          "style": {
+            "navigationBarTitleText": "步进器 stepper"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }

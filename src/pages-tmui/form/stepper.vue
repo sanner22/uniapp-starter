@@ -1,0 +1,52 @@
+<template>
+  <tm-app>
+    <tm-sheet>
+      <tm-text :font-size="24" _class="font-weight-b" label="基础示例,更多见文档"></tm-text>
+      <tm-divider></tm-divider>
+      <tm-stepper v-model="val" :defaultValue="20"></tm-stepper>
+    </tm-sheet>
+    <tm-sheet>
+      <tm-text :font-size="24" _class="font-weight-b" label="一些其它常见属性"></tm-text>
+      <tm-divider></tm-divider>
+      <tm-stepper v-model="val" color="primary" bgColor="primary" circular :defaultValue="20"></tm-stepper>
+    </tm-sheet>
+    <tm-sheet>
+      <tm-text :font-size="24" _class="font-weight-b" label="步幅3"></tm-text>
+      <tm-divider></tm-divider>
+      <tm-stepper color="red" bgColor="red" :step="3" circular :defaultValue="0"></tm-stepper>
+      <tm-text _class="pt-24 font-weight-b" :font-size="24" label="小数点"></tm-text>
+      <tm-divider></tm-divider>
+      <tm-stepper :round="0" bgColor="green" color="green" :fixed="1" :defaultValue="0.3"></tm-stepper>
+      <tm-text _class="pt-24 font-weight-b" :font-size="24" label="最大值10，最小值-3"></tm-text>
+      <tm-divider></tm-divider>
+      <tm-stepper :max="10" :min="-3" :defaultValue="1"></tm-stepper>
+    </tm-sheet>
+    <tm-sheet>
+      <tm-text :font-size="24" _class="font-weight-b" label="异步增减,尺寸的改变"></tm-text>
+      <tm-divider></tm-divider>
+      <tm-stepper
+        :width="200"
+        :height="62"
+        :beforeEnter="beforeEnter"
+        color="red"
+        linear="bottom"
+        bgColor="red"
+        circular
+        :defaultValue="20"
+      ></tm-stepper>
+    </tm-sheet>
+  </tm-app>
+</template>
+
+<script lang="ts" setup>
+  import { ref } from 'vue';
+
+  const val = ref(0);
+  function beforeEnter() {
+    return new Promise(res => {
+      setTimeout(function () {
+        res(true);
+      }, 1000);
+    });
+  }
+</script>
