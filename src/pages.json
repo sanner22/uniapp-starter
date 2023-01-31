@@ -978,6 +978,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "showData/tree",
+          "style": {
+            "navigationBarTitleText": "树 tree"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
