@@ -786,6 +786,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "layout/sheet",
+          "style": {
+            "navigationBarTitleText": "容器 sheet"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
