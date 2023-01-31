@@ -870,6 +870,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "showData/countdown",
+          "style": {
+            "navigationBarTitleText": "倒计时 countdown"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
