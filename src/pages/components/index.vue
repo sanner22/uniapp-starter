@@ -13,11 +13,16 @@
       </view>
 
       <tm-text color="grey-darken-1" class="uno-m-15px">布局组件：</tm-text>
-      <view class="uno-mb-15px uno-mx-15px uno-rounded-3px uno-overflow-hidden">
+      <view class="uno-mx-15px uno-rounded-3px uno-overflow-hidden">
         <tm-cell :margin="[0, 0]" title="分割线 divider" url="/pagesTMUI/layout/divider" />
         <tm-cell :margin="[0, 0]" title="宫格 grid" url="/pagesTMUI/layout/grid" />
         <tm-cell :margin="[0, 0]" title="布局 row" url="/pagesTMUI/layout/row" />
         <tm-cell :margin="[0, 0]" title="容器 sheet" url="/pagesTMUI/layout/sheet" />
+      </view>
+
+      <tm-text color="grey-darken-1" class="uno-m-15px">展示组件：</tm-text>
+      <view class="uno-mx-15px uno-rounded-3px uno-overflow-hidden">
+        <tm-cell :margin="[0, 0]" title="头像 avatar" url="/pagesTMUI/showData/avatar" />
       </view>
     </template>
 

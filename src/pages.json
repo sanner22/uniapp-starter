@@ -796,6 +796,18 @@
           }
         },
         // #endregion
+
+        // #region showData
+        {
+          "path": "showData/avatar",
+          "style": {
+            "navigationBarTitleText": "头像 avatar"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        // #endregion
       ]
     }
   ],
