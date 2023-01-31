@@ -62,6 +62,7 @@
         <tm-cell :margin="[0, 0]" title="步进器 stepper" url="/pages-tmui/form/stepper" />
         <tm-cell :margin="[0, 0]" title="滑块 slider" url="/pages-tmui/form/slider" />
         <tm-cell :margin="[0, 0]" title="开关 switch" url="/pages-tmui/form/switch" />
+        <tm-cell :margin="[0, 0]" title="时间选择器 time" url="/pages-tmui/form/time" />
       </view>
     </template>
   </tm-app>
