@@ -35,7 +35,7 @@
         cu.value?.resinit();
         break;
 
-      case 'resinit':
+      case 'start':
         cu.value?.start();
         break;
 
