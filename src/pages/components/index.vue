@@ -51,6 +51,7 @@
       <view class="uno-mx-15px uno-rounded-3px uno-overflow-hidden">
         <tm-cell :margin="[0, 0]" title="级联器 cascader" url="/pages-tmui/form/cascader" />
         <tm-cell :margin="[0, 0]" title="复选框 checkbox" url="/pages-tmui/form/checkbox" />
+        <tm-cell :margin="[0, 0]" title="日历 calendar" url="/pages-tmui/form/calendar" />
       </view>
     </template>
   </tm-app>

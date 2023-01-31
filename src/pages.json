@@ -406,6 +406,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "form/calendar",
+          "style": {
+            "navigationBarTitleText": "日历 calendar"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
