@@ -906,6 +906,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "showData/more",
+          "style": {
+            "navigationBarTitleText": "显示更多 more"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
