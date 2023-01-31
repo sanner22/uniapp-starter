@@ -41,6 +41,7 @@
         <tm-cell :margin="[0, 0]" title="表格 table" url="/pagesTMUI/showData/table" />
         <tm-cell :margin="[0, 0]" title="选项卡 tabs" url="/pagesTMUI/showData/tabs" />
         <tm-cell :margin="[0, 0]" title="标签 tag" url="/pagesTMUI/showData/tag" />
+        <tm-cell :margin="[0, 0]" title="时间轴 timeline" url="/pagesTMUI/showData/timeline" />
       </view>
     </template>
 

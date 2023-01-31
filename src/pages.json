@@ -969,6 +969,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "showData/timeline",
+          "style": {
+            "navigationBarTitleText": "时间轴 timeline"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
