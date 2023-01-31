@@ -460,6 +460,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "form/rate",
+          "style": {
+            "navigationBarTitleText": "评分 rate"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
