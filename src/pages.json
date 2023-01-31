@@ -897,6 +897,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "showData/indexes",
+          "style": {
+            "navigationBarTitleText": "列表索引 indexes"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }

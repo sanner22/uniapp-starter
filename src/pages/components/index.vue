@@ -33,6 +33,7 @@
         <tm-cell :margin="[0, 0]" title="倒计时 countdown" url="/pagesTMUI/showData/countdown" />
         <tm-cell :margin="[0, 0]" title="描述 descriptions" url="/pagesTMUI/showData/descriptions" />
         <tm-cell :margin="[0, 0]" title="图片 image" url="/pagesTMUI/showData/image" />
+        <tm-cell :margin="[0, 0]" title="列表索引 indexes" url="/pagesTMUI/showData/indexes" />
       </view>
     </template>
 
