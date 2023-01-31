@@ -888,6 +888,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "showData/image",
+          "style": {
+            "navigationBarTitleText": "图片 image"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
