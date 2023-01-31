@@ -433,6 +433,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "form/input",
+          "style": {
+            "navigationBarTitleText": "输入框 input"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
