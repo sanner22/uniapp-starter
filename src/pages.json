@@ -915,6 +915,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "showData/result",
+          "style": {
+            "navigationBarTitleText": "结果页 result"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }

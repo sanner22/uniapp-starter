@@ -35,6 +35,7 @@
         <tm-cell :margin="[0, 0]" title="图片 image" url="/pagesTMUI/showData/image" />
         <tm-cell :margin="[0, 0]" title="列表索引 indexes" url="/pagesTMUI/showData/indexes" />
         <tm-cell :margin="[0, 0]" title="显示更多 more" url="/pagesTMUI/showData/more" />
+        <tm-cell :margin="[0, 0]" title="结果页 result" url="/pagesTMUI/showData/result" />
       </view>
     </template>
 
