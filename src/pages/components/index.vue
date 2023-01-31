@@ -5,10 +5,16 @@
     </view>
 
     <template v-else>
-      <view class="mb-32 mx-32 round-3 overflow">
-        <tm-cell :margin="[0, 0]" :titleFontSize="30" title="按钮 Button" url="/pagesTMUI/common/button"> </tm-cell>
-        <tm-cell :margin="[0, 0]" :titleFontSize="30" title="图标 Icon" url="/pagesTMUI/common/icon"> </tm-cell>
-        <tm-cell :margin="[0, 0]" :titleFontSize="30" title="文本 Text" url="/pagesTMUI/common/text"> </tm-cell>
+      <tm-text color="grey-darken-1" class="uno-m-15px">通用组件：</tm-text>
+      <view class="uno-mx-15px uno-rounded-3px uno-overflow-hidden">
+        <tm-cell :margin="[0, 0]" title="按钮 Button" url="/pagesTMUI/common/button" />
+        <tm-cell :margin="[0, 0]" title="图标 Icon" url="/pagesTMUI/common/icon" />
+        <tm-cell :margin="[0, 0]" title="文本 Text" url="/pagesTMUI/common/text" />
+      </view>
+
+      <tm-text color="grey-darken-1" class="uno-m-15px">布局组件：</tm-text>
+      <view class="uno-mb-15px uno-mx-15px uno-rounded-3px uno-overflow-hidden">
+        <tm-cell :margin="[0, 0]" title="分割线 divider" url="/pagesTMUI/layout/divider" />
       </view>
     </template>
 

@@ -728,6 +728,7 @@
     {
       "root": "pagesTMUI",
       "pages": [
+        // #region common
         {
           "path": "common/button",
           "style": {
@@ -754,7 +755,20 @@
           "meta": {
             "ignoreAuth": true
           }
-        }
+        },
+        // #endregion
+
+        // #region layout
+        {
+          "path": "layout/divider",
+          "style": {
+            "navigationBarTitleText": "分割线 divider"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        // #endregion
       ]
     }
   ],
