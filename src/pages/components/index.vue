@@ -5,14 +5,14 @@
     </view>
 
     <template v-else>
-      <tm-text color="grey-darken-1" class="uno-m-15px">通用组件：</tm-text>
+      <tm-text color="grey-darken-1" class="uno-m-15px">通用：</tm-text>
       <view class="uno-mx-15px uno-rounded-3px uno-overflow-hidden">
         <tm-cell :margin="[0, 0]" title="按钮 Button" url="/pages-tmui/common/button" />
         <tm-cell :margin="[0, 0]" title="图标 Icon" url="/pages-tmui/common/icon" />
         <tm-cell :margin="[0, 0]" title="文本 Text" url="/pages-tmui/common/text" />
       </view>
 
-      <tm-text color="grey-darken-1" class="uno-m-15px">布局组件：</tm-text>
+      <tm-text color="grey-darken-1" class="uno-m-15px">布局：</tm-text>
       <view class="uno-mx-15px uno-rounded-3px uno-overflow-hidden">
         <tm-cell :margin="[0, 0]" title="分割线 divider" url="/pages-tmui/layout/divider" />
         <tm-cell :margin="[0, 0]" title="宫格 grid" url="/pages-tmui/layout/grid" />
@@ -20,7 +20,7 @@
         <tm-cell :margin="[0, 0]" title="容器 sheet" url="/pages-tmui/layout/sheet" />
       </view>
 
-      <tm-text color="grey-darken-1" class="uno-m-15px">展示组件：</tm-text>
+      <tm-text color="grey-darken-1" class="uno-m-15px">展示：</tm-text>
       <view class="uno-mx-15px uno-rounded-3px uno-overflow-hidden">
         <tm-cell :margin="[0, 0]" title="头像 avatar" url="/pages-tmui/showData/avatar" />
         <tm-cell :margin="[0, 0]" title="二维码 qrcode" url="/pages-tmui/showData/qrcode" />
@@ -45,6 +45,11 @@
         <tm-cell :margin="[0, 0]" title="树 tree" url="/pages-tmui/showData/tree" />
         <tm-cell :margin="[0, 0]" title="虚拟列表 virtual-list" url="/pages-tmui/showData/virtual-list" />
         <tm-cell :margin="[0, 0]" title="瀑布流 waterfall" url="/pages-tmui/showData/waterfall" />
+      </view>
+
+      <tm-text color="grey-darken-1" class="uno-m-15px">表单：</tm-text>
+      <view class="uno-mx-15px uno-rounded-3px uno-overflow-hidden">
+        <tm-cell :margin="[0, 0]" title="级联器 cascader" url="/pages-tmui/form/cascader" />
       </view>
     </template>
   </tm-app>

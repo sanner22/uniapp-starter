@@ -386,6 +386,18 @@
           }
         },
         // #endregion
+
+        // #region form
+        {
+          "path": "form/cascader",
+          "style": {
+            "navigationBarTitleText": "级联器 cascader"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        // #endregion
       ]
     }
   ],
