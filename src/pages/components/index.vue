@@ -52,6 +52,7 @@
         <tm-cell :margin="[0, 0]" title="级联器 cascader" url="/pages-tmui/form/cascader" />
         <tm-cell :margin="[0, 0]" title="复选框 checkbox" url="/pages-tmui/form/checkbox" />
         <tm-cell :margin="[0, 0]" title="日历 calendar" url="/pages-tmui/form/calendar" />
+        <tm-cell :margin="[0, 0]" title="城市选择 city" url="/pages-tmui/form/city" />
       </view>
     </template>
   </tm-app>

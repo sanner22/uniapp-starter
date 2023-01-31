@@ -415,6 +415,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "form/city",
+          "style": {
+            "navigationBarTitleText": "城市选择 city"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
