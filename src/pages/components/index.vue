@@ -7,7 +7,7 @@
     <template v-else>
       <view class="mb-32 mx-32 round-3 overflow">
         <tm-cell :margin="[0, 0]" :titleFontSize="30" title="按钮 Button" url="/pagesTMUI/common/button"> </tm-cell>
-        <tm-cell :margin="[0, 0]" :titleFontSize="30" title="徽标 Badge"> </tm-cell>
+        <tm-cell :margin="[0, 0]" :titleFontSize="30" title="图标 Icon" url="/pagesTMUI/common/icon"> </tm-cell>
         <tm-cell :margin="[0, 0]" :titleFontSize="30" title="卡片 Card"> </tm-cell>
       </view>
     </template>

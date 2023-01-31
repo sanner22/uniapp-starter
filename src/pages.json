@@ -723,6 +723,8 @@
     //     }
     //   ]
     // }
+
+    // pagesTMUI
     {
       "root": "pagesTMUI",
       "pages": [
@@ -730,6 +732,15 @@
           "path": "common/button",
           "style": {
             "navigationBarTitleText": "按钮 Button"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        {
+          "path": "common/icon",
+          "style": {
+            "navigationBarTitleText": "图标 Icon"
           },
           "meta": {
             "ignoreAuth": true
