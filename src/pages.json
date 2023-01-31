@@ -942,6 +942,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "showData/table",
+          "style": {
+            "navigationBarTitleText": "表格 table"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }

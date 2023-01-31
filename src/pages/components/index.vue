@@ -38,6 +38,7 @@
         <tm-cell :margin="[0, 0]" title="结果页 result" url="/pagesTMUI/showData/result" />
         <tm-cell :margin="[0, 0]" title="气泡卡片 popover" url="/pagesTMUI/showData/popover" />
         <tm-cell :margin="[0, 0]" title="数值显示 statistic" url="/pagesTMUI/showData/statistic" />
+        <tm-cell :margin="[0, 0]" title="表格 table" url="/pagesTMUI/showData/table" />
       </view>
     </template>
 
