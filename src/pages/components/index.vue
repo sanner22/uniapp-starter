@@ -63,6 +63,7 @@
         <tm-cell :margin="[0, 0]" title="滑块 slider" url="/pages-tmui/form/slider" />
         <tm-cell :margin="[0, 0]" title="开关 switch" url="/pages-tmui/form/switch" />
         <tm-cell :margin="[0, 0]" title="时间选择器 time" url="/pages-tmui/form/time" />
+        <tm-cell :margin="[0, 0]" title="图片上传 upload" url="/pages-tmui/form/upload" />
       </view>
     </template>
   </tm-app>
