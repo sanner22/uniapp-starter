@@ -54,12 +54,7 @@ if (arguments.includes('custom')) {
     // 云打包（打包自定义基座）
     const cli = spawn(
       'cli',
-      [
-        'pack',
-        `--config \"${packConfigUrl}\"`,
-        `--iscustom ${iscustom}`,
-        `--safemode ${safemode}`,
-      ],
+      ['pack', `--config \"${packConfigUrl}\"`, `--iscustom ${iscustom}`, `--safemode ${safemode}`],
       { shell: true },
     );
     cli.stdout.on('data', data => {
