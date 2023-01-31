@@ -745,6 +745,15 @@
           "meta": {
             "ignoreAuth": true
           }
+        },
+        {
+          "path": "common/text",
+          "style": {
+            "navigationBarTitleText": "文本 Text"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
         }
       ]
     }
