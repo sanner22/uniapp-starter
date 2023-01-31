@@ -834,6 +834,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "showData/carousel",
+          "style": {
+            "navigationBarTitleText": "轮播 carousel"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
