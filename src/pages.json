@@ -469,6 +469,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "form/radio",
+          "style": {
+            "navigationBarTitleText": "单选框 radio"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }

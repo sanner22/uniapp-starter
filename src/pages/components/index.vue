@@ -58,6 +58,7 @@
         <tm-cell :margin="[0, 0]" title="键盘 keyborad" url="/pages-tmui/form/keyborad" />
         <tm-cell :margin="[0, 0]" title="选择器 picker" url="/pages-tmui/form/picker" />
         <tm-cell :margin="[0, 0]" title="评分 rate" url="/pages-tmui/form/rate" />
+        <tm-cell :margin="[0, 0]" title="单选框 radio" url="/pages-tmui/form/radio" />
       </view>
     </template>
   </tm-app>
