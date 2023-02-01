@@ -111,6 +111,7 @@
         <tm-cell bottomBorder :margin="[0, 0]" title="吸顶 sticky" url="/pages-tmui/other/sticky" />
         <tm-cell bottomBorder :margin="[0, 0]" title="图表 chart" url="/pages-tmui/other/chart/index" />
         <tm-cell bottomBorder :margin="[0, 0]" title="签名板 sign-board" url="/pages-tmui/other/sign-board" />
+        <tm-cell bottomBorder :margin="[0, 0]" title="条形码 barcode" url="/pages-tmui/other/barcode" />
       </view>
     </template>
   </tm-app>

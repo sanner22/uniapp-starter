@@ -803,6 +803,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "other/barcode",
+          "style": {
+            "navigationBarTitleText": "条形码 barcode"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
