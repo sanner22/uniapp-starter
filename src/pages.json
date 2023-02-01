@@ -580,6 +580,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "feedback/message",
+          "style": {
+            "navigationBarTitleText": "全局提示 message"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
