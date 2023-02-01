@@ -625,6 +625,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "feedback/skeleton",
+          "style": {
+            "navigationBarTitleText": "骨架屏 skeleton"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }

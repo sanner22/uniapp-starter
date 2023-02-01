@@ -84,6 +84,7 @@
           title="左滑操作栏 slide-switch"
           url="/pages-tmui/feedback/slide-switch"
         />
+        <tm-cell bottomBorder :margin="[0, 0]" title="骨架屏 skeleton" url="/pages-tmui/feedback/skeleton" />
       </view>
     </template>
   </tm-app>
