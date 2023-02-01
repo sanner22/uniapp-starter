@@ -73,6 +73,7 @@
         <tm-cell bottomBorder :margin="[0, 0]" title="警告提示 alert" url="/pages-tmui/feedback/alert" />
         <tm-cell bottomBorder :margin="[0, 0]" title="抽屉 drawer" url="/pages-tmui/feedback/drawer" />
         <tm-cell bottomBorder :margin="[0, 0]" title="列表拖动排序 drag-list" url="/pages-tmui/feedback/drag-list" />
+        <tm-cell bottomBorder :margin="[0, 0]" title="模态框 modal" url="/pages-tmui/feedback/modal" />
       </view>
     </template>
   </tm-app>

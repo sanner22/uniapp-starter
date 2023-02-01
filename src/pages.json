@@ -571,6 +571,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "feedback/modal",
+          "style": {
+            "navigationBarTitleText": "模态框 modal"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
