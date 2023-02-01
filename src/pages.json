@@ -652,6 +652,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "feedback/roll-notice",
+          "style": {
+            "navigationBarTitleText": "滚动通知 roll-notice"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
