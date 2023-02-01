@@ -86,6 +86,7 @@
         />
         <tm-cell bottomBorder :margin="[0, 0]" title="骨架屏 skeleton" url="/pages-tmui/feedback/skeleton" />
         <tm-cell bottomBorder :margin="[0, 0]" title="动效 translate" url="/pages-tmui/feedback/translate" />
+        <tm-cell bottomBorder :margin="[0, 0]" title="通知提醒 notification" url="/pages-tmui/feedback/notification" />
       </view>
     </template>
   </tm-app>

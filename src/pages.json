@@ -643,6 +643,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "feedback/notification",
+          "style": {
+            "navigationBarTitleText": "通知提醒 notification"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
