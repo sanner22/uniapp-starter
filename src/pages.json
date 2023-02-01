@@ -553,6 +553,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "feedback/drawer",
+          "style": {
+            "navigationBarTitleText": "抽屉 drawer"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
