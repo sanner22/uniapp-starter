@@ -812,6 +812,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "other/scrollx",
+          "style": {
+            "navigationBarTitleText": "横向滚动 scrollx"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
