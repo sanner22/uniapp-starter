@@ -672,6 +672,16 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "nav/navbar",
+          "style": {
+            "navigationBarTitleText": "导航栏 navbar",
+            "navigationStyle": "custom"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
