@@ -776,6 +776,24 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "other/chart/index",
+          "style": {
+            "navigationBarTitleText": "图表 chart"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        {
+          "path": "other/chart/chart",
+          "style": {
+            "navigationBarTitleText": "图表 chart"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }

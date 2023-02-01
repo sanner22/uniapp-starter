@@ -109,6 +109,7 @@
         <tm-cell bottomBorder :margin="[0, 0]" title="图片裁剪 cropimg" url="/pages-tmui/other/cropimg" />
         <tm-cell bottomBorder :margin="[0, 0]" title="浮动按钮 float-button" url="/pages-tmui/other/float-button" />
         <tm-cell bottomBorder :margin="[0, 0]" title="吸顶 sticky" url="/pages-tmui/other/sticky" />
+        <tm-cell bottomBorder :margin="[0, 0]" title="图表 chart" url="/pages-tmui/other/chart/index" />
       </view>
     </template>
   </tm-app>
