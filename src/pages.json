@@ -616,6 +616,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "feedback/slide-switch",
+          "style": {
+            "navigationBarTitleText": "左滑操作栏 slide-switch"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }

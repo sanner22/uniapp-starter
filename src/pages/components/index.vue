@@ -78,6 +78,12 @@
         <tm-cell bottomBorder :margin="[0, 0]" title="遮罩 overlay" url="/pages-tmui/feedback/overlay" />
         <tm-cell bottomBorder :margin="[0, 0]" title="进度条 progress" url="/pages-tmui/feedback/progress" />
         <tm-cell bottomBorder :margin="[0, 0]" title="局部加载 spin" url="/pages-tmui/feedback/spin" />
+        <tm-cell
+          bottomBorder
+          :margin="[0, 0]"
+          title="左滑操作栏 slide-switch"
+          url="/pages-tmui/feedback/slide-switch"
+        />
       </view>
     </template>
   </tm-app>
