@@ -95,6 +95,7 @@
         <tm-cell bottomBorder :margin="[0, 0]" title="底部操作菜单 action-menu" url="/pages-tmui/nav/action-menu" />
         <tm-cell bottomBorder :margin="[0, 0]" title="下拉选项 dropdown" url="/pages-tmui/nav/dropdown" />
         <tm-cell bottomBorder :margin="[0, 0]" title="导航栏 navbar" url="/pages-tmui/nav/navbar" />
+        <tm-cell bottomBorder :margin="[0, 0]" title="分页 pagination" url="/pages-tmui/nav/pagination" />
       </view>
     </template>
   </tm-app>
