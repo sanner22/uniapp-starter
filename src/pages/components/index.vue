@@ -85,6 +85,7 @@
           url="/pages-tmui/feedback/slide-switch"
         />
         <tm-cell bottomBorder :margin="[0, 0]" title="骨架屏 skeleton" url="/pages-tmui/feedback/skeleton" />
+        <tm-cell bottomBorder :margin="[0, 0]" title="动效 translate" url="/pages-tmui/feedback/translate" />
       </view>
     </template>
   </tm-app>

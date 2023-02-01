@@ -634,6 +634,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "feedback/translate",
+          "style": {
+            "navigationBarTitleText": "动效 translate"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
