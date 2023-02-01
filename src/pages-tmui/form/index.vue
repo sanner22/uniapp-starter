@@ -10,5 +10,5 @@
 </template>
 
 <script lang="ts" setup>
-  import { componentsList as list } from './index';
+  import { componentsList as list } from './_index';
 </script>

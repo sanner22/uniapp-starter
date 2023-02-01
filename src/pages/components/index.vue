@@ -22,7 +22,7 @@
 
 <script lang="ts" setup>
   import { ref } from 'vue';
-  import { componentGroups } from '../../pages-tmui/index';
+  import { componentGroups } from '@/pages-tmui/tmuiComponents';
 
   const loading = ref(true);
 

@@ -214,7 +214,7 @@
         },
         // #endregion
 
-        // #region showData
+        // #region showdata
         {
           "path": "showdata/index",
           "style": {
@@ -225,7 +225,7 @@
           }
         },
         {
-          "path": "showData/avatar",
+          "path": "showdata/avatar",
           "style": {
             "navigationBarTitleText": "头像 avatar"
           },
@@ -234,7 +234,7 @@
           }
         },
         {
-          "path": "showData/qrcode",
+          "path": "showdata/qrcode",
           "style": {
             "navigationBarTitleText": "二维码 qrcode"
           },
@@ -243,7 +243,7 @@
           }
         },
         {
-          "path": "showData/badge",
+          "path": "showdata/badge",
           "style": {
             "navigationBarTitleText": "徽标 badge"
           },
@@ -252,7 +252,7 @@
           }
         },
         {
-          "path": "showData/card",
+          "path": "showdata/card",
           "style": {
             "navigationBarTitleText": "卡片 card"
           },
@@ -261,7 +261,7 @@
           }
         },
         {
-          "path": "showData/carousel",
+          "path": "showdata/carousel",
           "style": {
             "navigationBarTitleText": "轮播 carousel"
           },
@@ -270,7 +270,7 @@
           }
         },
         {
-          "path": "showData/collapse",
+          "path": "showdata/collapse",
           "style": {
             "navigationBarTitleText": "折叠面板 collapse"
           },
@@ -279,7 +279,7 @@
           }
         },
         {
-          "path": "showData/comment",
+          "path": "showdata/comment",
           "style": {
             "navigationBarTitleText": "评论 comment"
           },
@@ -288,7 +288,7 @@
           }
         },
         {
-          "path": "showData/cell",
+          "path": "showdata/cell",
           "style": {
             "navigationBarTitleText": "单元格 cell"
           },
@@ -297,7 +297,7 @@
           }
         },
         {
-          "path": "showData/countdown",
+          "path": "showdata/countdown",
           "style": {
             "navigationBarTitleText": "倒计时 countdown"
           },
@@ -306,7 +306,7 @@
           }
         },
         {
-          "path": "showData/descriptions",
+          "path": "showdata/descriptions",
           "style": {
             "navigationBarTitleText": "描述 descriptions"
           },
@@ -315,7 +315,7 @@
           }
         },
         {
-          "path": "showData/image",
+          "path": "showdata/image",
           "style": {
             "navigationBarTitleText": "图片 image"
           },
@@ -324,7 +324,7 @@
           }
         },
         {
-          "path": "showData/indexes",
+          "path": "showdata/indexes",
           "style": {
             "navigationBarTitleText": "列表索引 indexes"
           },
@@ -333,7 +333,7 @@
           }
         },
         {
-          "path": "showData/more",
+          "path": "showdata/more",
           "style": {
             "navigationBarTitleText": "显示更多 more"
           },
@@ -342,7 +342,7 @@
           }
         },
         {
-          "path": "showData/result",
+          "path": "showdata/result",
           "style": {
             "navigationBarTitleText": "结果页 result"
           },
@@ -351,7 +351,7 @@
           }
         },
         {
-          "path": "showData/popover",
+          "path": "showdata/popover",
           "style": {
             "navigationBarTitleText": "气泡卡片 popover"
           },
@@ -360,7 +360,7 @@
           }
         },
         {
-          "path": "showData/statistic",
+          "path": "showdata/statistic",
           "style": {
             "navigationBarTitleText": "数值显示 statistic"
           },
@@ -369,7 +369,7 @@
           }
         },
         {
-          "path": "showData/table",
+          "path": "showdata/table",
           "style": {
             "navigationBarTitleText": "表格 table"
           },
@@ -378,7 +378,7 @@
           }
         },
         {
-          "path": "showData/tabs",
+          "path": "showdata/tabs",
           "style": {
             "navigationBarTitleText": "选项卡 tabs"
           },
@@ -387,7 +387,7 @@
           }
         },
         {
-          "path": "showData/tag",
+          "path": "showdata/tag",
           "style": {
             "navigationBarTitleText": "标签 tag"
           },
@@ -396,7 +396,7 @@
           }
         },
         {
-          "path": "showData/timeline",
+          "path": "showdata/timeline",
           "style": {
             "navigationBarTitleText": "时间轴 timeline"
           },
@@ -405,7 +405,7 @@
           }
         },
         {
-          "path": "showData/tree",
+          "path": "showdata/tree",
           "style": {
             "navigationBarTitleText": "树 tree"
           },
@@ -414,7 +414,7 @@
           }
         },
         {
-          "path": "showData/virtual-list",
+          "path": "showdata/virtual-list",
           "style": {
             "navigationBarTitleText": "虚拟列表 virtual-list"
           },
@@ -423,7 +423,7 @@
           }
         },
         {
-          "path": "showData/waterfall",
+          "path": "showdata/waterfall",
           "style": {
             "navigationBarTitleText": "瀑布流 waterfall"
           },

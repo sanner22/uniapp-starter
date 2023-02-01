@@ -99,7 +99,7 @@
   import { judgePlatform } from '@/utils/platform';
   import tmApp from '@/tmui/components/tm-app/tm-app.vue';
   import { useTmpiniaStore } from '@/tmui/tool/lib/tmpinia';
-  import { componentGroups } from '../../pages-tmui/index';
+  import { componentGroups } from '@/pages-tmui/tmuiComponents';
 
   const store = useTmpiniaStore();
 
