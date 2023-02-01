@@ -110,9 +110,27 @@
       "pages": [
         // #region common
         {
+          "path": "common/index",
+          "style": {
+            "navigationBarTitleText": "通用组件"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        {
+          "path": "common/app",
+          "style": {
+            "navigationBarTitleText": "根节点 app"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        {
           "path": "common/button",
           "style": {
-            "navigationBarTitleText": "按钮 Button"
+            "navigationBarTitleText": "按钮 button"
           },
           "meta": {
             "ignoreAuth": true
@@ -121,7 +139,7 @@
         {
           "path": "common/icon",
           "style": {
-            "navigationBarTitleText": "图标 Icon"
+            "navigationBarTitleText": "图标 icon"
           },
           "meta": {
             "ignoreAuth": true
@@ -130,7 +148,7 @@
         {
           "path": "common/text",
           "style": {
-            "navigationBarTitleText": "文本 Text"
+            "navigationBarTitleText": "文本 text"
           },
           "meta": {
             "ignoreAuth": true
@@ -139,6 +157,15 @@
         // #endregion
 
         // #region layout
+        {
+          "path": "layout/index",
+          "style": {
+            "navigationBarTitleText": "布局组件"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         {
           "path": "layout/divider",
           "style": {
@@ -178,6 +205,15 @@
         // #endregion
 
         // #region showData
+        {
+          "path": "showdata/index",
+          "style": {
+            "navigationBarTitleText": "展示组件"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         {
           "path": "showData/avatar",
           "style": {
@@ -389,6 +425,15 @@
 
         // #region form
         {
+          "path": "form/index",
+          "style": {
+            "navigationBarTitleText": "表单组件"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        {
           "path": "form/cascader",
           "style": {
             "navigationBarTitleText": "级联器 cascader"
@@ -545,6 +590,15 @@
 
         // #region feedback
         {
+          "path": "feedback/index",
+          "style": {
+            "navigationBarTitleText": "反馈组件"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        {
           "path": "feedback/alert",
           "style": {
             "navigationBarTitleText": "警告提示 alert"
@@ -656,6 +710,15 @@
 
         // #region nav
         {
+          "path": "nav/index",
+          "style": {
+            "navigationBarTitleText": "导航组件"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        {
           "path": "nav/action-menu",
           "style": {
             "navigationBarTitleText": "底部操作菜单 action-menu"
@@ -740,6 +803,15 @@
         // #endregion
 
         // #region other
+        {
+          "path": "other/index",
+          "style": {
+            "navigationBarTitleText": "其他组件"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         {
           "path": "other/codeinput",
           "style": {
@@ -862,6 +934,15 @@
         // #endregion
 
         // #region business
+        {
+          "path": "business/index",
+          "style": {
+            "navigationBarTitleText": "业务组件"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         {
           "path": "business/coupon",
           "style": {
