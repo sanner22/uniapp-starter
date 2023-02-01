@@ -749,6 +749,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "other/cropimg",
+          "style": {
+            "navigationBarTitleText": "图片裁剪 cropimg"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }

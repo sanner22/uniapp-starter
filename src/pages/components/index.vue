@@ -106,6 +106,7 @@
       <tm-text color="grey-darken-1" class="uno-m-15px">其他：</tm-text>
       <view class="uno-mx-15px uno-rounded-3px uno-overflow-hidden">
         <tm-cell bottomBorder :margin="[0, 0]" title="验证码输入框 codeinput" url="/pages-tmui/other/codeinput" />
+        <tm-cell bottomBorder :margin="[0, 0]" title="图片裁剪 cropimg" url="/pages-tmui/other/cropimg" />
       </view>
     </template>
   </tm-app>
