@@ -114,6 +114,9 @@
         <tm-cell bottomBorder :margin="[0, 0]" title="条形码 barcode" url="/pages-tmui/other/barcode" />
         <tm-cell bottomBorder :margin="[0, 0]" title="横向滚动 scrollx" url="/pages-tmui/other/scrollx" />
         <tm-cell bottomBorder :margin="[0, 0]" title="纵向滚动 scrolly" url="/pages-tmui/other/scrolly" />
+        <!-- #ifdef H5 -->
+        <tm-cell bottomBorder :margin="[0, 0]" title="水印 watermark" url="/pages-tmui/other/watermark" />
+        <!-- #endif -->
       </view>
     </template>
   </tm-app>

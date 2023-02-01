@@ -830,6 +830,17 @@
             "ignoreAuth": true
           }
         },
+        // #ifdef H5
+        {
+          "path": "other/watermark",
+          "style": {
+            "navigationBarTitleText": "水印 watermark"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        // #endif
         // #endregion
       ]
     }
