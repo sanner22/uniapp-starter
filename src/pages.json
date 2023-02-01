@@ -850,6 +850,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "other/color-view",
+          "style": {
+            "navigationBarTitleText": "颜色选择器 html"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }

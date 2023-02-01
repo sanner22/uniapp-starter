@@ -118,6 +118,7 @@
         <tm-cell bottomBorder :margin="[0, 0]" title="水印 watermark" url="/pages-tmui/other/watermark" />
         <!-- #endif -->
         <tm-cell bottomBorder :margin="[0, 0]" title="富文本 html" url="/pages-tmui/other/html" />
+        <tm-cell bottomBorder :margin="[0, 0]" title="颜色选择器 color-view" url="/pages-tmui/other/color-view" />
       </view>
     </template>
   </tm-app>
