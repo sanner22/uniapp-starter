@@ -663,6 +663,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "nav/dropdown",
+          "style": {
+            "navigationBarTitleText": "下拉选项 dropdown"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
