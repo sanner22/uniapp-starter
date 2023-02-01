@@ -871,6 +871,21 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "business/sku",
+          "style": {
+            "navigationBarTitleText": "商品属性选择 sku"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        // #endregion
+
+        // #region 预留，仅用于快手小程序
+        // #ifdef MP-KUAISHOU
+        { }
+        // #endif
         // #endregion
       ]
     }

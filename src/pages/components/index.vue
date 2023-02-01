@@ -124,6 +124,7 @@
       <tm-text color="grey-darken-1" class="uno-m-15px">业务：</tm-text>
       <view class="uno-mx-15px uno-rounded-3px uno-overflow-hidden">
         <tm-cell bottomBorder :margin="[0, 0]" title="优惠券 coupon" url="/pages-tmui/business/coupon" />
+        <tm-cell bottomBorder :margin="[0, 0]" title="商品属性选择 sku" url="/pages-tmui/business/sku" />
       </view>
     </template>
   </tm-app>
