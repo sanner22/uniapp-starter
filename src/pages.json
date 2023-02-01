@@ -598,6 +598,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "feedback/progress",
+          "style": {
+            "navigationBarTitleText": "进度条 progress"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
