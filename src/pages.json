@@ -18,6 +18,16 @@
       }
     },
     {
+      "path": "pages/index/themes",
+      "style": {
+        "navigationBarTitleText": "更多主题",
+        "navigationStyle": "custom"
+      },
+      "meta": {
+        "ignoreAuth": true
+      }
+    },
+    {
       "path": "pages/components/index",
       "style": {
         "navigationBarTitleText": "UI 组件库"

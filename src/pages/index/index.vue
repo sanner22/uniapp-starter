@@ -36,7 +36,7 @@
             :font-size="32"
             name="tmicon-menu"
           ></tm-icon>
-          <navigator url="settheme" class="px-12">
+          <navigator url="themes" class="px-12">
             <tm-icon :font-size="32" name="tmicon-cog-fill"></tm-icon>
           </navigator>
           <tm-icon
