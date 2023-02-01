@@ -13,7 +13,7 @@
         <view class="uno-w-full uno-h-full uno-position-absolute uno-left-0 uno-top-0">
           <view :style="{ height: sysinfo.sysinfo.statusBarHeight + 'px' }"></view>
           <view class="flex flex-row flex-row-center-between py-24 px-16">
-            <tm-text label="Uniapp Starter 1.0.0"></tm-text>
+            <tm-text label="Uniapp Starter"></tm-text>
             <tm-icon @click="showf = false" color="white" :font-size="32" name="tmicon-times"></tm-icon>
           </view>
           <template v-for="(item, index) in componentGroups" :key="index">
@@ -29,7 +29,7 @@
       </tm-sheet>
     </template>
 
-    <tm-navbar title="首页" :shadow="0" hide-home>
+    <tm-navbar title="Uniapp Starter" :shadow="0" hide-home>
       <template v-slot:left>
         <view class="flex flex-center flex-row">
           <tm-icon
@@ -54,7 +54,7 @@
     </tm-navbar>
 
     <view class="uno-my-60px uno-center">
-      <tm-image src="/static/svg/favicon.svg" :width="240" :height="240" />
+      <tm-image src="/static/svg/favicon.svg" :width="240" :height="240" show-menu-by-long-press />
     </view>
 
     <view class="uno-center">
