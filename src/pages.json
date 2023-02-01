@@ -738,6 +738,18 @@
           }
         },
         // #endregion
+
+        // #region other
+        {
+          "path": "other/codeinput",
+          "style": {
+            "navigationBarTitleText": "验证码输入框 codeinput"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        // #endregion
       ]
     }
   ],

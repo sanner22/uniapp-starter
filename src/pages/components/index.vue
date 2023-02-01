@@ -102,6 +102,11 @@
         <tm-cell bottomBorder :margin="[0, 0]" title="下拉筛选器 filter-menu" url="/pages-tmui/nav/filter-menu" />
         <tm-cell bottomBorder :margin="[0, 0]" title="侧边栏导航 side-menu" url="/pages-tmui/nav/side-menu" />
       </view>
+
+      <tm-text color="grey-darken-1" class="uno-m-15px">其他：</tm-text>
+      <view class="uno-mx-15px uno-rounded-3px uno-overflow-hidden">
+        <tm-cell bottomBorder :margin="[0, 0]" title="验证码输入框 codeinput" url="/pages-tmui/other/codeinput" />
+      </view>
     </template>
   </tm-app>
 </template>
