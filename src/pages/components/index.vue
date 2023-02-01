@@ -89,6 +89,11 @@
         <tm-cell bottomBorder :margin="[0, 0]" title="通知提醒 notification" url="/pages-tmui/feedback/notification" />
         <tm-cell bottomBorder :margin="[0, 0]" title="滚动通知 roll-notice" url="/pages-tmui/feedback/roll-notice" />
       </view>
+
+      <tm-text color="grey-darken-1" class="uno-m-15px">反馈：</tm-text>
+      <view class="uno-mx-15px uno-rounded-3px uno-overflow-hidden">
+        <tm-cell bottomBorder :margin="[0, 0]" title="底部操作菜单 action-menu" url="/pages-tmui/nav/action-menu" />
+      </view>
     </template>
   </tm-app>
 </template>

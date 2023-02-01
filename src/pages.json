@@ -652,10 +652,12 @@
             "ignoreAuth": true
           }
         },
+
+        // #region nav
         {
-          "path": "feedback/roll-notice",
+          "path": "nav/action-menu",
           "style": {
-            "navigationBarTitleText": "滚动通知 roll-notice"
+            "navigationBarTitleText": "底部操作菜单 action-menu"
           },
           "meta": {
             "ignoreAuth": true
