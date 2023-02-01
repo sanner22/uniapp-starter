@@ -72,6 +72,7 @@
       <view class="uno-mx-15px uno-rounded-3px uno-overflow-hidden">
         <tm-cell bottomBorder :margin="[0, 0]" title="警告提示 alert" url="/pages-tmui/feedback/alert" />
         <tm-cell bottomBorder :margin="[0, 0]" title="抽屉 drawer" url="/pages-tmui/feedback/drawer" />
+        <tm-cell bottomBorder :margin="[0, 0]" title="列表拖动排序 drag-list" url="/pages-tmui/feedback/drag-list" />
       </view>
     </template>
   </tm-app>

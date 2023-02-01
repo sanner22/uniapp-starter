@@ -562,6 +562,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "feedback/drag-list",
+          "style": {
+            "navigationBarTitleText": "列表拖动排序 drag-list"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
