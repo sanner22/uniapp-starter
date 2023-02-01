@@ -107,6 +107,7 @@
       <view class="uno-mx-15px uno-rounded-3px uno-overflow-hidden">
         <tm-cell bottomBorder :margin="[0, 0]" title="验证码输入框 codeinput" url="/pages-tmui/other/codeinput" />
         <tm-cell bottomBorder :margin="[0, 0]" title="图片裁剪 cropimg" url="/pages-tmui/other/cropimg" />
+        <tm-cell bottomBorder :margin="[0, 0]" title="浮动按钮 float-button" url="/pages-tmui/other/float-button" />
       </view>
     </template>
   </tm-app>

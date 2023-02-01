@@ -758,6 +758,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "other/float-button",
+          "style": {
+            "navigationBarTitleText": "浮动按钮 float-button"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
