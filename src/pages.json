@@ -607,6 +607,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "feedback/spin",
+          "style": {
+            "navigationBarTitleText": "局部加载 spin"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }

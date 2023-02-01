@@ -77,6 +77,7 @@
         <tm-cell bottomBorder :margin="[0, 0]" title="全局提示 message" url="/pages-tmui/feedback/message" />
         <tm-cell bottomBorder :margin="[0, 0]" title="遮罩 overlay" url="/pages-tmui/feedback/overlay" />
         <tm-cell bottomBorder :margin="[0, 0]" title="进度条 progress" url="/pages-tmui/feedback/progress" />
+        <tm-cell bottomBorder :margin="[0, 0]" title="局部加载 spin" url="/pages-tmui/feedback/spin" />
       </view>
     </template>
   </tm-app>
