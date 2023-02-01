@@ -542,6 +542,18 @@
           }
         },
         // #endregion
+
+        // #region feedback
+        {
+          "path": "feedback/alert",
+          "style": {
+            "navigationBarTitleText": "警告提示 alert"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        // #endregion
       ]
     }
   ],

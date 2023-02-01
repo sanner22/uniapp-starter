@@ -67,6 +67,11 @@
         <tm-cell bottomBorder :margin="[0, 0]" title="时间周 weekbar" url="/pages-tmui/form/weekbar" />
         <tm-cell bottomBorder :margin="[0, 0]" title="时间选择器 time-between" url="/pages-tmui/form/time-between" />
       </view>
+
+      <tm-text color="grey-darken-1" class="uno-m-15px">反馈：</tm-text>
+      <view class="uno-mx-15px uno-rounded-3px uno-overflow-hidden">
+        <tm-cell bottomBorder :margin="[0, 0]" title="警告提示 alert" url="/pages-tmui/feedback/alert" />
+      </view>
     </template>
   </tm-app>
 </template>
