@@ -13,7 +13,8 @@
     "prepare": "husky install",
     "hbx:open": "cli open",
     "hbx:custom": "node ./scripts/hbx.pack.js custom",
-    "hbx:pack": "node ./scripts/hbx.pack.js"
+    "hbx:pack": "node ./scripts/hbx.pack.js",
+    "uniapp-cli:latest": "npx @dcloudio/uvm"
   },
   "dependencies": {
     "@dcloudio/uni-app": "3.0.0-3061820230117001",
