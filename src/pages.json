@@ -821,6 +821,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "other/scrolly",
+          "style": {
+            "navigationBarTitleText": "纵向滚动 scrolly"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }

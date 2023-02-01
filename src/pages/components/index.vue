@@ -113,6 +113,7 @@
         <tm-cell bottomBorder :margin="[0, 0]" title="签名板 sign-board" url="/pages-tmui/other/sign-board" />
         <tm-cell bottomBorder :margin="[0, 0]" title="条形码 barcode" url="/pages-tmui/other/barcode" />
         <tm-cell bottomBorder :margin="[0, 0]" title="横向滚动 scrollx" url="/pages-tmui/other/scrollx" />
+        <tm-cell bottomBorder :margin="[0, 0]" title="纵向滚动 scrolly" url="/pages-tmui/other/scrolly" />
       </view>
     </template>
   </tm-app>
