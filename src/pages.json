@@ -794,6 +794,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "other/sign-board",
+          "style": {
+            "navigationBarTitleText": "签名板 sign-board"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
