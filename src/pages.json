@@ -841,6 +841,15 @@
           }
         },
         // #endif
+        {
+          "path": "other/html",
+          "style": {
+            "navigationBarTitleText": "富文本 html"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
