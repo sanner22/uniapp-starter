@@ -1,27 +1,30 @@
 <template>
   <tm-app v-model:show-menu="showf" ref="app">
     <template v-slot:menu="{ sys }">
-      <tm-sheet :margin="[0, 0]" :padding="[0, 0]" color="indigo" linearDeep="accent" linear="bottom">
-        <image
-          class="opacity-1"
-          :style="{ width: `${sys.width}px`, height: `${sys.height}px` }"
-          :src="`https://picsum.photos/${sys.width}/${sys.height}?id=${Math.random()}`"
-          mode="scaleToFill"
-        />
-        <view class="absolute l-0 t-0" :style="{ width: `${sys.width}px`, height: `${sys.height}px` }">
+      <tm-sheet
+        :margin="[0, 0]"
+        :padding="[0, 0]"
+        color="indigo"
+        linearDeep="accent"
+        linear="bottom"
+        unit="px"
+        :height="sys.height"
+      >
+        <view class="uno-w-full uno-h-full uno-position-absolute uno-left-0 uno-top-0">
           <view :style="{ height: sysinfo.sysinfo.statusBarHeight + 'px' }"></view>
           <view class="flex flex-row flex-row-center-between py-24 px-16">
-            <tm-text label="TMUI 3.0.89"></tm-text>
+            <tm-text label="Uniapp Starter 1.0.0"></tm-text>
             <tm-icon @click="showf = false" color="white" :font-size="32" name="tmicon-times"></tm-icon>
           </view>
-          <tm-cell url="/pages-tmui/common/index" color="primary" transprent :margin="[10, 0]" title="通用组件" />
-          <tm-cell url="/pages-tmui/layout/index" color="primary" transprent :margin="[10, 0]" title="布局组件" />
-          <tm-cell url="/pages-tmui/showdata/index" color="primary" transprent :margin="[10, 0]" title="展示组件" />
-          <tm-cell url="/pages-tmui/form/index" color="primary" transprent :margin="[10, 0]" title="表单录入" />
-          <tm-cell url="/pages-tmui/feedback/index" color="primary" transprent :margin="[10, 0]" title="反馈组件" />
-          <tm-cell url="/pages-tmui/nav/index" color="primary" transprent :margin="[10, 0]" title="导航组件" />
-          <tm-cell url="/pages-tmui/other/index" color="primary" transprent :margin="[10, 0]" title="其他组件" />
-          <tm-cell url="/pages-tmui/business/index" color="primary" transprent :margin="[10, 0]" title="业务组件" />
+          <template v-for="(item, index) in componentGroup" :key="index">
+            <tm-cell
+              :url="`/pages-tmui/${item.key}/index`"
+              color="primary"
+              transprent
+              :margin="[10, 0]"
+              :title="item.title"
+            />
+          </template>
         </view>
       </tm-sheet>
     </template>
@@ -96,6 +99,7 @@
   import { judgePlatform } from '@/utils/platform';
   import tmApp from '@/tmui/components/tm-app/tm-app.vue';
   import { useTmpiniaStore } from '@/tmui/tool/lib/tmpinia';
+  import { componentGroup } from '../../pages-tmui/index';
 
   const store = useTmpiniaStore();
 
