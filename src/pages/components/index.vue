@@ -97,6 +97,7 @@
         <tm-cell bottomBorder :margin="[0, 0]" title="导航栏 navbar" url="/pages-tmui/nav/navbar" />
         <tm-cell bottomBorder :margin="[0, 0]" title="分页 pagination" url="/pages-tmui/nav/pagination" />
         <tm-cell bottomBorder :margin="[0, 0]" title="分段器 segtab" url="/pages-tmui/nav/segtab" />
+        <tm-cell bottomBorder :margin="[0, 0]" title="步进器 steps" url="/pages-tmui/nav/steps" />
       </view>
     </template>
   </tm-app>

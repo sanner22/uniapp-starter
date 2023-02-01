@@ -701,6 +701,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "nav/steps",
+          "style": {
+            "navigationBarTitleText": "步进器 steps"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
