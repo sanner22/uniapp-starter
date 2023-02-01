@@ -719,6 +719,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "nav/filter-menu",
+          "style": {
+            "navigationBarTitleText": "下拉筛选器 filter-menu"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }

@@ -99,6 +99,7 @@
         <tm-cell bottomBorder :margin="[0, 0]" title="分段器 segtab" url="/pages-tmui/nav/segtab" />
         <tm-cell bottomBorder :margin="[0, 0]" title="步进器 steps" url="/pages-tmui/nav/steps" />
         <tm-cell bottomBorder :margin="[0, 0]" title="底部导航 tabbar" url="/pages-tmui/nav/tabbar" />
+        <tm-cell bottomBorder :margin="[0, 0]" title="下拉筛选器 filter-menu" url="/pages-tmui/nav/filter-menu" />
       </view>
     </template>
   </tm-app>
