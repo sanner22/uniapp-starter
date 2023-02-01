@@ -860,6 +860,18 @@
           }
         },
         // #endregion
+
+        // #region business
+        {
+          "path": "business/coupon",
+          "style": {
+            "navigationBarTitleText": "优惠券 coupon"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        // #endregion
       ]
     }
   ],

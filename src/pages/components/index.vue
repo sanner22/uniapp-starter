@@ -120,6 +120,11 @@
         <tm-cell bottomBorder :margin="[0, 0]" title="富文本 html" url="/pages-tmui/other/html" />
         <tm-cell bottomBorder :margin="[0, 0]" title="颜色选择器 color-view" url="/pages-tmui/other/color-view" />
       </view>
+
+      <tm-text color="grey-darken-1" class="uno-m-15px">业务：</tm-text>
+      <view class="uno-mx-15px uno-rounded-3px uno-overflow-hidden">
+        <tm-cell bottomBorder :margin="[0, 0]" title="优惠券 coupon" url="/pages-tmui/business/coupon" />
+      </view>
     </template>
   </tm-app>
 </template>
