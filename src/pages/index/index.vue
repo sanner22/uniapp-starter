@@ -16,13 +16,13 @@
             <tm-text label="Uniapp Starter 1.0.0"></tm-text>
             <tm-icon @click="showf = false" color="white" :font-size="32" name="tmicon-times"></tm-icon>
           </view>
-          <template v-for="(item, index) in componentGroup" :key="index">
+          <template v-for="(item, index) in componentGroups" :key="index">
             <tm-cell
-              :url="`/pages-tmui/${item.key}/index`"
+              :url="`/pages-tmui/${item.group.key}/index`"
               color="primary"
               transprent
               :margin="[10, 0]"
-              :title="item.title"
+              :title="item.group.title"
             />
           </template>
         </view>
@@ -99,7 +99,7 @@
   import { judgePlatform } from '@/utils/platform';
   import tmApp from '@/tmui/components/tm-app/tm-app.vue';
   import { useTmpiniaStore } from '@/tmui/tool/lib/tmpinia';
-  import { componentGroup } from '../../pages-tmui/index';
+  import { componentGroups } from '../../pages-tmui/index';
 
   const store = useTmpiniaStore();
 
