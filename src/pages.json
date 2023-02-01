@@ -728,6 +728,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "nav/side-menu",
+          "style": {
+            "navigationBarTitleText": "侧边栏导航 side-menu"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
