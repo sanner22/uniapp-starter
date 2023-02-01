@@ -10,5 +10,5 @@
 </template>
 
 <script lang="ts" setup>
-  import { componentsList as list } from './_index';
+  import { componentsList as list } from '@/utils/tmui-helper/form';
 </script>
