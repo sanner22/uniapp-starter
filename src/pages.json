@@ -710,6 +710,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "nav/tabbar",
+          "style": {
+            "navigationBarTitleText": "底部导航 tabbar"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
