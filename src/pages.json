@@ -589,6 +589,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "feedback/overlay",
+          "style": {
+            "navigationBarTitleText": "遮罩 overlay"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }

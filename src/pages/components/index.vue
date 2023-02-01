@@ -75,6 +75,7 @@
         <tm-cell bottomBorder :margin="[0, 0]" title="列表拖动排序 drag-list" url="/pages-tmui/feedback/drag-list" />
         <tm-cell bottomBorder :margin="[0, 0]" title="模态框 modal" url="/pages-tmui/feedback/modal" />
         <tm-cell bottomBorder :margin="[0, 0]" title="全局提示 message" url="/pages-tmui/feedback/message" />
+        <tm-cell bottomBorder :margin="[0, 0]" title="遮罩 overlay" url="/pages-tmui/feedback/overlay" />
       </view>
     </template>
   </tm-app>
