@@ -108,6 +108,7 @@
         <tm-cell bottomBorder :margin="[0, 0]" title="验证码输入框 codeinput" url="/pages-tmui/other/codeinput" />
         <tm-cell bottomBorder :margin="[0, 0]" title="图片裁剪 cropimg" url="/pages-tmui/other/cropimg" />
         <tm-cell bottomBorder :margin="[0, 0]" title="浮动按钮 float-button" url="/pages-tmui/other/float-button" />
+        <tm-cell bottomBorder :margin="[0, 0]" title="吸顶 sticky" url="/pages-tmui/other/sticky" />
       </view>
     </template>
   </tm-app>

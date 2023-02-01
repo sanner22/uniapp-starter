@@ -767,6 +767,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "other/sticky",
+          "style": {
+            "navigationBarTitleText": "吸顶 sticky"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
