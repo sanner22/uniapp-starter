@@ -692,6 +692,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "nav/segtab",
+          "style": {
+            "navigationBarTitleText": "分段器 segtab"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }

@@ -1,0 +1,55 @@
+<template>
+  <tm-app>
+    <tm-sheet>
+      <tm-text :fontSize="24" _class="font-weight-b" label="基础属性,更多玩法请前往文档。"></tm-text>
+      <tm-divider></tm-divider>
+      <tm-segtab :width="636" :list="list" defaultValue="2"></tm-segtab>
+    </tm-sheet>
+    <tm-sheet>
+      <tm-text :fontSize="24" _class="font-weight-b" label="改变按钮主题"></tm-text>
+      <tm-divider></tm-divider>
+      <tm-segtab :round="24" :width="636" color="primary" activeColor="white" :list="list" defaultValue="2"></tm-segtab>
+    </tm-sheet>
+    <tm-sheet>
+      <tm-text :fontSize="24" _class="font-weight-b" label="背景"></tm-text>
+      <tm-divider></tm-divider>
+      <tm-segtab
+        :round="24"
+        :width="636"
+        bgColor="primary"
+        :followDark="false"
+        color="white"
+        activeColor="primary"
+        :list="list"
+        defaultValue="2"
+      ></tm-segtab>
+    </tm-sheet>
+    <tm-sheet>
+      <tm-text :fontSize="24" _class="font-weight-b" label="渐变"></tm-text>
+      <tm-divider></tm-divider>
+      <tm-segtab
+        :round="24"
+        :width="636"
+        bgColor="green"
+        :followDark="false"
+        linear="right"
+        color="white"
+        activeColor="green"
+        :list="list"
+        defaultValue="2"
+      ></tm-segtab>
+    </tm-sheet>
+  </tm-app>
+</template>
+
+<script lang="ts" setup>
+  import { ref } from 'vue';
+
+  const list = ref([
+    { text: '苹果', id: '1' },
+    { text: '菠萝菠萝密', id: '2' },
+    { text: '香蕉', id: '3' },
+    { text: '火龙果', id: '4' },
+    { text: 'tmui', id: '5' },
+  ]);
+</script>
