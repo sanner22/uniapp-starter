@@ -1,16 +1,11 @@
 # uniapp vue next starter
 
-## 简介
-
-- **uniapp Vue3 TypeScript 移动端快速开发解决方案**，集成 TMUI，集成 uView UI（uView plus 3），集成 HBuilderX cli（APP 模式一键打包：自定义基座、云打包）
-- cli 创建的 Vue3/ts 项目 与 使用 HBuilderX 导入插件的包有差异，请直接访问 [开源地址](https://gitee.com/time-network/uniapp-vue-next-starter)
+**uniapp Vue3 TypeScript 移动端快速开发解决方案**，cli 模式创建项目， 集成 TMUI，集成 HBuilderX cli（APP 模式一键打包：自定义基座、云打包）
 
 ## 特性
 
 - **最新技术栈**：使用 Vue3/Vite4/pinia ,TypeScript 等前端前沿技术开发;
-- **UI集成**：集成 [TMUI](https://tmui.design/) 组件，**tnt-tmui 分支**;
-- **UI集成**：集成 [uView-plus](https://uiadmin.net/uview-plus/) v3 UI 组件 **tnt-uview 分支**，扩展 vView 在 UNI 中的使用（后期加入 uView 更多 ts 支持）;
-- **快捷开发**：vscode 编辑器中开发，推荐插件 🚀[**uview-helper**](https://marketplace.visualstudio.com/items?itemName=tntgroup.uview-helper)，功能：代码片段、属性自动完成(智能枚举提示)、文档悬浮提示，给作者点赞 👍👍;
+- **UI集成**：集成 [TMUI](https://tmui.design/) 跨端组件，支持nvue原生渲染,H5,小程序,安卓,IOS等全端组件库;
 - **[Unocss](https://github.com/unocss/unocss) 原子化 CSS**：预设图标：[preset-icons](https://github.com/unocss/unocss/tree/main/packages/preset-icons#readme) 使用 [iconify](https://github.com/iconify/iconify) 图标，[unocss-preset-weapp](https://github.com/MellowCo/unocss-preset-weapp) 小程序支持，配置参考：[unocss.config.js](./unocss.config.js);
 - **Eslint/Prettier**：规范代码格式,统一编码;
 - **路由拦截**：基于 uni.addInterceptor 进行路由拦截;
@@ -20,11 +15,12 @@
 
 ## 说明
 
+- cli 创建的 Vue3/ts 项目 与 使用 HBuilderX 导入插件的包有差异，请直接访问 [开源地址](https://gitee.com/dodu/uniapp-starter)
 - 框架完全基于 Vue3 SFC `<script setup>` 语法糖写法(包含示例页面)，不支持 Vue2;
 - 可用于学习与交流;
 - 目前测试 H5、微信小程序,APP(Android)通过;
 - 其他平台暂未测试,后续会增加;
-- 如发现问题或建议可在评论区留言, 或提 [Issues](https://gitee.com/time-network/uniapp-vue-next-starter/issues) 及 [PR](https://gitee.com/time-network/uniapp-vue-next-starter/pulls)，会及时处理;
+- 如发现问题或建议可在评论区留言, 或提 [Issues](https://gitee.com/dodu/uniapp-starter/issues) 及 [PR](https://gitee.com/dodu/uniapp-starter/pulls)，尽可能及时处理;
 - 如有需求亦可在评论区留言,或在此项目基础上增加;
 
 ## 目录结构
@@ -55,6 +51,12 @@
 │   │   │    └─index.vue
 │   │   └─...
 │   │
+│   ├─pages-tmui # tmui 组件展示 和 示例 分包
+│   │   └─...
+│   │
+│   ├─router # tmui 必须
+│   │   └─index.ts
+│   │
 │   ├─services # 接口相关
 │   │   ├─ api # api
 │   │   │    ├─auth.ts
@@ -79,6 +81,13 @@
 │   │   │    ├─avatar.png
 │   │   │    └─...
 │   │   │
+│   │   └─ ...
+│   │
+│   ├─theme # tmui 必须
+│   │   └─index.ts
+│   │
+│   ├─tmui # tmui 组件
+│   │   ├─ components
 │   │   └─ ...
 │   │
 │   ├─types # 类型文件
@@ -113,16 +122,6 @@
 
 ```
 
-## 预览
-
-- H5
-
-  ![h5](./src/static/images/h5Qcode.png)
-
-- 小程序(体验版-需申请体验)
-
-  ![小程序](./src/static/images/wexinQcode.jpg)
-
 ## 安装使用
 
 - 安装依赖
@@ -149,16 +148,20 @@ pnpm build:mp-weixin
 pnpm build:app
 ```
 
-- 打包自定义基座
+- 打包
 
 ```bash
+# 打包自定义基座
 pnpm hbx:custom
+
+# 云打包(apk)
+pnpm hbx:pack
 ```
 
-- 云打包(apk)
+- 更新 uniapp cli 到最新
 
 ```bash
-pnpm hbx:pack
+pnpm uniapp-cli:latest
 ```
 
 ## Git 贡献提交规范
@@ -178,3 +181,13 @@ pnpm hbx:pack
   - `ci` 持续集成
   - `types` 类型定义文件更改
   - `wip` 开发中
+
+## 预览
+
+- H5
+
+  ![h5](./src/static/images/h5Qcode.png)
+
+- 小程序(体验版-需申请体验)
+
+  ![小程序](./src/static/images/wexinQcode.jpg)
