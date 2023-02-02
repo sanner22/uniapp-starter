@@ -4,19 +4,25 @@
       <tm-skeleton :rows="3"></tm-skeleton>
     </view>
 
-    <template v-else v-for="(group, index) in componentGroups" :key="index">
-      <tm-text color="grey-darken-1" class="uno-m-15px">{{ group.group.title }}：</tm-text>
-      <view class="uno-mx-15px uno-rounded-3px uno-overflow-hidden">
-        <tm-cell
-          v-for="(item, index) in group.list"
-          :key="index"
-          bottom-border
-          :margin="[0, 0]"
-          :title="item.title"
-          :url="item.path"
-        />
-      </view>
-    </template>
+    <tm-collapse v-else :accordion="true" :defaultActiveKey="['common']">
+      <tm-collapse-item
+        v-for="(g, index) in componentGroups"
+        :key="index"
+        :title="`${g.group.title} ${g.group.key}`"
+        :name="g.group.key"
+      >
+        <view class="uno-m-15px uno-rounded-3px uno-overflow-hidden">
+          <tm-cell
+            v-for="(item, index) in g.list"
+            :key="index"
+            bottom-border
+            :margin="[0, 0]"
+            :title="item.title"
+            :url="item.path"
+          />
+        </view>
+      </tm-collapse-item>
+    </tm-collapse>
   </tm-app>
 </template>
 
