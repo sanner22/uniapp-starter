@@ -13,6 +13,24 @@
 - **缓存加密**：使用 AES 加密缓存,可设置区分在开发或生成环境中是否加密;
 - **[HBuilderX cli](https://hx.dcloud.net.cn/cli/README) 集成**：通过命令实现启动hbx、打包自定义基座、云打包(使用前需把cli集成到[环境变量](https://hx.dcloud.net.cn/cli/env))，打包配置参考：[uniapp.pack.json](./uniapp.pack.json)，该文件只是配置参考，实际使用的是 `uniapp.pack.json.local`，该文档从 `uniapp.pack.json` 复制，考虑多PC开发情况，配置可能不一样，为了不产生 git 变更而使用 `.local`，单PC环境，可直接使用 `uniapp.pack.json`；
 
+## 示例
+
+<img src="./docs/images/01.png" width="150" />
+<img src="./docs/images/02.png" width="150" />
+<img src="./docs/images/03.png" width="150" />
+<img src="./docs/images/04.png" width="150" />
+<img src="./docs/images/05.png" width="150" />
+<img src="./docs/images/06.png" width="150" />
+<img src="./docs/images/07.png" width="150" />
+<img src="./docs/images/08.png" width="150" />
+<img src="./docs/images/09.png" width="150" />
+<img src="./docs/images/10.png" width="150" />
+
+## 预览（H5、微信小程序）
+
+<img src="./src/static/images/h5Qcode.png" width="150" />
+<img src="./src/static/images/wexinQcode.jpg" width="150" />
+
 ## 说明
 
 - cli 创建的 Vue3/ts 项目 与 使用 HBuilderX 导入插件的包有差异，请直接访问 [开源地址](https://gitee.com/dodu/uniapp-starter)
@@ -23,11 +41,53 @@
 - 如发现问题或建议可在评论区留言, 或提 [Issues](https://gitee.com/dodu/uniapp-starter/issues) 及 [PR](https://gitee.com/dodu/uniapp-starter/pulls)，尽可能及时处理;
 - 如有需求亦可在评论区留言,或在此项目基础上增加;
 
-## 目录结构
+## 安装使用
+
+- 安装依赖
 
 ```bash
-.
-├─ scripts
+pnpm install
+```
+
+- 运行
+
+```bash
+# 其他端请查看 package.json script
+pnpm dev:h5
+pnpm dev:mp-weixin
+pnpm dev:app
+```
+
+- 编译
+
+```bash
+# 其他端请查看 package.json script
+pnpm build:h5
+pnpm build:mp-weixin
+pnpm build:app
+```
+
+- 打包
+
+```bash
+# 打包自定义基座
+pnpm hbx:custom
+
+# 云打包(apk)
+pnpm hbx:pack
+```
+
+- 更新 uniapp cli 到最新
+
+```bash
+pnpm uniapp-cli:latest
+```
+
+## 目录结构
+
+<details>
+  <summary>打开/折叠</summary>
+  <pre><code>├─ scripts
 │   └─hbx.pack.js # 利用 HBuilderX cli 打包脚本
 │
 ├─ src
@@ -119,50 +179,9 @@
 ├─ uniapp.pack.json.local # 实际使用的 HBuilderX cli 打包配置
 ├─ unocss.config.js
 └─ vite.config.ts
+</code></pre>
+</details>
 
-```
-
-## 安装使用
-
-- 安装依赖
-
-```bash
-pnpm install
-```
-
-- 运行
-
-```bash
-# 其他端请查看 package.json script
-pnpm dev:h5
-pnpm dev:mp-weixin
-pnpm dev:app
-```
-
-- 编译
-
-```bash
-# 其他端请查看 package.json script
-pnpm build:h5
-pnpm build:mp-weixin
-pnpm build:app
-```
-
-- 打包
-
-```bash
-# 打包自定义基座
-pnpm hbx:custom
-
-# 云打包(apk)
-pnpm hbx:pack
-```
-
-- 更新 uniapp cli 到最新
-
-```bash
-pnpm uniapp-cli:latest
-```
 
 ## Git 贡献提交规范
 
@@ -181,13 +200,3 @@ pnpm uniapp-cli:latest
   - `ci` 持续集成
   - `types` 类型定义文件更改
   - `wip` 开发中
-
-## 预览
-
-- H5
-
-  ![h5](./src/static/images/h5Qcode.png)
-
-- 小程序(体验版-需申请体验)
-
-  ![小程序](./src/static/images/wexinQcode.jpg)
