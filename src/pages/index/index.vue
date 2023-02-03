@@ -94,7 +94,7 @@
       <tm-tag color="#0062ff" :label="`tmui:3.0.89`" :round="25" size="s" />
       <tm-tag color="#2b993a" :label="`UNIAPP`" :round="25" size="s" />
       <tm-tag color="#30a15f" :label="`${platform}`" :round="25" size="s" />
-      <tm-tag color="#666666" label="UnoCSS:0.46.4" :round="25" size="s" />
+      <tm-tag color="#515351" label="UnoCSS:0.46.4" :round="25" size="s" />
       <!-- <tm-tag color="#3f9eef" label="windicss:3.5.6" :round="25" size="s" /> -->
     </view>
 
