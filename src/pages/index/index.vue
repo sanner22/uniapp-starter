@@ -53,9 +53,23 @@
       </template>
     </tm-navbar>
 
-    <view class="uno-my-60px uno-center logo-color">
+    <tm-sheet :margin="[0, 0]" :followTheme="true">
+      <view class="flex-row flex-row-center-start">
+        <tm-image :width="64" :height="64" src="/static/svg/favicon.svg"></tm-image>
+        <view class="pl-16 flex-1" style="width: 0px">
+          <tm-text _class="text-weight-b" :font-size="36" label="Uniapp Starter"></tm-text>
+          <tm-text
+            _class="opacity-6 uno-mt-3px"
+            :font-size="24"
+            label="cli 方式基于 uniapp vue next 快速开发解决方案"
+          ></tm-text>
+        </view>
+      </view>
+    </tm-sheet>
+
+    <view class="uno-my-40px uno-center logo-color">
       <!-- #ifdef MP -->
-      <tm-image src="/static/svg/favicon.svg" :width="240" :height="240" show-menu-by-long-press />
+      <tm-image src="/static/svg/favicon.svg" :width="100" :height="100" unit="px" show-menu-by-long-press />
       <!-- #endif -->
       <!-- #ifndef MP -->
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -72,11 +86,7 @@
       <!-- #endif -->
     </view>
 
-    <view class="uno-center">
-      <tm-text label="cli 方式基于 vue3/vite4/typescript 的 移动端快速开发解决方案" :font-size="20" />
-    </view>
-
-    <view class="uno-center uno-flex-wrap uno-mt-40px">
+    <view class="uno-center uno-flex-wrap">
       <tm-tag color="#42d392" :label="isVue3 ? 'Vue:3' : 'Vue:2'" :round="25" size="s" />
       <tm-tag color="#bd34fe" label="Vite:4" :round="25" size="s" />
       <tm-tag color="#007acd" label="TS:4.9.4" :round="25" size="s" />
@@ -88,7 +98,18 @@
       <!-- <tm-tag color="#3f9eef" label="windicss:3.5.6" :round="25" size="s" /> -->
     </view>
 
-    <view class="uno-center uno-gap-15px uno-mt-40px">
+    <tm-sheet :margin="[30, 30]" :round="3">
+      <tm-text :font-size="24" _class="font-weight-b" label="选择主题"></tm-text>
+      <tm-divider></tm-divider>
+      <view class="flex flex-row flex-around">
+        <tm-button :width="100" color="yellow" size="small" @click="setTheme('yellow')" label="黄色"></tm-button>
+        <tm-button :width="100" color="blue" size="small" @click="setTheme('blue')" label="蓝色"></tm-button>
+        <tm-button :width="100" color="red" size="small" @click="setTheme('red')" label="红色"></tm-button>
+        <tm-button :width="160" size="small" @click="setTheme('')" label="默认"> </tm-button>
+      </view>
+    </tm-sheet>
+
+    <view class="uno-center uno-gap-15px">
       <tm-button size="small" color="primary" @click="handleGetStarted" :width="180">快速开始 🚀</tm-button>
       <tm-button size="small" color="purple" @click="handleGoDemo" :width="180">demo ✨</tm-button>
     </view>
@@ -139,6 +160,10 @@
     app.value?.setDark();
   };
 
+  const setTheme = (colorname: string) => {
+    app.value?.setTheme(colorname);
+  };
+
   const defaultColor = '#009fe8';
   const logoColor = computed(() => {
     if (store.tmStore.dark) return defaultColor;
@@ -153,8 +178,8 @@
     color: v-bind('logoColor');
     fill: v-bind('logoColor');
     svg {
-      width: 120px;
-      height: 120px;
+      width: 100px;
+      height: 100px;
     }
   }
   /* #endif */
