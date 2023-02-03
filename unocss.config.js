@@ -47,6 +47,7 @@ export default defineConfig({
   shortcuts: [
     {
       'uno-center': 'uno-flex uno-justify-center uno-items-center',
+      'uno-border-demo': 'uno-border-2px uno-border-red-500_75 uno-border-solid',
     },
   ],
   theme: {},

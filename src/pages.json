@@ -1037,6 +1037,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "shortcuts/index",
+          "style": {
+            "navigationBarTitleText": "快捷方式"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
