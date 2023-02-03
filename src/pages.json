@@ -1100,6 +1100,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "odd-even/index",
+          "style": {
+            "navigationBarTitleText": "奇偶伪类"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
