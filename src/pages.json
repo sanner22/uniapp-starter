@@ -1073,6 +1073,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "animation/index",
+          "style": {
+            "navigationBarTitleText": "动画"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
