@@ -1010,6 +1010,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "shadow/index",
+          "style": {
+            "navigationBarTitleText": "阴影"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
