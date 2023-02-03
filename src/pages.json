@@ -20,7 +20,7 @@
     {
       "path": "pages/components/index",
       "style": {
-        "navigationBarTitleText": "UI 组件库"
+        "navigationBarTitleText": "TMUI 组件"
       },
       "meta": {
         "ignoreAuth": true
@@ -1162,7 +1162,7 @@
       },
       {
         "pagePath": "pages/components/index",
-        "text": "组件",
+        "text": "TMUI",
         "iconPath": "static/images/tabBar/category.png",
         "selectedIconPath": "static/images/tabBar/selectedCategory.png"
       },
@@ -1174,13 +1174,13 @@
       },
       {
         "pagePath": "pages/demo/index",
-        "text": "Demo",
+        "text": "demo",
         "iconPath": "static/images/tabBar/demo.png",
         "selectedIconPath": "static/images/tabBar/selectedDemo.png"
       },
       {
         "pagePath": "pages/about/index",
-        "text": "关于",
+        "text": "用户",
         "iconPath": "static/images/tabBar/about.png",
         "selectedIconPath": "static/images/tabBar/selectedAbout.png"
       }
