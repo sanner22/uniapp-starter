@@ -69,7 +69,13 @@
 
     <view class="uno-my-40px uno-center logo-color">
       <!-- #ifdef MP -->
-      <tm-image src="/static/svg/favicon.svg" :width="100" :height="100" unit="px" show-menu-by-long-press />
+      <tm-image
+        src="/static/svg/favicon.svg"
+        :width="defaultLogoSize"
+        :height="defaultLogoSize"
+        unit="px"
+        show-menu-by-long-press
+      />
       <!-- #endif -->
       <!-- #ifndef MP -->
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -164,22 +170,24 @@
     app.value?.setTheme(colorname);
   };
 
-  const defaultColor = '#009fe8';
+  const defaultLogoSize = 100;
+  /* #ifndef MP */
+  const defaultLogoColor = '#009fe8';
   const logoColor = computed(() => {
-    if (store.tmStore.dark) return defaultColor;
+    // if (store.tmStore.dark) return defaultColor;
     const theme = store.tmStore.color;
-    return (theme && store.tmStore.colorList.find(i => i.name === theme)?.value) || defaultColor;
+    return (theme && store.tmStore.colorList.find(i => i.name === theme)?.value) || defaultLogoColor;
   });
+  /* #endif */
 </script>
 
 <style scoped lang="scss">
   /* #ifndef MP */
   .logo-color {
     color: v-bind('logoColor');
-    fill: v-bind('logoColor');
     svg {
-      width: 100px;
-      height: 100px;
+      width: v-bind('defaultLogoSize + "px"');
+      height: v-bind('defaultLogoSize + "px"');
     }
   }
   /* #endif */
