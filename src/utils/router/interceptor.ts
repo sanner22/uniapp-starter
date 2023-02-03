@@ -29,11 +29,14 @@ function addInterceptor(routerName: string) {
   uni.addInterceptor(routerName, {
     // 跳转前拦截
     invoke: args => {
+      console.log(`${routerName} before`);
       const flag = routerBeforeEach(args.url);
       return flag ? args : false;
     },
     // 成功回调拦截
-    success: () => {},
+    success: () => {
+      console.log(`${routerName} after`);
+    },
     // 失败回调拦截
     fail: (err: any) => {
       let reg: RegExp;
