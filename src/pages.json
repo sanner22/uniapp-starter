@@ -1118,6 +1118,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "divide/index",
+          "style": {
+            "navigationBarTitleText": "分割线"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
