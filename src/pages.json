@@ -1019,6 +1019,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "border/index",
+          "style": {
+            "navigationBarTitleText": "边框"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
