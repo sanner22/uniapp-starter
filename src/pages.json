@@ -27,6 +27,15 @@
       }
     },
     {
+      "path": "pages/unocss/index",
+      "style": {
+        "navigationBarTitleText": "unocss demo"
+      },
+      "meta": {
+        "ignoreAuth": true
+      }
+    },
+    {
       "path": "pages/demo/index",
       "style": {
         "navigationBarTitleText": "Demo"
@@ -1001,6 +1010,12 @@
       {
         "pagePath": "pages/components/index",
         "text": "组件",
+        "iconPath": "static/images/tabBar/category.png",
+        "selectedIconPath": "static/images/tabBar/selectedCategory.png"
+      },
+      {
+        "pagePath": "pages/unocss/index",
+        "text": "unocss",
         "iconPath": "static/images/tabBar/category.png",
         "selectedIconPath": "static/images/tabBar/selectedCategory.png"
       },
