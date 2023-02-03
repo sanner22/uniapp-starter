@@ -985,6 +985,24 @@
         }
         // #endregion
       ]
+    },
+
+    // pages-unocss
+    {
+      "root": "pages-unocss",
+      "pages": [
+        // #region common
+        {
+          "path": "font/index",
+          "style": {
+            "navigationBarTitleText": "字体"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        // #endregion
+      ]
     }
   ],
   "globalStyle": {
