@@ -1001,6 +1001,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "size/index",
+          "style": {
+            "navigationBarTitleText": "尺寸"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
