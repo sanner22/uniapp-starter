@@ -1064,6 +1064,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "attributify-mode/index",
+          "style": {
+            "navigationBarTitleText": "匹配属性模式"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
