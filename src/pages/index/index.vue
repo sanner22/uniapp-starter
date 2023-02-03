@@ -53,8 +53,23 @@
       </template>
     </tm-navbar>
 
-    <view class="uno-my-60px uno-center">
+    <view class="uno-my-60px uno-center logo-color">
+      <!-- #ifdef MP -->
       <tm-image src="/static/svg/favicon.svg" :width="240" :height="240" show-menu-by-long-press />
+      <!-- #endif -->
+      <!-- #ifndef MP -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <g data-name="图层 2">
+          <g data-name="图层 1" fill="currentColor">
+            <path
+              filter="brightness(80%)"
+              d="M512 0H136l-.05.19-56.99 214.54L168.24 304H55.25L0 512h376l.05-.19 56.99-214.54L343.76 208h112.99L512 0z"
+            />
+            <path d="M433.04 297.27L135.95.19 78.96 214.73l297.09 297.08 56.99-214.54z" />
+          </g>
+        </g>
+      </svg>
+      <!-- #endif -->
     </view>
 
     <view class="uno-center">
@@ -93,7 +108,7 @@
 </template>
 
 <script setup lang="ts">
-  import { ref } from 'vue';
+  import { computed, ref } from 'vue';
   import { useRouter } from '@/hooks/router';
   import { CURRENT_PLATFORM, PLATFORMS } from '@/enums/platformEnum';
   import { judgePlatform } from '@/utils/platform';
@@ -123,6 +138,24 @@
     // 切换暗黑模式
     app.value?.setDark();
   };
+
+  const defaultColor = '#009fe8';
+  const logoColor = computed(() => {
+    if (store.tmStore.dark) return defaultColor;
+    const theme = store.tmStore.color;
+    return (theme && store.tmStore.colorList.find(i => i.name === theme)?.value) || defaultColor;
+  });
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+  /* #ifndef MP */
+  .logo-color {
+    color: v-bind('logoColor');
+    fill: v-bind('logoColor');
+    svg {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  /* #endif */
+</style>
