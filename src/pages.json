@@ -1127,6 +1127,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "apply/index",
+          "style": {
+            "navigationBarTitleText": "apply 演示"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
