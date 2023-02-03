@@ -1046,6 +1046,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "class/index",
+          "style": {
+            "navigationBarTitleText": "响应式绑定"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
