@@ -18,16 +18,6 @@
       }
     },
     {
-      "path": "pages/index/themes",
-      "style": {
-        "navigationBarTitleText": "更多主题",
-        "navigationStyle": "custom"
-      },
-      "meta": {
-        "ignoreAuth": true
-      }
-    },
-    {
       "path": "pages/components/index",
       "style": {
         "navigationBarTitleText": "UI 组件库"
@@ -973,10 +963,17 @@
         },
         // #endregion
 
-        // #region 预留，仅用于快手小程序
-        // #ifdef MP-KUAISHOU
-        { }
-        // #endif
+        // #region theme
+        {
+          "path": "theme/index",
+          "style": {
+            "navigationBarTitleText": "选择主题",
+            "navigationStyle": "custom"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        }
         // #endregion
       ]
     }

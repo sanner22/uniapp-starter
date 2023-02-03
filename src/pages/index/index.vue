@@ -39,7 +39,7 @@
             :font-size="32"
             name="tmicon-menu"
           ></tm-icon>
-          <navigator url="themes" class="px-12">
+          <navigator url="/pages-tmui/theme/index" class="px-12">
             <tm-icon :font-size="32" name="tmicon-cog-fill"></tm-icon>
           </navigator>
           <tm-icon
