@@ -1055,6 +1055,15 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "color/index",
+          "style": {
+            "navigationBarTitleText": "颜色"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }
