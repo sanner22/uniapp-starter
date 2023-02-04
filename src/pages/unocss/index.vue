@@ -1,5 +1,9 @@
 <script setup lang="ts">
   import Iconify from '@/components/Iconify/index.vue';
+  import { useTmpiniaStore } from '@/tmui/tool/lib/tmpinia';
+  import { onMounted } from 'vue';
+  const store = useTmpiniaStore();
+
   const list = [
     { name: 'font', path: '/pages-unocss/font/index', icon: 'i-ic-round-font-download' },
     { name: 'size', path: '/pages-unocss/size/index', icon: 'i-icomoon-free-font-size' },
@@ -30,6 +34,19 @@
   <tm-app>
     <view class="uno-p-15px">
       <view class="uno-grid uno-grid-cols-3 uno-gap-10px uno-justify-items-center">
+        <!-- <tm-sheet
+          :margin="[0, 0]"
+          :round="5"
+          follow-theme
+          class="uno-w-full uno-flex uno-flex-col"
+          _class="uno-center"
+          v-for="(item, index) in list"
+          :key="index"
+          @click="to(item.path)"
+        >
+          <iconify :icon="item.icon"></iconify>
+          <tm-text class="uno-mt-6px">{{ item.name }}</tm-text>
+        </tm-sheet> -->
         <view
           v-for="(item, index) in list"
           :key="index"
