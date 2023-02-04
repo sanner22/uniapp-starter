@@ -1,5 +1,9 @@
 <template>
   <tm-app>
+    <view class="uno-my-30px uno-center">
+      <img src="https://tmui.design/images/logoGreat.png" width="80" height="80" />
+    </view>
+
     <view v-if="loading" class="uno-p-15px">
       <tm-skeleton :rows="3"></tm-skeleton>
     </view>

@@ -28,10 +28,11 @@
   const themeList = ref<colorThemeType[]>([]);
 
   onMounted(() => {
-    themeList.value = [...store.tmStore.colorList];
+    themeList.value = [...store.tmStore.colorList.filter(i => !i.name.startsWith('#'))];
   });
 
   function setTheme(colorname: string) {
     app.value?.setTheme(colorname);
+    uni.navigateBack();
   }
 </script>

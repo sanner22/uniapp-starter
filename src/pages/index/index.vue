@@ -105,32 +105,21 @@
     </view>
 
     <tm-sheet :margin="[30, 30]" :round="3">
-      <tm-text :font-size="24" _class="font-weight-b" label="选择主题"></tm-text>
-      <tm-divider></tm-divider>
-      <view class="flex flex-row flex-around">
-        <tm-button :width="100" color="yellow" size="small" @click="setTheme('yellow')" label="黄色"></tm-button>
-        <tm-button :width="100" color="blue" size="small" @click="setTheme('blue')" label="蓝色"></tm-button>
-        <tm-button :width="100" color="red" size="small" @click="setTheme('red')" label="红色"></tm-button>
-        <tm-button :width="160" size="small" @click="setTheme('')" label="默认"> </tm-button>
+      <tm-text :font-size="24" _class="font-weight-b" label="主题"></tm-text>
+      <tm-divider :margin="[0, 10]"></tm-divider>
+      <view class="uno-flex uno-justify-around">
+        <tm-button :width="120" size="small" @click="setTheme('')" label="默认" icon="tmicon-redo" />
+        <tm-button :width="100" color="red" size="small" @click="setTheme('red')" label="红色" />
+        <tm-button :width="100" color="yellow" size="small" @click="setTheme('yellow')" label="黄色" />
+        <tm-button :width="100" color="green" size="small" @click="setTheme('green')" label="绿色" />
+        <tm-button :width="100" color="teal" size="small" @click="toThemes()" label="更多.." />
       </view>
     </tm-sheet>
 
     <view class="uno-center uno-gap-15px">
-      <tm-button size="small" color="primary" @click="handleGetStarted" :width="180">快速开始 🚀</tm-button>
-      <tm-button size="small" color="purple" @click="handleGoDemo" :width="180">demo ✨</tm-button>
+      <tm-button size="small" color="pink" @click="handleGetStarted" :width="180">快速开始 🚀</tm-button>
+      <tm-button size="small" color="pink" @click="handleGoDemo" :width="180">demo ✨</tm-button>
     </view>
-
-    <tm-float-button
-      :disabledScrollTo="false"
-      position="br"
-      :btn="{
-        icon: 'tmicon-ios-sunny',
-        linear: '',
-        color: 'white',
-        label: '暗黑',
-      }"
-      @click="toggleDark"
-    ></tm-float-button>
   </tm-app>
 </template>
 
@@ -168,6 +157,10 @@
 
   const setTheme = (colorname: string) => {
     app.value?.setTheme(colorname);
+  };
+
+  const toThemes = () => {
+    uni.navigateTo({ url: '/pages-tmui/theme/index' });
   };
 
   const defaultLogoSize = 100;
