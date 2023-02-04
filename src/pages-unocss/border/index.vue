@@ -6,10 +6,12 @@
 </script>
 
 <template>
-  <view class="uno-bg-white">
-    <border-radius />
-    <border-width />
-    <border-style />
-    <border-color />
-  </view>
+  <tm-app>
+    <view class="uno-bg-gray uno-m-2">
+      <border-radius />
+      <border-width />
+      <border-style />
+      <border-color />
+    </view>
+  </tm-app>
 </template>

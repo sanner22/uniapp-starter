@@ -27,17 +27,19 @@
 </script>
 
 <template>
-  <view class="uno-p-15px">
-    <view class="uno-grid uno-grid-cols-3 uno-gap-10px uno-justify-items-center">
-      <view
-        v-for="(item, index) in list"
-        :key="index"
-        class="uno-w-full uno-h-20vw uno-shadow-md uno-rounded-md uno-bg-gray uno-center uno-flex-col"
-        @click="to(item.path)"
-      >
-        <iconify :icon="item.icon"></iconify>
-        <view class="uno-mt-6px uno-text-sm">{{ item.name }}</view>
+  <tm-app>
+    <view class="uno-p-15px">
+      <view class="uno-grid uno-grid-cols-3 uno-gap-10px uno-justify-items-center">
+        <view
+          v-for="(item, index) in list"
+          :key="index"
+          class="uno-w-full uno-h-20vw uno-shadow-md uno-rounded-md uno-bg-gray uno-center uno-flex-col"
+          @click="to(item.path)"
+        >
+          <iconify :icon="item.icon"></iconify>
+          <view class="uno-mt-6px uno-text-sm">{{ item.name }}</view>
+        </view>
       </view>
     </view>
-  </view>
+  </tm-app>
 </template>

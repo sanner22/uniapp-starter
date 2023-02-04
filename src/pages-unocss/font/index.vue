@@ -13,17 +13,19 @@
 </script>
 
 <template>
-  <view>
-    <font-size />
-    <font-bold />
-    <letter-spacing />
-    <line-height />
-    <text-align />
-    <text-color />
-    <text-decoration />
-    <text-decoration-style />
-    <text-indent />
-    <text-opacity />
-    <text-shadow />
-  </view>
+  <tm-app>
+    <view class="uno-m-2 uno-bg-gray">
+      <font-size />
+      <font-bold />
+      <letter-spacing />
+      <line-height />
+      <text-align />
+      <text-color />
+      <text-decoration />
+      <text-decoration-style />
+      <text-indent />
+      <text-opacity />
+      <text-shadow />
+    </view>
+  </tm-app>
 </template>
