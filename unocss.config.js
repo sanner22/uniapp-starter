@@ -4,7 +4,7 @@
  * @link unocss-preset-weapp: https://github.com/MellowCo/unocss-preset-weapp
  * */
 
-import { defineConfig, presetIcons } from 'unocss'
+import { defineConfig, presetIcons, presetUno } from 'unocss'
 import presetWeapp from 'unocss-preset-weapp'
 import { transformerAttributify, transformerClass } from 'unocss-preset-weapp/transformer'
 
@@ -28,6 +28,10 @@ const exclude = [/[\\/]node_modules[\\/]/, /[\\/]\.git[\\/]/, /[\\/]dist[\\/]/, 
 export default defineConfig({
   // 预设
   presets: [
+    presetUno({
+      prefix, // 前缀
+    }),
+
     // UnoCSS 小程序预设
     // https://github.com/MellowCo/unocss-preset-weapp
     presetWeapp({
