@@ -1,21 +1,21 @@
 <script setup lang="ts">
-  import { computed, ref } from 'vue';
+import { computed, ref } from 'vue'
 
-  const flag = ref(false);
-  const onChange = () => {
-    flag.value = !flag.value;
-  };
+const flag = ref(false)
+const onChange = () => {
+  flag.value = !flag.value
+}
 
-  const c1 = computed(() => {
-    return { 'uno-bg-blue-600:80': flag.value, 'uno-text-green-600/80': !flag.value };
-  });
+const c1 = computed(() => {
+  return { 'uno-bg-blue-600:80': flag.value, 'uno-text-green-600/80': !flag.value }
+})
 
-  const c2 = computed(() => {
-    return [
-      flag.value ? 'uno-bg-blue-600:80' : 'uno-bg-red-600:80',
-      !flag.value ? 'uno-text-yellow-600/80' : 'uno-text-green-600/80',
-    ];
-  });
+const c2 = computed(() => {
+  return [
+    flag.value ? 'uno-bg-blue-600:80' : 'uno-bg-red-600:80',
+    !flag.value ? 'uno-text-yellow-600/80' : 'uno-text-green-600/80',
+  ]
+})
 </script>
 
 <template>

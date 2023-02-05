@@ -1,4 +1,4 @@
-export const componentGroup = { title: '表单组件', key: 'form' };
+export const componentGroup = { title: '表单组件', key: 'form' }
 
 export const componentsList = [
   { path: '/pages-tmui/form/cascader', title: '级联器 cascader' },
@@ -18,4 +18,4 @@ export const componentsList = [
   { path: '/pages-tmui/form/upload', title: '图片上传 upload' },
   { path: '/pages-tmui/form/weekbar', title: '时间周 weekbar' },
   { path: '/pages-tmui/form/time-between', title: '时间选择器 time-between' },
-];
+]

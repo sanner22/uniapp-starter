@@ -1,84 +1,84 @@
+<script lang="ts" setup>
+import { ref } from 'vue'
+import type tmCalendarView from '@tmui/components/tm-calendar-view/tm-calendar-view.vue'
+
+const calendarView = ref<InstanceType<typeof tmCalendarView> | null>(null)
+const showWin = ref(false)
+const showWin2 = ref(false)
+const pos = ref('bottom')
+
+function changPos(params: string) {
+  pos.value = params
+  showWin.value = true
+}
+</script>
+
 <template>
   <tm-app>
     <tm-sheet>
-      <tm-text :font-size="24" _class="font-weight-b" label="下面是基础演示属性,更多玩法请前往文档。"></tm-text>
-      <tm-divider></tm-divider>
+      <tm-text :font-size="24" _class="font-weight-b" label="下面是基础演示属性,更多玩法请前往文档。" />
+      <tm-divider />
       <view class="flex flex-row flex-wrap">
         <tm-button
           :margin="[12, 12]"
-          @click="changPos('bottom')"
           color="white"
           :width="120"
           :height="56"
           :font-size="24"
           label="底部"
-        ></tm-button>
+          @click="changPos('bottom')"
+        />
         <tm-button
           :margin="[12, 12]"
-          @click="changPos('top')"
           color="red"
           :width="120"
           :height="56"
           :font-size="24"
           label="顶部"
-        ></tm-button>
+          @click="changPos('top')"
+        />
         <tm-button
           :margin="[12, 12]"
-          @click="changPos('left')"
           color="orange"
           :width="120"
           :height="56"
           :font-size="24"
           label="左边"
-        ></tm-button>
+          @click="changPos('left')"
+        />
         <tm-button
           :margin="[12, 12]"
-          @click="changPos('right')"
           color="pink"
           :width="120"
           :height="56"
           :font-size="24"
           label="右边"
-        ></tm-button>
+          @click="changPos('right')"
+        />
         <tm-button
           :margin="[12, 12]"
-          @click="changPos('center')"
           color="green"
           :width="120"
           :height="56"
           :font-size="24"
           label="居中"
-        ></tm-button>
+          @click="changPos('center')"
+        />
       </view>
     </tm-sheet>
 
-    <tm-drawer ref="calendarView" :placement="pos" v-model:show="showWin">
+    <tm-drawer ref="calendarView" v-model:show="showWin" :placement="pos">
       <tm-button
         :margin="[12, 12]"
-        @click="showWin2 = true"
         color="green"
         :width="120"
         :height="56"
         :font-size="24"
         label="内弹出"
-      ></tm-button>
-      <tm-drawer inContent :width="300" :height="300" ref="calendarView" :placement="pos" v-model:show="showWin2">
-      </tm-drawer>
+        @click="showWin2 = true"
+      />
+      <tm-drawer ref="calendarView" v-model:show="showWin2" in-content :width="300" :height="300" :placement="pos" />
       <!-- <tm-picker :height="500" inContent v-model:show="showWin2" :columns="citydate"></tm-picker> -->
     </tm-drawer>
   </tm-app>
 </template>
-<script lang="ts" setup>
-  import { ref } from 'vue';
-  import tmCalendarView from '@tmui/components/tm-calendar-view/tm-calendar-view.vue';
-
-  const calendarView = ref<InstanceType<typeof tmCalendarView> | null>(null);
-  const showWin = ref(false);
-  const showWin2 = ref(false);
-  const pos = ref('bottom');
-
-  function changPos(params: string) {
-    pos.value = params;
-    showWin.value = true;
-  }
-</script>

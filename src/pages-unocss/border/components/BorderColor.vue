@@ -1,6 +1,8 @@
 <template>
   <view class="uno-p-2">
-    <view class="uno-text-2xl uno-text-center uno-my-3"> border-color11 </view>
+    <view class="uno-text-2xl uno-text-center uno-my-3">
+      border-color11
+    </view>
     <view class="uno-center uno-flex-col">
       <view
         class="uno-w-half uno-h-200rpx uno-mb-3 uno-bg-blue-100 uno-center uno-text-center uno-border-transparent uno-border-4"

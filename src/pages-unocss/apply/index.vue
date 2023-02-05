@@ -1,8 +1,14 @@
 <template>
   <tm-app>
-    <view class="bg-to-t"> apply bg-to-t </view>
-    <view class="bg-unocss"> bg-unocss </view>
-    <view class="bg-to-r"> apply bg-to-r </view>
+    <view class="bg-to-t">
+      apply bg-to-t
+    </view>
+    <view class="bg-unocss">
+      bg-unocss
+    </view>
+    <view class="bg-to-r">
+      apply bg-to-r
+    </view>
   </tm-app>
 </template>
 

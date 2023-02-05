@@ -1,4 +1,4 @@
-export const componentGroup = { title: '其他组件', key: 'other' };
+export const componentGroup = { title: '其他组件', key: 'other' }
 
 export const componentsList = [
   { path: '/pages-tmui/other/codeinput', title: '验证码输入框 codeinput' },
@@ -15,4 +15,4 @@ export const componentsList = [
   // #endif
   { path: '/pages-tmui/other/html', title: '富文本 html' },
   { path: '/pages-tmui/other/color-view', title: '颜色选择器 color-view' },
-];
+]

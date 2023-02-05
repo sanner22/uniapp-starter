@@ -4,9 +4,9 @@
  * @link unocss-preset-weapp: https://github.com/MellowCo/unocss-preset-weapp
  * */
 
-import { defineConfig, presetIcons } from 'unocss';
-import presetWeapp from 'unocss-preset-weapp';
-import { transformerAttributify, transformerClass } from 'unocss-preset-weapp/transformer';
+import { defineConfig, presetIcons } from 'unocss'
+import presetWeapp from 'unocss-preset-weapp'
+import { transformerAttributify, transformerClass } from 'unocss-preset-weapp/transformer'
 
 const transformRules = {
   '.': '-d111-',
@@ -19,11 +19,11 @@ const transformRules = {
   ')': '-b111r-',
   '[': '-f111l-',
   ']': '-f111r-',
-  $: '-r111-',
+  '$': '-r111-',
   ',': '-r222-',
-};
-const prefix = `uno-`;
-const exclude = [/[\\/]node_modules[\\/]/, /[\\/]\.git[\\/]/, /[\\/]dist[\\/]/, /[\\/]tmui[\\/]/];
+}
+const prefix = 'uno-'
+const exclude = [/[\\/]node_modules[\\/]/, /[\\/]\.git[\\/]/, /[\\/]dist[\\/]/, /[\\/]tmui[\\/]/]
 
 export default defineConfig({
   // 预设
@@ -31,7 +31,7 @@ export default defineConfig({
     // UnoCSS 小程序预设
     // https://github.com/MellowCo/unocss-preset-weapp
     presetWeapp({
-      prefix: prefix, // 前缀
+      prefix, // 前缀
       whRpx: false, // wh 是否使用 rpx 为默认单位
       transform: true, // 是否转换微信class
       platform: 'uniapp', // 平台 'taro' | 'uniapp'
@@ -83,4 +83,4 @@ export default defineConfig({
       exclude,
     }),
   ],
-});
+})

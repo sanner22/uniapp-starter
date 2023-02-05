@@ -1,4 +1,4 @@
-export const componentGroup = { title: '反馈组件', key: 'feedback' };
+export const componentGroup = { title: '反馈组件', key: 'feedback' }
 
 export const componentsList = [
   { path: '/pages-tmui/feedback/alert', title: '警告提示 alert' },
@@ -14,4 +14,4 @@ export const componentsList = [
   { path: '/pages-tmui/feedback/translate', title: '动效 translate' },
   { path: '/pages-tmui/feedback/notification', title: '通知提醒 notification' },
   { path: '/pages-tmui/feedback/roll-notice', title: '滚动通知 roll' },
-];
+]

@@ -1,63 +1,64 @@
+<script lang="ts" setup>
+import { ref } from 'vue'
+
+const acc = ref(1)
+function laodingfun(val: any) {
+  // eslint-disable-next-line promise/param-names
+  return new Promise((res) => {
+    setTimeout(() => {
+      console.log('选中了：', val)
+      res(true)
+    }, 2000)
+  })
+}
+</script>
+
 <template>
   <tm-app>
     <tm-sheet>
-      <tm-text label="点击中间+按钮可以体验异步加载动态效果."></tm-text>
+      <tm-text label="点击中间+按钮可以体验异步加载动态效果." />
     </tm-sheet>
-    <tm-tabbar :autoSelect="false" v-model:active="acc">
+    <tm-tabbar v-model:active="acc" :auto-select="false">
       <tm-tabbar-item
-        @click="acc = 0"
-        activeColor="orange"
+        active-color="orange"
         count="HOT"
         open-type="reLaunch"
         text="首页"
         icon="tmicon-collection-fill"
-      ></tm-tabbar-item>
-      <tm-tabbar-item @click="acc = 1" activeColor="orange" text="表单" icon="tmicon-cog-fill"></tm-tabbar-item>
+        @click="acc = 0"
+      />
+      <tm-tabbar-item active-color="orange" text="表单" icon="tmicon-cog-fill" @click="acc = 1" />
       <tm-tabbar-item
-        @click="acc = 2"
         :shadow="2"
-        :beforeClick="laodingfun"
-        :data="'中间项'"
+        :before-click="laodingfun"
+        data="中间项"
         btn-top
-        fontColor="white"
-        activeColor="white"
+        font-color="white"
+        active-color="white"
         linear="top"
-        linearDeep="accent"
+        linear-deep="accent"
         color="yellow"
         icon="tmicon-plus"
-      ></tm-tabbar-item>
+        @click="acc = 2"
+      />
       <tm-tabbar-item
-        @click="acc = 3"
-        activeColor="orange"
+        active-color="orange"
         url="/pages/feedback/index"
         text="反馈分类"
         unicon="tmicon-like"
         icon="tmicon-heart-fill"
-      ></tm-tabbar-item>
+        @click="acc = 3"
+      />
       <tm-tabbar-item
-        @click="acc = 4"
-        activeColor="orange"
+        active-color="orange"
         :count="8"
         url="/pages/user/index"
         active
         text="个人中心"
         unicon="tmicon-account"
         icon="tmicon-userplus-fill"
-      ></tm-tabbar-item>
+        @click="acc = 4"
+      />
     </tm-tabbar>
   </tm-app>
 </template>
-
-<script lang="ts" setup>
-  import { ref } from 'vue';
-
-  const acc = ref(1);
-  function laodingfun(val: any) {
-    return new Promise(res => {
-      setTimeout(function () {
-        console.log('选中了：', val);
-        res(true);
-      }, 2000);
-    });
-  }
-</script>

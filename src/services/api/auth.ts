@@ -1,8 +1,8 @@
-import { request } from '@/utils/http';
+import { request } from '@/utils/http'
 
-const LOGIN = '/login';
-const LOGIN_OUT = '/logout';
-const REFRESH_TOKEN = '/refresh/token';
+const LOGIN = '/login'
+const LOGIN_OUT = '/logout'
+const REFRESH_TOKEN = '/refresh/token'
 
 /**
  * 登录
@@ -13,19 +13,19 @@ export function login(params: LoginParams) {
     custom: {
       auth: false,
     },
-  });
+  })
 }
 
 /**
  * 登出
  */
 export function logout() {
-  return request.post(LOGIN_OUT, {});
+  return request.post(LOGIN_OUT, {})
 }
 
 /**
  * 刷新token
  */
 export function refreshToken() {
-  return request.post<LoginModel>(REFRESH_TOKEN, {});
+  return request.post<LoginModel>(REFRESH_TOKEN, {})
 }

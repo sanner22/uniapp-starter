@@ -1,66 +1,117 @@
+<script lang="ts" setup>
+import { onBeforeMount, onBeforeUnmount, onMounted, ref } from 'vue'
+import { customfont } from './customIcon/customiconfont'
+import fontList from '@/tmui/tool/tmicon/iconfont.json'
+
+// #ifdef APP-NVUE || APP-PLUS-NVUE
+
+const domModule = weex.requireModule('dom')
+
+// eslint-disable-next-line unused-imports/no-unused-vars
+const animation = uni.requireNativePlugin('animation')
+// #endif
+
+const spin = ref(true)
+const showAll = ref(false)
+const deg = ref(0)
+const list = ref<{ name: string; text: string }[]>([])
+
+// 演示自定义图标
+// #ifdef APP-PLUS-NVUE
+onBeforeMount(() => {
+  domModule.addRule('fontFace', {
+    fontFamily: 'myicon', // 注意这里必须是驼峰命名，跟上面的css样式对照
+    src: `url('data:font/ttf;charset=utf-8;base64,${customfont}')`,
+  })
+})
+// #endif
+onBeforeUnmount(() => {
+  list.value = []
+})
+onMounted(() => {
+  uni.showLoading({ title: '...', mask: true })
+  const ls_list = fontList.glyphs.slice(0, 30)
+  setTimeout(() => {
+    for (let i = 0; i < ls_list.length; i++)
+      list.value.push({ name: fontList.css_prefix_text + ls_list[i].font_class, text: ls_list[i].name })
+
+    uni.hideLoading()
+  }, 100)
+})
+
+// 显示全部图标
+const onShowAll = () => {
+  showAll.value = true
+  const ls_list = fontList.glyphs // 全部显示
+  list.value = []
+  uni.showLoading({ title: '...', mask: true })
+  for (let i = 0; i < ls_list.length; i++)
+    list.value.push({ name: fontList.css_prefix_text + ls_list[i].font_class, text: ls_list[i].name } as never)
+
+  uni.hideLoading()
+}
+function onclick(item: any) {
+  (uni.setClipboardData({ data: item.name }) as Promise<string>).then(() =>
+    uni.showToast({ title: '复制成功', icon: 'none' }),
+  )
+}
+</script>
+
 <template>
   <tm-app>
     <tm-sheet :margin="[32, 32, 32, 16]">
-      <tm-text :font-size="24" _class="font-weight-b" label="基本示例"></tm-text>
-      <tm-divider></tm-divider>
+      <tm-text :font-size="24" _class="font-weight-b" label="基本示例" />
+      <tm-divider />
       <view class="flex flex-row flex-wrap">
-        <tm-icon :font-size="50" name="tmicon-playcircle-fill"></tm-icon>
-        <tm-icon color="primary" :font-size="50" name="tmicon-user-fill"></tm-icon>
-        <tm-icon color="red" :font-size="50" name="tmicon-minus-circle-fill"></tm-icon>
+        <tm-icon :font-size="50" name="tmicon-playcircle-fill" />
+        <tm-icon color="primary" :font-size="50" name="tmicon-user-fill" />
+        <tm-icon color="red" :font-size="50" name="tmicon-minus-circle-fill" />
       </view>
     </tm-sheet>
     <tm-sheet :margin="[32, 0, 32, 16]">
-      <tm-text :font-size="24" _class="font-weight-b" label="图片图标"></tm-text>
-      <tm-divider></tm-divider>
+      <tm-text :font-size="24" _class="font-weight-b" label="图片图标" />
+      <tm-divider />
       <view class="flex flex-row flex-wrap">
         <tm-icon
           color="red"
           :font-size="80"
           name="https://roundicons.com/wp-content/uploads/2017/09/PIzza-freebie-icon.png"
-        ></tm-icon>
+        />
         <tm-icon
           color="red"
           :font-size="80"
           name="https://roundicons.com/wp-content/uploads/2017/09/Rheindeer-freebie-icon.png"
-        ></tm-icon>
+        />
         <tm-icon
           color="red"
           :font-size="80"
           name="https://roundicons.com/wp-content/uploads/2017/09/Donut-freebie-icon.png"
-        ></tm-icon>
+        />
       </view>
     </tm-sheet>
     <tm-sheet :margin="[32, 0, 32, 16]">
-      <tm-text :font-size="24" _class="font-weight-b" label="自定义图标"></tm-text>
-      <tm-divider></tm-divider>
+      <tm-text :font-size="24" _class="font-weight-b" label="自定义图标" />
+      <tm-divider />
       <view class="flex flex-row flex-wrap">
-        <tm-icon customicon name="myicon-music-e617"></tm-icon>
-        <tm-icon customicon name="myicon-news-e618"></tm-icon>
-        <tm-icon customicon name="myicon-phone-e619"></tm-icon>
+        <tm-icon customicon name="myicon-music-e617" />
+        <tm-icon customicon name="myicon-news-e618" />
+        <tm-icon customicon name="myicon-phone-e619" />
       </view>
     </tm-sheet>
     <tm-sheet :margin="[32, 0, 32, 16]">
-      <tm-text :font-size="24" _class="font-weight-b" label="spin 旋转图标"></tm-text>
-      <tm-divider></tm-divider>
-      <tm-icon @click="spin = !spin" :spin="spin" :font-size="50" name="tmicon-shuaxin"></tm-icon>
+      <tm-text :font-size="24" _class="font-weight-b" label="spin 旋转图标" />
+      <tm-divider />
+      <tm-icon :spin="spin" :font-size="50" name="tmicon-shuaxin" @click="spin = !spin" />
     </tm-sheet>
     <tm-sheet :margin="[32, 0, 32, 16]">
-      <tm-text :font-size="24" _class="font-weight-b" label="rotate-deg 旋转图标角度与spin不能混用"></tm-text>
-      <tm-divider></tm-divider>
+      <tm-text :font-size="24" _class="font-weight-b" label="rotate-deg 旋转图标角度与spin不能混用" />
+      <tm-divider />
       <view class="flex flex-row">
-        <tm-button :margin="[24, 0]" @click="deg += 90" label="+90deg"></tm-button>
-        <tm-button
-          :shadow="0"
-          text
-          :border="2"
-          outlined
-          :margin="[24, 0]"
-          @click="deg -= 90"
-          label="-90deg"
-        ></tm-button>
+        <tm-button :margin="[24, 0]" label="+90deg" @click="deg += 90" />
+        <tm-button :shadow="0" text :border="2" outlined :margin="[24, 0]" label="-90deg" @click="deg -= 90" />
       </view>
       <view class="pa-32">
-        <tm-icon rotate :rotate-deg="deg" :font-size="50" name="tmicon-angle-down"></tm-icon>
+        <tm-icon rotate :rotate-deg="deg" :font-size="50" name="tmicon-angle-down" />
       </view>
     </tm-sheet>
     <tm-sheet :margin="[32, 0, 32, 16]">
@@ -68,75 +119,18 @@
         :font-size="24"
         _class="font-weight-b"
         :label="`部分参考图标(共${fontList.glyphs.length}个)，前缀【tmicon-】`"
-      ></tm-text>
-      <tm-divider></tm-divider>
+      />
+      <tm-divider />
 
       <tm-grid :col="4" :width="630">
-        <tm-grid-item @click="onclick(item)" :height="140" v-for="(item, index) in list" :key="index">
-          <tm-icon :font-size="42" :name="item.name"></tm-icon>
-          <tm-text :label="item.text" :font-size="22"></tm-text>
+        <tm-grid-item v-for="(item, index) in list" :key="index" :height="140" @click="onclick(item)">
+          <tm-icon :font-size="42" :name="item.name" />
+          <tm-text :label="item.text" :font-size="22" />
         </tm-grid-item>
       </tm-grid>
       <!-- #ifndef MP -->
-      <tm-button v-if="!showAll" block label="展示所有图标(过多会卡)" @click="onShowAll"></tm-button>
+      <tm-button v-if="!showAll" block label="展示所有图标(过多会卡)" @click="onShowAll" />
       <!-- #endif -->
     </tm-sheet>
   </tm-app>
 </template>
-<script lang="ts" setup>
-  import { ref, onMounted, onBeforeUnmount, onBeforeMount } from 'vue';
-  import fontList from '@/tmui/tool/tmicon/iconfont.json';
-
-  // #ifdef APP-NVUE || APP-PLUS-NVUE
-  import { customfont } from './customIcon/customiconfont';
-
-  let domModule = weex.requireModule('dom');
-  // eslint-disable-next-line no-unused-vars, @typescript-eslint/no-unused-vars
-  const animation = uni.requireNativePlugin('animation');
-  // #endif
-
-  const spin = ref(true);
-  let showAll = ref(false);
-  const deg = ref(0);
-  const list = ref<{ name: string; text: string }[]>([]);
-
-  //演示自定义图标
-  // #ifdef APP-PLUS-NVUE
-  onBeforeMount(() => {
-    domModule.addRule('fontFace', {
-      fontFamily: 'myicon', //注意这里必须是驼峰命名，跟上面的css样式对照
-      src: "url('data:font/ttf;charset=utf-8;base64," + customfont + "')",
-    });
-  });
-  // #endif
-  onBeforeUnmount(() => {
-    list.value = [];
-  });
-  onMounted(() => {
-    uni.showLoading({ title: '...', mask: true });
-    let ls_list = fontList.glyphs.slice(0, 30);
-    setTimeout(() => {
-      for (let i = 0; i < ls_list.length; i++) {
-        list.value.push({ name: fontList.css_prefix_text + ls_list[i].font_class, text: ls_list[i].name });
-      }
-      uni.hideLoading();
-    }, 100);
-  });
-
-  //显示全部图标
-  const onShowAll = () => {
-    showAll.value = true;
-    let ls_list = fontList.glyphs; //全部显示
-    list.value = [];
-    uni.showLoading({ title: '...', mask: true });
-    for (let i = 0; i < ls_list.length; i++) {
-      list.value.push({ name: fontList.css_prefix_text + ls_list[i].font_class, text: ls_list[i].name } as never);
-    }
-    uni.hideLoading();
-  };
-  function onclick(item: any) {
-    (uni.setClipboardData({ data: item.name }) as Promise<string>).then(() =>
-      uni.showToast({ title: '复制成功', icon: 'none' }),
-    );
-  }
-</script>

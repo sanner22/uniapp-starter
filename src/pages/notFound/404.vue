@@ -1,24 +1,24 @@
 <script lang="ts" setup>
-  import { onLoad } from '@dcloudio/uni-app';
-  import { ref } from 'vue';
-  import { useRouter } from '@/hooks/router';
-  import { HOME_PAGE } from '@/enums/routerEnum';
+import { onLoad } from '@dcloudio/uni-app'
+import { ref } from 'vue'
+import { useRouter } from '@/hooks/router'
+import { HOME_PAGE } from '@/enums/routerEnum'
 
-  const go = ref<string>('');
-  const router = useRouter();
-  const redirect = ref<string>('');
+const go = ref<string>('')
+const router = useRouter()
+const redirect = ref<string>('')
 
-  onLoad(query => {
-    go.value = query?.go || '';
-    redirect.value = query?.redirect || HOME_PAGE;
-  });
+onLoad((query) => {
+  go.value = query?.go || ''
+  redirect.value = query?.redirect || HOME_PAGE
+})
 
-  /**
+/**
    * 返回首页
    */
-  const backHome = () => {
-    router.pushTab(redirect.value);
-  };
+const backHome = () => {
+  router.pushTab(redirect.value)
+}
 </script>
 
 <template>
@@ -37,11 +37,10 @@
         icon="tmicon-md-home"
         size="small"
         class="uno-mb-30px"
-        @click="backHome"
         label="返回首页"
         :width="200"
-      >
-      </tm-button>
+        @click="backHome"
+      />
     </view>
   </tm-app>
 </template>

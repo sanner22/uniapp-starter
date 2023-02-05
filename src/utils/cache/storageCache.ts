@@ -1,12 +1,12 @@
-import { cacheCipher } from '@/settings/encryptionSetting';
-import type { EncryptionParams } from '@/utils/cipher';
-import { AesEncryption } from '@/utils/cipher';
-import { isNullOrUnDef } from '@/utils/is';
+import { cacheCipher } from '@/settings/encryptionSetting'
+import type { EncryptionParams } from '@/utils/cipher'
+import { AesEncryption } from '@/utils/cipher'
+import { isNullOrUnDef } from '@/utils/is'
 
 export interface CreateStorageParams extends EncryptionParams {
-  prefixKey: string;
-  hasEncrypt: boolean;
-  timeout?: number | null;
+  prefixKey: string
+  hasEncrypt: boolean
+  timeout?: number | null
 }
 export const createStorage = ({
   prefixKey = '',
@@ -15,11 +15,10 @@ export const createStorage = ({
   timeout = null,
   hasEncrypt = true,
 }: Partial<CreateStorageParams> = {}) => {
-  if (hasEncrypt && [key.length, iv.length].some(item => item !== 16)) {
-    throw new Error('When hasEncrypt is true, the key or iv must be 16 bits!');
-  }
+  if (hasEncrypt && [key.length, iv.length].some(item => item !== 16))
+    throw new Error('When hasEncrypt is true, the key or iv must be 16 bits!')
 
-  const encryption = new AesEncryption({ key, iv });
+  const encryption = new AesEncryption({ key, iv })
 
   /**
    * Cache class
@@ -28,24 +27,24 @@ export const createStorage = ({
    * @example
    */
   class Storage {
-    private prefixKey?: string;
+    private prefixKey?: string
 
-    private encryption: AesEncryption;
+    private encryption: AesEncryption
 
-    private hasEncrypt: boolean;
+    private hasEncrypt: boolean
 
     /**
      *
      * @param {*} storage
      */
     constructor() {
-      this.prefixKey = prefixKey;
-      this.encryption = encryption;
-      this.hasEncrypt = hasEncrypt;
+      this.prefixKey = prefixKey
+      this.encryption = encryption
+      this.hasEncrypt = hasEncrypt
     }
 
     private getKey(key: string) {
-      return `${this.prefixKey}${key}`.toUpperCase();
+      return `${this.prefixKey}${key}`.toUpperCase()
     }
 
     /**
@@ -61,11 +60,12 @@ export const createStorage = ({
           value,
           time: Date.now(),
           expire: !isNullOrUnDef(expire) ? new Date().getTime() + expire * 1000 : null,
-        });
-        const stringifyValue = this.hasEncrypt ? this.encryption.encryptByAES(stringData) : stringData;
-        uni.setStorageSync(this.getKey(key), stringifyValue);
-      } catch (err) {
-        throw new Error(`setStorageSync error: ${err}`);
+        })
+        const stringifyValue = this.hasEncrypt ? this.encryption.encryptByAES(stringData) : stringData
+        uni.setStorageSync(this.getKey(key), stringifyValue)
+      }
+      catch (err) {
+        throw new Error(`setStorageSync error: ${err}`)
       }
     }
 
@@ -76,20 +76,22 @@ export const createStorage = ({
      * @memberof Cache
      */
     get<T = any>(key: string, def: any = null): T {
-      const val = uni.getStorageSync(this.getKey(key));
-      if (!val) return def;
+      const val = uni.getStorageSync(this.getKey(key))
+      if (!val)
+        return def
 
       try {
-        const decVal = this.hasEncrypt ? this.encryption.decryptByAES(val) : val;
-        const data = JSON.parse(decVal);
-        const { value, expire } = data;
+        const decVal = this.hasEncrypt ? this.encryption.decryptByAES(val) : val
+        const data = JSON.parse(decVal)
+        const { value, expire } = data
         if (isNullOrUnDef(expire) || expire < new Date().getTime()) {
-          this.remove(key);
-          return def;
+          this.remove(key)
+          return def
         }
-        return value;
-      } catch (e) {
-        return def;
+        return value
+      }
+      catch (e) {
+        return def
       }
     }
 
@@ -99,15 +101,15 @@ export const createStorage = ({
      * @memberof Cache
      */
     remove(key: string) {
-      uni.removeStorageSync(this.getKey(key));
+      uni.removeStorageSync(this.getKey(key))
     }
 
     /**
      * Delete all caches of this instance
      */
     clear(): void {
-      uni.clearStorageSync();
+      uni.clearStorageSync()
     }
   }
-  return new Storage();
-};
+  return new Storage()
+}

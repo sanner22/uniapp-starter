@@ -1,14 +1,25 @@
+<script lang="ts" setup>
+import { ref } from 'vue'
+import { componentGroups } from '@/utils/tmui-helper'
+
+const loading = ref(true)
+
+setTimeout(() => {
+  loading.value = false
+}, 100)
+</script>
+
 <template>
   <tm-app>
     <view class="uno-my-30px uno-center">
-      <img src="https://tmui.design/images/logoGreat.png" width="80" height="80" />
+      <img src="https://tmui.design/images/logoGreat.png" width="80" height="80">
     </view>
 
     <view v-if="loading" class="uno-p-15px">
-      <tm-skeleton :rows="3"></tm-skeleton>
+      <tm-skeleton :rows="3" />
     </view>
 
-    <tm-collapse v-else :accordion="true" :defaultActiveKey="['common']">
+    <tm-collapse v-else :accordion="true" :default-active-key="['common']">
       <tm-collapse-item
         v-for="(g, index) in componentGroups"
         :key="index"
@@ -29,16 +40,5 @@
     </tm-collapse>
   </tm-app>
 </template>
-
-<script lang="ts" setup>
-  import { ref } from 'vue';
-  import { componentGroups } from '@/utils/tmui-helper';
-
-  const loading = ref(true);
-
-  setTimeout(() => {
-    loading.value = false;
-  }, 100);
-</script>
 
 <style lang="scss" scoped></style>

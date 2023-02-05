@@ -1,10 +1,10 @@
-import { defineStore } from 'pinia';
-import { getCache, removeCache, setCache } from '@/utils/cache';
-import { TOKEN_KEY } from '@/enums/cacheEnum';
-import { login, logout, refreshToken } from '@/services/api/auth';
+import { defineStore } from 'pinia'
+import { getCache, removeCache, setCache } from '@/utils/cache'
+import { TOKEN_KEY } from '@/enums/cacheEnum'
+import { login, logout, refreshToken } from '@/services/api/auth'
 
 interface AuthState {
-  token?: string;
+  token?: string
 }
 
 export const useAuthStore = defineStore({
@@ -18,22 +18,23 @@ export const useAuthStore = defineStore({
   },
   actions: {
     initToken() {
-      this.token = getCache<string>(TOKEN_KEY) || undefined;
+      this.token = getCache<string>(TOKEN_KEY) || undefined
     },
     setToken(token: string | undefined) {
-      setCache(TOKEN_KEY, token);
-      this.token = token;
+      setCache(TOKEN_KEY, token)
+      this.token = token
     },
     /**
      * @description 登录
      */
     async login(params: LoginParams): Promise<LoginModel> {
       try {
-        const { data } = await login(params);
-        this.setToken(data.token);
-        return Promise.resolve(data);
-      } catch (err: any) {
-        return Promise.reject(err);
+        const { data } = await login(params)
+        this.setToken(data.token)
+        return Promise.resolve(data)
+      }
+      catch (err: any) {
+        return Promise.reject(err)
       }
     },
     /**
@@ -41,12 +42,13 @@ export const useAuthStore = defineStore({
      */
     async loginOut(): Promise<any> {
       try {
-        const res = await logout();
-        removeCache(TOKEN_KEY);
-        this.setToken(undefined);
-        return Promise.resolve(res);
-      } catch (err: any) {
-        return Promise.reject(err);
+        const res = await logout()
+        removeCache(TOKEN_KEY)
+        this.setToken(undefined)
+        return Promise.resolve(res)
+      }
+      catch (err: any) {
+        return Promise.reject(err)
       }
     },
     /**
@@ -54,12 +56,13 @@ export const useAuthStore = defineStore({
      */
     async refreshToken(): Promise<LoginModel> {
       try {
-        const { data } = await refreshToken();
-        this.setToken(data.token);
-        return Promise.resolve(data);
-      } catch (err: any) {
-        return Promise.reject(err);
+        const { data } = await refreshToken()
+        this.setToken(data.token)
+        return Promise.resolve(data)
+      }
+      catch (err: any) {
+        return Promise.reject(err)
       }
     },
   },
-});
+})

@@ -1,14 +1,14 @@
-import { Navigates } from '@/utils/router/navigates';
-import { useRouterStore } from '@/state/modules/router';
-import { RouteLocationNormalized } from '@/types/router/route';
+import { Navigates } from '@/utils/router/navigates'
+import { useRouterStore } from '@/state/modules/router'
+import type { RouteLocationNormalized } from '@/types/router/route'
 
-const router = new Navigates();
+const router = new Navigates()
 
 /**
  * 路由hook
  */
 export function useRouter() {
-  return router;
+  return router
 }
 
 /**
@@ -19,20 +19,20 @@ export function useRouter() {
  * @return RouteLocationNormalized
  */
 export function useRoute(): RouteLocationNormalized {
-  const currentPages = getCurrentPages();
-  const currentPage = currentPages[currentPages.length - 1];
-  const path = currentPage?.route || '';
-  const routerStore = useRouterStore();
-  const currentRoute = routerStore.getRoutes?.get(path as string);
-  let query = {};
+  const currentPages = getCurrentPages()
+  const currentPage = currentPages[currentPages.length - 1]
+  const path = currentPage?.route || ''
+  const routerStore = useRouterStore()
+  const currentRoute = routerStore.getRoutes?.get(path as string)
+  let query = {}
   /* #ifndef MP-WEIXIN */
-  // @ts-ignore
-  query = currentPage?.$page?.options || {};
+  // @ts-expect-error
+  query = currentPage?.$page?.options || {}
   /* #endif */
 
   /* #ifdef MP-WEIXIN */
-  // @ts-ignore
-  query = currentPage?.options || {};
+  // @ts-expect-error
+  query = currentPage?.options || {}
   /* #endif */
   return {
     currentPages,
@@ -40,5 +40,5 @@ export function useRoute(): RouteLocationNormalized {
     path,
     currentRoute,
     query,
-  };
+  }
 }

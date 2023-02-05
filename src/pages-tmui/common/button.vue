@@ -1,48 +1,49 @@
+<script lang="ts" setup></script>
+
 <template>
   <tm-app>
     <tm-sheet>
-      <tm-text :font-size="24" _class="font-weight-b" label="基本示例"></tm-text>
-      <tm-divider></tm-divider>
+      <tm-text :font-size="24" _class="font-weight-b" label="基本示例" />
+      <tm-divider />
       <view class="flex flex-row flex-wrap">
-        <tm-button :margin="[10]" size="mini" :shadow="0" label="mini"></tm-button>
-        <tm-button :margin="[10]" size="small" :shadow="0" label="small"></tm-button>
-        <tm-button :margin="[10]" :shadow="0" text size="normal" label="normal"></tm-button>
-        <tm-button :margin="[10]" :shadow="0" text :border="2" borderStyle="dashed" size="large" label="large">
-        </tm-button>
-        <tm-button :margin="[10]" :shadow="0" text size="normal" outlined label="浅边框"></tm-button>
-        <tm-button :margin="[10]" :shadow="0" :border="6" outlined size="normal" label="深边框"></tm-button>
-        <tm-button :margin="[10]" transprent text :shadow="0" size="normal" label="透明背景"></tm-button>
+        <tm-button :margin="[10]" size="mini" :shadow="0" label="mini" />
+        <tm-button :margin="[10]" size="small" :shadow="0" label="small" />
+        <tm-button :margin="[10]" :shadow="0" text size="normal" label="normal" />
+        <tm-button :margin="[10]" :shadow="0" text :border="2" border-style="dashed" size="large" label="large" />
+        <tm-button :margin="[10]" :shadow="0" text size="normal" outlined label="浅边框" />
+        <tm-button :margin="[10]" :shadow="0" :border="6" outlined size="normal" label="深边框" />
+        <tm-button :margin="[10]" transprent text :shadow="0" size="normal" label="透明背景" />
       </view>
-      <tm-button block label="block"></tm-button>
+      <tm-button block label="block" />
     </tm-sheet>
     <tm-sheet>
-      <tm-text :font-size="24" _class="font-weight-b" label="带图标"></tm-text>
-      <tm-divider></tm-divider>
+      <tm-text :font-size="24" _class="font-weight-b" label="带图标" />
+      <tm-divider />
       <view class="flex flex-row flex-wrap">
-        <tm-button icon="tmicon-tongzhifill" size="normal" label="按钮"></tm-button>
+        <tm-button icon="tmicon-tongzhifill" size="normal" label="按钮" />
         <tm-button
           color="red"
           icon="tmicon-account"
           :width="86"
           :round="10"
           :height="86"
-          :fontSize="40"
+          :font-size="40"
           :margin="[10]"
           :shadow="0"
           size="normal"
-        ></tm-button>
+        />
         <tm-button
           color="green"
           icon="tmicon-account"
           :width="86"
           :round="10"
           :height="86"
-          :fontSize="40"
+          :font-size="40"
           :margin="[10]"
           :shadow="0"
           text
           size="normal"
-        ></tm-button>
+        />
         <tm-button
           icon="tmicon-account"
           color="pink"
@@ -50,24 +51,22 @@
           :shadow="0"
           text
           :border="2"
-          borderStyle="dashed"
+          border-style="dashed"
           size="normal"
           label="按钮"
-        ></tm-button>
+        />
       </view>
     </tm-sheet>
     <tm-sheet>
-      <tm-text :font-size="24" _class="font-weight-b" label="渐变样式,更多属性见文档"></tm-text>
-      <tm-divider></tm-divider>
-      <tm-button loading linear="right" block label="light 加载中"></tm-button>
-      <tm-button linear="right" block label="light"></tm-button>
-      <tm-button linear="right" linearDeep="dark" block label="dark 被禁用"></tm-button>
-      <tm-button disabled linear="right" linearDeep="dark" block label="dark 被禁用"></tm-button>
-      <tm-button linear="right" linearDeep="accent" block label="accent"></tm-button>
-      <tm-button color="pink" linear="right" linearDeep="accent" block label="accent"></tm-button>
-      <tm-button color="orange" linear="right" linearDeep="accent" block label="accent top"></tm-button>
+      <tm-text :font-size="24" _class="font-weight-b" label="渐变样式,更多属性见文档" />
+      <tm-divider />
+      <tm-button loading linear="right" block label="light 加载中" />
+      <tm-button linear="right" block label="light" />
+      <tm-button linear="right" linear-deep="dark" block label="dark 被禁用" />
+      <tm-button disabled linear="right" linear-deep="dark" block label="dark 被禁用" />
+      <tm-button linear="right" linear-deep="accent" block label="accent" />
+      <tm-button color="pink" linear="right" linear-deep="accent" block label="accent" />
+      <tm-button color="orange" linear="right" linear-deep="accent" block label="accent top" />
     </tm-sheet>
   </tm-app>
 </template>
-
-<script lang="ts" setup></script>

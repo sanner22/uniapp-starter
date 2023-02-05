@@ -1,4 +1,4 @@
-export const componentGroup = { title: '展示组件', key: 'showdata' };
+export const componentGroup = { title: '展示组件', key: 'showdata' }
 
 export const componentsList = [
   { path: '/pages-tmui/showdata/avatar', title: '头像 avatar' },
@@ -24,4 +24,4 @@ export const componentsList = [
   { path: '/pages-tmui/showdata/tree', title: '树 tree' },
   { path: '/pages-tmui/showdata/virtual-list', title: '虚拟列表 virtual-list' },
   { path: '/pages-tmui/showdata/waterfall', title: '瀑布流 waterfall' },
-];
+]

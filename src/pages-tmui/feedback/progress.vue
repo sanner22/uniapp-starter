@@ -1,75 +1,73 @@
+<script lang="ts" setup>
+import { ref } from 'vue'
+
+const percent = ref(50)
+</script>
+
 <template>
   <tm-app>
     <tm-sheet>
-      <tm-text :fontSize="24" _class="font-weight-b" label="基础属性,更多玩法请前往文档。"></tm-text>
-      <tm-divider></tm-divider>
-      <tm-progress :width="636" v-model:percent="percent"></tm-progress>
-      <view class="py-12"></view>
-      <tm-progress linear="right" :width="636" color="red" v-model:percent="percent"></tm-progress>
-      <view class="py-12"></view>
-      <tm-progress linear="right" showBar :width="636" color="orange" v-model:percent="percent"></tm-progress>
+      <tm-text :font-size="24" _class="font-weight-b" label="基础属性,更多玩法请前往文档。" />
+      <tm-divider />
+      <tm-progress v-model:percent="percent" :width="636" />
+      <view class="py-12" />
+      <tm-progress v-model:percent="percent" linear="right" :width="636" color="red" />
+      <view class="py-12" />
+      <tm-progress v-model:percent="percent" linear="right" show-bar :width="636" color="orange" />
     </tm-sheet>
     <tm-sheet>
-      <tm-text :fontSize="24" _class="font-weight-b" label="圆形"></tm-text>
-      <tm-divider></tm-divider>
+      <tm-text :font-size="24" _class="font-weight-b" label="圆形" />
+      <tm-divider />
       <view class="flex flex-row">
-        <tm-progress model="circle" bgColor="grey-4" :height="24" :width="200" v-model:percent="percent"></tm-progress>
-        <view class="py-12"></view>
-        <tm-progress model="circle" bgColor="grey-4" color="pink" :height="24" :width="200" v-model:percent="percent">
-        </tm-progress>
-        <view class="py-12"></view>
+        <tm-progress v-model:percent="percent" model="circle" bg-color="grey-4" :height="24" :width="200" />
+        <view class="py-12" />
         <tm-progress
+          v-model:percent="percent"
           model="circle"
-          semicircleFlip
-          bgColor="grey-4"
+          bg-color="grey-4"
+          color="pink"
           :height="24"
           :width="200"
+        />
+        <view class="py-12" />
+        <tm-progress
           v-model:percent="percent"
-        ></tm-progress>
-        <view class="py-12"></view>
+          model="circle"
+          semicircle-flip
+          bg-color="grey-4"
+          :height="24"
+          :width="200"
+        />
+        <view class="py-12" />
       </view>
     </tm-sheet>
     <tm-sheet>
-      <tm-text :fontSize="24" _class="font-weight-b" label="半圆形，以及镜像"></tm-text>
-      <tm-divider></tm-divider>
+      <tm-text :font-size="24" _class="font-weight-b" label="半圆形，以及镜像" />
+      <tm-divider />
       <view class="flex flex-row">
-        <tm-progress
-          model="circle"
-          color="yellow"
-          semicircle
-          :height="24"
-          :width="200"
-          v-model:percent="percent"
-        ></tm-progress>
-        <view class="py-12"></view>
+        <tm-progress v-model:percent="percent" model="circle" color="yellow" semicircle :height="24" :width="200" />
+        <view class="py-12" />
 
         <tm-progress
+          v-model:percent="percent"
           model="circle"
           semicircle
-          semicircleFlip
+          semicircle-flip
           :height="24"
           color="orange"
           :width="200"
-          v-model:percent="percent"
-        >
-        </tm-progress>
-        <view class="py-12"></view>
+        />
+        <view class="py-12" />
       </view>
     </tm-sheet>
     <tm-sheet>
-      <tm-text :fontSize="24" _class="font-weight-b" label="进度操作"></tm-text>
-      <tm-divider></tm-divider>
+      <tm-text :font-size="24" _class="font-weight-b" label="进度操作" />
+      <tm-divider />
       <view class="flex flex-row">
-        <tm-button @click="percent = percent >= 100 ? 0 : percent + 10" label="增加"></tm-button>
-        <view class="px-12"></view>
-        <tm-button color="red" @click="percent = percent <= 0 ? 0 : percent - 10" label="减少"></tm-button>
+        <tm-button label="增加" @click="percent = percent >= 100 ? 0 : percent + 10" />
+        <view class="px-12" />
+        <tm-button color="red" label="减少" @click="percent = percent <= 0 ? 0 : percent - 10" />
       </view>
     </tm-sheet>
   </tm-app>
 </template>
-
-<script lang="ts" setup>
-  import { ref } from 'vue';
-
-  const percent = ref(50);
-</script>

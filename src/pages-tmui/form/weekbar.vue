@@ -1,13 +1,13 @@
+<script lang="ts" setup></script>
+
 <template>
   <tm-app>
     <tm-sheet>
-      <tm-text :font-size="24" _class="font-weight-b" label="基础示例,更多见文档"></tm-text>
+      <tm-text :font-size="24" _class="font-weight-b" label="基础示例,更多见文档" />
     </tm-sheet>
-    <tm-weekbar></tm-weekbar>
-    <tm-weekbar :followTheme="false" activeColor="white" color="red"></tm-weekbar>
-    <tm-weekbar :followTheme="false" activeColor="black" color="yellow" linear="bottom"></tm-weekbar>
-    <tm-weekbar model="custom" :dayNumber="7"></tm-weekbar>
+    <tm-weekbar />
+    <tm-weekbar :follow-theme="false" active-color="white" color="red" />
+    <tm-weekbar :follow-theme="false" active-color="black" color="yellow" linear="bottom" />
+    <tm-weekbar model="custom" :day-number="7" />
   </tm-app>
 </template>
-
-<script lang="ts" setup></script>

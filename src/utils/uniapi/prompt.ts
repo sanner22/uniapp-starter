@@ -16,14 +16,14 @@ export function Toast(title: string, options?: Partial<UniApp.ShowToastOptions>)
     icon: 'none',
     mask: true,
     ...options,
-  });
+  })
 }
 
 /**
  * 隐藏消息提示框
  */
 export function HideToast() {
-  uni.hideToast();
+  uni.hideToast()
 }
 
 /**
@@ -37,14 +37,14 @@ export function Loading(title: string, options?: Partial<UniApp.ShowLoadingOptio
     title,
     mask: true,
     ...options,
-  });
+  })
 }
 
 /**
  * 隐藏 loading 提示框
  */
 export function HideLoading() {
-  uni.hideLoading();
+  uni.hideLoading()
 }
 
 /**
@@ -56,14 +56,14 @@ export function Modal(options: UniApp.ShowModalOptions) {
   return new Promise((resolve, reject) => {
     uni.showModal({
       ...options,
-      success: res => {
-        resolve(res);
+      success: (res) => {
+        resolve(res)
       },
-      fail: res => {
-        reject(res);
+      fail: (res) => {
+        reject(res)
       },
-    });
-  });
+    })
+  })
 }
 
 /**
@@ -75,12 +75,12 @@ export function ActionSheet(options: UniApp.ShowActionSheetOptions) {
   return new Promise((resolve, reject) => {
     uni.showActionSheet({
       ...options,
-      success: res => {
-        resolve(res);
+      success: (res) => {
+        resolve(res)
       },
-      fail: res => {
-        reject(res);
+      fail: (res) => {
+        reject(res)
       },
-    });
-  });
+    })
+  })
 }

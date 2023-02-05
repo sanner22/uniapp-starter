@@ -1,34 +1,35 @@
-<template>
-  <view ref="elRef" @click="onClick" :class="['iconify', icon]"></view>
-</template>
-
 <script lang="ts" setup name="Iconify">
-  import { isNumber } from '@/utils/is';
-  import { computed } from 'vue';
+import { computed } from 'vue'
+import { isNumber } from '@/utils/is'
 
-  const props = defineProps({
-    icon: {
-      type: String,
-      required: true,
-    },
-    size: {
-      type: [Number, String],
-      default: '44rpx',
-    },
-    color: {
-      type: String,
-    },
-  });
+const props = defineProps({
+  icon: {
+    type: String,
+    required: true,
+  },
+  size: {
+    type: [Number, String],
+    default: '44rpx',
+  },
+  color: {
+    type: String,
+  },
+})
 
-  const _size = computed(() => {
-    return isNumber(props.size) ? `${props.size}px` : props.size;
-  });
+const emit = defineEmits(['click'])
 
-  const emit = defineEmits(['click']);
-  const onClick = () => {
-    emit('click');
-  };
+const _size = computed(() => {
+  return isNumber(props.size) ? `${props.size}px` : props.size
+})
+
+const onClick = () => {
+  emit('click')
+}
 </script>
+
+<template>
+  <view ref="elRef" class="iconify" :class="[icon]" @click="onClick" />
+</template>
 
 <style lang="scss" scoped>
   .iconify {

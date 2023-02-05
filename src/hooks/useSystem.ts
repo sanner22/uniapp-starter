@@ -17,7 +17,7 @@ export const useSystem = () => {
     osVersion,
     osLanguage,
     osTheme,
-    // @ts-ignore
+    // @ts-expect-error
     osAndroidAPILevel,
     // rom
     romName,
@@ -43,7 +43,7 @@ export const useSystem = () => {
     appVersion,
     appVersionCode,
     appLanguage,
-    // @ts-ignore
+    // @ts-expect-error
     appWgtVersion,
     // 其他
     ua,
@@ -57,9 +57,9 @@ export const useSystem = () => {
     safeArea,
     safeAreaInsets,
     // 某些小程序特殊的返回参数
-    // @ts-ignore
+    // @ts-expect-error
     benchmarkLevel,
-    // @ts-ignore
+    // @ts-expect-error
     batteryLevel,
     currentBattery,
     navigationBarHeight,
@@ -77,7 +77,7 @@ export const useSystem = () => {
     wifiEnabled,
     cacheLocation,
     storage,
-  } = uni.getSystemInfoSync();
+  } = uni.getSystemInfoSync()
   const {
     top: safeAreaTop,
     bottom: safeAreaBottom,
@@ -85,13 +85,13 @@ export const useSystem = () => {
     right: safeAreaRight,
     height: safeAreaHeight,
     width: safeAreaWidth,
-  } = safeArea!;
+  } = safeArea!
   const {
     top: safeAreaInsetsTop,
     bottom: safeAreaInsetsBottom,
     left: safeAreaInsetsLeft,
     right: safeAreaInsetsRight,
-  } = safeAreaInsets!;
+  } = safeAreaInsets!
   return {
     deviceId,
     deviceBrand,
@@ -160,5 +160,5 @@ export const useSystem = () => {
     wifiEnabled,
     cacheLocation,
     storage,
-  };
-};
+  }
+}
