@@ -8,9 +8,8 @@
     "build:app": "uni build -p app",
     "build:h5": "uni build --minify",
     "build:mp-weixin": "uni build -p mp-weixin --minify",
-    "lint": "eslint --cache --max-warnings 0  \"src/**/*.{vue,js,ts}\"",
-    "lint:fix": "eslint --cache --max-warnings 0  \"src/**/*.{vue,js,ts}\" --fix",
-    "prettier": "prettier --write \"src/**/*.{js,ts,json,css,scss,vue}\"",
+    "lint": "eslint --cache --max-warnings 0  \"src/**/*.{js,jsx,vue,ts,tsx}\"",
+    "lint:fix": "eslint --cache --max-warnings 0  \"src/**/*.{js,jsx,vue,ts,tsx}\" --fix",
     "prepare": "husky install",
     "hbx:open": "cli open",
     "hbx:custom": "node ./scripts/hbx.pack.js custom",
@@ -45,6 +44,7 @@
     "vue-i18n": "^9.2.2"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^0.35.1",
     "@dcloudio/types": "^3.2.8",
     "@dcloudio/uni-automator": "3.0.0-3061820230117001",
     "@dcloudio/uni-cli-shared": "3.0.0-3061820230117001",
@@ -60,15 +60,12 @@
     "@unocss/preset-icons": "^0.46.4",
     "autoprefixer": "^10.4.13",
     "eslint": "^8.31.0",
-    "eslint-config-prettier": "^8.6.0",
-    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.9.0",
     "husky": "^8.0.3",
     "iconv-lite": "^0.6.3",
     "lint-staged": "^13.1.0",
     "mrm": "^4.1.13",
     "postcss": "^8.4.21",
-    "prettier": "^2.8.3",
     "sass": "^1.57.1",
     "sass-loader": "10",
     "typescript": "^4.9.4",
@@ -85,7 +82,7 @@
   },
   "lint-staged": {
     "*.{js,jsx,vue,ts,tsx}": [
-      "prettier --write",
+      "eslint --fix",
       "git add"
     ]
   }
