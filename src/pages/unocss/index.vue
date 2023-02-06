@@ -5,8 +5,8 @@ import { useTmpiniaStore } from '@/tmui/tool/lib/tmpinia'
 const store = useTmpiniaStore()
 
 const list = [
-  { name: 'font', path: '/pages-unocss/font/index', icon: 'i-ic-round-font-download' },
-  { name: 'size', path: '/pages-unocss/size/index', icon: 'i-icomoon-free-font-size' },
+  { name: 'font', path: '/pages-unocss/font/index', icon: 'i-material-symbols-font-download-outline-rounded' },
+  { name: 'size', path: '/pages-unocss/size/index', icon: 'i-mdi-move-resize' },
   { name: 'shadow', path: '/pages-unocss/shadow/index', icon: 'i-tabler-inner-shadow-bottom-right' },
   { name: 'border', path: '/pages-unocss/border/index', icon: 'i-material-symbols-border-outer-rounded' },
   { name: 'spacing', path: '/pages-unocss/spacing/index', icon: 'i-icon-park-twotone-distribute-horizontal-spacing' },
@@ -17,10 +17,11 @@ const list = [
   { name: 'animation', path: '/pages-unocss/animation/index', icon: 'i-clarity-animation-line' },
   { name: 'bg', path: '/pages-unocss/bg/index', icon: 'i-ant-design-bg-colors-outlined' },
   { name: 'first-last', path: '/pages-unocss/first-last/index', icon: 'i-material-symbols-first-page' },
-  { name: 'odd-even', path: '/pages-unocss/odd-even/index', icon: 'i-material-symbols-event-note' },
-  { name: 'space-x', path: '/pages-unocss/space/index', icon: 'i-fluent-align-space-around-vertical-20-regular' },
-  { name: 'divide-x', path: '/pages-unocss/divide/index', icon: 'i-iconoir-divide-selection-1' },
-  { name: 'apply', path: '/pages-unocss/apply/index', icon: 'i-flat-color-icons-accept-database' },
+  { name: 'odd-even', path: '/pages-unocss/odd-even/index', icon: 'i-fluent-number-row-24-regular' },
+  { name: 'space', path: '/pages-unocss/space/index', icon: 'i-carbon-name-space' },
+  { name: 'gap', path: '/pages-unocss/gap/index', icon: 'i-carbon-name-space' },
+  { name: 'divide', path: '/pages-unocss/divide/index', icon: 'i-radix-icons-divider-horizontal' },
+  { name: 'apply', path: '/pages-unocss/apply/index', icon: 'i-fluent-text-change-accept-20-filled' },
 ]
 
 const to = (to: string) => {
