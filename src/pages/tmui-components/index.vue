@@ -1,17 +1,18 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
+import { onLoad } from '@dcloudio/uni-app'
 import { componentGroups } from './components'
 
+// loading
 const loading = ref(true)
-
-setTimeout(() => {
+onLoad(() => {
   loading.value = false
-}, 100)
+})
 </script>
 
 <template>
   <tm-app>
-    <view class="uno-my-30px uno-center">
+    <view class="uno-my-20px uno-center">
       <tm-image src="https://tmui.design/images/logoGreat.png" :width="80" :height="80" unit="px" />
     </view>
 
@@ -19,7 +20,7 @@ setTimeout(() => {
       <tm-skeleton :rows="3" />
     </view>
 
-    <tm-collapse v-else :accordion="true" :default-active-key="['common']">
+    <tm-collapse v-else :accordion="true">
       <tm-collapse-item
         v-for="(g, index) in componentGroups"
         :key="index"

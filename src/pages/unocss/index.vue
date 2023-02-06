@@ -1,7 +1,10 @@
 <!-- eslint-disable unused-imports/no-unused-vars -->
 <script setup lang="ts">
+import { ref } from 'vue'
+import { onLoad } from '@dcloudio/uni-app'
 import Iconify from '@/components/Iconify/index.vue'
 import { useTmpiniaStore } from '@/tmui/tool/lib/tmpinia'
+
 const store = useTmpiniaStore()
 
 const list = [
@@ -29,16 +32,26 @@ const to = (to: string) => {
     url: to,
   })
 }
+
+// loading
+const loading = ref(true)
+onLoad((e) => {
+  loading.value = false
+})
 </script>
 
 <template>
   <tm-app>
     <view class="uno-p-15px">
-      <view class="uno-my-30px uno-center">
+      <view class="uno-my-20px uno-center">
         <tm-image src="https://img.cdn.sugarat.top/mdImg/MTY2ODA4OTc3MjcyMg==unocss-icon-gray.svg" :width="80" :height="80" unit="px" />
       </view>
 
-      <view class="uno-grid uno-grid-cols-3 uno-gap-10px uno-justify-items-center">
+      <view v-if="loading" class="uno-p-15px">
+        <tm-skeleton :rows="3" />
+      </view>
+
+      <view v-else class="uno-grid uno-grid-cols-3 uno-gap-10px uno-justify-items-center">
         <!-- <tm-sheet
           :margin="[0, 0]"
           :round="5"
@@ -55,11 +68,11 @@ const to = (to: string) => {
         <view
           v-for="(item, index) in list"
           :key="index"
-          class="uno-w-full uno-h-20vw uno-shadow-md uno-rounded-md uno-bg-gray uno-center uno-flex-col"
+          class="uno-w-full uno-h-60px uno-shadow-md uno-rounded-md uno-bg-gray uno-center uno-flex-col"
           @click="to(item.path)"
         >
           <iconify :icon="item.icon" />
-          <view class="uno-mt-6px uno-text-sm">
+          <view class="uno-mt-6px uno-text-12px">
             {{ item.name }}
           </view>
         </view>
