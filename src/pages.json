@@ -7,6 +7,7 @@
     }
   },
   "pages": [
+    // index
     {
       "path": "pages/index/index",
       "style": {
@@ -17,8 +18,10 @@
         "ignoreAuth": true
       }
     },
+
+    // tmui-components
     {
-      "path": "pages/components/index",
+      "path": "pages/tmui-components/index",
       "style": {
         "navigationBarTitleText": "TMUI 组件"
       },
@@ -26,15 +29,19 @@
         "ignoreAuth": true
       }
     },
+
+    // unocss demo
     {
       "path": "pages/unocss/index",
       "style": {
-        "navigationBarTitleText": "unocss demo"
+        "navigationBarTitleText": "unocss 示例"
       },
       "meta": {
         "ignoreAuth": true
       }
     },
+
+    // demo
     {
       "path": "pages/demo/index",
       "style": {
@@ -44,6 +51,8 @@
         "ignoreAuth": true
       }
     },
+
+    // about
     {
       "path": "pages/about/index",
       "style": {
@@ -53,6 +62,8 @@
         "ignoreAuth": true
       }
     },
+
+    // login
     {
       "path": "pages/login/index",
       "style": {
@@ -62,12 +73,16 @@
         "ignoreAuth": true
       }
     },
+
+    // log
     {
       "path": "pages/log/index",
       "style": {
         "navigationBarTitleText": "日志"
       }
     },
+
+    // notFound/404
     {
       "path": "pages/notFound/404",
       "style": {
@@ -1161,7 +1176,7 @@
         "selectedIconPath": "static/images/tabBar/selectedHome.png"
       },
       {
-        "pagePath": "pages/components/index",
+        "pagePath": "pages/tmui-components/index",
         "text": "TMUI",
         "iconPath": "static/images/tabBar/category.png",
         "selectedIconPath": "static/images/tabBar/selectedCategory.png"

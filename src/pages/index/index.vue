@@ -17,7 +17,7 @@ const showf = ref(false)
 const router = useRouter()
 
 const handleGetStarted = () => {
-  router.pushTab('/pages/components/index')
+  router.pushTab('/pages/tmui-components/index')
 }
 const handleGoDemo = () => {
   router.pushTab('/pages/demo/index')
