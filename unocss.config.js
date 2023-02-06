@@ -4,35 +4,16 @@
  * @link unocss-preset-weapp: https://github.com/MellowCo/unocss-preset-weapp
  * */
 
-import { defineConfig, presetIcons, presetUno, transformerDirectives } from 'unocss'
+import { defineConfig, presetIcons, transformerDirectives } from 'unocss'
 import presetWeapp from 'unocss-preset-weapp'
 import { transformerAttributify, transformerClass } from 'unocss-preset-weapp/transformer'
 
-const transformRules = {
-  '.': '-d111-',
-  '/': '-s111-',
-  ':': '-c111-',
-  '%': '-p111-',
-  '!': '-e111-',
-  '#': '-w111-',
-  '(': '-b111l-',
-  ')': '-b111r-',
-  '[': '-f111l-',
-  ']': '-f111r-',
-  '$': '-r111-',
-  ',': '-r222-',
-  '=': '-r333-',
-}
 const prefix = 'uno-'
 const exclude = [/[\\/]node_modules[\\/]/, /[\\/]\.git[\\/]/, /[\\/]dist[\\/]/, /[\\/]tmui[\\/]/]
 
 export default defineConfig({
   // 预设
   presets: [
-    presetUno({
-      prefix, // 前缀
-    }),
-
     // UnoCSS 小程序预设
     // https://github.com/MellowCo/unocss-preset-weapp
     presetWeapp({
@@ -40,7 +21,7 @@ export default defineConfig({
       whRpx: false, // wh 是否使用 rpx 为默认单位
       transform: true, // 是否转换微信class
       platform: 'uniapp', // 平台 'taro' | 'uniapp'
-      transformRules, // 自定义转换规则
+      // transformRules, // 自定义转换规则
     }),
 
     // unocss 预设图标配置 https://www.npmjs.com/package/@unocss/preset-icons
@@ -71,7 +52,7 @@ export default defineConfig({
     // https://github.com/MellowCo/unocss-preset-weapp/tree/main/src/transformer/transformerAttributify
     transformerAttributify({
       classPrefix: prefix, // 为生成的class选择器添加前缀, ''
-      transformRules, // 自定义转换规则
+      // transformRules, // 自定义转换规则
       nonValuedAttribute: false, // 支持匹配非值属性, true
       // attributes: [], // 需要转换的属性列表, ['bg', 'flex', 'grid', 'border', 'text', 'font', 'class', 'className', 'p', 'm', 'animate']
       exclude, // 排除转换目标, [/[\\/]node_modules[\\/]/, /[\\/]\.git[\\/]/]
@@ -84,7 +65,7 @@ export default defineConfig({
 
     // https://github.com/MellowCo/unocss-preset-weapp/tree/main/src/transformer/transformerClass
     transformerClass({
-      transformRules,
+      // transformRules,
       exclude,
     }),
   ],
