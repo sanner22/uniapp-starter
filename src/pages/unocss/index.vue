@@ -35,7 +35,7 @@ const to = (to: string) => {
   <tm-app>
     <view class="uno-p-15px">
       <view class="uno-my-30px uno-center">
-        <img src="https://img.cdn.sugarat.top/mdImg/MTY2ODA4OTc3MjcyMg==unocss-icon-gray.svg" width="80" height="80">
+        <tm-image src="https://img.cdn.sugarat.top/mdImg/MTY2ODA4OTc3MjcyMg==unocss-icon-gray.svg" :width="80" :height="80" unit="px" />
       </view>
 
       <view class="uno-grid uno-grid-cols-3 uno-gap-10px uno-justify-items-center">

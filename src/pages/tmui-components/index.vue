@@ -12,7 +12,7 @@ setTimeout(() => {
 <template>
   <tm-app>
     <view class="uno-my-30px uno-center">
-      <img src="https://tmui.design/images/logoGreat.png" width="80" height="80">
+      <tm-image src="https://tmui.design/images/logoGreat.png" :width="80" :height="80" unit="px" />
     </view>
 
     <view v-if="loading" class="uno-p-15px">
