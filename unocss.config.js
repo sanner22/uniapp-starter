@@ -21,6 +21,7 @@ const transformRules = {
   ']': '-f111r-',
   '$': '-r111-',
   ',': '-r222-',
+  '=': '-r333-',
 }
 const prefix = 'uno-'
 const exclude = [/[\\/]node_modules[\\/]/, /[\\/]\.git[\\/]/, /[\\/]dist[\\/]/, /[\\/]tmui[\\/]/]
