@@ -5,7 +5,7 @@ import { CURRENT_PLATFORM, PLATFORMS } from '@/enums/platformEnum'
 import { judgePlatform } from '@/utils/platform'
 import tmApp from '@/tmui/components/tm-app/tm-app.vue'
 import { useTmpiniaStore } from '@/tmui/tool/lib/tmpinia'
-import { componentGroups } from '@/utils/tmui-helper'
+import { componentGroups } from '@/pages/tmui-components/components'
 
 const store = useTmpiniaStore()
 

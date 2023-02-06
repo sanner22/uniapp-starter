@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { componentGroups } from '@/utils/tmui-helper'
+import { componentGroups } from './components'
 
 const loading = ref(true)
 

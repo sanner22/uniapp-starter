@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { componentsList as list } from '@/utils/tmui-helper/feedback'
+import { componentsList as list } from '@/pages/tmui-components/components/feedback'
 </script>
 
 <template>
