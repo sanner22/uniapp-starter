@@ -1127,7 +1127,16 @@
         {
           "path": "space/index",
           "style": {
-            "navigationBarTitleText": "空隙"
+            "navigationBarTitleText": "space 间隔"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        {
+          "path": "gap/index",
+          "style": {
+            "navigationBarTitleText": "gap 间隔"
           },
           "meta": {
             "ignoreAuth": true
