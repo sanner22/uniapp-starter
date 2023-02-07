@@ -1,27 +1,29 @@
 <template>
   <tm-app>
-    <view class="bg-to-t">
-      apply bg-to-t
-    </view>
-    <view class="bg-unocss">
-      bg-unocss
-    </view>
-    <view class="bg-to-r">
-      apply bg-to-r
-    </view>
+    <tm-sheet>
+      <view class="bg-to-t">
+        apply bg-to-t
+      </view>
+      <view class="bg-unocss" />
+      <view class="bg-to-r">
+        apply bg-to-r
+      </view>
+    </tm-sheet>
   </tm-app>
 </template>
 
 <style lang="scss" scoped>
 .bg-to-t {
-  @apply uno-center uno-h-200 uno-rounded-md uno-bg-gradient-to-t uno-from-#f39c12/60 uno-via-#2ecc71: 80 uno-to-#9b59b6_70 uno-mb-3;
+  @apply uno-center uno-h-100px uno-rounded-md uno-bg-gradient-to-t uno-from-#f39c12/60 uno-via-#2ecc71:80 uno-to-#9b59b6_70 uno-mb-15px;
 }
 
 .bg-unocss {
-  @apply uno-w-100rpx uno-h-100rpx uno-bg-cover uno-mb-3 uno-m-auto uno-bg-[url(https://img.cdn.sugarat.top/mdImg/MTY2ODA4OTc3MjcyMg==unocss-icon-gray.svg)];
+  @apply uno-w-100px uno-h-100px uno-bg-cover uno-mx-auto uno-bg-[url(https://img.cdn.sugarat.top/mdImg/MTY2ODA4OTc3MjcyMg==unocss-icon-gray.svg)] uno-mb-15px;
 }
 
 .bg-to-r {
-  --at-apply: uno-center uno-h-200rpx uno-rounded-md uno-bg-gradient-to-r uno-from-#f39c12/60 uno-via-#2ecc71:80 uno-to-#9b59b6_70 uno-mb-3
+  // --at-apply 会编译 ;; 导致小程序编译错误
+  // --at-apply: uno-center uno-h-100px uno-rounded-md uno-bg-gradient-to-r uno-from-#f39c12/60 uno-via-#2ecc71:80 uno-to-#9b59b6_70
+  @apply uno-center uno-h-100px uno-rounded-md uno-bg-gradient-to-r uno-from-#f39c12/60 uno-via-#2ecc71:80 uno-to-#9b59b6_70;
 }
 </style>
