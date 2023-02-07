@@ -11,7 +11,6 @@ const store = useTmpiniaStore()
 
 const platform = CURRENT_PLATFORM
 const isVue3 = judgePlatform(PLATFORMS.VUE3)
-const sysinfo = uni.$tm.u.getWindow()
 const showf = ref(false)
 
 const router = useRouter()
@@ -55,17 +54,17 @@ const logoColor = computed(() => {
       <tm-sheet
         :margin="[0, 0]"
         :padding="[0, 0]"
-        color="indigo"
+        color="tnt"
         linear-deep="accent"
         linear="bottom"
         unit="px"
         :height="sys.height"
+        _class="uno-h-full uno-flex uno-flex-col"
       >
-        <view class="uno-w-full uno-h-full uno-position-absolute uno-left-0 uno-top-0">
-          <view :style="{ height: `${sysinfo.sysinfo.statusBarHeight}px` }" />
-          <view class="flex flex-row flex-row-center-between py-24 px-16">
+        <view uno-flex="auto">
+          <view class="uno-flex uno-justify-between uno-items-center uno-p-10px">
             <tm-text label="Uniapp Starter" />
-            <tm-icon color="white" :font-size="32" name="tmicon-times" @click="showf = false" />
+            <tm-icon :font-size="32" name="tmicon-times" @click="showf = false" />
           </view>
           <template v-for="(item, index) in componentGroups" :key="index">
             <tm-cell
@@ -77,24 +76,31 @@ const logoColor = computed(() => {
             />
           </template>
         </view>
+
+        <!-- 边栏底部 -->
+        <view class="uno-p-8px uno-flex uno-justify-between">
+          <tm-text label="@tntgroup" />
+          <tm-text label="v1.0.0" />
+        </view>
       </tm-sheet>
     </template>
 
     <tm-navbar title="Uniapp Starter" :shadow="0" hide-home>
       <template #left>
-        <view class="flex flex-center flex-row">
+        <view class="uno-flex uno-items-center uno-gap-12px uno-ml-12px">
           <tm-icon
             :color="store.tmStore.dark ? 'primary' : ''"
-            _class="px-24"
             :font-size="32"
             name="tmicon-menu"
             @click="showf = true"
           />
-          <navigator url="/pages-tmui/theme/index" class="px-12">
-            <tm-icon :font-size="32" name="tmicon-cog-fill" />
-          </navigator>
           <tm-icon
-            _class="px-24"
+            :color="store.tmStore.dark ? 'yellow' : ''"
+            :font-size="32"
+            name="tmicon-ios-color-palette"
+            @click="toThemes"
+          />
+          <tm-icon
             :color="store.tmStore.dark ? 'yellow' : ''"
             :font-size="32"
             name="tmicon-ios-sunny"
@@ -105,14 +111,14 @@ const logoColor = computed(() => {
     </tm-navbar>
 
     <tm-sheet :margin="[0, 0]" :follow-theme="true">
-      <view class="flex-row flex-row-center-start">
+      <view class="uno-flex uno-items-center">
         <tm-image :width="64" :height="64" src="/static/svg/favicon.svg" />
-        <view class="pl-16 flex-1" style="width: 0px">
-          <tm-text _class="text-weight-b" :font-size="36" label="Uniapp Starter" />
+        <view class="uno-flex-auto uno-pl-8px uno-w-0">
+          <tm-text _class="uno-font-bold" :font-size="36" label="Uniapp Starter" />
           <tm-text
-            _class="opacity-6 uno-mt-3px"
+            _class="uno-mt-3px uno-opacity-60"
             :font-size="24"
-            label="cli 方式基于 uniapp vue next 快速开发解决方案"
+            label="cli 方式 uniapp vue next 快速开发解决方案"
           />
         </view>
       </view>
@@ -156,7 +162,7 @@ const logoColor = computed(() => {
     </view>
 
     <tm-sheet :margin="[30, 30]" :round="3">
-      <tm-text :font-size="24" _class="font-weight-b" label="主题" />
+      <tm-text :font-size="24" _class="uno-font-bold" label="主题" />
       <tm-divider :margin="[0, 10]" />
       <view class="uno-flex uno-justify-around">
         <tm-button :width="120" size="small" label="默认" icon="tmicon-redo" @click="setTheme('')" />
