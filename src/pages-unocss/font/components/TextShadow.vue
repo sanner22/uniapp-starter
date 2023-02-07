@@ -1,8 +1,15 @@
+<script setup lang="ts">
+import { useTmpiniaStore } from '@/tmui/tool/lib/tmpinia'
+
+const dark = useTmpiniaStore().tmStore.dark
+</script>
+
 <template>
-  <view class="uno-p-2">
-    <view class="uno-text-2xl uno-text-center uno-my-3">
-      text-shadow
-    </view>
+  <view class="uno-text-xl uno-font-bold">
+    text-shadow
+  </view>
+  <tm-divider />
+  <view :style="{ '--un-text-shadow-color': dark ? '#fff' : '#000' }">
     <view class="uno-text-shadow">
       text-shadow
     </view>

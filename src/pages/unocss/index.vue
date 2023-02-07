@@ -1,14 +1,11 @@
-<!-- eslint-disable unused-imports/no-unused-vars -->
 <script setup lang="ts">
 import { ref } from 'vue'
 import { onLoad } from '@dcloudio/uni-app'
 import Iconify from '@/components/Iconify/index.vue'
-import { useTmpiniaStore } from '@/tmui/tool/lib/tmpinia'
-
-const store = useTmpiniaStore()
 
 const list = [
   { name: '字体 font', path: '/pages-unocss/font/index', icon: 'i-material-symbols-font-download-outline-rounded' },
+  { name: '图标 icon', path: '/pages-unocss/icon/index', icon: 'i-mdi-emoticon-kiss-outline' },
   { name: '尺寸 size', path: '/pages-unocss/size/index', icon: 'i-mdi-move-resize' },
   { name: '阴影 shadow', path: '/pages-unocss/shadow/index', icon: 'i-vaadin-square-shadow' },
   { name: '边框 border', path: '/pages-unocss/border/index', icon: 'i-material-symbols-border-outer-rounded' },
@@ -26,7 +23,6 @@ const list = [
   { name: '分割线 divide', path: '/pages-unocss/divide/index', icon: 'i-radix-icons-divider-horizontal' },
   { name: '@apply', path: '/pages-unocss/apply/index', icon: 'i-fluent-text-change-accept-20-filled' },
   { name: '分组 group', path: '/pages-unocss/group/index', icon: 'i-carbon-cics-system-group' },
-  { name: '图标 icon', path: '/pages-unocss/icon/index', icon: 'i-mdi-emoticon-kiss-outline' },
 ]
 
 const to = (to: string) => {
@@ -37,7 +33,7 @@ const to = (to: string) => {
 
 // loading
 const loading = ref(true)
-onLoad((e) => {
+onLoad((_e) => {
   loading.value = false
 })
 </script>
@@ -60,7 +56,7 @@ onLoad((e) => {
           _class="uno-center"
           @click="to(item.path)"
         >
-          <iconify :icon="item.icon" :color="store.tmStore.dark ? '#fff' : ''" />
+          <iconify :icon="item.icon" />
           <tm-text class="uno-mt-6px" _class="uno-ellipsis" :label="item.name" :font-size="12" unit="px" />
         </tm-sheet>
       </view>

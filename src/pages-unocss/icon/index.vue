@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import Iconify from '@/components/Iconify/index.vue'
-import { useTmpiniaStore } from '@/tmui/tool/lib/tmpinia'
+import { setClipboardData, toast } from '@/tmui/tool/function/util'
 
-const store = useTmpiniaStore()
 const group = [
   {
     name: 'Material Line Icons',
@@ -16,7 +15,6 @@ const group = [
       'i-line-md-bell-twotone',
       'i-line-md-calendar',
       'i-line-md-cancel',
-      'i-line-md-check-list-3',
       'i-line-md-check-list-3-twotone',
       'i-line-md-chevron-small-triple-right',
       'i-line-md-cloud',
@@ -63,12 +61,35 @@ const group = [
     ],
   },
 ]
+
+const copyLink = (url: string) => {
+  setClipboardData(url)
+  toast('复制成功', true, 'success')
+}
 </script>
 
 <template>
   <tm-app>
-    <tm-sheet v-for="(g, index) in group" :key="index">
-      <tm-text :label="g.name" />
+    <tm-sheet _class="uno-gap-10px">
+      <tm-text
+        label="unocss 预设 iconify，支持全网所有开源图标，这里只陈列了随机挑选的3个图标集"
+        :font-size="14" unit="px"
+      />
+      <view uno-flex="~ row" class="uno-justify-between uno-items-center">
+        <tm-text
+          label="图标集：https://icon-sets.iconify.design/"
+          :font-size="12" unit="px"
+          selectable
+          class="uno-opacity-70"
+        />
+        <iconify icon="i-bx-copy-alt" @click="copyLink('https://icon-sets.iconify.design/')" />
+      </view>
+    </tm-sheet>
+    <tm-sheet v-for="(g, index) in group" :key="index" :margin="[32, 0, 32, 32]">
+      <view uno-flex="~ row" class="uno-items-center uno-justify-between">
+        <tm-text :label="g.name" />
+        <tm-text :font-size="10" unit="px" :label="`i-${g.alias}-[name]`" class="uno-opacity-75" />
+      </view>
       <tm-divider :margin="[10, 20]" />
       <view class="uno-grid uno-grid-cols-3 uno-gap-10px uno-justify-items-center">
         <tm-sheet
@@ -79,10 +100,10 @@ const group = [
           :round="5"
           :height="72"
           unit="px"
-          class="uno-w-full uno-flex uno-flex-col"
+          class="uno-w-full"
           _class="uno-center uno-text-center"
         >
-          <iconify :icon="iconName" :color="store.tmStore.dark ? '#fff' : ''" size="32px" />
+          <iconify :icon="iconName" size="32px" />
           <tm-text :font-size="12" class="uno-mt-10px">
             {{ iconName.replace(`i-${g.alias}-`, '') }}
           </tm-text>
