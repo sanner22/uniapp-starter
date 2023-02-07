@@ -1160,6 +1160,24 @@
             "ignoreAuth": true
           }
         },
+        {
+          "path": "group/index",
+          "style": {
+            "navigationBarTitleText": "group 分组"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        {
+          "path": "icon/index",
+          "style": {
+            "navigationBarTitleText": "icon 图标"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
         // #endregion
       ]
     }

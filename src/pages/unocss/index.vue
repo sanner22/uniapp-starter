@@ -25,6 +25,8 @@ const list = [
   { name: '间隔 gap', path: '/pages-unocss/gap/index', icon: 'i-carbon-name-space' },
   { name: '分割线 divide', path: '/pages-unocss/divide/index', icon: 'i-radix-icons-divider-horizontal' },
   { name: '@apply', path: '/pages-unocss/apply/index', icon: 'i-fluent-text-change-accept-20-filled' },
+  { name: '分组 group', path: '/pages-unocss/group/index', icon: 'i-carbon-cics-system-group' },
+  { name: '图标 icon', path: '/pages-unocss/icon/index', icon: 'i-mdi-emoticon-kiss-outline' },
 ]
 
 const to = (to: string) => {
