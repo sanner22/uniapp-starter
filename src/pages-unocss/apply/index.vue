@@ -18,7 +18,9 @@
 }
 
 .bg-unocss {
-  @apply uno-w-100px uno-h-100px uno-bg-cover uno-mx-auto uno-bg-[url(https://img.cdn.sugarat.top/mdImg/MTY2ODA4OTc3MjcyMg==unocss-icon-gray.svg)] uno-mb-15px;
+  --logo: url(https://img.cdn.sugarat.top/mdImg/MTY2ODA4OTc3MjcyMg==unocss-icon-gray.svg);
+  background-image: var(--logo);
+  @apply uno-w-100px uno-h-100px uno-bg-cover uno-mx-auto uno-mb-15px;
 }
 
 .bg-to-r {

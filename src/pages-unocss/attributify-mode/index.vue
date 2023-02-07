@@ -1,44 +1,51 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useTmpiniaStore } from '@/tmui/tool/lib/tmpinia'
+
+const dark = useTmpiniaStore().tmStore.dark
+</script>
 
 <template>
-  <tm-app>
-    <view class="uno-p-2">
-      <button uno-text="sm green" uno-p="y-2 x-4" uno-m="4" my-attr="y-1 x-2 sm">
-        text-sm text-green p-y-2 p-x-4
-      </button>
-      <button uno-text-sm uno-text-blue uno-py-2 uno-px-4 uno-m-4>
-        不生效，规则武略了无值属性
-      </button>
-      <button uno-text="sm blue" uno-p="y-2 x-4" uno-m="4">
-        有值模式, text-sm text-blue p-y-2 p-x-4
-      </button>
-      <button uno-border="~ red solid" uno-m="4">
-        border border-solid border-red
-      </button>
-      <button uno-flex="~ col wrap" class="uno-m-4 uno-p-2">
-        <text uno-text="sm">
-          flex
+  <tm-app :class="dark ? 'uno-text-white' : ''">
+    <tm-sheet>
+      <view uno-flex="~ col gap-y-15px">
+        <view uno-text="sm green" uno-p="y-2 x-4" my-attr="y-1 x-2 sm" uno-bg="#333:30">
+          text-sm text-green p-y-2 p-x-4
+        </view>
+        <view uno-text-sm uno-text-blue uno-py-2 uno-px-4 uno-bg="#333:30">
+          无值属性，被规则忽略，不会生效
+        </view>
+        <view uno-text="sm blue" uno-p="y-2 x-4" uno-bg="#333:30">
+          有值模式, text-sm text-blue p-y-2 p-x-4
+        </view>
+        <view uno-border="~ red solid" uno-bg="#333:30">
+          border border-solid border-red
+        </view>
+        <view uno-flex="~ col wrap" uno-p="2" uno-bg="#333:30">
+          <text uno-text="sm">
+            flex
+          </text>
+          <text uno-text="sm">
+            flex-col
+          </text>
+          <text uno-text="sm">
+            flex-wrap
+          </text>
+        </view>
+
+        <text uno-text="red" uno-bg="#333:30">
+          避免与 text 的属性冲突 text-red
         </text>
-        <text uno-text="sm">
-          flex-col
-        </text>
-        <text uno-text="sm">
-          flex-wrap
-        </text>
-      </button>
-      <text uno-text="red">
-        避免与 text 的属性冲突 text-red
-      </text>
-      <view uno-bg="#333:30" uno-text="white">
-        bg-hex-#333:30 text-white
+        <view uno-bg="#333:30" uno-text="yellow">
+          bg-hex-#333:30 text-yellow
+        </view>
+        <view uno-bg="[#11dddd]:80">
+          bg-hex-#11dddd:80
+        </view>
+        <view uno-bg="#2ecc71:50">
+          bg-hex-#2ecc71:50
+        </view>
       </view>
-      <view uno-bg="[#11dddd]:80">
-        bg-hex-#11dddd:30
-      </view>
-      <view uno-bg="#2ecc71:50">
-        bg-hex-#2ecc71:30
-      </view>
-    </view>
+    </tm-sheet>
   </tm-app>
 </template>
 

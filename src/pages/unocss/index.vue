@@ -5,8 +5,8 @@ import Iconify from '@/components/Iconify/index.vue'
 
 const list = [
   { name: '字体 font', path: '/pages-unocss/font/index', icon: 'i-material-symbols-font-download-outline-rounded' },
-  { name: '图标 icon', path: '/pages-unocss/icon/index', icon: 'i-mdi-emoticon-kiss-outline' },
-  { name: '尺寸 size', path: '/pages-unocss/size/index', icon: 'i-mdi-move-resize' },
+  { name: '图标 icon', path: '/pages-unocss/icon/index', icon: 'i-line-md-iconify1' },
+  { name: '尺寸 size', path: '/pages-unocss/size/index', icon: 'i-line-md-arrows-diagonal-rotated' },
   { name: '阴影 shadow', path: '/pages-unocss/shadow/index', icon: 'i-vaadin-square-shadow' },
   { name: '边框 border', path: '/pages-unocss/border/index', icon: 'i-material-symbols-border-outer-rounded' },
   { name: '边距 spacing', path: '/pages-unocss/spacing/index', icon: 'i-icon-park-twotone-distribute-horizontal-spacing' },
@@ -21,7 +21,7 @@ const list = [
   { name: '间隔 space', path: '/pages-unocss/space/index', icon: 'i-carbon-name-space' },
   { name: '间隔 gap', path: '/pages-unocss/gap/index', icon: 'i-carbon-name-space' },
   { name: '分割线 divide', path: '/pages-unocss/divide/index', icon: 'i-radix-icons-divider-horizontal' },
-  { name: '@apply', path: '/pages-unocss/apply/index', icon: 'i-fluent-text-change-accept-20-filled' },
+  { name: '指令 apply', path: '/pages-unocss/apply/index', icon: 'i-fluent-text-change-accept-20-filled' },
   { name: '分组 group', path: '/pages-unocss/group/index', icon: 'i-carbon-cics-system-group' },
 ]
 

@@ -1017,6 +1017,15 @@
           }
         },
         {
+          "path": "icon/index",
+          "style": {
+            "navigationBarTitleText": "图标"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        {
           "path": "size/index",
           "style": {
             "navigationBarTitleText": "尺寸"
@@ -1154,7 +1163,7 @@
         {
           "path": "apply/index",
           "style": {
-            "navigationBarTitleText": "apply 演示"
+            "navigationBarTitleText": "指令"
           },
           "meta": {
             "ignoreAuth": true
@@ -1163,21 +1172,12 @@
         {
           "path": "group/index",
           "style": {
-            "navigationBarTitleText": "group 分组"
+            "navigationBarTitleText": "分组"
           },
           "meta": {
             "ignoreAuth": true
           }
-        },
-        {
-          "path": "icon/index",
-          "style": {
-            "navigationBarTitleText": "icon 图标"
-          },
-          "meta": {
-            "ignoreAuth": true
-          }
-        },
+        }
         // #endregion
       ]
     }
