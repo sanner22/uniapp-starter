@@ -6,7 +6,7 @@ import { judgePlatform } from '@/utils/platform'
 import tmApp from '@/tmui/components/tm-app/tm-app.vue'
 import { useTmpiniaStore } from '@/tmui/tool/lib/tmpinia'
 import { componentGroups } from '@/pages/tmui-components/components'
-import Iconify from '@/components/iconify/index.vue'
+import Iconify from '@/components/Iconify/index.vue'
 const store = useTmpiniaStore()
 
 const platform = CURRENT_PLATFORM
