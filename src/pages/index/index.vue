@@ -6,7 +6,7 @@ import { judgePlatform } from '@/utils/platform'
 import tmApp from '@/tmui/components/tm-app/tm-app.vue'
 import { useTmpiniaStore } from '@/tmui/tool/lib/tmpinia'
 import { componentGroups } from '@/pages/tmui-components/components'
-
+import Iconify from '@/components/iconify/index.vue'
 const store = useTmpiniaStore()
 
 const platform = CURRENT_PLATFORM
@@ -87,23 +87,23 @@ const logoColor = computed(() => {
 
     <tm-navbar title="Uniapp Starter" :shadow="0" hide-home>
       <template #left>
-        <view class="uno-flex uno-items-center uno-gap-12px uno-ml-12px">
-          <tm-icon
-            :color="store.tmStore.dark ? 'primary' : ''"
-            :font-size="32"
-            name="tmicon-menu"
+        <view class="uno-flex uno-items-center uno-gap-10px uno-ml-12px">
+          <iconify
+            icon="i-line-md-menu-fold-right"
+            size="20px"
+            :color="store.tmStore.dark ? '#009fe8' : ''"
             @click="showf = true"
           />
-          <tm-icon
-            :color="store.tmStore.dark ? 'yellow' : ''"
-            :font-size="32"
-            name="tmicon-ios-color-palette"
+          <iconify
+            icon="i-ion-color-palette"
+            size="20px"
+            :color="store.tmStore.dark ? '#cc8500' : ''"
             @click="toThemes"
           />
-          <tm-icon
-            :color="store.tmStore.dark ? 'yellow' : ''"
-            :font-size="32"
-            name="tmicon-ios-sunny"
+          <iconify
+            :icon="store.tmStore.dark ? 'i-line-md-moon-filled-to-sunny-filled-loop-transition' : 'i-line-md-sunny-filled-loop-to-moon-filled-loop-transition'"
+            :color="store.tmStore.dark ? '#FFFB01' : ''"
+            size="20px"
             @click="toggleDark"
           />
         </view>
