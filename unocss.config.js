@@ -37,6 +37,7 @@ export default defineConfig({
   shortcuts: [
     {
       'uno-center': 'uno-flex uno-justify-center uno-items-center',
+      'uno-ellipsis': 'uno-break-keep uno-truncate', // 不换行，截断显示省略号
       'uno-border-demo': 'uno-border-2px uno-border-red-500_75 uno-border-solid', // 用于 unocss 示例演示
     },
   ],

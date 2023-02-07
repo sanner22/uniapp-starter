@@ -10,14 +10,14 @@ const store = useTmpiniaStore()
 const list = [
   { name: '字体 font', path: '/pages-unocss/font/index', icon: 'i-material-symbols-font-download-outline-rounded' },
   { name: '尺寸 size', path: '/pages-unocss/size/index', icon: 'i-mdi-move-resize' },
-  { name: '阴影 shadow', path: '/pages-unocss/shadow/index', icon: 'i-tabler-inner-shadow-bottom-right' },
+  { name: '阴影 shadow', path: '/pages-unocss/shadow/index', icon: 'i-vaadin-square-shadow' },
   { name: '边框 border', path: '/pages-unocss/border/index', icon: 'i-material-symbols-border-outer-rounded' },
   { name: '边距 spacing', path: '/pages-unocss/spacing/index', icon: 'i-icon-park-twotone-distribute-horizontal-spacing' },
   { name: '快捷 shortcuts', path: '/pages-unocss/shortcuts/index', icon: 'i-material-symbols-switch-access-shortcut' },
   { name: '响应式 :class', path: '/pages-unocss/class/index', icon: 'i-ic-twotone-hotel-class' },
   { name: '颜色 color', path: '/pages-unocss/color/index', icon: 'i-ic-twotone-color-lens' },
   { name: '属性 attributify', path: '/pages-unocss/attributify-mode/index', icon: 'i-ic-twotone-edit-attributes' },
-  { name: '动画 animation', path: '/pages-unocss/animation/index', icon: 'i-clarity-animation-line' },
+  { name: '动画 animation', path: '/pages-unocss/animation/index', icon: 'i-line-md-uploading-loop' },
   { name: '背景 bg', path: '/pages-unocss/bg/index', icon: 'i-ant-design-bg-colors-outlined' },
   { name: '伪类 first-last', path: '/pages-unocss/first-last/index', icon: 'i-material-symbols-first-page' },
   { name: '奇偶 odd-even', path: '/pages-unocss/odd-even/index', icon: 'i-fluent-number-row-24-regular' },
@@ -49,30 +49,18 @@ onLoad((e) => {
     <view class="uno-px-15px">
       <tm-skeleton v-if="loading" :rows="3" />
       <view v-else class="uno-grid uno-grid-cols-3 uno-gap-10px uno-justify-items-center">
-        <!-- <tm-sheet
+        <tm-sheet
+          v-for="(item, index) in list"
+          :key="index"
           :margin="[0, 0]"
           :round="5"
-          follow-theme
           class="uno-w-full uno-flex uno-flex-col"
           _class="uno-center"
-          v-for="(item, index) in list"
-          :key="index"
           @click="to(item.path)"
         >
-          <iconify :icon="item.icon"></iconify>
-          <tm-text class="uno-mt-6px">{{ item.name }}</tm-text>
-        </tm-sheet> -->
-        <view
-          v-for="(item, index) in list"
-          :key="index"
-          class="uno-w-full uno-h-60px uno-shadow-md uno-rounded-md uno-bg-gray uno-center uno-flex-col"
-          @click="to(item.path)"
-        >
-          <iconify :icon="item.icon" />
-          <view class="uno-mt-6px uno-text-12px">
-            {{ item.name }}
-          </view>
-        </view>
+          <iconify :icon="item.icon" :color="store.tmStore.dark ? '#fff' : ''" />
+          <tm-text class="uno-mt-6px" _class="uno-ellipsis" :label="item.name" :font-size="12" unit="px" />
+        </tm-sheet>
       </view>
     </view>
   </tm-app>
