@@ -1,7 +1,7 @@
 <script lang="ts" setup name="Iconify">
 import { computed } from 'vue'
 import { isNumber } from '@/utils/is'
-
+import { useTmpiniaStore } from '@/tmui/tool/lib/tmpinia'
 const props = defineProps({
   icon: {
     type: String,
@@ -18,8 +18,14 @@ const props = defineProps({
 
 const emit = defineEmits(['click'])
 
+const store = useTmpiniaStore()
+
 const _size = computed(() => {
   return isNumber(props.size) ? `${props.size}px` : props.size
+})
+
+const _color = computed(() => {
+  return props.color ? props.color : store.tmStore.dark ? '#fff' : ''
 })
 
 const onClick = () => {
@@ -37,7 +43,7 @@ const onClick = () => {
     vertical-align: middle;
     height: v-bind('_size');
     width: v-bind('_size');
-    color: v-bind('color');
+    color: v-bind('_color');
     &:hover {
       cursor: pointer;
       opacity: 0.8;
