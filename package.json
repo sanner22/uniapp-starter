@@ -50,7 +50,7 @@
     "@dcloudio/uni-cli-shared": "3.0.0-3061820230117001",
     "@dcloudio/uni-stacktracey": "3.0.0-3061820230117001",
     "@dcloudio/vite-plugin-uni": "3.0.0-3061820230117001",
-    "@iconify/json": "^2.2.6",
+    "@iconify/json": "^2.2.18",
     "@types/crypto-js": "^4.1.1",
     "@types/lodash-es": "^4.17.6",
     "@types/node": "^17.0.45",
