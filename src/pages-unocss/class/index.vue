@@ -20,23 +20,19 @@ const c2 = computed(() => {
 
 <template>
   <tm-app>
-    <view class="uno-p-2">
-      <button class="uno-w-300rpx uno-p-2 uno-bg-green-200 uno-text-center uno-mb-15px" @click="onChange">
-        change flag
-      </button>
-
+    <tm-sheet :margin="[32]">
       <view class="uno-mb-3 uno-text-xs" :class="{ 'uno-bg-blue-600:80': flag, 'uno-text-green-600/80': !flag }">
-        {{ c1 }}
+        <tm-text :label="JSON.stringify(c1)" />
       </view>
       <view class="uno-mb-3 uno-text-xs" :class="c1">
-        {{ c1 }}
+        <tm-text :label="JSON.stringify(c1)" />
       </view>
 
       <view class="uno-mb-3 uno-text-xs" :class="[!flag ? 'uno-text-yellow-600/80' : 'uno-text-green-600/80']">
-        {{ c2 }}
+        <tm-text :label="`${c2}`" />
       </view>
       <view class="uno-mb-3 uno-text-xs" :class="[!flag ? 'uno-bg-blue-600:80' : 'uno-bg-red-600:80']">
-        {{ c2 }}
+        <tm-text :label="`${c2}`" />
       </view>
       <view
         class="uno-mb-3 uno-text-xs"
@@ -45,9 +41,13 @@ const c2 = computed(() => {
           !flag ? 'uno-text-yellow-600/80' : 'uno-text-green-600/80',
         ]"
       >
-        {{ c2 }}
+        <tm-text :label="`${c2}`" />
       </view>
-    </view>
+
+      <tm-button color="primary" class="uno-mt-15px" block @click="onChange">
+        change flag
+      </tm-button>
+    </tm-sheet>
   </tm-app>
 </template>
 

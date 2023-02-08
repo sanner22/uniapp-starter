@@ -7,11 +7,9 @@ import BorderColor from './components/BorderColor.vue'
 
 <template>
   <tm-app>
-    <view class="uno-bg-gray uno-m-2">
-      <border-radius />
-      <border-width />
-      <border-style />
-      <border-color />
-    </view>
+    <border-radius />
+    <border-width />
+    <border-style />
+    <border-color />
   </tm-app>
 </template>

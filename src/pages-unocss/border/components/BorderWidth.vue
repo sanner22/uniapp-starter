@@ -1,49 +1,34 @@
 <template>
-  <view class="uno-p-2">
-    <view class="uno-text-2xl uno-text-center uno-my-3">
-      border-width
-    </view>
-    <view class="uno-center uno-flex-col">
-      <view
-        class="uno-w-half uno-h-200rpx uno-mb-3 uno-bg-blue-100 uno-center uno-text-center uno-border-0 uno-border-black"
-      >
-        border-0
+  <tm-sheet :margin="[32, 0, 32, 32]">
+    <tm-text label="border-width" :font-size="20" unit="px" />
+    <tm-divider />
+
+    <view uno-flex="~ col gap-y-15px">
+      <view class="uno-h-80px uno-bg-blue-300_30 uno-center uno-border-solid uno-border-0 uno-border-yellow">
+        <tm-text label="border-0" />
       </view>
-      <view
-        class="uno-w-half uno-h-200rpx uno-mb-3 uno-bg-blue-100 uno-center uno-text-center uno-border uno-border-black"
-      >
-        border
+      <view class="uno-h-80px uno-bg-blue-300_30 uno-center uno-border-solid uno-border uno-border-yellow">
+        <tm-text label="border" />
       </view>
-      <view
-        class="uno-w-half uno-h-200rpx uno-mb-3 uno-bg-blue-100 uno-center uno-text-center uno-border-base uno-border-black"
-      >
-        border-base
+      <view class="uno-h-80px uno-bg-blue-300_30 uno-center uno-border-solid uno-border-base uno-border-yellow">
+        <tm-text label="border-base" />
       </view>
-      <view
-        class="uno-w-half uno-h-200rpx uno-mb-3 uno-bg-blue-100 uno-center uno-text-center uno-border-2rpx uno-border-black"
-      >
-        border-2
+      <view class="uno-h-80px uno-bg-blue-300_30 uno-center uno-border-solid uno-border-2px uno-border-yellow">
+        <tm-text label="border-2" />
       </view>
-      <view
-        class="uno-w-half uno-h-200rpx uno-mb-3 uno-bg-blue-100 uno-center uno-text-center uno-border-4rpx uno-border-black"
-      >
-        border-4
+      <view class="uno-h-80px uno-bg-blue-300_30 uno-center uno-border-solid uno-border-4px uno-border-yellow">
+        <tm-text label="border-4" />
       </view>
-      <view
-        class="uno-w-half uno-h-200rpx uno-mb-3 uno-bg-blue-100 uno-center uno-text-center uno-border-6rpx uno-border-black"
-      >
-        border-6
+      <view class="uno-h-80px uno-bg-blue-300_30 uno-center uno-border-solid uno-border-6px uno-border-yellow">
+        <tm-text label="border-6" />
       </view>
-      <view
-        class="uno-w-half uno-h-200rpx uno-mb-3 uno-bg-blue-100 uno-center uno-text-center uno-border-8rpx uno-border-black"
-      >
-        border-8
+      <view class="uno-h-80px uno-bg-blue-300_30 uno-center uno-border-solid uno-border-8px uno-border-yellow">
+        <tm-text label="border-8" />
       </view>
-      <view
-        class="uno-w-half uno-h-200rpx uno-mb-3 uno-bg-blue-100 uno-center uno-text-center uno-border-10rpx uno-border-black"
-      >
-        border-10
+      <view class="uno-h-80px uno-bg-blue-300_30 uno-center uno-border-solid uno-border-10px uno-border-yellow">
+        <tm-text label="border-10" />
       </view>
     </view>
-  </view>
+  </tm-sheet>
+  <view class="uno-p-2" />
 </template>

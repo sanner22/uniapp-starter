@@ -4,12 +4,13 @@
       <tm-text :font-size="16" unit="px">
         uno-flex="~ row wrap" 等效于 class="uno-flex uno-flex-row uno-flex-wrap"
       </tm-text>
-    </tm-sheet>
+      <tm-divider />
 
-    <view uno-flex="~ row wrap" class="uno-gap-10px uno-mx-15px">
-      <view v-for="(item, index) in 5" :key="index" class="uno-w-150px uno-bg-blue_70 hover:uno-bg-yellow_50">
-        <tm-text :label="item" class="uno-p-5px" />
+      <view uno-flex="~ row wrap gap-10px">
+        <view v-for="(item, index) in 10" :key="index" class="uno-w-1/5 uno-bg-blue_30 hover:uno-bg-yellow_30">
+          <tm-text :label="item" class="uno-p-5px" />
+        </view>
       </view>
-    </view>
+    </tm-sheet>
   </tm-app>
 </template>

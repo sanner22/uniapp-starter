@@ -1,17 +1,17 @@
 <template>
   <tm-app>
-    <view class="uno-center uno-flex-col">
-      <view class="uno-w-300rpx uno-h-300rpx uno-bg-red-200 uno-center uno-my-3">
-        center
+    <tm-sheet :margin="[32]">
+      <view uno-flex="~ col gap-y-10px">
+        <view class="uno-h-80px uno-bg-red-200_30 uno-center">
+          <tm-text label="center" />
+        </view>
+        <view class="uno-h-80px uno-bg-red-200_30 uno-center uno-border-demo">
+          <tm-text label="border-demo" />
+        </view>
+        <view class="uno-mt-10px">
+          <tm-text label="快捷方式在 unocss.config.js 中设置" />
+        </view>
       </view>
-      <view class="uno-w-300rpx uno-h-300rpx uno-bg-white uno-center uno-border-demo">
-        border-demo
-      </view>
-      <view class="uno-mt-10px">
-        快捷方式在 unocss.config.js 中设置
-      </view>
-    </view>
+    </tm-sheet>
   </tm-app>
 </template>
-
-<style lang="scss" scoped></style>
