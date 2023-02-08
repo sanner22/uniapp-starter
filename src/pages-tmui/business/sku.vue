@@ -180,7 +180,7 @@ function buy(e: any) {
     <view class="pa-32">
       <tm-button
         label="打开购买窗口"
-        block
+        block class="uno-flex uno-flex-row" _class="uno-flex-auto"
         linear="left"
         linear-deep="accent"
         color="red"

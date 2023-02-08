@@ -60,13 +60,13 @@
     <tm-sheet>
       <tm-text :font-size="24" _class="font-weight-b" label="渐变样式,更多属性见文档" />
       <tm-divider />
-      <tm-button loading linear="right" block label="light 加载中" />
-      <tm-button linear="right" block label="light" />
-      <tm-button linear="right" linear-deep="dark" block label="dark 被禁用" />
-      <tm-button disabled linear="right" linear-deep="dark" block label="dark 被禁用" />
-      <tm-button linear="right" linear-deep="accent" block label="accent" />
-      <tm-button color="pink" linear="right" linear-deep="accent" block label="accent" />
-      <tm-button color="orange" linear="right" linear-deep="accent" block label="accent top" />
+      <tm-button loading linear="right" block class="uno-flex uno-flex-row" _class="uno-flex-auto" label="light 加载中" />
+      <tm-button linear="right" block class="uno-flex uno-flex-row" _class="uno-flex-auto" label="light" />
+      <tm-button linear="right" linear-deep="dark" block class="uno-flex uno-flex-row" _class="uno-flex-auto" label="dark 被禁用" />
+      <tm-button disabled linear="right" linear-deep="dark" block class="uno-flex uno-flex-row" _class="uno-flex-auto" label="dark 被禁用" />
+      <tm-button linear="right" linear-deep="accent" block class="uno-flex uno-flex-row" _class="uno-flex-auto" label="accent" />
+      <tm-button color="pink" linear="right" linear-deep="accent" block class="uno-flex uno-flex-row" _class="uno-flex-auto" label="accent" />
+      <tm-button color="orange" linear="right" linear-deep="accent" block class="uno-flex uno-flex-row" _class="uno-flex-auto" label="accent top" />
     </tm-sheet>
   </tm-app>
 </template>

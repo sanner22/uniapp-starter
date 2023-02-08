@@ -44,11 +44,9 @@ const c2 = computed(() => {
         <tm-text :label="`${c2}`" />
       </view>
 
-      <tm-button color="primary" class="uno-mt-15px" block @click="onChange">
+      <tm-button color="primary" block class="uno-mt-15px uno-flex uno-flex-row" _class="uno-flex-auto" @click="onChange">
         change flag
       </tm-button>
     </tm-sheet>
   </tm-app>
 </template>
-
-<style lang="scss" scoped></style>

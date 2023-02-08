@@ -82,7 +82,7 @@ async function openDrawer() {
       <tm-text :font-size="24" _class="font-weight-b" label="下面是通过ref.open打开返回Promise示例。" />
       <tm-divider />
       <view class="">
-        <tm-button block color="green" :font-size="28" label="Ref打开,返回Promise" @click="openDrawer" />
+        <tm-button block class="uno-flex uno-flex-row" _class="uno-flex-auto" color="green" :font-size="28" label="Ref打开,返回Promise" @click="openDrawer" />
       </view>
     </tm-sheet>
     <tm-modal v-model:show="showWin" title="信息框" content="主体内容哦" />

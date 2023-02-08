@@ -13,7 +13,7 @@ const jumpList1 = () => {
       页面构建中...
     </tm-sheet>
     <view class="uno-p-15px">
-      <tm-button color="primary" size="small" block @click="jumpList1">
+      <tm-button color="primary" size="small" block class="uno-flex uno-flex-row" _class="uno-flex-auto" @click="jumpList1">
         List1 →
       </tm-button>
     </view>

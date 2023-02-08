@@ -129,7 +129,7 @@ function onclick(item: any) {
         </tm-grid-item>
       </tm-grid>
       <!-- #ifndef MP -->
-      <tm-button v-if="!showAll" block label="展示所有图标(过多会卡)" @click="onShowAll" />
+      <tm-button v-if="!showAll" block class="uno-flex uno-flex-row" _class="uno-flex-auto" label="展示所有图标(过多会卡)" @click="onShowAll" />
       <!-- #endif -->
     </tm-sheet>
   </tm-app>

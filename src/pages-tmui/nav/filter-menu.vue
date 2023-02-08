@@ -71,10 +71,10 @@ const radioList3 = ref([
         </tm-checkbox-group>
         <view class="flex flex-row flex-row-between">
           <view class="pl-24 pr-12 flex-1">
-            <tm-button :shadow="0" text :outlined="true" block label="取消" @click="filter.close()" />
+            <tm-button :shadow="0" text :outlined="true" block class="uno-flex uno-flex-row" _class="uno-flex-auto" label="取消" @click="filter.close()" />
           </view>
           <view class="pr-24 pl-12 flex-1">
-            <tm-button block :border="1" label="确认" @click="filter.close()" />
+            <tm-button block class="uno-flex uno-flex-row" _class="uno-flex-auto" :border="1" label="确认" @click="filter.close()" />
           </view>
         </view>
       </tm-filterMenu-item>

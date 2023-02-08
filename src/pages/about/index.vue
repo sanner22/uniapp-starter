@@ -34,17 +34,17 @@ const handleLoginOut = () => {
         </view>
       </view>
       <view class="cell">
-        <tm-button color="primary" block @click="handleJump('/pages/log/index?id=4345&title=log')">
+        <tm-button color="primary" block class="uno-flex uno-flex-row" _class="uno-flex-auto" @click="handleJump('/pages/log/index?id=4345&title=log')">
           log
         </tm-button>
       </view>
       <view v-if="isLogin" class="cell">
-        <tm-button color="red" block @click="handleLoginOut">
+        <tm-button color="red" block class="uno-flex uno-flex-row" _class="uno-flex-auto" @click="handleLoginOut">
           登出
         </tm-button>
       </view>
       <view v-else class="cell">
-        <tm-button color="green" block @click="handleJump('/pages/login/index')">
+        <tm-button color="green" block class="uno-flex uno-flex-row" _class="uno-flex-auto" @click="handleJump('/pages/login/index')">
           登入
         </tm-button>
       </view>

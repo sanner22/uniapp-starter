@@ -190,10 +190,10 @@ const showPickerFun = () => {
       <tm-form-item :border="false">
         <view class="flex flex-row">
           <view class="flex-1 mr-32">
-            <tm-button form-type="submit" label="提交表单" block />
+            <tm-button form-type="submit" label="提交表单" block class="uno-flex uno-flex-row" _class="uno-flex-auto" />
           </view>
           <view class="flex-1">
-            <tm-button :shadow="0" text form-type="reset" label="重置表单" block />
+            <tm-button :shadow="0" text form-type="reset" label="重置表单" block class="uno-flex uno-flex-row" _class="uno-flex-auto" />
           </view>
         </view>
       </tm-form-item>

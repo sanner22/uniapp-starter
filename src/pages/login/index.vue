@@ -51,7 +51,7 @@ const submit = (e: any) => {
               <input type="password" name="password" :value="form.password">
             </view>
           </label>
-          <tm-button block form-type="submit" class="submit-btn" hover-class="none">
+          <tm-button block class="uno-flex uno-flex-row submit-btn" _class="uno-flex-auto" form-type="submit" hover-class="none">
             登录
           </tm-button>
         </form>
