@@ -1,10 +1,10 @@
 <template>
   <tm-app>
     <tm-sheet :margin="[32, 32, 32, 32]">
-      <tm-text label="padding" :font-size="20" unit="px" />
+      <tm-text label="padding 内边距" :font-size="20" unit="px" />
       <tm-divider />
       <!--  -->
-      <view uno-flex="~ row wrap gap-10px">
+      <view uno-flex="~ row wrap gap-10px" class="uno-items-start">
         <view class="uno-bg-blue-300_30 uno-center uno-p-0">
           <tm-text label="p-0" />
         </view>
@@ -45,65 +45,93 @@
     </tm-sheet>
 
     <tm-sheet :margin="[32, 0, 32, 32]">
-      <tm-text label="margin" :font-size="20" unit="px" />
+      <tm-text label="margin 外边距" :font-size="20" unit="px" />
       <tm-divider />
       <!--  -->
-      <view uno-flex="~ row wrap gap-10px" class="uno-bg-yellow-300_30">
-        <view class="uno-bg-blue-300_30 uno-m-0">
-          <tm-text label="m-0" />
+      <view uno-flex="~ row wrap gap-10px">
+        <view class="uno-bg-blue-300_30">
+          <view class="uno-bg-yellow-300_30 uno-m-0">
+            <tm-text label="m-0" />
+          </view>
         </view>
-        <view class="uno-bg-blue-300_30 uno-m-1">
-          <tm-text label="m-1" />
+
+        <view class="uno-bg-blue-300_30">
+          <view class="uno-bg-yellow-300_30 uno-m-1">
+            <tm-text label="m-1" />
+          </view>
         </view>
-        <view class="uno-bg-blue-300_30 uno-m-2">
-          <tm-text label="m-2" />
+        <view class="uno-bg-blue-300_30">
+          <view class="uno-bg-yellow-300_30 uno-m-2">
+            <tm-text label="m-2" />
+          </view>
         </view>
-        <view class="uno-bg-blue-300_30 uno-m-3">
-          <tm-text label="m-3" />
+        <view class="uno-bg-blue-300_30">
+          <view class="uno-bg-yellow-300_30 uno-m-3">
+            <tm-text label="m-3" />
+          </view>
         </view>
-        <view class="uno-bg-blue-300_30 uno-m-4">
-          <tm-text label="m-4" />
+        <view class="uno-bg-blue-300_30">
+          <view class="uno-bg-yellow-300_30 uno-m-4">
+            <tm-text label="m-4" />
+          </view>
         </view>
-        <view class="uno-bg-blue-300_30 uno-m-none">
-          <tm-text label="m-none" />
+        <view class="uno-bg-blue-300_30">
+          <view class="uno-bg-yellow-300_30 uno-m-none">
+            <tm-text label="m-none" />
+          </view>
         </view>
-        <view class="uno-bg-blue-300_30 uno-m-xs">
-          <tm-text label="m-xs" />
+        <view class="uno-bg-blue-300_30">
+          <view class="uno-bg-yellow-300_30 uno-m-xs">
+            <tm-text label="m-xs" />
+          </view>
         </view>
-        <view class="uno-bg-blue-300_30 uno-m-sm">
-          <tm-text label="m-sm" />
+        <view class="uno-bg-blue-300_30">
+          <view class="uno-bg-yellow-300_30 uno-m-sm">
+            <tm-text label="m-sm" />
+          </view>
         </view>
-        <view class="uno-bg-blue-300_30 uno-m-md">
-          <tm-text label="m-md" />
+        <view class="uno-bg-blue-300_30">
+          <view class="uno-bg-yellow-300_30 uno-m-md">
+            <tm-text label="m-md" />
+          </view>
         </view>
-        <view class="uno-bg-blue-300_30 uno-m-lg">
-          <tm-text label="m-lg" />
+        <view class="uno-bg-blue-300_30">
+          <view class="uno-bg-yellow-300_30 uno-m-lg">
+            <tm-text label="m-lg" />
+          </view>
         </view>
-        <view class="uno-bg-blue-300_30 uno-m-xl">
-          <tm-text label="m-xl" />
+        <view class="uno-bg-blue-300_30">
+          <view class="uno-bg-yellow-300_30 uno-m-xl">
+            <tm-text label="m-xl" />
+          </view>
         </view>
-        <view class="uno-bg-blue-300_30 uno-m-2xl">
-          <tm-text label="m-2xl" />
+        <view class="uno-bg-blue-300_30">
+          <view class="uno-bg-yellow-300_30 uno-m-2xl">
+            <tm-text label="m-2xl" />
+          </view>
         </view>
       </view>
     </tm-sheet>
 
     <tm-sheet :margin="[32, 0, 32, 32]">
-      <tm-text label="position" :font-size="20" unit="px" />
+      <tm-text label="position 定位" :font-size="20" unit="px" />
       <tm-divider />
       <!--  -->
-      <view class="uno-bg-yellow-300_30 uno-relative uno-w-full uno-h-100vw">
-        <view class="uno-bg-blue-300_30 uno-absolute uno-top-20">
-          <tm-text label="top" />
+      <view class="uno-bg-blue-300_30 uno-relative uno-w-full uno-h-90vw">
+        <view class="uno-bg-yellow-300_30 uno-absolute uno-top-40px">
+          <tm-text label="top-40px" />
         </view>
-        <view class="uno-bg-blue-300_30 uno-absolute uno-bottom-20">
-          <tm-text label="bottom" />
+        <view class="uno-bg-yellow-300_30 uno-absolute uno-bottom-40px">
+          <tm-text label="bottom-40px" />
         </view>
-        <view class="uno-bg-blue-300_30 uno-absolute uno-left-20">
-          <tm-text label="left" />
+        <view class="uno-bg-yellow-300_30 uno-absolute uno-left-40px">
+          <tm-text label="left-40px" />
         </view>
-        <view class="uno-bg-blue-300_30 uno-absolute uno-right-20">
-          <tm-text label="right" />
+        <view class="uno-bg-yellow-300_30 uno-absolute uno-right-40px">
+          <tm-text label="right-40px" />
+        </view>
+        <view class="uno-bg-yellow-300_30 uno-absolute uno-top-45vw uno-left-45vw">
+          <tm-text label="top-45vw left-45vw" />
         </view>
       </view>
     </tm-sheet>

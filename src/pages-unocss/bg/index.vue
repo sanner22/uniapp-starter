@@ -1,11 +1,5 @@
-<script setup lang="ts">
-import { useTmpiniaStore } from '@/tmui/tool/lib/tmpinia'
-
-const dark = useTmpiniaStore().tmStore.dark
-</script>
-
 <template>
-  <tm-app :class="dark ? 'uno-text-white' : ''">
+  <tm-app>
     <tm-sheet _class="uno-flex uno-flex-col uno-flex-gap-y-15px">
       <view class="uno-flex uno-justify-around !uno-p-10px">
         <view class="uno-w-100rpx uno-h-100rpx uno-bg-cover bg-local-logo" />
@@ -13,28 +7,28 @@ const dark = useTmpiniaStore().tmStore.dark
       </view>
 
       <view class="uno-center uno-h-60px uno-rounded-md uno-bg-gradient-to-t uno-from-#f39c12/60 uno-via-#2ecc71:80 uno-to-#9b59b6_70">
-        to-t
+        <tm-text label="to-t" />
       </view>
       <view class="uno-center uno-h-60px uno-rounded-md uno-bg-gradient-to-tr uno-from-#f39c12/60 uno-via-#2ecc71:80 uno-to-#9b59b6_70">
-        to-tr
+        <tm-text label="to-tr" />
       </view>
       <view class="uno-center uno-h-60px uno-rounded-md uno-bg-gradient-to-r uno-from-#f39c12/60 uno-via-#2ecc71:80 uno-to-#9b59b6_70">
-        to-r
+        <tm-text label="to-r" />
       </view>
       <view class="uno-center uno-h-60px uno-rounded-md uno-bg-gradient-to-br uno-from-#f39c12/60 uno-via-#2ecc71:80 uno-to-#9b59b6_70">
-        to-br
+        <tm-text label="to-br" />
       </view>
       <view class="uno-center uno-h-60px uno-rounded-md uno-bg-gradient-to-b uno-from-#f39c12/60 uno-via-#2ecc71:80 uno-to-#9b59b6_70">
-        to-b
+        <tm-text label="to-b" />
       </view>
       <view class="uno-center uno-h-60px uno-rounded-md uno-bg-gradient-to-bl uno-from-#f39c12/60 uno-via-#2ecc71:80 uno-to-#9b59b6_70">
-        to-bl
+        <tm-text label="to-bl" />
       </view>
       <view class="uno-center uno-h-60px uno-rounded-md uno-bg-gradient-to-l uno-from-#f39c12/60 uno-via-#2ecc71:80 uno-to-#9b59b6_70">
-        to-l
+        <tm-text label="to-l" />
       </view>
       <view class="uno-center uno-h-60px uno-rounded-md uno-bg-gradient-to-tl uno-from-#f39c12/60 uno-via-#2ecc71:80 uno-to-#9b59b6_70">
-        to-tl
+        <tm-text label="to-tl" />
       </view>
     </tm-sheet>
   </tm-app>

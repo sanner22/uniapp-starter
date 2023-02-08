@@ -7,10 +7,9 @@ const store = useTmpiniaStore()
 <template>
   <tm-app :class="store.tmStore.dark ? 'uno-text-white' : ''">
     <tm-sheet>
-      <view class="uno-text-xl uno-font-bold">
-        width
-      </view>
+      <tm-text label="width" :font-size="20" unit="px" />
       <tm-divider />
+
       <view class="uno-h-20px uno-bg-blue-9_25 uno-mb-10px uno-w-xs">
         w-xs
       </view>
@@ -74,10 +73,9 @@ const store = useTmpiniaStore()
     </tm-sheet>
 
     <tm-sheet :margin="[32, 0, 32, 32]">
-      <view class="uno-text-xl uno-font-bold">
-        height (左右滑动看全部)
-      </view>
+      <tm-text label="height (左右滑动看全部)" :font-size="20" unit="px" />
       <tm-divider />
+
       <view class="uno-flex uno-flex-row uno-gap-15px uno-overflow-x-auto uno-overflow-y-hidden uno-h-300px uno-bg-green-500_30">
         <view class="item uno-h-xs">
           <text class="text">
@@ -163,10 +161,9 @@ const store = useTmpiniaStore()
     </tm-sheet>
 
     <tm-sheet :margin="[32, 0, 32, 32]">
-      <view class="uno-text-xl uno-font-bold">
-        box sizing
-      </view>
+      <tm-text label="box sizing" :font-size="20" unit="px" />
       <tm-divider />
+
       <view class="uno-box-border uno-w-full uno-h-100px uno-p-15px uno-bg-blue-300_30 uno-center uno-mb-10px">
         border-box w-full h-250px p-4
       </view>

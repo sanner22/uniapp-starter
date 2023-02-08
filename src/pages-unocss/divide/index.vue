@@ -1,64 +1,52 @@
-<script setup lang="ts">
-import { useTmpiniaStore } from '@/tmui/tool/lib/tmpinia'
-
-const dark = useTmpiniaStore().tmStore.dark
-</script>
-
 <template>
-  <tm-app :class="dark ? 'uno-text-white' : ''">
+  <tm-app>
     <tm-sheet>
-      <view class="uno-text-xl uno-font-bold">
-        divide-x
-      </view>
+      <tm-text label="divide-x" :font-size="20" unit="px" />
       <tm-divider />
 
       <view class="uno-flex uno-h-50rpx uno-divide-x uno-divide-yellow-500:50">
         <view class="uno-flex-1 uno-center">
-          view
+          <tm-text label="view" />
         </view>
         <view class="uno-flex-1 uno-center">
-          view
+          <tm-text label="view" />
         </view>
         <view class="uno-flex-1 uno-center">
-          view
+          <tm-text label="view" />
         </view>
       </view>
     </tm-sheet>
 
     <tm-sheet>
-      <view class="uno-text-xl uno-font-bold">
-        divide-y
-      </view>
+      <tm-text label="divide-y" :font-size="20" unit="px" />
       <tm-divider />
 
       <view class="uno-divide-y uno-divide-blue">
         <view class="uno-center">
-          view
+          <tm-text label="view" />
         </view>
         <view class="uno-center">
-          view
+          <tm-text label="view" />
         </view>
         <view class="uno-center">
-          view
+          <tm-text label="view" />
         </view>
       </view>
     </tm-sheet>
 
     <tm-sheet>
-      <view class="uno-text-xl uno-font-bold">
-        divide-(number)
-      </view>
+      <tm-text label="divide-(number)" :font-size="20" unit="px" />
       <tm-divider />
 
       <view class="uno-divide-y-20 uno-divide-red-500 uno-divide-opacity-50">
         <view class="uno-center">
-          view
+          <tm-text label="view" />
         </view>
         <view class="uno-center">
-          view
+          <tm-text label="view" />
         </view>
         <view class="uno-center">
-          view
+          <tm-text label="view" />
         </view>
       </view>
     </tm-sheet>
