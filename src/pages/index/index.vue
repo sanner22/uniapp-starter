@@ -14,6 +14,7 @@ const isVue3 = judgePlatform(PLATFORMS.VUE3)
 const showf = ref(false)
 
 const router = useRouter()
+const sysinfo = uni.$tm.u.getWindow()
 
 const handleGetStarted = () => {
   router.pushTab('/pages/tmui-components/index')
@@ -54,13 +55,17 @@ const logoColor = computed(() => {
       <tm-sheet
         :margin="[0, 0]"
         :padding="[0, 0]"
-        color="tnt"
+        color="primary"
         linear-deep="accent"
         linear="bottom"
         unit="px"
         :height="sys.height"
         _class="uno-h-full uno-flex uno-flex-col"
       >
+        <!-- 状态栏 -->
+        <view :style="{ height: `${sysinfo.sysinfo.statusBarHeight}px` }" />
+
+        <!-- 菜单部分 -->
         <view uno-flex="auto">
           <view class="uno-flex uno-justify-between uno-items-center uno-p-10px">
             <tm-text label="Uniapp Starter" />
