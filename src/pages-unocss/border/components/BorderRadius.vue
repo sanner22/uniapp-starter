@@ -5,7 +5,7 @@
 
     <view uno-flex="~ col gap-y-15px">
       <view class="uno-h-80px uno-bg-blue-300_30 uno-center uno-rounded-none">
-        <tm-text label="" />
+        <tm-text label="rounded-none" />
       </view>
       <view class="uno-h-80px uno-bg-blue-300_30 uno-center uno-rounded-sm">
         <tm-text label="rounded-sm" />
