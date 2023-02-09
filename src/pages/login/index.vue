@@ -4,6 +4,10 @@ import { onLoad } from '@dcloudio/uni-app'
 import { useAuthStore } from '@/state/modules/auth'
 import { Toast } from '@/utils/uniapi/prompt'
 import { useRouter } from '@/hooks/router'
+import { useTmpiniaStore } from '@/tmui/tool/lib/tmpinia'
+import tmApp from '@/tmui/components/tm-app/tm-app.vue'
+import Iconify from '@/components/Iconify/index.vue'
+const store = useTmpiniaStore()
 
 const redirect = ref<string | undefined>(undefined)
 onLoad((query) => {
@@ -15,10 +19,20 @@ const router = useRouter()
 const form = reactive({
   email: 'uni-app@test.com',
   password: 'Vue3_Ts_Vite',
+  accept: false,
 })
 const authStore = useAuthStore()
 const submit = (e: any) => {
-  authStore.login(e.detail.value).then(() => {
+  if (!form.email || !form.password) {
+    Toast('账号 & 密码 必填', { mask: false })
+    return
+  }
+  if (!form.accept) {
+    Toast('请阅读并同意用户隐私政策', { mask: false })
+    return
+  }
+  console.log(e)
+  authStore.login(form).then(() => {
     Toast('登录成功', { duration: 1500 })
     setTimeout(() => {
       if (redirect.value) {
@@ -29,73 +43,67 @@ const submit = (e: any) => {
     }, 1500)
   })
 }
+
+// 切换暗黑模式
+const app = ref<InstanceType<typeof tmApp> | null>(null)
+const toggleDark = () => {
+  // 切换暗黑模式
+  app.value?.setDark()
+}
 </script>
 
 <template>
-  <tm-app>
-    <view class="container">
-      <view class="title">
-        登录
-      </view>
-      <view class="form-wrap">
-        <form class="form" @submit="submit">
-          <label class="form-item">
-            <view class="form-label">邮箱:</view>
-            <view class="form-element">
-              <input name="email" :value="form.email">
-            </view>
-          </label>
-          <label class="form-item">
-            <view class="form-label">密码:</view>
-            <view class="form-element">
-              <input type="password" name="password" :value="form.password">
-            </view>
-          </label>
-          <tm-button block class="uno-flex uno-flex-row submit-btn" _class="uno-flex-auto" form-type="submit" hover-class="none">
-            登录
-          </tm-button>
-        </form>
-      </view>
+  <tm-app ref="app">
+    <tm-navbar title="用户登录" :shadow="0" hide-home>
+      <template #right>
+        <view class="uno-flex uno-items-center uno-gap-10px uno-mr-12px">
+          <iconify
+            :icon="store.tmStore.dark ? 'i-line-md-moon-filled-to-sunny-filled-loop-transition' : 'i-line-md-sunny-filled-loop-to-moon-filled-loop-transition'"
+            :color="store.tmStore.dark ? '#FFFB01' : ''"
+            size="20px"
+            @click="toggleDark"
+          />
+        </view>
+      </template>
+    </tm-navbar>
+
+    <view uno-flex-auto uno-center class="uno-bg-gradient-to-br uno-from-#007dbf:10 uno-via-#009fe8:20 uno-to-#007dbf:10">
+      <tm-form id="form" uno-w-75vw _class="uno-flex uno-flex-col uno-gap-y-20px" transprent :margin="[0]" :padding="[32]" @submit="submit">
+        <view uno-center uno-flex-col>
+          <tm-image src="/static/svg/favicon.svg" :width="80" :height="80" unit="px" uno-mb-30px />
+          <tm-text label="LOGIN" :font-size="24" unit="px" uno-font-bold />
+          <tm-text label="欢迎您登录" uno-opacity-40 />
+        </view>
+
+        <view>
+          <tm-input
+            v-model="form.email"
+            placeholder="请输入用户名" prefix="tmicon-user-fill"
+            focus-color="primary" linear="right"
+            :margin="[0, 24]" :round="15" :border="10"
+          />
+          <tm-input
+            v-model="form.password"
+            password placeholder="请输入密码" prefix="tmicon-lock-fill"
+            focus-color="primary" linear="right"
+            :margin="[0, 24]" :round="15" :border="10"
+          />
+          <view uno-flex="~ row" uno-justify-end>
+            <navigator url="/pages/login/forget-password" open-type="navigate" uno-flex="~ row" uno-justify-end>
+              <tm-text label="忘记密码？" :color="store.tmStore.color || 'primary'" />
+            </navigator>
+          </view>
+        </view>
+
+        <tm-button label="登录" icon="tmicon-unlock" linear="right" linear-deep="accent" :round="15" block class="uno-flex uno-flex-row" _class="uno-flex-auto" form-type="submit" />
+
+        <view uno-flex="~ row" uno-items-center>
+          <tm-checkbox v-model="form.accept" label="我已经阅读并同意" :size="36" :font-size="24" />
+          <tm-text label="《用户隐私政策》" :font-size="24" :color="store.tmStore.color || 'primary'" />
+        </view>
+      </tm-form>
     </view>
   </tm-app>
 </template>
 
-<style lang="scss" scoped>
-  .container {
-    margin: 0 auto;
-    width: 80%;
-    .title {
-      padding: 320rpx 0 32rpx 0;
-      text-align: center;
-    }
-    .form-wrap {
-      padding: 20rpx 24rpx;
-      box-shadow: 16rpx 16rpx 30rpx #e5e7eb;
-      .form {
-        .form-item {
-          display: flex;
-          height: 88rpx;
-          border-bottom: 2rpx solid #dbeafe;
-          align-items: center;
-          .form-label {
-            min-width: 96rpx;
-          }
-          .form-element {
-            flex-grow: 1;
-          }
-        }
-        .submit-btn {
-          margin-top: 44rpx;
-          border: 4rpx solid #bfdbfe;
-          background-color: #60a5fa;
-          border-radius: 8rpx;
-          font-size: 28rpx;
-          color: #ffffff;
-          :hover {
-            background-color: #3b82f6;
-          }
-        }
-      }
-    }
-  }
-</style>
+<style lang="scss" scoped></style>
