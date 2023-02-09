@@ -34,7 +34,7 @@
     {
       "path": "pages/unocss/index",
       "style": {
-        "navigationBarTitleText": "unocss 示例"
+        "navigationBarTitleText": "UnoCSS 示例"
       },
       "meta": {
         "ignoreAuth": true
@@ -1212,7 +1212,7 @@
       },
       {
         "pagePath": "pages/unocss/index",
-        "text": "unocss",
+        "text": "UnoCSS",
         "iconPath": "static/images/tabBar/category.png",
         "selectedIconPath": "static/images/tabBar/selectedCategory.png"
       },

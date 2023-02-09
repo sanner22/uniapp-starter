@@ -33,20 +33,21 @@ const handleLoginOut = () => {
 
     <view class="uno-bg-gradient-to-br uno-from-#007dbf:10 uno-via-#009fe8:20 uno-to-#007dbf:10">
       <tm-sheet :round="6" :padding="[30]" :url="!isLogin ? '/pages/login/index' : ''">
-        <view uno-flex="~ row">
+        <view uno-flex="~ row" uno-items-center>
           <tm-image v-if="isLogin" src="/static/svg/favicon.svg" :height="48" :width="48" unit="px" />
           <tm-image v-else src="/static/images/avatar.png" :height="48" :width="48" unit="px" />
-          <view uno-mx-10px uno-flex-auto>
-            <tm-text :label="isLogin ? '测试用户' : '点此登录'" :font-size="18" unit="px" uno-font-bold uno-mb-10px uno-ml-5px />
-            <tm-tag label="新锐会员 ⭐" color="orange" text :round="25" size="m" :shadow="0" :margin="[0]" />
+          <view uno-flex="~ col auto" uno-mx-10px>
+            <tm-text :label="isLogin ? '测试用户' : '点此登录'" :font-size="18" unit="px" uno-font-bold uno-mb-5px uno-ml-5px />
+            <tm-tag v-if="isLogin" label="新锐会员 ⭐" color="orange" text :round="25" size="m" :shadow="0" :margin="[0]" />
           </view>
-          <view uno-flex="~ row gap-x-10px">
+          <view uno-flex="~ row gap-x-10px" :class="[isLogin ? 'uno-self-start' : '']">
+            <!-- 右侧3个管理按钮，登录后靠顶对齐 -->
             <iconify icon="i-ri-customer-service-2-line" />
             <iconify icon="i-ri-settings-5-line" />
             <iconify v-if="isLogin" icon="i-ri-logout-box-r-fill" color="orange" @click="handleLoginOut" />
           </view>
         </view>
-        <view uno-mt-15px>
+        <view v-if="isLogin" uno-mt-15px>
           <tm-text label="距离铜牌还差980.00元" :font-size="24" />
           <tm-progress :percent="5" linear="right" color="red" :width="635" />
           <view uno-flex="~ row" uno-justify-between>
@@ -87,27 +88,27 @@ const handleLoginOut = () => {
       <tm-sheet :round="6" :padding="[30]" :margin="[32, 0, 32, 32]">
         <view uno-grid="~ cols-4 gap-15px">
           <view uno-flex="~ col gap-y-8px" uno-items-center>
-            <tm-text label="0" :font-size="36" />
+            <tm-text :label="isLogin ? 0 : '-'" :font-size="36" />
             <tm-text label="优惠券" :font-size="24" />
           </view>
           <view uno-flex="~ col gap-y-8px" uno-items-center>
-            <tm-text label="0" :font-size="36" />
+            <tm-text :label="isLogin ? 0 : '-'" :font-size="36" />
             <tm-text label="会员券" :font-size="24" />
           </view>
           <view uno-flex="~ col gap-y-8px" uno-items-center>
-            <tm-text label="0" :font-size="36" />
+            <tm-text :label="isLogin ? 0 : '-'" :font-size="36" />
             <tm-text label="礼品码" :font-size="24" />
           </view>
           <view uno-flex="~ col gap-y-8px" uno-items-center>
-            <tm-text label="0" :font-size="36" />
+            <tm-text :label="isLogin ? 0 : '-'" :font-size="36" />
             <tm-text label="免邮卡" :font-size="24" />
           </view>
           <view uno-flex="~ col gap-y-8px" uno-items-center>
-            <tm-text label="0" :font-size="36" />
+            <tm-text :label="isLogin ? 0 : '-'" :font-size="36" />
             <tm-text label="积分" :font-size="24" />
           </view>
           <view uno-flex="~ col gap-y-8px" uno-items-center>
-            <tm-text label="￥ 0.00" :font-size="36" />
+            <tm-text :label="isLogin ? '￥ 0.00' : '-'" :font-size="36" />
             <tm-text label="红包" :font-size="24" />
           </view>
         </view>
