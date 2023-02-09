@@ -12,23 +12,23 @@ const dark = useTmpiniaStore().tmStore.dark
           text-sm text-green p-y-2 p-x-4
         </view>
         <view uno-text-sm uno-text-blue uno-py-2 uno-px-4 uno-bg="#333:30">
-          无值属性，被规则忽略，不会生效
+          无值模式 text-sm text-blue py-2 px-4
         </view>
         <view uno-text="sm blue" uno-p="y-2 x-4" uno-bg="#333:30">
           有值模式, text-sm text-blue p-y-2 p-x-4
         </view>
-        <view uno-border="~ red solid" uno-bg="#333:30">
-          border border-solid border-red
+        <view uno-border="~ red solid" uno-p="y-2 x-4" uno-bg="#333:30">
+          组合模式 border border-solid border-red
         </view>
         <view uno-flex="~ col wrap" uno-p="2" uno-bg="#333:30">
           <text uno-text="sm">
-            flex
+            flex="~ col wrap"
           </text>
           <text uno-text="sm">
-            flex-col
+            view
           </text>
           <text uno-text="sm">
-            flex-wrap
+            view
           </text>
         </view>
 
