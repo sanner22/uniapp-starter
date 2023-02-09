@@ -31,7 +31,7 @@ const handleLoginOut = () => {
       </template>
     </tm-navbar>
 
-    <view class="uno-bg-gradient-to-br uno-from-#007dbf:10 uno-via-#009fe8:20 uno-to-#007dbf:10">
+    <view class="uno-bg-gradient-to-br uno-from-#007dbf:10 uno-via-#009fe8:20 uno-to-#007dbf:10 uno-flex-auto">
       <tm-sheet :round="6" :padding="[30]" :url="!isLogin ? '/pages/login/index' : ''">
         <view uno-flex="~ row" uno-items-center>
           <tm-image v-if="isLogin" src="/static/svg/favicon.svg" :height="48" :width="48" unit="px" />
