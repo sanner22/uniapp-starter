@@ -2,17 +2,13 @@
 import { ref } from 'vue'
 import { onShow } from '@dcloudio/uni-app'
 import { useAuthStore } from '@/state/modules/auth'
-import { useRouter } from '@/hooks/router'
+import Iconify from '@/components/Iconify/index.vue'
 
 const authStore = useAuthStore()
 const isLogin = ref(false)
-const router = useRouter()
 onShow(() => {
   isLogin.value = authStore.isLogin
 })
-const handleJump = (url: string) => {
-  router.push(url)
-}
 
 // 登出
 const handleLoginOut = () => {
@@ -24,61 +20,146 @@ const handleLoginOut = () => {
 
 <template>
   <tm-app>
-    <view class="container">
-      <view class="head-wrap">
-        <view class="avatar">
-          <image class="img" src="/static/images/avatar.png" />
+    <tm-navbar title="用户中心" :shadow="0" hide-home>
+      <template #left>
+        <view uno-flex="~ row gap-x-10px" uno-items-center uno-ml-12px>
+          <iconify
+            icon="i-line-md-home-md-twotone"
+            size="20px"
+          />
         </view>
-        <view class="desc">
-          {{ isLogin ? '测试' : '未登入' }}
+      </template>
+    </tm-navbar>
+
+    <view class="uno-bg-gradient-to-br uno-from-#007dbf:10 uno-via-#009fe8:20 uno-to-#007dbf:10">
+      <tm-sheet :round="6" :padding="[30]" :url="!isLogin ? '/pages/login/index' : ''">
+        <view uno-flex="~ row">
+          <tm-image v-if="isLogin" src="/static/svg/favicon.svg" :height="48" :width="48" unit="px" />
+          <tm-image v-else src="/static/images/avatar.png" :height="48" :width="48" unit="px" />
+          <view uno-mx-10px uno-flex-auto>
+            <tm-text :label="isLogin ? '测试用户' : '点此登录'" :font-size="18" unit="px" uno-font-bold uno-mb-10px uno-ml-5px />
+            <tm-tag label="新锐会员 ⭐" color="orange" text :round="25" size="m" :shadow="0" :margin="[0]" />
+          </view>
+          <view uno-flex="~ row gap-x-10px">
+            <iconify icon="i-ri-customer-service-2-line" />
+            <iconify icon="i-ri-settings-5-line" />
+            <iconify v-if="isLogin" icon="i-ri-logout-box-r-fill" color="orange" @click="handleLoginOut" />
+          </view>
         </view>
-      </view>
-      <view class="cell">
-        <tm-button color="primary" block class="uno-flex uno-flex-row" _class="uno-flex-auto" @click="handleJump('/pages/log/index?id=4345&title=log')">
-          log
-        </tm-button>
-      </view>
-      <view v-if="isLogin" class="cell">
-        <tm-button color="red" block class="uno-flex uno-flex-row" _class="uno-flex-auto" @click="handleLoginOut">
-          登出
-        </tm-button>
-      </view>
-      <view v-else class="cell">
-        <tm-button color="green" block class="uno-flex uno-flex-row" _class="uno-flex-auto" @click="handleJump('/pages/login/index')">
-          登入
-        </tm-button>
-      </view>
+        <view uno-mt-15px>
+          <tm-text label="距离铜牌还差980.00元" :font-size="24" />
+          <tm-progress :percent="5" linear="right" color="red" :width="635" />
+          <view uno-flex="~ row" uno-justify-between>
+            <tm-text label="新锐" :font-size="12" unit="px" uno-opacity-75 />
+            <tm-text label="铜牌" :font-size="12" unit="px" uno-opacity-75 />
+            <tm-text label="银牌" :font-size="12" unit="px" uno-opacity-75 />
+            <tm-text label="金牌" :font-size="12" unit="px" uno-opacity-75 />
+          </view>
+        </view>
+      </tm-sheet>
+
+      <tm-sheet :round="6" :padding="[30]" :margin="[32, 0, 32, 32]">
+        <view uno-flex="~ row" uno-justify-between uno-items-center uno-mb-15px>
+          <tm-text label="我的订单" :font-size="36" uno-font-bold />
+          <tm-text label="查看全部订单" :font-size="24" uno-opacity-75 />
+        </view>
+
+        <view uno-grid="~ cols-4 gap-15px">
+          <view uno-flex="~ col gap-y-8px" uno-items-center>
+            <iconify icon="i-fluent-credit-card-clock-24-regular" :size="32" />
+            <tm-text label="待付款" :font-size="24" />
+          </view>
+          <view uno-flex="~ col gap-y-8px" uno-items-center>
+            <iconify icon="i-fluent-cart-24-regular" :size="32" />
+            <tm-text label="待收货" :font-size="24" />
+          </view>
+          <view uno-flex="~ col gap-y-8px" uno-items-center>
+            <iconify icon="i-fluent-gift-card-24-regular" :size="32" />
+            <tm-text label="待评价" :font-size="24" />
+          </view>
+          <view uno-flex="~ col gap-y-8px" uno-items-center>
+            <iconify icon="i-fluent-wallet-credit-card-24-regular" :size="32" />
+            <tm-text label="售后" :font-size="24" />
+          </view>
+        </view>
+      </tm-sheet>
+
+      <tm-sheet :round="6" :padding="[30]" :margin="[32, 0, 32, 32]">
+        <view uno-grid="~ cols-4 gap-15px">
+          <view uno-flex="~ col gap-y-8px" uno-items-center>
+            <tm-text label="0" :font-size="36" />
+            <tm-text label="优惠券" :font-size="24" />
+          </view>
+          <view uno-flex="~ col gap-y-8px" uno-items-center>
+            <tm-text label="0" :font-size="36" />
+            <tm-text label="会员券" :font-size="24" />
+          </view>
+          <view uno-flex="~ col gap-y-8px" uno-items-center>
+            <tm-text label="0" :font-size="36" />
+            <tm-text label="礼品码" :font-size="24" />
+          </view>
+          <view uno-flex="~ col gap-y-8px" uno-items-center>
+            <tm-text label="0" :font-size="36" />
+            <tm-text label="免邮卡" :font-size="24" />
+          </view>
+          <view uno-flex="~ col gap-y-8px" uno-items-center>
+            <tm-text label="0" :font-size="36" />
+            <tm-text label="积分" :font-size="24" />
+          </view>
+          <view uno-flex="~ col gap-y-8px" uno-items-center>
+            <tm-text label="￥ 0.00" :font-size="36" />
+            <tm-text label="红包" :font-size="24" />
+          </view>
+        </view>
+      </tm-sheet>
+
+      <tm-sheet :round="6" :padding="[30]" :margin="[32, 0, 32, 32]">
+        <view uno-grid="~ cols-4 gap-15px">
+          <view uno-flex="~ col gap-y-8px" uno-items-center>
+            <iconify icon="i-clarity-favorite-line" :size="32" />
+            <tm-text label="商品收藏" :font-size="24" />
+          </view>
+          <view uno-flex="~ col gap-y-8px" uno-items-center>
+            <iconify icon="i-clarity-alarm-clock-outline-badged" :size="32" />
+            <tm-text label="浏览记录" :font-size="24" />
+          </view>
+          <view uno-flex="~ col gap-y-8px" uno-items-center>
+            <iconify icon="i-clarity-search-line" :size="32" />
+            <tm-text label="防伪查询" :font-size="24" />
+          </view>
+          <view uno-flex="~ col gap-y-8px" uno-items-center>
+            <iconify icon="i-clarity-store-line" :size="32" />
+            <tm-text label="附近门店" :font-size="24" />
+          </view>
+        </view>
+      </tm-sheet>
+
+      <tm-sheet :round="6" :padding="[30]" :margin="[32, 0, 32, 32]" border="1px" text color="orange" linear="bottom" linear-deep="light">
+        <view uno-flex="~ row" uno-justify-between uno-items-center uno-mb-15px>
+          <tm-text label="会员专享福利" :font-size="36" uno-font-bold />
+          <tm-text label="查看会员权益" :font-size="24" uno-opacity-75 />
+        </view>
+        <view uno-grid="~ cols-4 gap-15px">
+          <view uno-flex="~ col gap-y-8px" uno-items-center>
+            <iconify icon="i-icon-park-solid-coupon" :size="48" color="#ecc276" />
+            <tm-text label="50元券" :font-size="24" />
+          </view>
+          <view uno-flex="~ col gap-y-8px" uno-items-center>
+            <iconify icon="i-icon-park-solid-coupon" :size="48" color="#ecc276" />
+            <tm-text label="6折券" :font-size="24" />
+          </view>
+          <view uno-flex="~ col gap-y-8px" uno-items-center>
+            <iconify icon="i-icon-park-solid-coupon" :size="48" color="#ecc276" />
+            <tm-text label="6折生日券" :font-size="24" />
+          </view>
+          <view uno-flex="~ col gap-y-8px" uno-items-center>
+            <iconify icon="i-icon-park-solid-coupon" :size="48" color="#ecc276" />
+            <tm-text label="88折专券" :font-size="24" />
+          </view>
+        </view>
+      </tm-sheet>
     </view>
   </tm-app>
 </template>
 
-<style lang="scss" scoped>
-  .container {
-    padding: 96rpx 24rpx;
-    .head-wrap {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      .avatar {
-        height: 120rpx;
-        width: 120rpx;
-        border: 2rpx solid #d1d5db;
-        border-radius: 120rpx;
-        overflow: hidden;
-        padding: 6rpx;
-        .img {
-          height: 100%;
-          width: 100%;
-        }
-      }
-      .desc {
-        font-size: 28rpx;
-        line-height: 120rpx;
-      }
-    }
-    .cell {
-      margin-top: 60rpx;
-      text-align: center;
-    }
-  }
-</style>
+<style lang="scss" scoped></style>

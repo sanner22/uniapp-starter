@@ -56,7 +56,8 @@
     {
       "path": "pages/about/index",
       "style": {
-        "navigationBarTitleText": "关于"
+        "navigationBarTitleText": "用户中心",
+        "navigationStyle": "custom"
       },
       "meta": {
         "ignoreAuth": true
@@ -1223,7 +1224,7 @@
       },
       {
         "pagePath": "pages/about/index",
-        "text": "用户",
+        "text": "我的",
         "iconPath": "static/images/tabBar/about.png",
         "selectedIconPath": "static/images/tabBar/selectedAbout.png"
       }

@@ -55,8 +55,8 @@ const toggleDark = () => {
 <template>
   <tm-app ref="app">
     <tm-navbar title="用户登录" :shadow="0" hide-home>
-      <template #right>
-        <view class="uno-flex uno-items-center uno-gap-10px uno-mr-12px">
+      <template #left>
+        <view class="uno-flex uno-items-center uno-gap-10px uno-ml-12px">
           <iconify
             :icon="store.tmStore.dark ? 'i-line-md-moon-filled-to-sunny-filled-loop-transition' : 'i-line-md-sunny-filled-loop-to-moon-filled-loop-transition'"
             :color="store.tmStore.dark ? '#FFFB01' : ''"
