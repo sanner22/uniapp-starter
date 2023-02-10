@@ -45,7 +45,8 @@
     {
       "path": "pages/demo/index",
       "style": {
-        "navigationBarTitleText": "Demo"
+        "navigationBarTitleText": "模板示例",
+        "navigationStyle": "custom"
       },
       "meta": {
         "ignoreAuth": true
@@ -96,40 +97,6 @@
     }
   ],
   "subPackages": [
-    // {
-    //   "root": "pagesB",
-    //   "pages": [
-    //     {
-    //       "path": "detail/index",
-    //       "style": {
-    //         "navigationBarTitleText": "Detail"
-    //       },
-    //       "meta": {
-    //         "ignoreAuth": true
-    //       }
-    //     },
-    //     {
-    //       "path": "list/test1/index",
-    //       "style": {
-    //         "navigationBarTitleText": "test1"
-    //       },
-    //       "meta": {
-    //         "ignoreAuth": true
-    //       }
-    //     },
-    //     {
-    //       "path": "list/test2/index",
-    //       "style": {
-    //         "navigationBarTitleText": "test2",
-    //         "navigationStyle": "custom"
-    //       },
-    //       "meta": {
-    //         "ignoreAuth": true
-    //       }
-    //     }
-    //   ]
-    // }
-
     // pages-tmui
     {
       "root": "pages-tmui",
@@ -1180,6 +1147,74 @@
             "ignoreAuth": true
           }
         }
+        // #endregion
+      ]
+    },
+
+    // pages-demo
+    {
+      "root": "pages-demo",
+      "pages": [
+        // #region demo
+
+        // #region mall
+        {
+          "path": "mall/index",
+          "style": {
+            "navigationBarTitleText": "商城首页",
+            "navigationStyle": "custom"
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        {
+          "path": "mall/cart",
+          "style": {
+            "navigationBarTitleText": "购物车",
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        {
+          "path": "mall/category",
+          "style": {
+            "navigationBarTitleText": "分类",
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        {
+          "path": "mall/detail",
+          "style": {
+            "navigationBarTitleText": "商品详情",
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        {
+          "path": "mall/list",
+          "style": {
+            "navigationBarTitleText": "商品列表",
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        },
+        {
+          "path": "mall/search",
+          "style": {
+            "navigationBarTitleText": "搜索",
+          },
+          "meta": {
+            "ignoreAuth": true
+          }
+        }
+        // #endregion
+
         // #endregion
       ]
     }

@@ -30,7 +30,9 @@ const toggleDark = () => {
     </tm-navbar>
 
     <!-- 这里放置你的内容 -->
-    <view> 页面模板,新建pages,将此页面内容复制粘贴到新建.vue文件 </view>
+    <tm-sheet :round="5">
+      <tm-text label="页面模板,新建pages,将此页面内容复制粘贴到新建.vue文件" />
+    </tm-sheet>
   </tm-app>
 </template>
 
