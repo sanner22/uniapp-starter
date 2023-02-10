@@ -9,7 +9,7 @@ defineProps({
   },
   padding: {
     type: Array as PropType<Array<number>>,
-    default: () => [20, 8],
+    default: () => [20, 0],
   },
   round: {
     type: Number,
@@ -37,8 +37,8 @@ const theme = {
 </script>
 
 <template>
-  <tm-sheet :margin="margin" :padding="padding" :round="round" :color="theme.sheet" uno-border="~ solid #aaa! 1rpx!" @click="onClick">
-    <view uno-flex="~ row" uno-items-center>
+  <tm-sheet :margin="margin" :padding="padding" :round="round" :border="1" :height="60" :color="theme.sheet" @click="onClick">
+    <view uno-flex="~ row" uno-items-center uno-my-auto>
       <tm-text _class="i-uil-search" :font-size="fontSize" />
       <tm-divider vertical real-color :height="fontSize" :margin="[12]" color="#aaa" />
       <tm-text :label="placeholder" _class="uno-ellipsis" uno-flex-auto :font-size="fontSize" />
