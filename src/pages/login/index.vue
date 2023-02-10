@@ -39,7 +39,7 @@ const submit = (e: any) => {
         router.go(redirect.value, { replace: true })
         return
       }
-      router.pushTab('/pages/about/index')
+      router.pushTab('/pages/user/index')
     }, 1500)
   })
 }

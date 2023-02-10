@@ -20,16 +20,7 @@ const handleLoginOut = () => {
 
 <template>
   <tm-app>
-    <tm-navbar title="用户中心" :shadow="0" hide-home>
-      <template #left>
-        <view uno-flex="~ row gap-x-10px" uno-items-center uno-ml-12px>
-          <iconify
-            icon="i-line-md-home-md-twotone"
-            size="20px"
-          />
-        </view>
-      </template>
-    </tm-navbar>
+    <tm-navbar title="用户中心" :shadow="0" />
 
     <view class="uno-bg-gradient-to-br uno-from-#007dbf:10 uno-via-#009fe8:20 uno-to-#007dbf:10 uno-flex-auto">
       <tm-sheet :round="6" :padding="[30]" :url="!isLogin ? '/pages/login/index' : ''">

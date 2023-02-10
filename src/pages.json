@@ -52,9 +52,9 @@
       }
     },
 
-    // about
+    // user
     {
-      "path": "pages/about/index",
+      "path": "pages/user/index",
       "style": {
         "navigationBarTitleText": "用户中心",
         "navigationStyle": "custom"
@@ -1223,7 +1223,7 @@
         "selectedIconPath": "static/images/tabBar/selectedDemo.png"
       },
       {
-        "pagePath": "pages/about/index",
+        "pagePath": "pages/user/index",
         "text": "我的",
         "iconPath": "static/images/tabBar/about.png",
         "selectedIconPath": "static/images/tabBar/selectedAbout.png"
