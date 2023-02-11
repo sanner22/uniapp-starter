@@ -80,7 +80,8 @@ const starTabsList = [
 
       <view uno-grid="~ cols-3 gap-10px" uno-m-15px>
         <view v-for="(item, index) in logoList" :key="index">
-          <img :src="item" uno-w-full uno-rounded uno-shadow>
+          <!-- <img :src="item" uno-w-full uno-rounded uno-shadow> -->
+          <tm-image :src="item" :width="108" :height="45" unit="px" />
         </view>
       </view>
 
@@ -88,17 +89,24 @@ const starTabsList = [
         <tm-text label="尖货发售" :font-size="32" uno-font-bold />
         <tm-text label="滑动查看更多" :font-size="24" uno-opacity-75 />
       </view>
-      <tm-scrollx :width="sysinfo.width * 2 - 30 * 2" :height="207 * 2 + 30" uno-mx-15px uno-mb-15px>
-        <view uno-flex="~ row gap-10px">
-          <img v-for="(item, index) in scrollxList" :key="index" :src="item" uno-block uno-w-150px>
-        </view>
-      </tm-scrollx>
+      <view uno-mx-15px uno-mb-15px>
+        <tm-scrollx :width="sysinfo.width * 2 - 30 * 2" :height="207 * 2 + 30">
+          <view uno-flex="~ row gap-10px">
+            <!-- #ifdef H5 -->
+            <img v-for="(item, index) in scrollxList" :key="index" :src="item" uno-block uno-w-150px uno-h-207px>
+            <!-- #endif -->
+            <!-- #ifndef H5 -->
+            <tm-image v-for="(item, index) in scrollxList" :key="index" :src="item" :width="150" :height="207" unit="px" />
+            <!-- #endif -->
+          </view>
+        </tm-scrollx>
+      </view>
 
       <view uno-m="15px" uno-mt="0" uno-flex="~ row" uno-justify-between uno-items-end>
         <tm-text label="会员尊享权益" :font-size="32" uno-font-bold />
         <!-- <tm-text label="滑动查看更多" :font-size="24" uno-opacity-75 /> -->
       </view>
-      <img src="https://bizmid-material-online-1302115263.file.myqcloud.com/persist/ml1x6fmrer3z/ml1x6fmrer3z-%E4%BC%9A%E5%91%98%E6%9D%83%E7%9B%8A_03.jpg?imageMogr2/thumbnail/750x432!/strip/ignore-error/1" alt="" uno-block uno-w-full uno-my-16px>
+      <img src="https://bizmid-material-online-1302115263.file.myqcloud.com/persist/ml1x6fmrer3z/ml1x6fmrer3z-%E4%BC%9A%E5%91%98%E6%9D%83%E7%9B%8A_03.jpg?imageMogr2/thumbnail/750x432!/strip/ignore-error/1" alt="" uno-block uno-w-full uno-my-16px uno-h-188px>
       <!-- <view uno-grid="~ cols-2 gap-15px" uno-mx-15px uno-mb-15px>
         <img v-for="(item, index) in vipList" :key="index" :src="item" uno-block uno-w-full>
       </view> -->
@@ -107,7 +115,7 @@ const starTabsList = [
         <tm-text label="献礼情人节" :font-size="32" uno-font-bold />
         <tm-text label="💕" :font-size="24" uno-ml-2px />
       </view>
-      <img src="https://bizmid-material-online-1302115263.file.myqcloud.com/persist/mmp5z2ppaunk/mmp5z2ppaunk-%E4%BC%98%E6%83%A0%E5%88%B8.gif?imageMogr2/thumbnail/750x377!/strip/ignore-error/1" alt="" uno-block uno-w-full uno-my-16px>
+      <img src="https://bizmid-material-online-1302115263.file.myqcloud.com/persist/mmp5z2ppaunk/mmp5z2ppaunk-%E4%BC%98%E6%83%A0%E5%88%B8.gif?imageMogr2/thumbnail/750x377!/strip/ignore-error/1" alt="" uno-block uno-w-full uno-my-16px uno-h-188px>
       <!-- <tm-sheet color="pink" :padding="[32]" :round="5">
         <view uno-grid="~ cols-3">
           <view uno-flex="~ col" uno-center>
@@ -139,14 +147,14 @@ const starTabsList = [
         <view uno-rounded>
           <img
             src="https://bizmid-material-online-1302115263.file.myqcloud.com/persist/mkunt6ree4cf/mkunt6ree4cf-%E6%96%B0%E5%93%81%E4%B8%8A%E5%B8%82-%E9%9E%8B_04.png?imageMogr2/thumbnail/690x350!/strip/ignore-error/1" alt=""
-            uno-block uno-w-full
+            uno-block uno-w-full uno-h-175px
           >
         </view>
         <view uno-grid="~ cols-3 gap-10px" uno-my-15px>
           <view v-for="(item, index) in 6" :key="index" uno-flex="~ col">
             <img
               src="https://lining-goods-online-1302115263.file.myqcloud.com/data/lining/ARMT013-1/08c5268445ffd11e3360ad312456ffe5797c13616d860611265917cadf81915ab38624078f777ed3.jpg?imageMogr2/ignore-error/1" alt=""
-              uno-block uno-w-full
+              uno-block uno-w-full uno-h-108px
             >
             <tm-text label="[2023新品] 李宁日进斗金主题针织帽AMZT0003-1" :font-size="24" uno-my-10px />
             <view uno-flex="~ row" uno-items-end>
@@ -165,14 +173,14 @@ const starTabsList = [
         <view uno-rounded>
           <img
             src="https://bizmid-material-online-1302115263.file.myqcloud.com/persist/mkunt6ree4cf/mkunt6ree4cf-%E6%96%B0%E5%93%81%E4%B8%8A%E5%B8%82-%E9%9E%8B_04.png?imageMogr2/thumbnail/690x350!/strip/ignore-error/1" alt=""
-            uno-block uno-w-full
+            uno-block uno-w-full uno-h-175px
           >
         </view>
         <view uno-grid="~ cols-3 gap-10px" uno-my-15px>
           <view v-for="(item, index) in 6" :key="index" uno-flex="~ col">
             <img
               src="https://lining-goods-online-1302115263.file.myqcloud.com/data/lining/ARMT013-3/2b09822a98f4741e1070feed0929fdac4dd3d7dab7c347fa80fbdb85ccf21478b38624078f777ed3.jpg?imageMogr2/ignore-error/1" alt=""
-              uno-block uno-w-full
+              uno-block uno-w-full uno-h-108px
             >
             <tm-text label="[2023新品] 李宁日进斗金主题针织帽AMZT0003-1" :font-size="24" uno-my-10px />
             <view uno-flex="~ row" uno-items-end>

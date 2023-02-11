@@ -37,12 +37,18 @@ const searchFocus = ref(false)
 onLoad((query) => {
   query && query.focus as string === '1' && (searchFocus.value = true)
 })
+
+let stickyOffset = 0
+// #ifdef H5
+// h5 模式有个导航栏需要加上
+stickyOffset += (sysinfo.statusBarHeight + 44) * 2
+// #endif
 </script>
 
 <template>
   <tm-app>
     <tm-input prefix="tmicon-search" placeholder="查找你喜欢的商品吧" :focus="searchFocus" :round="0" />
-    <tm-sticky :offset="(sysinfo.statusBarHeight + 44) * 2">
+    <tm-sticky :offset="stickyOffset">
       <template #sticky>
         <tm-filterMenu ref="filter">
           <tm-filterMenu-item :height="450" title="综合">
@@ -98,7 +104,7 @@ onLoad((query) => {
       <view uno-p-15px>
         <view uno-grid="~ cols-2 gap-10px">
           <tm-sheet v-for="(item, index) in 10" :key="index" :margin="[0]" :padding="[16]" :round="5">
-            <img uno-w-full src="https://lining-goods-online-1302115263.file.myqcloud.com/data/lining/goods/image/AJMS107-9/bb93c3ec2a434625b656d1c2c10843f4.jpg?imageMogr2/quality/90/strip/format/webp">
+            <img uno-w-full uno-h-151px src="https://lining-goods-online-1302115263.file.myqcloud.com/data/lining/goods/image/AJMS107-9/bb93c3ec2a434625b656d1c2c10843f4.jpg?imageMogr2/quality/90/strip/format/webp">
             <tm-text label="[2023新品] 李宁日进斗金主题针织帽AMZT0003-1" :font-size="24" uno-my-15px />
             <view uno-flex="~ row" uno-items-end>
               <tm-text label="￥ 78.00" color="red" />

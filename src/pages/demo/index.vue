@@ -6,7 +6,7 @@ const router = useRouter()
 
 <template>
   <tm-app>
-    <tm-navbar title="用户中心" :shadow="0" />
+    <tm-navbar title="商城示例" :shadow="0" />
 
     <tm-sheet :round="5" url="/pages-demo/mall/index">
       <tm-text label="商城首页" :font-size="32" />
