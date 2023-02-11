@@ -90,7 +90,7 @@ const logoColor = computed(() => {
       </tm-sheet>
     </template>
 
-    <tm-navbar title="Uniapp Starter" :shadow="0" hide-home>
+    <tm-navbar title="Uniapp Starter" :shadow="0" hide-home hide-back>
       <template #left>
         <view class="uno-flex uno-items-center uno-gap-10px uno-ml-12px">
           <iconify
