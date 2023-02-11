@@ -1171,7 +1171,7 @@
         {
           "path": "mall/cart",
           "style": {
-            "navigationBarTitleText": "购物车",
+            "navigationBarTitleText": "购物车"
           },
           "meta": {
             "ignoreAuth": true
@@ -1180,7 +1180,7 @@
         {
           "path": "mall/category",
           "style": {
-            "navigationBarTitleText": "分类",
+            "navigationBarTitleText": "分类"
           },
           "meta": {
             "ignoreAuth": true
@@ -1189,7 +1189,7 @@
         {
           "path": "mall/detail",
           "style": {
-            "navigationBarTitleText": "商品详情",
+            "navigationBarTitleText": "商品详情"
           },
           "meta": {
             "ignoreAuth": true
@@ -1198,16 +1198,7 @@
         {
           "path": "mall/list",
           "style": {
-            "navigationBarTitleText": "商品列表",
-          },
-          "meta": {
-            "ignoreAuth": true
-          }
-        },
-        {
-          "path": "mall/search",
-          "style": {
-            "navigationBarTitleText": "搜索",
+            "navigationBarTitleText": "商品列表"
           },
           "meta": {
             "ignoreAuth": true

@@ -18,11 +18,6 @@ const router = useRouter()
       <tm-divider />
     </tm-sheet>
 
-    <tm-sheet :round="5" :margin="[32, 0, 32, 32]" url="/pages-demo/mall/search">
-      <tm-text label="搜索" :font-size="32" />
-      <tm-divider />
-    </tm-sheet>
-
     <tm-sheet :round="5" :margin="[32, 0, 32, 32]" url="/pages-demo/mall/list">
       <tm-text label="商品列表" :font-size="32" />
       <tm-divider />

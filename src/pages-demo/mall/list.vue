@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { Ref } from 'vue'
 import { ref } from 'vue'
+import { onLoad } from '@dcloudio/uni-app'
 import tmFilterMenu from '@/tmui/components/tm-filterMenu/tm-filterMenu.vue'
 
 const filter = ref<InstanceType<typeof tmFilterMenu | null>>(null)
@@ -31,11 +32,16 @@ const radioList3 = ref([
 ])
 
 const sysinfo = uni.$tm.u.getWindow()
+const searchFocus = ref(false)
+
+onLoad((query) => {
+  query && query.focus as string === '1' && (searchFocus.value = true)
+})
 </script>
 
 <template>
   <tm-app>
-    <tm-input prefix="tmicon-search" placeholder="查找你喜欢的商品吧" :round="0" />
+    <tm-input prefix="tmicon-search" placeholder="查找你喜欢的商品吧" :focus="searchFocus" :round="0" />
     <tm-sticky :offset="(sysinfo.statusBarHeight + 44) * 2">
       <template #sticky>
         <tm-filterMenu ref="filter">
