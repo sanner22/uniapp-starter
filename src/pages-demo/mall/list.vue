@@ -51,7 +51,7 @@ stickyOffset += (sysinfo.statusBarHeight + 44) * 2
     <tm-sticky :offset="stickyOffset">
       <template #sticky>
         <tm-filterMenu ref="filter">
-          <tm-filterMenu-item :height="450" title="综合">
+          <tm-filterMenu-item :height="450" title="综合(多选)">
             <tm-checkbox-group v-model="checbox" direction="customCol" :default-value="checbox">
               <tm-checkbox v-for="(item, index) in checboxList" :key="index" :value="item.id" :custom="false">
                 <template #default="{ checked }">
@@ -97,7 +97,7 @@ stickyOffset += (sysinfo.statusBarHeight + 44) * 2
               </tm-checkbox>
             </tm-checkbox-group>
           </tm-filterMenu-item>
-          <tm-filterMenu-item is-button title="按钮选项" un-icon="tmicon-ios-radio-button-off" icon="tmicon-ios-radio-button-on" />
+          <!-- <tm-filterMenu-item is-button title="按钮选项" un-icon="tmicon-ios-radio-button-off" icon="tmicon-ios-radio-button-on" /> -->
         </tm-filterMenu>
       </template>
 

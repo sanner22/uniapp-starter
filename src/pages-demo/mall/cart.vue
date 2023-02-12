@@ -13,7 +13,9 @@ const router = useRouter()
     />
     <!-- 这里放置你的内容 -->
     <view uno-p-15px>
-      <tm-text label="💕 猜你喜欢" uno-justify-center :font-size="32" uno-mb-15px />
+      <view uno-flex="~ row" uno-justify-center uno-mb-15px>
+        <tm-text label="💕 猜你喜欢" :font-size="32" />
+      </view>
       <view uno-grid="~ cols-2 gap-10px">
         <tm-sheet v-for="(item, index) in 10" :key="index" :margin="[0]" :padding="[16]" :round="5">
           <img uno-w-full uno-h-151px src="https://lining-goods-online-1302115263.file.myqcloud.com/data/lining/goods/image/AJMS107-9/bb93c3ec2a434625b656d1c2c10843f4.jpg?imageMogr2/quality/90/strip/format/webp">

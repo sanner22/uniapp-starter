@@ -16,6 +16,11 @@ const handleLoginOut = () => {
     isLogin.value = false
   })
 }
+
+const vipList = [
+  'https://lining-common-front-1302115263.file.myqcloud.com/assets/miniapp/home/new-user/vip-share-v1.png?imageMogr2/thumbnail/330x/strip/ignore-error/1%20HTTP/1.1',
+  'https://lining-common-front-1302115263.file.myqcloud.com/assets/miniapp/home/new-user/walk-v1.png?imageMogr2/thumbnail/330x/strip/ignore-error/1%20HTTP/1.1',
+]
 </script>
 
 <template>
@@ -150,6 +155,25 @@ const handleLoginOut = () => {
           </view>
         </view>
       </tm-sheet>
+
+      <view uno-grid="~ cols-2 gap-15px" uno-mx-15px uno-mb-15px>
+        <img v-for="(item, index) in vipList" :key="index" :src="item" uno-block uno-w-full uno-h-170px>
+      </view>
+      <view uno-p-15px>
+        <view uno-flex="~ row" uno-justify-center uno-mb-15px>
+          <tm-text label="💕 猜你喜欢" :font-size="32" />
+        </view>
+        <view uno-grid="~ cols-2 gap-10px">
+          <tm-sheet v-for="(item, index) in 10" :key="index" :margin="[0]" :padding="[16]" :round="5">
+            <img uno-w-full uno-h-151px src="https://lining-goods-online-1302115263.file.myqcloud.com/data/lining/goods/image/AJMS107-9/bb93c3ec2a434625b656d1c2c10843f4.jpg?imageMogr2/quality/90/strip/format/webp">
+            <tm-text label="[2023新品] 李宁日进斗金主题针织帽AMZT0003-1" :font-size="24" uno-my-15px />
+            <view uno-flex="~ row" uno-items-end>
+              <tm-text label="￥ 78.00" color="red" />
+              <tm-text label="￥ 149" :font-size="20" uno-opacity-50 uno-ml-10px _class="uno-line-through" />
+            </view>
+          </tm-sheet>
+        </view>
+      </view>
     </view>
   </tm-app>
 </template>
