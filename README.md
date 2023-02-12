@@ -16,21 +16,30 @@
 ## 示例
 
 <img src="./docs/images/00.png" height="266" />
-<img src="./docs/images/01.png" height="266" />
 <img src="./docs/images/02.png" height="266" />
+<img src="./docs/images/01.png" height="266" />
 <img src="./docs/images/03.png" height="266" />
-<img src="./docs/images/04.png" height="266" />
 <img src="./docs/images/05.png" height="266" />
-<img src="./docs/images/06.png" height="266" />
 <img src="./docs/images/07.png" height="266" />
-<img src="./docs/images/08.png" height="266" />
-<img src="./docs/images/13.png" height="266" />
-<img src="./docs/images/14.png" height="266" />
+<img src="./docs/images/17.png" height="266" />
+<img src="./docs/images/19.png" height="266" />
+<img src="./docs/images/21.png" height="266" />
+<img src="./docs/images/27.png" height="266" />
 <img src="./docs/images/15.png" height="266" />
-<img src="./docs/images/16.png" height="266" />
+<img src="./docs/images/13.png" height="266" />
 <img src="./docs/images/09.png" height="266" />
-<img src="./docs/images/10.png" height="266" />
 <img src="./docs/images/11.png" height="266" />
+
+<img src="./docs/images/04.png" height="266" />
+<img src="./docs/images/06.png" height="266" />
+<img src="./docs/images/08.png" height="266" />
+<img src="./docs/images/18.png" height="266" />
+<img src="./docs/images/20.png" height="266" />
+<img src="./docs/images/22.png" height="266" />
+<img src="./docs/images/28.png" height="266" />
+<img src="./docs/images/16.png" height="266" />
+<img src="./docs/images/14.png" height="266" />
+<img src="./docs/images/10.png" height="266" />
 <img src="./docs/images/12.png" height="266" />
 
 ## 预览（H5、微信小程序）
