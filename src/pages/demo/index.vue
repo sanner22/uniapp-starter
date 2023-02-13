@@ -14,7 +14,7 @@ const router = useRouter()
         url="/pages-demo/mall/index" bottom-border
       >
         <template #avatar>
-          <tm-icon color="orange" :font-size="38" name="tmicon-md-home" />
+          <tm-icon class="grey-darken-2" follow-theme :font-size="38" name="tmicon-md-home" />
         </template>
       </tm-cell>
       <tm-cell
@@ -22,7 +22,7 @@ const router = useRouter()
         url="/pages-demo/mall/category" bottom-border
       >
         <template #avatar>
-          <tm-icon color="orange" :font-size="38" name="tmicon-all-fill" />
+          <tm-icon color="grey-darken-2" follow-theme :font-size="38" name="tmicon-all-fill" />
         </template>
       </tm-cell>
       <tm-cell
@@ -30,7 +30,7 @@ const router = useRouter()
         url="/pages-demo/mall/list" bottom-border
       >
         <template #avatar>
-          <tm-icon color="orange" :font-size="38" name="tmicon-alignright-fill" />
+          <tm-icon color="grey-darken-2" follow-theme :font-size="38" name="tmicon-alignright-fill" />
         </template>
       </tm-cell>
       <tm-cell
@@ -38,7 +38,7 @@ const router = useRouter()
         url="/pages-demo/mall/detail" bottom-border
       >
         <template #avatar>
-          <tm-icon color="orange" :font-size="38" name="tmicon-ios-filing" />
+          <tm-icon color="grey-darken-2" follow-theme :font-size="38" name="tmicon-ios-filing" />
         </template>
       </tm-cell>
       <tm-cell
@@ -46,7 +46,7 @@ const router = useRouter()
         url="/pages-demo/mall/cart"
       >
         <template #avatar>
-          <tm-icon color="orange" :font-size="38" name="tmicon-shopping-cart-fill" />
+          <tm-icon color="grey-darken-2" follow-theme :font-size="38" name="tmicon-shopping-cart-fill" />
         </template>
       </tm-cell>
     </tm-sheet>
@@ -57,7 +57,7 @@ const router = useRouter()
         url="/pages/user/index" bottom-border @click="router.go('/pages/user/index')"
       >
         <template #avatar>
-          <tm-icon color="orange" :font-size="38" name="tmicon-user-fill" />
+          <tm-icon color="grey-darken-2" follow-theme :font-size="38" name="tmicon-user-fill" />
         </template>
       </tm-cell>
       <tm-cell
@@ -65,7 +65,7 @@ const router = useRouter()
         url="/pages/login/index" bottom-border
       >
         <template #avatar>
-          <tm-icon color="orange" :font-size="38" name="tmicon-unlock-fill" />
+          <tm-icon color="grey-darken-2" follow-theme :font-size="38" name="tmicon-unlock-fill" />
         </template>
       </tm-cell>
     </tm-sheet>
