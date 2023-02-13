@@ -102,7 +102,7 @@ const content = '<div class="product-detail-img"><div class="img-item-wrapper"><
     </tm-sheet>
     <tm-html :content="content" :tag-style="{ img: 'display:block; max-width:100%;' }" />
 
-    <tm-sheet :margin="[0]" :padding="[10]" uno-fixed uno-left-0 uno-bottom-0 uno-right-0 uno-z-9999>
+    <tm-sheet :margin="[0]" :padding="[10]" uno-fixed uno-left-0px uno-bottom-0px uno-right-0px uno-z-9999>
       <view uno-flex="~ row gap-5px" uno-items-center>
         <view uno-flex="~ col" uno-items-center uno-mx-5px>
           <tm-icon name="tmicon-md-home" />
