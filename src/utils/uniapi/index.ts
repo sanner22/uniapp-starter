@@ -6,7 +6,7 @@
  */
 export const SetClipboardData = (data: string, showToast = true) =>
   new Promise((resolve, reject) => {
-    uni.setClipboardData({
+    void uni.setClipboardData({
       data,
       showToast,
       success: (res) => {

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import Request from 'luch-request'
 import { assign } from 'lodash-es'
 import { Toast } from '@/utils/uniapi/prompt'
@@ -35,6 +36,7 @@ request.interceptors.request.use(
         return Promise.reject(options)
       }
       options.header = assign(options.header, {
+        // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
         authorization: `Bearer ${authStore.getToken}`,
       })
     }
@@ -51,9 +53,10 @@ request.interceptors.response.use(
     const { data: resData } = response
     const { code, message } = resData
     if (code === ResultEnum.SUCCESS)
-      return resData as any
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-return
+      return resData
 
-    Toast(message)
+    Toast(message as string)
     return Promise.reject(resData)
   },
   response =>

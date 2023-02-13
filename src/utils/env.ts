@@ -6,7 +6,7 @@ import { PLATFORMS } from '@/enums/platformEnum'
  * @description: Generate cache key according to version
  */
 export function getPkgVersion() {
-  return `${`__${pkg.version}`}__`.toUpperCase()
+  return `__${pkg.version}__`.toUpperCase()
 }
 
 /**
@@ -35,6 +35,7 @@ export function getEnvMode(): string {
  */
 export function getEnvValue<T = any>(key: string): T {
   // @ts-expect-error
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-return
   return import.meta.env[key]
 }
 
