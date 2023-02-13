@@ -23,7 +23,8 @@
     {
       "path": "pages/tmui-components/index",
       "style": {
-        "navigationBarTitleText": "TMUI 组件"
+        "navigationBarTitleText": "TMUI 组件",
+        "navigationStyle": "custom"
       },
       "meta": {
         "ignoreAuth": true
@@ -34,7 +35,8 @@
     {
       "path": "pages/unocss/index",
       "style": {
-        "navigationBarTitleText": "UnoCSS 示例"
+        "navigationBarTitleText": "UnoCSS 示例",
+        "navigationStyle": "custom"
       },
       "meta": {
         "ignoreAuth": true

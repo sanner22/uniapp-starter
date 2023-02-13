@@ -12,6 +12,8 @@ onLoad(() => {
 
 <template>
   <tm-app>
+    <tm-navbar title="TMUI 组件" :shadow="0" hide-back />
+
     <view class="uno-my-20px uno-center">
       <tm-image src="https://tmui.design/images/logoGreat.png" :width="80" :height="80" unit="px" />
     </view>

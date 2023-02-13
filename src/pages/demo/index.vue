@@ -6,7 +6,7 @@ const router = useRouter()
 
 <template>
   <tm-app>
-    <tm-navbar title="商城示例" :shadow="0" />
+    <tm-navbar title="商城示例" :shadow="0" hide-back />
 
     <tm-sheet :padding="[24, 0]" :round="5">
       <tm-cell

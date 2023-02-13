@@ -40,6 +40,8 @@ onLoad((_e) => {
 
 <template>
   <tm-app>
+    <tm-navbar title="UnoCSS 示例" :shadow="0" hide-back />
+
     <view class="uno-my-20px uno-center">
       <tm-image src="https://img.cdn.sugarat.top/mdImg/MTY2ODA4OTc3MjcyMg==unocss-icon-gray.svg" :width="80" :height="80" unit="px" />
     </view>
