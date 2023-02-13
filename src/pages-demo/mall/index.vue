@@ -127,10 +127,10 @@ const starTabsList = [
         </view>
       </tm-sheet> -->
 
-      <view uno-flex="~ row" uno-items-start uno-m-15px uno-mb-0>
+      <view uno-flex="~ row" uno-items-start uno-m-15px uno-mb-0px>
         <tm-text label="新品上市" :font-size="32" uno-font-bold />
       </view>
-      <view uno-m-15px uno-mt-0>
+      <view uno-m-15px uno-mt-0px>
         <tm-tabs item-model="line" transprent align="around" :list="newTabsList" :width="sysinfo.width * 2 - 30 * 2" default-name="1" />
         <view uno-rounded>
           <img
@@ -153,10 +153,10 @@ const starTabsList = [
         </view>
       </view>
 
-      <view uno-flex="~ row" uno-items-start uno-m-15px uno-mb-0>
+      <view uno-flex="~ row" uno-items-start uno-m-15px uno-mb-0px>
         <tm-text label="明星单品" :font-size="32" uno-font-bold />
       </view>
-      <view uno-m-15px uno-mt-0>
+      <view uno-m-15px uno-mt-0px>
         <tm-tabs item-model="line" transprent align="around" :list="starTabsList" :width="sysinfo.width * 2 - 30 * 2" default-name="1" />
         <view uno-rounded>
           <img

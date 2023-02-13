@@ -5,8 +5,8 @@
       <tm-divider />
       <!--  -->
       <view uno-flex="~ row wrap gap-10px" class="uno-items-start">
-        <view class="uno-bg-blue-300_30 uno-center uno-p-0">
-          <tm-text label="p-0" />
+        <view class="uno-bg-blue-300_30 uno-center uno-p-0px">
+          <tm-text label="p-0px" />
         </view>
         <view class="uno-bg-blue-300_30 uno-center uno-p-1">
           <tm-text label="p-1" />
@@ -50,8 +50,8 @@
       <!--  -->
       <view uno-flex="~ row wrap gap-10px">
         <view class="uno-bg-blue-300_30">
-          <view class="uno-bg-yellow-300_30 uno-m-0">
-            <tm-text label="m-0" />
+          <view class="uno-bg-yellow-300_30 uno-m-0px">
+            <tm-text label="m-0px" />
           </view>
         </view>
 

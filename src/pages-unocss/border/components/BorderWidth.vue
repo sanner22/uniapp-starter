@@ -4,8 +4,8 @@
     <tm-divider />
 
     <view uno-flex="~ col gap-y-15px">
-      <view class="uno-h-80px uno-bg-blue-300_30 uno-center uno-border-solid uno-border-0 uno-border-yellow">
-        <tm-text label="border-0" />
+      <view class="uno-h-80px uno-bg-blue-300_30 uno-center uno-border-solid uno-border-0px uno-border-yellow">
+        <tm-text label="border-0px" />
       </view>
       <view class="uno-h-80px uno-bg-blue-300_30 uno-center uno-border-solid uno-border uno-border-yellow">
         <tm-text label="border" />

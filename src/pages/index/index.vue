@@ -118,7 +118,7 @@ const logoColor = computed(() => {
     <tm-sheet :margin="[0, 0]" :follow-theme="true">
       <view class="uno-flex uno-items-center">
         <tm-image :width="64" :height="64" src="/static/svg/favicon.svg" />
-        <view class="uno-flex-auto uno-pl-8px uno-w-0">
+        <view class="uno-flex-auto uno-pl-8px uno-w-0px">
           <tm-text _class="uno-font-bold" :font-size="36" label="Uniapp Starter" />
           <tm-text
             _class="uno-mt-3px uno-opacity-60"
