@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Iconify from '@/components/Iconify/index.vue'
-import { setClipboardData, toast } from '@/tmui/tool/function/util'
+import { SetClipboardData } from '@/utils/uniapi'
+import { Toast } from '@/utils/uniapi/prompt'
 
 const group = [
   {
@@ -63,8 +64,7 @@ const group = [
 ]
 
 const copyLink = (url: string) => {
-  setClipboardData(url)
-  toast('复制成功', true, 'success')
+  SetClipboardData(url, false).then(_ => Toast('复制成功', { icon: 'success' }))
 }
 </script>
 

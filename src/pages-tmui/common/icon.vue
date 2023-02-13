@@ -2,6 +2,8 @@
 import { onBeforeMount, onBeforeUnmount, onMounted, ref } from 'vue'
 import { customfont } from './customIcon/customiconfont'
 import fontList from '@/tmui/tool/tmicon/iconfont.json'
+import { SetClipboardData } from '@/utils/uniapi'
+import { HideLoading, Loading, Toast } from '@/utils/uniapi/prompt'
 
 // #ifdef APP-NVUE || APP-PLUS-NVUE
 
@@ -29,13 +31,13 @@ onBeforeUnmount(() => {
   list.value = []
 })
 onMounted(() => {
-  uni.showLoading({ title: '...', mask: true })
+  Loading('...', { mask: true })
   const ls_list = fontList.glyphs.slice(0, 30)
   setTimeout(() => {
     for (let i = 0; i < ls_list.length; i++)
       list.value.push({ name: fontList.css_prefix_text + ls_list[i].font_class, text: ls_list[i].name })
 
-    uni.hideLoading()
+    HideLoading()
   }, 100)
 })
 
@@ -44,16 +46,14 @@ const onShowAll = () => {
   showAll.value = true
   const ls_list = fontList.glyphs // 全部显示
   list.value = []
-  uni.showLoading({ title: '...', mask: true })
+  Loading('...', { mask: true })
   for (let i = 0; i < ls_list.length; i++)
     list.value.push({ name: fontList.css_prefix_text + ls_list[i].font_class, text: ls_list[i].name } as never)
 
-  uni.hideLoading()
+  HideLoading()
 }
 function onclick(item: any) {
-  (uni.setClipboardData({ data: item.name }) as Promise<string>).then(() =>
-    uni.showToast({ title: '复制成功', icon: 'none' }),
-  )
+  SetClipboardData(item.name).then(() => Toast('复制成功'))
 }
 </script>
 
