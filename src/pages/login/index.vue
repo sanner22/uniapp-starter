@@ -6,7 +6,6 @@ import { Toast } from '@/utils/uniapi/prompt'
 import { useRouter } from '@/hooks/router'
 import { useTmpiniaStore } from '@/tmui/tool/lib/tmpinia'
 import tmApp from '@/tmui/components/tm-app/tm-app.vue'
-import Iconify from '@/components/Iconify/index.vue'
 const store = useTmpiniaStore()
 
 const redirect = ref<string | undefined>(undefined)
@@ -56,11 +55,12 @@ const toggleDark = () => {
   <tm-app ref="app">
     <tm-navbar title="用户登录" :shadow="0" hide-home>
       <template #left>
-        <view class="uno-flex uno-items-center uno-gap-10px uno-ml-12px">
-          <iconify
-            :icon="store.tmStore.dark ? 'i-line-md-moon-filled-to-sunny-filled-loop-transition' : 'i-line-md-sunny-filled-loop-to-moon-filled-loop-transition'"
-            :color="store.tmStore.dark ? '#FFFB01' : ''"
-            size="20px"
+        <view class="uno-flex uno-items-center uno-gap-10px">
+          <tm-text
+            :_class="store.tmStore.dark ? 'i-line-md-moon-filled-to-sunny-filled-loop-transition' : 'i-line-md-sunny-filled-loop-to-moon-filled-loop-transition'"
+            :color="store.tmStore.dark ? '#FFFB01' : undefined"
+            :font-size="18"
+            unit="px"
             @click="toggleDark"
           />
         </view>

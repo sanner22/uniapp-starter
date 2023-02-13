@@ -6,7 +6,6 @@ import { judgePlatform } from '@/utils/platform'
 import tmApp from '@/tmui/components/tm-app/tm-app.vue'
 import { useTmpiniaStore } from '@/tmui/tool/lib/tmpinia'
 import { componentGroups } from '@/pages/tmui-components/components'
-import Iconify from '@/components/Iconify/index.vue'
 const store = useTmpiniaStore()
 
 const platform = CURRENT_PLATFORM
@@ -93,29 +92,32 @@ const logoColor = computed(() => {
     <tm-navbar title="Uniapp Starter" :shadow="0" hide-home hide-back>
       <template #left>
         <view class="uno-flex uno-items-center uno-gap-10px uno-ml-12px">
-          <iconify
-            icon="i-line-md-menu-fold-right"
-            size="20px"
-            :color="store.tmStore.dark ? '#009fe8' : ''"
+          <tm-text
+            _class="i-line-md-menu-fold-right uno-text-20px"
+            :font-size="18"
+            unit="px"
+            :color="store.tmStore.dark ? '#009fe8' : undefined"
             @click="showf = true"
           />
-          <iconify
-            icon="i-ion-color-palette"
-            size="20px"
-            :color="store.tmStore.dark ? '#cc8500' : ''"
+          <tm-text
+            _class="i-ion-color-palette"
+            :font-size="18"
+            unit="px"
+            :color="store.tmStore.dark ? '#cc8500' : undefined"
             @click="toThemes"
           />
-          <iconify
-            :icon="store.tmStore.dark ? 'i-line-md-moon-filled-to-sunny-filled-loop-transition' : 'i-line-md-sunny-filled-loop-to-moon-filled-loop-transition'"
-            :color="store.tmStore.dark ? '#FFFB01' : ''"
-            size="20px"
+          <tm-text
+            :_class="store.tmStore.dark ? 'i-line-md-moon-filled-to-sunny-filled-loop-transition' : 'i-line-md-sunny-filled-loop-to-moon-filled-loop-transition'"
+            :color="store.tmStore.dark ? '#FFFB01' : undefined"
+            :font-size="18"
+            unit="px"
             @click="toggleDark"
           />
         </view>
       </template>
     </tm-navbar>
 
-    <tm-sheet :margin="[0, 0]" :follow-theme="true">
+    <tm-sheet :margin="[0, 0]" follow-theme>
       <view class="uno-flex uno-items-center">
         <tm-image :width="64" :height="64" src="/static/svg/favicon.svg" />
         <view class="uno-flex-auto uno-pl-8px uno-w-0px">
