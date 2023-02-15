@@ -1,17 +1,15 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable @typescript-eslint/no-unused-vars */
+import { resolve } from 'path'
+import type { ConfigEnv, UserConfig } from 'vite'
+import { loadEnv } from 'vite'
+import uni from '@dcloudio/vite-plugin-uni'
 
-import { ConfigEnv, UserConfig } from 'vite';
-import uni from '@dcloudio/vite-plugin-uni';
-import eslintPlugin from 'vite-plugin-eslint';
-import { resolve } from 'path';
-import { loadEnv } from 'vite';
-import Unocss from 'unocss/vite';
+import Unocss from 'unocss/vite'
+import { viteMockServe } from 'vite-plugin-mock'
 
 // https://vitejs.cn/config/
 export default ({ mode }: ConfigEnv): UserConfig => {
-  const root = process.cwd();
-  const env = loadEnv(mode, root);
+  const root = process.cwd()
+  const env = loadEnv(mode, root)
   return {
     base: './',
     resolve: {
@@ -25,7 +23,7 @@ export default ({ mode }: ConfigEnv): UserConfig => {
     server: {
       host: true,
       // open: true,
-      port: env.VITE_PORT as any,
+      port: env.VITE_PORT as unknown as number,
       proxy: {
         '/api': {
           target: env.VITE_BASE_URL,
@@ -43,11 +41,11 @@ export default ({ mode }: ConfigEnv): UserConfig => {
       uni(),
       Unocss(),
 
-      // eslintPlugin({
-      //   include: ['src/**/*.js', 'src/**/*.vue', 'src/**/*.ts'],
-      //   exclude: ['./node_modules/**'],
-      //   cache: false,
-      // }),
+      // mockjs
+      viteMockServe({
+        mockPath: './src/services/mock/user', // 解析刚刚user.ts的位置
+        localEnabled: true, // 是否开启开发环境
+      }),
     ],
     css: {
       preprocessorOptions: {
@@ -56,5 +54,5 @@ export default ({ mode }: ConfigEnv): UserConfig => {
         },
       },
     },
-  };
-};
+  }
+}
