@@ -4,7 +4,6 @@ import { loadEnv } from 'vite'
 import uni from '@dcloudio/vite-plugin-uni'
 
 import Unocss from 'unocss/vite'
-import { viteMockServe } from 'vite-plugin-mock'
 
 // https://vitejs.cn/config/
 export default ({ mode }: ConfigEnv): UserConfig => {
@@ -40,12 +39,6 @@ export default ({ mode }: ConfigEnv): UserConfig => {
     plugins: [
       uni(),
       Unocss(),
-
-      // mockjs
-      viteMockServe({
-        mockPath: './src/services/mock/user', // 解析刚刚user.ts的位置
-        localEnabled: true, // 是否开启开发环境
-      }),
     ],
     css: {
       preprocessorOptions: {
