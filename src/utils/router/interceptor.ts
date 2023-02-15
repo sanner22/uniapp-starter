@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
 import { HOME_PAGE, NAVIGATE_TYPE_LIST, NOT_FOUND_PAGE } from '@/enums/routerEnum'
 import { useAuthStore } from '@/state/modules/auth'
 import { isIgnoreAuth, jumpLogin } from '@/utils/router/constant'
@@ -30,9 +32,10 @@ export function routerBeforeEach(path: string): boolean {
 function addInterceptor(routerName: string) {
   uni.addInterceptor(routerName, {
     // 跳转前拦截
-    invoke: (args) => {
+    invoke: (args: any) => {
       console.log(`${routerName} before`)
       const flag = routerBeforeEach(args.url)
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-return
       return flag ? args : false
     },
     // 成功回调拦截
@@ -42,14 +45,14 @@ function addInterceptor(routerName: string) {
     // 失败回调拦截
     fail: (err: any) => {
       let reg: RegExp
-      /* #ifdef MP-WEIXIN */
+      // #ifdef MP-WEIXIN
       reg = /(.*)?(fail page ")(.*)(" is not found$)/
-      /* #endif */
-      /* #ifndef MP-WEIXIN */
+      // #endif
+      // #ifndef MP-WEIXIN
       reg = /(.*)?(fail page `)(.*)(` is not found$)/
-      /* #endif */
-      if (reg.test(err.errMsg)) {
-        const go = err.errMsg.replace(reg, '$3') || ''
+      // #endif
+      if (err.errMsg && reg.test(err.errMsg)) {
+        const go: string = (err.errMsg as string).replace(reg, '$3') || ''
         uni.navigateTo({
           url: `${NOT_FOUND_PAGE}?redirect=${HOME_PAGE}&go=${go}`,
         })

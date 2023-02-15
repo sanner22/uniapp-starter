@@ -21,8 +21,8 @@ export class Navigates {
   }
 
   navigate(url: string, options?: NavigateOptions) {
-    const navigateOptions = deepMerge(cloneDeep(this.options), options)
-    const _options = deepMerge({ url }, navigateOptions)
+    const navigateOptions: UniApp.NavigateBackOptions | undefined = deepMerge(cloneDeep(this.options), options)
+    const _options: UniApp.NavigateToOptions = deepMerge({ url }, navigateOptions)
     switch (this.type) {
       case NAVIGATE_TYPE.NAVIGATE_TO:
         uni.navigateTo(_options)
@@ -82,11 +82,11 @@ export class Navigates {
    */
   pushTab(url: string, options?: NavigateOptions) {
     // 微信小程序端uni.switchTab拦截无效处理
-    /* #ifdef MP-WEIXIN */
+    // #ifdef MP-WEIXIN
     if (!routerBeforeEach(url))
       return
 
-    /* #endif */
+    // #endif
     this.type = NAVIGATE_TYPE.SWITCH_TAB
     this.navigate(url, options)
   }

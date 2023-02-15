@@ -23,17 +23,20 @@ export function useRoute(): RouteLocationNormalized {
   const currentPage = currentPages[currentPages.length - 1]
   const path = currentPage?.route || ''
   const routerStore = useRouterStore()
-  const currentRoute = routerStore.getRoutes?.get(path as string)
+  const currentRoute = routerStore.getRoutes?.get(path)
   let query = {}
-  /* #ifndef MP-WEIXIN */
-  // @ts-expect-error
-  query = currentPage?.$page?.options || {}
-  /* #endif */
 
-  /* #ifdef MP-WEIXIN */
+  // #ifndef MP-WEIXIN
   // @ts-expect-error
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
+  query = currentPage?.$page?.options || {}
+  // #endif
+
+  // #ifdef MP-WEIXIN
+  // @ts-expect-error
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
   query = currentPage?.options || {}
-  /* #endif */
+  // #endif
   return {
     currentPages,
     currentPage,

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { cacheCipher } from '@/settings/encryptionSetting'
 import type { EncryptionParams } from '@/utils/cipher'
 import { AesEncryption } from '@/utils/cipher'
@@ -44,7 +45,7 @@ export const createStorage = ({
     }
 
     private getKey(key: string) {
-      return `${this.prefixKey}${key}`.toUpperCase()
+      return `${this.prefixKey || ''}${key}`.toUpperCase()
     }
 
     /**
@@ -65,7 +66,7 @@ export const createStorage = ({
         uni.setStorageSync(this.getKey(key), stringifyValue)
       }
       catch (err) {
-        throw new Error(`setStorageSync error: ${err}`)
+        throw new Error(`setStorageSync error: ${err as string}`)
       }
     }
 
@@ -76,22 +77,22 @@ export const createStorage = ({
      * @memberof Cache
      */
     get<T = any>(key: string, def: any = null): T {
-      const val = uni.getStorageSync(this.getKey(key))
+      const val = uni.getStorageSync(this.getKey(key)) as string | undefined
       if (!val)
-        return def
+        return def as T
 
       try {
         const decVal = this.hasEncrypt ? this.encryption.decryptByAES(val) : val
-        const data = JSON.parse(decVal)
+        const data = JSON.parse(decVal) as { value: string; expire: number }
         const { value, expire } = data
         if (isNullOrUnDef(expire) || expire < new Date().getTime()) {
           this.remove(key)
-          return def
+          return def as T
         }
-        return value
+        return value as T
       }
       catch (e) {
-        return def
+        return def as T
       }
     }
 

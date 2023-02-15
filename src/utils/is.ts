@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/unbound-method
 const { toString } = Object.prototype
 
 export function is(val: unknown, type: string) {
@@ -70,6 +71,7 @@ export function isRegExp(val: unknown): val is RegExp {
 }
 
 export function isArray(val: any): val is Array<any> {
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-return
   return val && Array.isArray(val)
 }
 
@@ -90,7 +92,6 @@ export const isServer = typeof window === 'undefined'
 export const isClient = !isServer
 
 export function isUrl(path: string): boolean {
-  // @ts-expect-error
   const reg
     = /^((https|http|ftp|rtsp|mms):\/\/)(([0-9a-zA-Z_!~*'().&=+$%-]+: )?[0-9a-zA-Z_!~*'().&=+$%-]+@)?(([0-9]{1,3}.){3}[0-9]{1,3}|([0-9a-zA-Z_!~*'()-]+.)*([0-9a-zA-Z][0-9a-zA-Z-]{0,61})?[0-9a-zA-Z].[a-zA-Z]{2,6})(:[0-9]{1,4})?((\/?)|(\/[0-9a-zA-Z_!~*'().;?:@&=+$,%#-]+)+\/?)$/
   return reg.test(path)
