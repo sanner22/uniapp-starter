@@ -1,13 +1,15 @@
 # uniapp vue next starter
 
-**uniapp Vue3 TypeScript 移动端快速开发解决方案**，cli 模式创建项目， 集成 TMUI，集成 HBuilderX cli（APP 模式一键打包：自定义基座、云打包）
+**uniapp Vue3 Vite TypeScript 快速开发解决方案**，cli 方式创建， 集成 `TMUI` `UnoCSS`（实现零 CSS 开发），集成 `HBuilderX cli`（APP 模式一键打包：自定义基座、云打包）
+
+仓储：<https://gitee.com/dodu/uniapp-starter>，线上示例：[live demo (H5)](http://uniapp-h5.5shiguang.net/)
 
 ## 特性
 
 - **最新技术栈**：使用 Vue3/Vite4/pinia ,TypeScript 等前端前沿技术开发;
-- **UI集成**：集成 [TMUI](https://tmui.design/) 跨端组件，支持nvue原生渲染,H5,小程序,安卓,IOS等全端组件库;
-- **[Unocss](https://github.com/unocss/unocss) 原子化 CSS**：预设图标：[preset-icons](https://github.com/unocss/unocss/tree/main/packages/preset-icons#readme) 使用 [iconify](https://github.com/iconify/iconify) 图标，[unocss-preset-weapp](https://github.com/MellowCo/unocss-preset-weapp) 小程序支持，配置参考：[unocss.config.js](./unocss.config.js);
-- **Eslint/Prettier**：规范代码格式,统一编码;
+- **UI集成**：集成 [TMUI](https://tmui.design/) 跨端组件，支持 `nvue 原生渲染` `H5` `小程序` `安卓` `IOS` 等全端组件库;
+- **[Unocss](https://github.com/unocss/unocss) 原子化 CSS**：预设图标：[preset-icons](https://github.com/unocss/unocss/tree/main/packages/preset-icons#readme) 使用 [iconify](https://github.com/iconify/iconify) 图标(可使用全网所有图标)，[unocss-preset-weapp](https://github.com/MellowCo/unocss-preset-weapp) 小程序支持，配置参考：[unocss.config.js](./unocss.config.js);
+- **[@antfu/eslint-config](https://github.com/antfu/eslint-config)**：规范代码格式预设配置，统一编码，使用简单，去 Prettier（[为什么我不使用Pretier](https://antfu.me/posts/why-not-prettier-zh)）;
 - **路由拦截**：基于 uni.addInterceptor 进行路由拦截;
 - **请求拦截**：核心使用 [luch-request](https://ext.dcloud.net.cn/plugin?id=392),支持请求和响应拦截等;
 - **缓存加密**：使用 AES 加密缓存,可设置区分在开发或生成环境中是否加密;
@@ -132,6 +134,12 @@ pnpm uniapp-cli:latest
 │   │   └─...
 │   │
 │   ├─pages-tmui # tmui 组件展示 和 示例 分包
+│   │   └─...
+│   │
+│   ├─pages-unocss # unocss 示例
+│   │   └─...
+│   │
+│   ├─pages-demo # demo 页面分包
 │   │   └─...
 │   │
 │   ├─router # tmui 必须
