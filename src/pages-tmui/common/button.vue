@@ -62,8 +62,9 @@
       <tm-divider />
       <tm-button loading linear="right" block class="uno-flex uno-flex-row" _class="uno-flex-auto" label="light 加载中" />
       <tm-button linear="right" block class="uno-flex uno-flex-row" _class="uno-flex-auto" label="light" />
-      <tm-button linear="right" linear-deep="dark" block class="uno-flex uno-flex-row" _class="uno-flex-auto" label="dark 被禁用" />
-      <tm-button disabled linear="right" linear-deep="dark" block class="uno-flex uno-flex-row" _class="uno-flex-auto" label="dark 被禁用" />
+      <tm-button linear="right" block class="uno-flex uno-flex-row" _class="uno-flex-auto" label="light 被禁用" disabled />
+      <tm-button linear="right" linear-deep="dark" block class="uno-flex uno-flex-row" _class="uno-flex-auto" label="dark" />
+      <tm-button linear="right" linear-deep="dark" block class="uno-flex uno-flex-row" _class="uno-flex-auto" label="dark 被禁用" disabled />
       <tm-button linear="right" linear-deep="accent" block class="uno-flex uno-flex-row" _class="uno-flex-auto" label="accent" />
       <tm-button color="pink" linear="right" linear-deep="accent" block class="uno-flex uno-flex-row" _class="uno-flex-auto" label="accent" />
       <tm-button color="orange" linear="right" linear-deep="accent" block class="uno-flex uno-flex-row" _class="uno-flex-auto" label="accent top" />
