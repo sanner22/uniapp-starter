@@ -10,7 +10,7 @@ import type { ApiResult, ApiResultOf } from '../../../api/apiResult'
  * @param {string} message 消息
  * @returns {ApiResult} 封装后的结果
  */
-const apiResult = (data: any, error = 0, message = 'success'): ApiResult => {
+const apiResult = (data: any = undefined, error = 0, message = 'success'): ApiResult => {
   return {
     error,
     message,

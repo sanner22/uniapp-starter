@@ -1,7 +1,7 @@
 export interface ApiResultOf<T> {
   error: number
-  message: string
-  result: T
+  message?: string
+  result?: T
 }
 
 interface EntityResult<T> {
