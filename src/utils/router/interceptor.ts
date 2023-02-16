@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-argument */
 import { HOME_PAGE, NAVIGATE_TYPE_LIST, NOT_FOUND_PAGE } from '@/enums/routerEnum'
 import { useAuthStore } from '@/state/modules/auth'
@@ -32,10 +31,10 @@ export function routerBeforeEach(path: string): boolean {
 function addInterceptor(routerName: string) {
   uni.addInterceptor(routerName, {
     // 跳转前拦截
-    invoke: (args: any) => {
+    invoke: (args: any): any => {
       console.log(`${routerName} before`)
       const flag = routerBeforeEach(args.url)
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-return
+
       return flag ? args : false
     },
     // 成功回调拦截

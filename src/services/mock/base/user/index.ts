@@ -14,7 +14,6 @@ const apiResult = (data: any = undefined, error = 0, message = 'success'): ApiRe
   return {
     error,
     message,
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     result: data,
   }
 }

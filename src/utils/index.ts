@@ -7,9 +7,7 @@ import { isObject } from '@/utils/is'
  */
 export function deepMerge<T = any>(src: any = {}, target: any = {}): T {
   let key: string
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
   for (key in target) src[key] = isObject(src[key]) ? deepMerge(src[key], target[key]) : (src[key] = target[key])
 
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-return
-  return src
+  return src as T
 }

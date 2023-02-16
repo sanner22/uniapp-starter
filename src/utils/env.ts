@@ -34,9 +34,7 @@ export function getEnvMode(): string {
  * @example:
  */
 export function getEnvValue<T = any>(key: string): T {
-  // @ts-expect-error
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-return
-  return import.meta.env[key]
+  return (import.meta.env as any)[key] as T
 }
 
 /**

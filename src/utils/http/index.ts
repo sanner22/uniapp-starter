@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import Request from 'luch-request'
 import { assign } from 'lodash-es'
 import type { ApiResult } from './../../services/api/apiResult'

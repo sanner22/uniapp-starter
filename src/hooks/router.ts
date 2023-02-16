@@ -28,13 +28,11 @@ export function useRoute(): RouteLocationNormalized {
 
   // #ifndef MP-WEIXIN
   // @ts-expect-error
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
   query = currentPage?.$page?.options || {}
   // #endif
 
   // #ifdef MP-WEIXIN
   // @ts-expect-error
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
   query = currentPage?.options || {}
   // #endif
   return {

@@ -71,8 +71,7 @@ export function isRegExp(val: unknown): val is RegExp {
 }
 
 export function isArray(val: any): val is Array<any> {
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-return
-  return val && Array.isArray(val)
+  return !!val && Array.isArray(val)
 }
 
 export function isWindow(val: any): val is Window {

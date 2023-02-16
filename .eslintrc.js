@@ -10,6 +10,8 @@ module.exports = {
     'no-irregular-whitespace': 'warn',
     'promise/param-names': 'warn',
     '@typescript-eslint/ban-ts-comment': 'off',
+    '@typescript-eslint/no-unsafe-member-access': 'off',
+    '@typescript-eslint/no-unsafe-assignment': 'off',
     'vue/no-irregular-whitespace': 'warn',
     'vue/component-name-in-template-casing': ['error', 'kebab-case'],
     'vue/component-options-name-casing': ['error', 'PascalCase'],

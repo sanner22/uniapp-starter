@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /**
  * 系统信息
  * @description 除去uni官方不推荐使用的返回参数
