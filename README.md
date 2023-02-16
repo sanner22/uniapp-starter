@@ -12,7 +12,7 @@
 - **[@antfu/eslint-config](https://github.com/antfu/eslint-config)**：规范代码格式预设配置，统一编码，使用简单，去 Prettier（[为什么我不使用Pretier](https://antfu.me/posts/why-not-prettier-zh)）;
 - **路由拦截**：基于 uni.addInterceptor 进行路由拦截;
 - **请求拦截**：核心使用 [luch-request](https://ext.dcloud.net.cn/plugin?id=392)，支持请求和响应拦截等；
-- **[mockjs](http://mockjs.com/) 集成**：仅前端开发，并配置 api 统一响应结果：[ApiResult](./src/services/api/apiResult.ts)，支持泛型 `ApiResultOf<T>`，服务器端只需要符合 ApiResult 规范即可支持生产模式;
+- **[mockjs](http://mockjs.com/) 集成**：H5 模式集成 mockjs，仅前端开发，并配置 api 统一响应结果：[ApiResult](./src/services/api/apiResult.ts)，支持泛型 `ApiResultOf<T>`，服务器端只需要符合 ApiResult 规范即可支持生产模式;
 - **缓存加密**：使用 AES 加密缓存,可设置区分在开发或生成环境中是否加密;
 - **[HBuilderX cli](https://hx.dcloud.net.cn/cli/README) 集成**：通过命令实现启动hbx、打包自定义基座、云打包(使用前需把cli集成到[环境变量](https://hx.dcloud.net.cn/cli/env))，打包配置参考：[uniapp.pack.json](./uniapp.pack.json)，该文件只是配置参考，实际使用的是 `uniapp.pack.json.local`，该文档从 `uniapp.pack.json` 复制，考虑多PC开发情况，配置可能不一样，为了不产生 git 变更而使用 `.local`，单PC环境，可直接使用 `uniapp.pack.json`；
 
