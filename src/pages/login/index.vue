@@ -21,7 +21,7 @@ const form = reactive({
   accept: false,
 })
 const authStore = useAuthStore()
-const submit = (e: any) => {
+const submit = (_e: any) => {
   if (!form.username || !form.password) {
     Toast('账号 & 密码 必填', { mask: false })
     return
@@ -30,7 +30,6 @@ const submit = (e: any) => {
     Toast('请阅读并同意用户隐私政策', { mask: false })
     return
   }
-  console.log(e)
   authStore.login(form).then(() => {
     Toast('登录成功', { duration: 1500 })
     setTimeout(() => {
