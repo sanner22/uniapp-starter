@@ -27,10 +27,10 @@ export default ({ mode }: ConfigEnv): UserConfig => {
       // open: true,
       port: env.VITE_PORT as unknown as number,
       proxy: {
-        '/api': {
+        '/mockapi': {
           target: env.VITE_BASE_URL,
           changeOrigin: true,
-          // rewrite: path => path.replace(/^\/api/, ''),
+          rewrite: path => path.replace(/^\/mockapi/, ''),
         },
         '/upload': {
           target: env.VITE_BASE_URL,

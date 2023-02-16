@@ -3,24 +3,24 @@ import { judgePlatform } from '@/utils/platform'
 import { PLATFORMS } from '@/enums/platformEnum'
 
 /**
- * @description: Generate cache key according to version
+ * @description: 根据版本生成缓存键
  */
 export function getPkgVersion() {
   return `__${pkg.version}__`.toUpperCase()
 }
 
 /**
- * @description: Development mode
+ * @description: 开发者模式
  */
 export const devMode = 'development'
 
 /**
- * @description: Production mode
+ * @description: 生产模式
  */
 export const prodMode = 'production'
 
 /**
- * @description: Get environment mode
+ * @description: 获取环境模式
  * @returns:
  * @example:
  */
@@ -29,7 +29,7 @@ export function getEnvMode(): string {
 }
 
 /**
- * @description: Get environment variables
+ * @description: 获取环境变量
  * @returns:
  * @example:
  */
@@ -38,7 +38,7 @@ export function getEnvValue<T = any>(key: string): T {
 }
 
 /**
- * @description: Is it a development mode
+ * @description: 是否为开发环境
  * @returns:
  * @example:
  */
@@ -47,7 +47,7 @@ export function isDevMode(): boolean {
 }
 
 /**
- * @description: Is it a production mode
+ * @description: 是否为生产环境
  * @returns:
  * @example:
  */
@@ -56,18 +56,18 @@ export function isProdMode(): boolean {
 }
 
 /**
- * @description: Get environment VITE_BASE_URL value
+ * @description: 获取环境变量 VITE_BASE_URL 的值
  * @returns:
  * @example:
  */
 export function getBaseUrl(): string {
   if (judgePlatform(PLATFORMS.H5) && isDevMode())
-    return '/api'
+    return '/mockapi'
   return getEnvValue<string>('VITE_BASE_URL')
 }
 
 /**
- * @description: Get environment VITE_UPLOAD_URL value
+ * @description: 获取环境变量 VITE_UPLOAD_URL 的值
  * @returns:
  * @example:
  */

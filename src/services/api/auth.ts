@@ -1,8 +1,8 @@
 import type { ApiResultOf } from './apiResult'
 import { request } from '@/utils/http'
 
-const LOGIN = '/Base/User/login'
-const LOGIN_OUT = '/Base/User/Logout'
+const LOGIN = '/api/Base/User/login'
+const LOGIN_OUT = '/api/Base/User/Logout'
 const REFRESH_TOKEN = '/refresh/token'
 
 /**
