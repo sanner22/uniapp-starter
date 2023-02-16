@@ -3,6 +3,7 @@ import { ref } from 'vue'
 import { onShow } from '@dcloudio/uni-app'
 import { useAuthStore } from '@/state/modules/auth'
 import Iconify from '@/components/Iconify/index.vue'
+import { Toast } from '@/utils/uniapi/prompt'
 
 const authStore = useAuthStore()
 const isLogin = ref(false)
@@ -12,9 +13,14 @@ onShow(() => {
 
 // 登出
 const handleLoginOut = () => {
-  authStore.loginOut().then(() => {
-    isLogin.value = false
-  })
+  authStore.loginOut()
+    .then(() => {
+      Toast('成功退出')
+      isLogin.value = false
+    })
+    .catch((err) => {
+      Toast(err)
+    })
 }
 
 const vipList = [

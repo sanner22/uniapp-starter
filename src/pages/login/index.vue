@@ -16,8 +16,8 @@ onLoad((query) => {
 const router = useRouter()
 
 const form = reactive({
-  email: 'uni-app@test.com',
-  password: 'Vue3_Ts_Vite',
+  username: 'admin',
+  password: 'admin999',
   accept: false,
 })
 const authStore = useAuthStore()
