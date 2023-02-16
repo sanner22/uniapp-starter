@@ -10,6 +10,8 @@ import { viteMockServe } from 'vite-plugin-mock'
 export default ({ mode }: ConfigEnv): UserConfig => {
   const root = process.cwd()
   const env = loadEnv(mode, root)
+  // 在控制台输出环境变量
+  console.log('当前环境：', env)
   return {
     base: './',
     resolve: {
@@ -28,7 +30,7 @@ export default ({ mode }: ConfigEnv): UserConfig => {
         '/api': {
           target: env.VITE_BASE_URL,
           changeOrigin: true,
-          rewrite: path => path.replace(/^\/api/, ''),
+          // rewrite: path => path.replace(/^\/api/, ''),
         },
         '/upload': {
           target: env.VITE_BASE_URL,

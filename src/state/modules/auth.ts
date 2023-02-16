@@ -30,8 +30,9 @@ export const useAuthStore = defineStore({
     async login(params: LoginParams): Promise<LoginModel> {
       try {
         const { data } = await login(params)
-        this.setToken(data.token)
-        return Promise.resolve(data)
+        const result = data.result!
+        this.setToken(result.token)
+        return Promise.resolve(result)
       }
       catch (err: any) {
         return Promise.reject(err)

@@ -22,7 +22,7 @@ const form = reactive({
 })
 const authStore = useAuthStore()
 const submit = (e: any) => {
-  if (!form.email || !form.password) {
+  if (!form.username || !form.password) {
     Toast('账号 & 密码 必填', { mask: false })
     return
   }
@@ -77,7 +77,7 @@ const toggleDark = () => {
 
         <view>
           <tm-input
-            v-model="form.email"
+            v-model="form.username"
             placeholder="请输入用户名" prefix="tmicon-user-fill"
             focus-color="primary" linear="right"
             :margin="[0, 24]" :round="15" :border="10"

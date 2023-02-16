@@ -1,7 +1,8 @@
+import type { ApiResultOf } from './apiResult'
 import { request } from '@/utils/http'
 
-const LOGIN = '/login'
-const LOGIN_OUT = '/logout'
+const LOGIN = '/Base/User/login'
+const LOGIN_OUT = '/Base/User/Logout'
 const REFRESH_TOKEN = '/refresh/token'
 
 /**
@@ -9,7 +10,7 @@ const REFRESH_TOKEN = '/refresh/token'
  * @param params
  */
 export function login(params: LoginParams) {
-  return request.post<LoginModel>(LOGIN, params, {
+  return request.post<ApiResultOf<LoginModel>>(LOGIN, params, {
     custom: {
       auth: false,
     },
