@@ -62,7 +62,7 @@ export function isProdMode(): boolean {
  */
 export function getBaseUrl(): string {
   if (judgePlatform(PLATFORMS.H5) && isDevMode())
-    return '/mockapi'
+    return ''
   return getEnvValue<string>('VITE_BASE_URL')
 }
 
