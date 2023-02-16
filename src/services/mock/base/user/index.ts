@@ -38,45 +38,6 @@ const apiResultOf = <T>(data: T, error = 0, message = 'success'): ApiResultOf<T>
 // #endregion
 
 export default [
-  {
-    url: '/api/base/users/getUserInfo', // 注意，这里只能是string格式
-    method: 'get',
-    response: () => {
-      return {
-        menusList: [{
-          id: '1',
-          title: '南辰',
-          subMenuList: [
-            {
-              id: '11',
-              title: '南',
-              path: '/user/nan',
-            },
-            {
-              id: '12',
-              title: '小',
-              path: '/user/xiao',
-            },
-            {
-              id: '13',
-              title: '辰',
-              path: '/user/chen',
-            },
-          ],
-        }, {
-          id: '2',
-          title: '希',
-          subMenuList: [
-            {
-              id: '21',
-              title: '玩游戏',
-              path: '/user/play',
-            },
-          ],
-        }],
-      }
-    },
-  },
 
   // #region base
 
@@ -92,6 +53,15 @@ export default [
         type: 'Bearer',
         expiration: '2023/02/16 09:34:00+0800',
       })
+    },
+  },
+
+  // 用户注销
+  {
+    url: '/api/base/user/logout',
+    method: 'post',
+    response: () => {
+      return apiResult()
     },
   },
 
