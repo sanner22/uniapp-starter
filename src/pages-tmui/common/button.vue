@@ -15,7 +15,7 @@
         <tm-button :margin="[10]" :shadow="0" :border="6" outlined size="normal" label="深边框" />
         <tm-button :margin="[10]" transprent text :shadow="0" size="normal" label="透明背景" />
       </view>
-      <tm-button block label="block" class="uno-flex uno-flex-row" _class="uno-flex-auto" />
+      <tm-button block label="block" />
     </tm-sheet>
     <tm-sheet>
       <tm-text :font-size="24" _class="font-weight-b" label="带图标" />
@@ -70,10 +70,10 @@
     <tm-sheet>
       <tm-text :font-size="24" _class="font-weight-b" label="渐变样式,更多属性见文档" />
       <tm-divider />
-      <tm-button class="uno-flex uno-flex-row" _class="uno-flex-auto" :linear-color="['#ea3c2d', '#ff9d14']" color="orange" font-color="white" linear="left" block label="自定义渐变背景" />
-      <tm-button class="uno-flex uno-flex-row" _class="uno-flex-auto" linear="right" block label="light" />
-      <tm-button class="uno-flex uno-flex-row" _class="uno-flex-auto" linear="right" linear-deep="dark" block label="dark" />
-      <tm-button class="uno-flex uno-flex-row" _class="uno-flex-auto" linear="right" linear-deep="accent" block label="accent" />
+      <tm-button :linear-color="['#ea3c2d', '#ff9d14']" color="orange" font-color="white" linear="left" block label="自定义渐变背景" />
+      <tm-button linear="right" block label="light" />
+      <tm-button linear="right" linear-deep="dark" block label="dark" />
+      <tm-button linear="right" linear-deep="accent" block label="accent" />
     </tm-sheet>
   </tm-app>
 </template>

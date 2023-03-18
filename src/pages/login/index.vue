@@ -94,7 +94,7 @@ const toggleDark = () => {
           </view>
         </view>
 
-        <tm-button label="登录" icon="tmicon-unlock" :round="15" block :disabled="!form.accept" class="uno-flex uno-flex-row" _class="uno-flex-auto" form-type="submit" />
+        <tm-button label="登录" icon="tmicon-unlock" :round="15" block :disabled="!form.accept" form-type="submit" />
 
         <view uno-flex="~ row" uno-items-center>
           <tm-checkbox v-model="form.accept" label="我已经阅读并同意" :size="36" :font-size="24" />

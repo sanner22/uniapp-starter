@@ -13,7 +13,7 @@ const showWin = ref(false)
         label="下面是基础演示属性,更多玩法请前往文档。更多属性动画时长这些请前文档"
       />
       <tm-divider />
-      <tm-button block class="uno-flex uno-flex-row" _class="uno-flex-auto" label="显示" @click="showWin = true" />
+      <tm-button block label="显示" @click="showWin = true" />
     </tm-sheet>
     <tm-overlay v-model:show="showWin" content-animation>
       <view @click.stop="">

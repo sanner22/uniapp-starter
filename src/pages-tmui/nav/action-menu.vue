@@ -14,7 +14,7 @@ const list = ref([
     <tm-sheet>
       <tm-text :font-size="24" _class="font-weight-b" label="基础属性,更多玩法请前往文档。" />
       <tm-divider />
-      <tm-button label="显示操作栏" block class="uno-flex uno-flex-row" _class="uno-flex-auto" @click="show = true" />
+      <tm-button label="显示操作栏" block @click="show = true" />
     </tm-sheet>
     <tm-action-menu v-model="show" :list="list" />
   </tm-app>
