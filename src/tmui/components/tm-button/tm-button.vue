@@ -55,7 +55,7 @@
         color: textColor,
         lineHeight: btnSizeObj.h + props.unit,
       },
-      btnSizeObj.w && !props.block ? { width: btnSizeObj.w + props.unit } : '',
+      btnSizeObj.w && !props.block ? { width: btnSizeObj.w + props.unit } : props.block ? { width: 'auto' } : {},
       tmcomputed.borderCss,
       _bgcolor,
       !_transprent && props.shadow > 0 ? tmcomputed.shadowColor : '',
