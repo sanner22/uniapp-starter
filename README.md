@@ -100,6 +100,14 @@ pnpm hbx:custom
 pnpm hbx:pack
 ```
 
+> 打包自定义基座过程（vscode）：
+
+![打包效果](.\docs\images\p-01.png)
+
+> 正式云打包过程（vscode）：
+
+![打包效果](.\docs\images\p-02.png)
+
 - 更新 uniapp cli 到最新
 
 ```bash
