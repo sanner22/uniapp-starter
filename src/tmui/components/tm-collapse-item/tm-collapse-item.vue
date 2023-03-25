@@ -1,5 +1,6 @@
 <template>
-  <view class="flex flex-col overflow" :class="[disabled ? 'opacity-7' : '']">
+ 
+  <view class="flex col overflow" :class="[disabled ? 'opacity-7' : '']">
     <tm-sheet
       :transprent="props.transprent"
       @click="openAndClose"
@@ -66,24 +67,24 @@
 
 	<!-- #ifndef APP-NVUE -->
 	<view
-	class="flex overflow content"
+	class="flex overflow content col"
 	:style="[isActiveAfter?{ height: _contentHeight }:{ height: '0px', overflow: 'hidden' }]"
 	>
 	  <view
 		ref="contentIds" id="contentIds"
-	    class="flex  flex-col flex-1 on"
+	    class="flex  col flex-1 on"
 	  >
 	    <slot></slot>
 	  </view>
 	</view>
-
-
+	
+	
 	<!-- #endif -->
-
+    
 	<!-- #ifdef APP-NVUE -->
-
+	
 	<!-- v-if="_contentHeight" -->
-	<view
+	<view  
 	v-if="_contentHeight && isActive"
 	class="flex overflow content"
 	:style="[isActiveAfter?{ height: _contentHeight }:{ height: '0px', overflow: 'hidden' }]"
@@ -95,19 +96,19 @@
 	    <slot></slot>
 	  </view>
 	</view>
-
+	
 	<view v-if="!_contentHeight && isActive" class="flex overflow content" >
 	  <view ref="contentIds" id="contentIds" class="flex  flex-col flex-1" >
 	    <slot></slot>
 	  </view>
 	</view>
-
+	
 	<!-- #endif -->
 
 
-
-
-
+	
+	
+	
   </view>
 </template>
 
@@ -275,7 +276,7 @@ watchEffect(() => {
     }, 20);
   } else {
     isActiveAfter.value = false;
-
+	
   }
   clearTimeout(tid)
   tid = setTimeout(function() {
@@ -295,7 +296,7 @@ onUpdated(()=>{
 	updateHeight()
 })
 function setcontentHeight(h:number|string=0,unit:'rpx'|'px'='rpx'){
-	if(!h) return undefined
+	if(!h) return 0
 	if (typeof h == "string"){
 		if(h.indexOf('rpx')){
 			_contentHeightNumber.value = uni.upx2px(Number(h))
@@ -312,10 +313,10 @@ function setcontentHeight(h:number|string=0,unit:'rpx'|'px'='rpx'){
 	return  Number(h) + "px";
 }
 function updateHeight(h:number=0){
-
+	
 	// #ifdef APP-NVUE
 	_contentHeight.value = setcontentHeight(props.contentHeight ,'rpx')
-
+	
 	// #endif
 	// #ifndef APP-NVUE
 
@@ -328,15 +329,15 @@ function updateHeight(h:number=0){
 			_contentHeight.value = setcontentHeight( el.height+h ,'px')
 		}
 	})
-
+	
 	// #endif
-
+	
 }
 function openAndClose(e: Event) {
   emits("click", e);
   if (props.disabled) return;
   parent?.setKey(props.name);
-
+  
 }
 defineExpose({tmCollapseItem:'tmCollapseItem',updateHeight})
 </script>
@@ -363,10 +364,21 @@ defineExpose({tmCollapseItem:'tmCollapseItem',updateHeight})
   box-sizing: border-box;
   will-change: height;
 }
+.col{
+/* #ifndef APP-NVUE */
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: auto;
+  align-items: stretch;
+  align-content: flex-start;
+/* #endif */
+}
 .content.on {
   flex: 1 1 auto;
   /* max-height: 1200px; */
-
+ 
 }
 .content.off {
   /* max-height: 0px; */
