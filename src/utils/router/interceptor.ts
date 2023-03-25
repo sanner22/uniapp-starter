@@ -52,6 +52,7 @@ function addInterceptor(routerName: string) {
       // #endif
       if (err.errMsg && reg.test(err.errMsg)) {
         const go: string = (err.errMsg as string).replace(reg, '$3') || ''
+        // eslint-disable-next-line @typescript-eslint/no-floating-promises
         uni.navigateTo({
           url: `${NOT_FOUND_PAGE}?redirect=${HOME_PAGE}&go=${go}`,
         })

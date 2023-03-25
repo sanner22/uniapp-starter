@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-floating-promises */
 import { warn } from 'vue'
 import { cloneDeep } from 'lodash-es'
 import { NAVIGATE_TYPE } from '@/enums/routerEnum'

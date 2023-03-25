@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-floating-promises */
 /**
  * 交互反馈
  * https://uniapp.dcloud.io/api/ui/prompt.html
