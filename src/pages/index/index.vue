@@ -62,7 +62,7 @@ const logoColor = computed(() => {
         _class="uno-h-full uno-flex uno-flex-col"
       >
         <!-- 状态栏 -->
-        <view :style="{ height: `${sysinfo.sysinfo.statusBarHeight}px` }" />
+        <view :style="{ height: `${sysinfo.statusBarHeight}px` }" />
 
         <!-- 菜单部分 -->
         <view uno-flex="auto">
@@ -160,11 +160,11 @@ const logoColor = computed(() => {
       <tm-tag color="#42d392" :label="isVue3 ? 'Vue:3' : 'Vue:2'" :round="25" size="s" />
       <tm-tag color="#bd34fe" label="Vite:4" :round="25" size="s" />
       <tm-tag color="#007acd" label="TS:4.9.4" :round="25" size="s" />
-      <tm-tag color="#cca438" label="pinia:2.0.28" :round="25" size="s" />
-      <tm-tag color="#0062ff" label="tmui:3.0.89" :round="25" size="s" />
+      <tm-tag color="#cca438" label="pinia:2.0.33" :round="25" size="s" />
+      <tm-tag color="#0062ff" label="tmui:3.1.02" :round="25" size="s" />
       <tm-tag color="#2b993a" label="UNIAPP" :round="25" size="s" />
       <tm-tag color="#30a15f" :label="`${platform}`" :round="25" size="s" />
-      <tm-tag color="#515351" label="UnoCSS:0.46.4" :round="25" size="s" />
+      <tm-tag color="#515351" label="UnoCSS:0.50.6" :round="25" size="s" />
       <!-- <tm-tag color="#3f9eef" label="windicss:3.5.6" :round="25" size="s" /> -->
     </view>
 
