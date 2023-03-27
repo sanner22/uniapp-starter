@@ -4,7 +4,7 @@ import { ref } from 'vue'
 import { onLoad } from '@dcloudio/uni-app'
 import tmFilterMenu from '@/tmui/components/tm-filterMenu/tm-filterMenu.vue'
 
-const filter = ref<InstanceType<typeof tmFilterMenu | null>>(null)
+const filter = ref<InstanceType<typeof tmFilterMenu>>(null)
 const checbox: Ref<Array<string | number>> = ref([])
 const checbox2: Ref<Array<string | number>> = ref([])
 const radiobox: Ref<string | number> = ref('')
@@ -31,7 +31,7 @@ const radioList3 = ref([
   { text: 'radio15-1', id: '5' },
 ])
 
-const sysinfo = uni.$tm.u.getWindow()
+const px2rpx = (px: number) => uni.$tm.u.torpx(px)
 const searchFocus = ref(false)
 
 onLoad((query) => {
@@ -41,7 +41,7 @@ onLoad((query) => {
 let stickyOffset = 0
 // #ifdef H5
 // h5 模式有个导航栏需要加上
-stickyOffset += (sysinfo.statusBarHeight + 44) * 2
+stickyOffset += px2rpx(uni.$tm.u.getWindow().statusBarHeight + 44)
 // #endif
 </script>
 

@@ -6,6 +6,7 @@ import { useRouter } from '@/hooks/router'
 
 const router = useRouter()
 const sysinfo = uni.$tm.u.getWindow()
+const px2rpx = (px: number) => uni.$tm.u.torpx(px)
 
 const tabsList = ref([
   { key: '1', title: '尖货' },
@@ -66,9 +67,9 @@ const starTabsList = [
       </template>
     </tm-navbar>
 
-    <tm-sticky :offset="(sysinfo.statusBarHeight + 44) * 2">
+    <tm-sticky :offset="px2rpx(sysinfo.statusBarHeight + 44)">
       <template #sticky>
-        <tm-tabs :show-tabs-line-ani="false" item-model="textLight" :item-width="140" :list="tabsList" :width="sysinfo.width * 2" default-name="1" />
+        <tm-tabs :show-tabs-line-ani="false" item-model="textLight" :item-width="140" :list="tabsList" :width="px2rpx(sysinfo.width)" default-name="1" />
       </template>
 
       <tm-carousel autoplay model="dot" :margin="[0, 0]" :round="0" :list="carouselList" />
@@ -85,7 +86,7 @@ const starTabsList = [
         <tm-text label="滑动查看更多" :font-size="24" uno-opacity-75 />
       </view>
       <view uno-mx-15px uno-mb-15px>
-        <tm-scrollx :width="sysinfo.width * 2 - 30 * 2" :height="207 * 2 + 30">
+        <tm-scrollx :width="px2rpx(sysinfo.width - 30)" :height="px2rpx(207 + 15)">
           <view uno-flex="~ row nowrap gap-10px">
             <view v-for="(item, index) in scrollxList" :key="index">
               <tm-image :src="item" :width="150" :height="207" unit="px" />
@@ -97,13 +98,13 @@ const starTabsList = [
       <view uno-flex="~ row" uno-justify-between uno-items-end uno-m-15px>
         <tm-text label="会员尊享权益" :font-size="32" uno-font-bold />
       </view>
-      <tm-image src="https://bizmid-material-online-1302115263.file.myqcloud.com/persist/ml1x6fmrer3z/ml1x6fmrer3z-%E4%BC%9A%E5%91%98%E6%9D%83%E7%9B%8A_03.jpg?imageMogr2/thumbnail/750x432!/strip/ignore-error/1" :width="sysinfo.width * 2" :height="376" />
+      <image src="https://bizmid-material-online-1302115263.file.myqcloud.com/persist/ml1x6fmrer3z/ml1x6fmrer3z-%E4%BC%9A%E5%91%98%E6%9D%83%E7%9B%8A_03.jpg?imageMogr2/thumbnail/750x432!/strip/ignore-error/1" uno-block uno-w-full :height="376" />
 
       <view uno-flex="~ row" uno-items-start uno-m-15px>
         <tm-text label="献礼情人节" :font-size="32" uno-font-bold />
         <tm-text label="💕" :font-size="24" uno-ml-2px />
       </view>
-      <img src="https://bizmid-material-online-1302115263.file.myqcloud.com/persist/mmp5z2ppaunk/mmp5z2ppaunk-%E4%BC%98%E6%83%A0%E5%88%B8.gif?imageMogr2/thumbnail/750x377!/strip/ignore-error/1" alt="" uno-block uno-w-full uno-my-16px uno-h-188px>
+      <image src="https://bizmid-material-online-1302115263.file.myqcloud.com/persist/mmp5z2ppaunk/mmp5z2ppaunk-%E4%BC%98%E6%83%A0%E5%88%B8.gif?imageMogr2/thumbnail/750x377!/strip/ignore-error/1" alt="" uno-block uno-w-full uno-my-16px uno-h-188px />
       <!-- <tm-sheet color="pink" :padding="[32]" :round="5">
         <view uno-grid="~ cols-3">
           <view uno-flex="~ col" uno-center>
@@ -131,7 +132,7 @@ const starTabsList = [
         <tm-text label="新品上市" :font-size="32" uno-font-bold />
       </view>
       <view uno-m-15px uno-mt-0px>
-        <tm-tabs item-model="line" transprent align="around" :list="newTabsList" :width="sysinfo.width * 2 - 30 * 2" default-name="1" />
+        <tm-tabs item-model="line" transprent align="around" :list="newTabsList" :width="px2rpx(sysinfo.width - 30)" default-name="1" />
         <view uno-rounded>
           <img
             src="https://bizmid-material-online-1302115263.file.myqcloud.com/persist/mkunt6ree4cf/mkunt6ree4cf-%E6%96%B0%E5%93%81%E4%B8%8A%E5%B8%82-%E9%9E%8B_04.png?imageMogr2/thumbnail/690x350!/strip/ignore-error/1" alt=""
@@ -157,7 +158,7 @@ const starTabsList = [
         <tm-text label="明星单品" :font-size="32" uno-font-bold />
       </view>
       <view uno-m-15px uno-mt-0px>
-        <tm-tabs item-model="line" transprent align="around" :list="starTabsList" :width="sysinfo.width * 2 - 30 * 2" default-name="1" />
+        <tm-tabs item-model="line" transprent align="around" :list="starTabsList" :width="px2rpx(sysinfo.width - 30)" default-name="1" />
         <view uno-rounded>
           <img
             src="https://bizmid-material-online-1302115263.file.myqcloud.com/persist/mkt49xgicqoa/mkt49xgicqoa-%E6%98%8E%E6%98%9F%E5%8D%95%E5%93%81-%E8%B7%91%E6%AD%A5%E9%9E%8B_04.png?imageMogr2/thumbnail/690x350!/strip/ignore-error/1" alt=""

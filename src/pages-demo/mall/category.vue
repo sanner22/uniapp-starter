@@ -20,11 +20,12 @@ const list = ref([
 ])
 
 const system = uni.$tm.u.getWindow()
+const px2rpx = (px: number) => uni.$tm.u.torpx(px)
 </script>
 
 <template>
   <tm-app>
-    <tm-side-menu v-model:active="active" :height="system.height * 2" :list="list">
+    <tm-side-menu v-model:active="active" :height="px2rpx(system.height)" :list="list">
       <view uno-p-15px>
         <tm-text label="男子运动鞋" :font-size="30" uno-my-10px uno-font-bold />
         <img src="https://lining.com/mobile/img/index/202212302238/banner09.jpg" uno-w-full uno-h-175px uno-block uno-mb-10px>

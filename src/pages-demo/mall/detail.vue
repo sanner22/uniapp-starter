@@ -1,5 +1,7 @@
 <script setup lang="ts">
 const sysinfo = uni.$tm.u.getWindow()
+const px2rpx = (px: number) => uni.$tm.u.torpx(px)
+
 const carouselList = [
   'https://lining-goods-online-1302115263.file.myqcloud.com/data/lining/ARMT015-3/638a9df34c691190d59fa8aae6cbb8c8bf3b93d89a1f3930be19070943d1a9aeb38624078f777ed3.jpg?imageMogr2/thumbnail/750x/strip/ignore-error/1',
   'https://lining-goods-online-1302115263.file.myqcloud.com/data/lining/ARMT015-1/e375c64a07a3a7b3eb71cf7d7a6b4d37e8585ae85e7bfffe4c38f185554354ebb38624078f777ed3.jpg?imageMogr2/thumbnail/750x/strip/ignore-error/1',
@@ -82,16 +84,16 @@ const content = '<div class="product-detail-img"><div class="img-item-wrapper"><
         { key: '1', title: '商品详情' },
         { key: '2', title: '商品参数' },
         { key: '3', title: '商品评价' },
-      ]" :width="sysinfo.width * 2" default-name="1"
+      ]" :width="px2rpx(sysinfo.width)" default-name="1"
     />
-    <tm-image src="https://bizmid-material-online-1302115263.file.myqcloud.com/persist/ml2lzsbhmpcc/ml2lzsbhmpcc-%E4%BC%98%E6%83%A0%E5%88%B8-%E4%BA%8C%E6%AC%A1.gif?imageMogr2/ignore-error/1" :width="sysinfo.width * 2" :height="213 * 2" />
+    <image src="https://bizmid-material-online-1302115263.file.myqcloud.com/persist/ml2lzsbhmpcc/ml2lzsbhmpcc-%E4%BC%98%E6%83%A0%E5%88%B8-%E4%BA%8C%E6%AC%A1.gif?imageMogr2/ignore-error/1" uno-block uno-w-full />
     <tm-sheet :margin="[0]">
       <view uno-grid="~ cols-3 gap-10px">
         <view v-for="(item, index) in 6" :key="index" uno-flex="~ col">
-          <img
+          <image
             src="https://lining-goods-online-1302115263.file.myqcloud.com/data/lining/ARMT013-1/08c5268445ffd11e3360ad312456ffe5797c13616d860611265917cadf81915ab38624078f777ed3.jpg?imageMogr2/ignore-error/1" alt=""
             uno-block uno-w-full uno-h-108px
-          >
+          />
           <tm-text label="[2023新品] 李宁日进斗金主题针织帽AMZT0003-1" :font-size="24" uno-my-10px />
           <view uno-flex="~ row" uno-items-end>
             <tm-text label="￥78.00" color="red" />
