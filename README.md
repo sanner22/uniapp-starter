@@ -49,10 +49,11 @@
 <img src="./docs/images/10.png" height="266" />
 <img src="./docs/images/12.png" height="266" />
 
-## 预览（H5、微信小程序）
+## 预览（H5、微信小程序、APP）
 
-<img src="./src/static/images/h5Qcode.png" width="150" />
-<img src="./src/static/images/wexinQcode.jpg" width="150" />
+<img src="./docs/images/qrcode.h5.png" width="150" />
+<img src="./docs/images/qrcode.mp-weixin.jpg" width="150" />
+<img src="./docs/images/qrcode.app.png" width="150" />
 
 ## 说明
 
