@@ -132,7 +132,7 @@ const logoColor = computed(() => {
     </tm-sheet>
 
     <view class="uno-my-40px uno-center logo-color">
-      <!-- #ifdef MP -->
+      <!-- #ifndef H5 -->
       <tm-image
         src="/static/svg/favicon.svg"
         :width="defaultLogoSize"
@@ -141,7 +141,7 @@ const logoColor = computed(() => {
         show-menu-by-long-press
       />
       <!-- #endif -->
-      <!-- #ifndef MP -->
+      <!-- #ifdef H5 -->
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
         <g data-name="图层 2">
           <g data-name="图层 1" fill="currentColor">
