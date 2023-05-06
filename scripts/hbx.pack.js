@@ -8,6 +8,36 @@ const dir = process.env.INIT_CWD // npm package.json 所在目录
 const projectPath = `${dir}\\dist\\build\\app` // 编译后的app目录，要导入到 hbx 中
 const packConfigUrl = `${dir}\\uniapp.pack.json.local` // 打包配置文件
 
+/**
+ * 是否在操作系统环境变量的 %PATH% 中安装了 hbx cli
+ * @param {string} hbxName hbx路径名称关键词
+ */
+const isInstallHbxCli = (hbxName = 'hbuilderx') => {
+  // 查询 PATH 变量
+  const result = execSync('echo %PATH%').toString('ascii')
+  return !result ? false : result.split(';').find(i => i.toLowerCase().includes(hbxName))
+}
+
+// 检测 hbx cli 是否安装到系统变量中
+if (!isInstallHbxCli()) {
+  console.error('未能找到 hbx cli，请先将 HBuilderX cli 所在路径正确添加到环境变量中，正确配置后需要重启 vscode。配置方法请参考：https://hx.dcloud.net.cn/cli/env\n')
+  return
+}
+
+/**
+ * 启动 hbx
+ */
+const openHBX = () => {
+  execSync('cli open')
+  console.log('- hbx 启动成功...\n')
+}
+
+// 仅仅启动 hbx
+if (args.includes('open')) {
+  openHBX()
+  return
+}
+
 let iscustom = false
 let safemode = true
 let packMode = '云打包'
@@ -21,8 +51,7 @@ if (args.includes('custom')) {
 
 (function () {
   // 启动 hbx
-  execSync('cli open')
-  console.log('- hbx 启动成功...\n')
+  openHBX()
 
   // 导入（已存在，不做任何事情）
   execSync(`cli project open --path ${projectPath}`).toString('ascii')

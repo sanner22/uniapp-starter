@@ -11,7 +11,7 @@
     "lint": "eslint --cache --max-warnings 0  \"src/**/*.{js,jsx,vue,ts,tsx}\"",
     "lint:fix": "eslint --cache --max-warnings 0  \"src/**/*.{js,jsx,vue,ts,tsx}\" --fix",
     "prepare": "husky install",
-    "hbx:open": "cli open",
+    "hbx:open": "node ./scripts/hbx.pack.js open",
     "hbx:custom": "node ./scripts/hbx.pack.js custom",
     "hbx:pack": "node ./scripts/hbx.pack.js",
     "uniapp-cli:latest": "npx @dcloudio/uvm"
